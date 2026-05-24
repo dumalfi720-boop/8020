@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 1.8: O vendedor como condutor, nao como ator | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 1.8: The salesperson as a driver, not as an actor | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -20,539 +20,491 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- NAV -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
-          <span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500/10 text-emerald-400"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HEADER -->
-  <header class="bg-gradient-to-b from-emerald-900/30 to-dark-900 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-      <div class="flex items-center space-x-2 text-sm text-neutral-400 mb-4">
-        <a href="index.html" class="hover:text-emerald-400 transition-colors">Trilha 1</a>
-        <span>›</span>
-        <span class="text-neutral-300">Modulo 1.8</span>
-      </div>
-      <div class="flex items-center space-x-3 mb-4">
-        <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs font-semibold">Fundamentos</span>
-        <span class="px-3 py-1 bg-dark-700 text-neutral-400 rounded-full text-xs font-semibold">Mental</span>
-      </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">🎭 O vendedor como condutor, nao como ator</h1>
-      <p class="text-lg text-neutral-300 max-w-2xl mb-6">Entenda por que consistencia vence talento, como scripts libertam em vez de engessar, e por que vendas e metodo — nao dom. Este modulo encerra a Trilha 1 e prepara voce para a pratica.</p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
-          <div class="text-emerald-400 font-bold text-lg">6</div>
-          <div class="text-neutral-400 text-sm">Topicos</div>
-        </div>
-        <div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
-          <div class="text-emerald-400 font-bold text-lg">~60 min</div>
-          <div class="text-neutral-400 text-sm">Duracao</div>
-        </div>
-        <div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
-          <div class="text-emerald-400 font-bold text-lg">Basico</div>
-          <div class="text-neutral-400 text-sm">Nivel</div>
-        </div>
-        <div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
-          <div class="text-emerald-400 font-bold text-lg">Mental</div>
-          <div class="text-neutral-400 text-sm">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
-
-    <!-- TOPICO 1 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">🔁</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">1. Processo vs improviso</h2>
-          <p class="text-neutral-400 mt-1">Por que consistencia vence talento isolado — sempre</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">Existe um mito perigoso no mundo de vendas: o de que os melhores vendedores sao aqueles com "talento natural", que improvisam com carisma e fecham negocios na base da labia. A realidade e bem diferente. <strong class="text-emerald-400">O vendedor que depende de improviso tem resultados aleatorios</strong>. Alguns dias sao otimos, outros sao pessimos, e ele nunca sabe por que.</p>
-
-        <p class="text-neutral-300 leading-relaxed">Ja o vendedor que segue um processo — mesmo sendo menos carismatico — tem <strong class="text-emerald-400">previsibilidade</strong>. Ele sabe o que funciona, sabe o que medir, sabe o que corrigir. Os resultados podem comecar mais modestos, mas crescem de forma consistente porque sao replicaveis.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="bg-dark-800 rounded-xl p-5 border border-red-500/20">
-          <h4 class="font-bold text-red-400 mb-4 text-center">❌ Vendedor por improviso</h4>
-          <ul class="space-y-2 text-neutral-300 text-sm">
-            <li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Resultados oscilam entre extremos</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Nao sabe replicar o que funcionou</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Depende do humor e da energia do dia</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Nao consegue ensinar outros a fazer igual</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Quando perde a motivacao, os numeros despencam</span></li>
-          </ul>
-        </div>
-
-        <div class="bg-dark-800 rounded-xl p-5 border border-emerald-500/20">
-          <h4 class="font-bold text-emerald-400 mb-4 text-center">✅ Vendedor por processo</h4>
-          <ul class="space-y-2 text-neutral-300 text-sm">
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Resultados consistentes e previsveis</span></li>
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Sabe exatamente o que faz e por que funciona</span></li>
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Opera bem mesmo em dias ruins</span></li>
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Pode treinar outros a atingir o mesmo nivel</span></li>
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Melhora continuamente com base em dados</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
-        <h4 class="font-bold text-emerald-400 mb-2">💡 Analogia</h4>
-        <p class="text-neutral-300 text-sm leading-relaxed">Pense em dois restaurantes. Um depende do chef genial que improvisa pratos incriveis — quando ele falta, o restaurante sofre. O outro tem receitas documentadas, processos claros e qualquer cozinheiro treinado entrega o mesmo padrao. Qual deles escala? Qual sobrevive a longo prazo?</p>
-      </div>
-    </section>
-
-    <!-- TOPICO 2 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">📋</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">2. Script como ferramenta, nao como prisao</h2>
-          <p class="text-neutral-400 mt-1">Estrutura liberta — nao engessa</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">A objecao mais comum quando se fala em "seguir um script" e: <em class="text-neutral-100">"Mas eu nao quero parecer um robo"</em>. Essa preocupacao e valida, mas nasce de uma confusao entre <strong class="text-emerald-400">script rigido</strong> (leia palavra por palavra) e <strong class="text-emerald-400">script estrutural</strong> (siga a estrutura, use suas palavras).</p>
-
-        <p class="text-neutral-300 leading-relaxed">O script estrutural e como uma partitura musical. O musico que conhece a partitura pode improvisar sobre ela com seguranca. O que nao conhece nenhuma partitura improvisa sem direcao — as vezes soa bem, na maioria das vezes soa confuso.</p>
-      </div>
-
-      <!-- Grid comparativo -->
-      <div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden">
-        <div class="grid grid-cols-3 gap-0 text-sm">
-          <div class="bg-dark-700 p-3 font-bold text-neutral-400 border-b border-r border-dark-600">Aspecto</div>
-          <div class="bg-dark-700 p-3 font-bold text-red-400 border-b border-r border-dark-600 text-center">Sem script</div>
-          <div class="bg-dark-700 p-3 font-bold text-emerald-400 border-b border-dark-600 text-center">Com script estrutural</div>
-
-          <div class="p-3 text-neutral-300 border-b border-r border-dark-700">Abertura</div>
-          <div class="p-3 text-neutral-400 border-b border-r border-dark-700">Diferente cada vez, muitas vezes longa demais</div>
-          <div class="p-3 text-neutral-300 border-b border-dark-700">Sempre eficiente, testada e otimizada</div>
-
-          <div class="p-3 text-neutral-300 border-b border-r border-dark-700">Perguntas</div>
-          <div class="p-3 text-neutral-400 border-b border-r border-dark-700">Esquece de perguntar coisas cruciais</div>
-          <div class="p-3 text-neutral-300 border-b border-dark-700">Todas as perguntas chave sao feitas</div>
-
-          <div class="p-3 text-neutral-300 border-b border-r border-dark-700">Transicao</div>
-          <div class="p-3 text-neutral-400 border-b border-r border-dark-700">Abrupta ou inexistente</div>
-          <div class="p-3 text-neutral-300 border-b border-dark-700">Natural e planejada</div>
-
-          <div class="p-3 text-neutral-300 border-b border-r border-dark-700">Apresentacao de valor</div>
-          <div class="p-3 text-neutral-400 border-b border-r border-dark-700">Fala de features, nao de beneficios</div>
-          <div class="p-3 text-neutral-300 border-b border-dark-700">Conecta valor com a dor do cliente</div>
-
-          <div class="p-3 text-neutral-300 border-r border-dark-700">Fechamento</div>
-          <div class="p-3 text-neutral-400 border-r border-dark-700">Fica esperando o cliente decidir</div>
-          <div class="p-3 text-neutral-300">Conduz ao proximo passo com seguranca</div>
-        </div>
-      </div>
-
-      <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
-        <h4 class="font-bold text-emerald-400 mb-2">🎵 Pense assim</h4>
-        <p class="text-neutral-300 text-sm leading-relaxed">Jazz — a musica mais "improvisada" que existe — e tocada por musicos que dominam teoria musical, escalas e progressoes. A improvisacao so funciona porque existe uma estrutura por baixo. Vendas e igual: voce improvisa melhor quando tem estrutura.</p>
-      </div>
-    </section>
-
-    <!-- TOPICO 3 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">🧭</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">3. A mentalidade do condutor</h2>
-          <p class="text-neutral-400 mt-1">Guiar a conversa com intencao, sem pressionar</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">O vendedor condutor nao "empurra" — ele <strong class="text-emerald-400">guia</strong>. Pense em um GPS: ele nao te obriga a seguir a rota, mas te mostra o melhor caminho e recalcula se voce desviar. O condutor faz a mesma coisa na conversa de vendas.</p>
-
-        <p class="text-neutral-300 leading-relaxed">A diferenca entre conduzir e pressionar e sutil mas fundamental. Conduzir e ter clareza sobre aonde a conversa precisa ir e usar perguntas para chegar la. Pressionar e ignorar o que o cliente diz e forcar a venda.</p>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
-        <h4 class="font-bold text-neutral-100 mb-4">Condutor vs Reativo vs Pressionador</h4>
-        <div class="space-y-4">
-          <div class="bg-dark-700 rounded-lg p-4">
-            <div class="flex items-center space-x-2 mb-2">
-              <span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs font-bold">CONDUTOR</span>
-              <span class="text-neutral-400 text-sm">— O ideal</span>
-            </div>
-            <p class="text-neutral-300 text-sm"><em>"Voce mencionou que o problema principal e X. Se existisse uma forma de resolver X em Y dias, faria sentido para voce explorar isso?"</em></p>
-          </div>
-
-          <div class="bg-dark-700 rounded-lg p-4">
-            <div class="flex items-center space-x-2 mb-2">
-              <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded text-xs font-bold">REATIVO</span>
-              <span class="text-neutral-400 text-sm">— Comum, mas fraco</span>
-            </div>
-            <p class="text-neutral-300 text-sm"><em>"Entendi... e voce quer saber mais alguma coisa? Posso enviar um material..."</em></p>
-          </div>
-
-          <div class="bg-dark-700 rounded-lg p-4">
-            <div class="flex items-center space-x-2 mb-2">
-              <span class="px-2 py-1 bg-red-500/20 text-red-400 rounded text-xs font-bold">PRESSIONADOR</span>
-              <span class="text-neutral-400 text-sm">— Destrutivo</span>
-            </div>
-            <p class="text-neutral-300 text-sm"><em>"Olha, essa oferta e so hoje. Se voce nao fechar agora, vai perder. E serio, eu to te ajudando."</em></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
-        <h4 class="font-bold text-neutral-100 mb-3">Os 4 principios do condutor</h4>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="flex items-start space-x-3">
-            <span class="text-emerald-400 font-bold text-lg">01</span>
-            <div>
-              <p class="text-neutral-100 font-semibold text-sm">Sabe onde quer chegar</p>
-              <p class="text-neutral-400 text-sm">Cada pergunta e cada frase tem um proposito claro na jornada da conversa.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <span class="text-emerald-400 font-bold text-lg">02</span>
-            <div>
-              <p class="text-neutral-100 font-semibold text-sm">Ouve antes de falar</p>
-              <p class="text-neutral-400 text-sm">Ajusta a rota com base no que o cliente revela. Nao segue um roteiro cego.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <span class="text-emerald-400 font-bold text-lg">03</span>
-            <div>
-              <p class="text-neutral-100 font-semibold text-sm">Nunca perde o controle</p>
-              <p class="text-neutral-400 text-sm">Mesmo quando o cliente desvia, reconecta a conversa com naturalidade.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <span class="text-emerald-400 font-bold text-lg">04</span>
-            <div>
-              <p class="text-neutral-100 font-semibold text-sm">Respeita o tempo do cliente</p>
-              <p class="text-neutral-400 text-sm">Se nao e a hora, nao forca. Planta a semente e cultiva o relacionamento.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOPICO 4 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">👂</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">4. Perguntar bem, ouvir bem, explicar valor com clareza</h2>
-          <p class="text-neutral-400 mt-1">Os 3 pilares do vendedor eficaz</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">Se voce tivesse que resumir vendas em tres habilidades, seriam estas: <strong class="text-emerald-400">perguntar bem, ouvir bem e explicar valor com clareza</strong>. Tudo o mais — tecnicas de fechamento, gatilhos mentais, negocoacao — e construido sobre esses tres pilares.</p>
-      </div>
-
-      <div class="space-y-6">
-        <!-- Pilar 1 -->
-        <div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <div class="flex items-center space-x-3 mb-4">
-            <span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">1</span>
-            <h4 class="font-bold text-emerald-400 text-lg">Perguntar bem</h4>
-          </div>
-          <p class="text-neutral-300 text-sm leading-relaxed mb-3">Boas perguntas fazem o cliente pensar. Perguntas ruins fazem o cliente se defender. A diferenca esta na intencao e na formulacao.</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="bg-dark-700 rounded-lg p-3">
-              <p class="text-red-400 text-xs font-bold mb-1">❌ Pergunta ruim</p>
-              <p class="text-neutral-400 text-sm">"Voce precisa de um CRM?"</p>
-            </div>
-            <div class="bg-dark-700 rounded-lg p-3">
-              <p class="text-emerald-400 text-xs font-bold mb-1">✅ Pergunta boa</p>
-              <p class="text-neutral-400 text-sm">"Como voce acompanha hoje se os leads estao sendo atendidos no prazo?"</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pilar 2 -->
-        <div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <div class="flex items-center space-x-3 mb-4">
-            <span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">2</span>
-            <h4 class="font-bold text-emerald-400 text-lg">Ouvir bem</h4>
-          </div>
-          <p class="text-neutral-300 text-sm leading-relaxed mb-3">Ouvir nao e esperar sua vez de falar. E processar o que o cliente disse e usar essa informacao para a proxima pergunta ou para a apresentacao de valor.</p>
-          <div class="bg-dark-700 rounded-lg p-3">
-            <p class="text-emerald-400 text-xs font-bold mb-1">Tecnica: Escuta ativa com confirmacao</p>
-            <p class="text-neutral-400 text-sm">"Se eu entendi bem, o seu principal desafio hoje e [X], e isso esta impactando [Y]. E isso mesmo?" — Essa confirmacao mostra que voce ouviu E organiza o pensamento do cliente.</p>
-          </div>
-        </div>
-
-        <!-- Pilar 3 -->
-        <div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <div class="flex items-center space-x-3 mb-4">
-            <span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">3</span>
-            <h4 class="font-bold text-emerald-400 text-lg">Explicar valor com clareza</h4>
-          </div>
-          <p class="text-neutral-300 text-sm leading-relaxed mb-3">Valor nao e o que voce acha que vale. E o que o cliente percebe que resolve o problema dele. A explicacao de valor deve sempre conectar a capacidade do produto com a dor especifica do cliente.</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="bg-dark-700 rounded-lg p-3">
-              <p class="text-red-400 text-xs font-bold mb-1">❌ Feature</p>
-              <p class="text-neutral-400 text-sm">"Nosso sistema tem dashboard em tempo real."</p>
-            </div>
-            <div class="bg-dark-700 rounded-lg p-3">
-              <p class="text-emerald-400 text-xs font-bold mb-1">✅ Valor conectado</p>
-              <p class="text-neutral-400 text-sm">"Voce mencionou que demora 2 dias para saber se um lead foi atendido. Com o dashboard, voce ve isso em tempo real e age no mesmo dia."</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOPICO 5 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">🔬</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">5. Vendas nao precisa de talento, precisa de metodo</h2>
-          <p class="text-neutral-400 mt-1">A tese central de todo o curso 8020</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">Esta e a ideia mais importante de todo o curso: <strong class="text-emerald-400">vendas e uma habilidade treinavel, nao um talento inato</strong>. Talento pode ajudar alguem a comecar mais rapido, mas e o metodo que determina quem fica bom — e quem continua bom ao longo do tempo.</p>
-
-        <p class="text-neutral-300 leading-relaxed">Pesquisas em performance de vendas mostram consistentemente que os vendedores de alta performance nao sao os mais carismaticos ou extrovertidos. Sao os que seguem processos, treinam regularmente e analisam seus resultados com disciplina.</p>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
-        <h4 class="font-bold text-neutral-100 mb-4">Talento vs Metodo ao longo do tempo</h4>
-        <div class="space-y-4">
-          <div class="flex items-center space-x-4">
-            <span class="text-neutral-400 text-sm w-20">Mes 1</span>
-            <div class="flex-1 space-y-1">
-              <div class="flex items-center space-x-2">
-                <span class="text-yellow-400 text-xs w-16">Talento</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 70%"></div></div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <span class="text-emerald-400 text-xs w-16">Metodo</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 30%"></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <span class="text-neutral-400 text-sm w-20">Mes 3</span>
-            <div class="flex-1 space-y-1">
-              <div class="flex items-center space-x-2">
-                <span class="text-yellow-400 text-xs w-16">Talento</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 72%"></div></div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <span class="text-emerald-400 text-xs w-16">Metodo</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 55%"></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <span class="text-neutral-400 text-sm w-20">Mes 6</span>
-            <div class="flex-1 space-y-1">
-              <div class="flex items-center space-x-2">
-                <span class="text-yellow-400 text-xs w-16">Talento</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 73%"></div></div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <span class="text-emerald-400 text-xs w-16">Metodo</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 75%"></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <span class="text-neutral-400 text-sm w-20">Mes 12</span>
-            <div class="flex-1 space-y-1">
-              <div class="flex items-center space-x-2">
-                <span class="text-yellow-400 text-xs w-16">Talento</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500/50 h-3 rounded-full" style="width: 68%"></div></div>
-              </div>
-              <div class="flex items-center space-x-2">
-                <span class="text-emerald-400 text-xs w-16">Metodo</span>
-                <div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 90%"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="text-neutral-400 text-sm mt-4">O talento estagna porque nao tem o que otimizar. O metodo cresce porque cada iteracao adiciona melhoria mensuravel.</p>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
-        <h4 class="font-bold text-neutral-100 mb-3">Por que metodo vence talento?</h4>
-        <ul class="space-y-2 text-neutral-300">
-          <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Metodo e escalavel</strong> — Voce pode ensinar 50 pessoas o mesmo metodo. Nao pode ensinar 50 pessoas a terem carisma.</span></li>
-          <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Metodo e mensuravel</strong> — Voce pode identificar qual etapa esta falhando e corrigir. Com talento, voce so sabe que "nao ta funcionando".</span></li>
-          <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Metodo e resistente</strong> — Funciona mesmo quando voce esta cansado, desmotivado ou em um dia ruim. Talento oscila com o emocional.</span></li>
-          <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Metodo e acumulativo</strong> — Cada melhoria no processo se soma as anteriores. O resultado e exponencial, nao linear.</span></li>
-        </ul>
-      </div>
-
-      <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
-        <h4 class="font-bold text-emerald-400 mb-2">💡 Reflexao</h4>
-        <p class="text-neutral-300 text-sm leading-relaxed">Se vendas fosse talento, os melhores vendedores seriam sempre os mesmos. Mas na realidade, pessoas comuns que adotam metodos inteligentes superam "talentos naturais" o tempo todo. A pergunta nao e "eu tenho talento para vendas?" — e "eu estou disposto a seguir um metodo?"</p>
-      </div>
-    </section>
-
-    <!-- TOPICO 6 -->
-    <section class="space-y-6">
-      <div class="flex items-start space-x-3">
-        <span class="text-2xl">➡️</span>
-        <div>
-          <h2 class="text-2xl font-bold text-neutral-100">6. O proximo passo: do conceito para a pratica</h2>
-          <p class="text-neutral-400 mt-1">Resumo da Trilha 1 e transicao para o metodo pratico</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
-        <p class="text-neutral-300 leading-relaxed">Voce chegou ao final da <strong class="text-emerald-400">Trilha 1 — Fundamentos</strong>. Ao longo de 8 modulos, construiu a base conceitual que sustenta todo o restante do curso. Agora voce entende como vendas funciona de verdade, por que as pessoas compram e como se comunicar com cada tipo de publico.</p>
-
-        <p class="text-neutral-300 leading-relaxed">Mas conceito sem pratica e apenas teoria. Na <strong class="text-emerald-400">Trilha 2 — Metodo Pratico de Vendas</strong>, voce vai transformar tudo isso em acao. Vai aprender roteiros, scripts, tecnicas de objecao e processos que pode usar amanha mesmo.</p>
-      </div>
-
-      <div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
-        <h4 class="font-bold text-neutral-100 mb-4">O que voce construiu na Trilha 1</h4>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.1</span>
-            <span class="text-neutral-300 text-sm">O principio 80/20 aplicado a vendas</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.2</span>
-            <span class="text-neutral-300 text-sm">Por que as pessoas compram</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.3</span>
-            <span class="text-neutral-300 text-sm">Dor, desejo e decisao</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.4</span>
-            <span class="text-neutral-300 text-sm">Os 5 niveis de consciencia</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.5</span>
-            <span class="text-neutral-300 text-sm">Valor percebido vs preco</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.6</span>
-            <span class="text-neutral-300 text-sm">Confianca como moeda de troca</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.7</span>
-            <span class="text-neutral-300 text-sm">O funil de consciencia na pratica</span>
-          </div>
-          <div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
-            <span class="text-emerald-400 text-sm">1.8</span>
-            <span class="text-neutral-300 text-sm">O vendedor como condutor (voce esta aqui)</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
-        <h4 class="font-bold text-emerald-400 mb-2">🎯 Sua missao antes de ir para a Trilha 2</h4>
-        <p class="text-neutral-300 text-sm leading-relaxed">Releia os modulos que mais geraram duvida. Anote 3 insights que mudaram sua visao sobre vendas. Identifique 1 habito que voce ja pode mudar amanha. Nao precisa esperar terminar o curso para comecar a aplicar.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- SUMMARY -->
-  <section class="bg-dark-800 border-t border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
-      <h2 class="text-2xl font-bold text-neutral-100">📋 O que voce aprendeu neste modulo</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">Processo gera previsibilidade; improviso gera aleatoriedade</span>
-        </div>
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">Scripts estruturais libertam — nao engessam</span>
-        </div>
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">A mentalidade do condutor: guiar com intencao, sem pressionar</span>
-        </div>
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">Os 3 pilares: perguntar, ouvir, explicar valor</span>
-        </div>
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">Vendas e metodo treinavel, nao talento inato</span>
-        </div>
-        <div class="flex items-start space-x-3">
-          <span class="text-emerald-400 text-lg">✅</span>
-          <span class="text-neutral-300">Base completa da Trilha 1 pronta para aplicar na pratica</span>
-        </div>
-      </div>
-
-      <!-- Next module preview -->
-      <div class="bg-gradient-to-r from-blue-900/30 to-dark-700 rounded-xl p-6 border border-blue-500/20">
-        <div class="flex items-center space-x-2 text-sm text-neutral-400 mb-2">
-          <span>Proxima trilha</span>
-          <span>→</span>
-        </div>
-        <h3 class="text-xl font-bold text-neutral-100 mb-2">🔧 Trilha 2 — Metodo Pratico de Vendas</h3>
-        <p class="text-neutral-400">Agora que voce tem a base conceitual, e hora de colocar em pratica. Roteiros, scripts, tecnicas de objecao, simulacoes e o treinamento de 7 dias que transforma teoria em resultado.</p>
-        <a href="../trilha2/index.html" class="inline-flex items-center space-x-2 mt-4 px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors">
-          <span>Ir para Trilha 2</span><span>→</span>
-        </a>
-      </div>
-
-      <!-- Nav buttons -->
-      <div class="flex justify-between items-center pt-4">
-        <a href="modulo-1-7.html" class="flex items-center space-x-2 text-neutral-400 hover:text-emerald-400 transition-colors">
-          <span>←</span><span>Modulo anterior</span>
-        </a>
-        <a href="index.html" class="text-neutral-400 hover:text-emerald-400 transition-colors">
-          <span>Voltar para Trilha 1</span>
-        </a>
-        <a href="../trilha2/index.html" class="flex items-center space-x-2 text-neutral-400 hover:text-blue-400 transition-colors">
-          <span>Trilha 2</span><span>→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-dark-900 border-t border-dark-600 py-8">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-neutral-400 text-sm">💰 8020 — Vendas com inteligencia</p>
-      <p class="text-neutral-600 text-xs mt-2">Um curso <a href="https://inema.club" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p>
-    </div>
-  </footer>
-
-  <!-- THEME SCRIPT -->
-  <script>
+NAV
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
+<span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500/10 text-emerald-400" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+HEADER
+<header class="bg-gradient-to-b from-emerald-900/30 to-dark-900 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+<div class="flex items-center space-x-2 text-sm text-neutral-400 mb-4">
+<a class="hover:text-emerald-400 transition-colors" href="index.html">Track 1</a>
+<span>›</span>
+<span class="text-neutral-300">Module 1.8</span>
+</div>
+<div class="flex items-center space-x-3 mb-4">
+<span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs font-semibold">Fundamentals</span>
+<span class="px-3 py-1 bg-dark-700 text-neutral-400 rounded-full text-xs font-semibold">Mental</span>
+</div>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-4">🎭 The salesperson as a driver, not as an actor</h1>
+<p class="text-lg text-neutral-300 max-w-2xl mb-6">Understand why consistency beats talent, how scripts free rather than set you back, and why sales is a method — not a gift. This module concludes Track 1 and prepares you for practice.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
+<div class="text-emerald-400 font-bold text-lg">6</div>
+<div class="text-neutral-400 text-sm">Topics</div>
+</div>
+<div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
+<div class="text-emerald-400 font-bold text-lg">~60 min</div>
+<div class="text-neutral-400 text-sm">Duration</div>
+</div>
+<div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
+<div class="text-emerald-400 font-bold text-lg">Basic</div>
+<div class="text-neutral-400 text-sm">Level</div>
+</div>
+<div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
+<div class="text-emerald-400 font-bold text-lg">Mental</div>
+<div class="text-neutral-400 text-sm">Type</div>
+</div>
+</div>
+</div>
+</header>
+MAIN CONTENT
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12">
+TOPIC 1
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🔁</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">1. Process vs improvisation</h2>
+<p class="text-neutral-400 mt-1">Why Consistency Beats Isolated Talent — Every Time</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">There is a dangerous myth in the world of sales: that the best salespeople are those with "natural talent", who improvise with charisma and close deals based on lip service. The reality is very different.<strong class="text-emerald-400">The seller who relies on improvisation has random results</strong>. Some days are great, some days are terrible, and he never knows why.</p>
+<p class="text-neutral-300 leading-relaxed">The salesperson who follows a process — even if he is less charismatic — has<strong class="text-emerald-400">predictability</strong>. He knows what works, he knows what to measure, he knows what to correct. Results may start out more modest, but grow consistently because they are replicable.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-dark-800 rounded-xl p-5 border border-red-500/20">
+<h4 class="font-bold text-red-400 mb-4 text-center">❌ Impromptu seller</h4>
+<ul class="space-y-2 text-neutral-300 text-sm">
+<li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Results fluctuate between extremes</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>Don't know how to replicate what worked</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>It depends on the mood and energy of the day</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>You can't teach others to do the same</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">▸</span><span>When you lose motivation, numbers plummet</span></li>
+</ul>
+</div>
+<div class="bg-dark-800 rounded-xl p-5 border border-emerald-500/20">
+<h4 class="font-bold text-emerald-400 mb-4 text-center">✅ Seller by process</h4>
+<ul class="space-y-2 text-neutral-300 text-sm">
+<li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Consistent and predictable results</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Knows exactly what it does and why it works</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Operates well even on bad days</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Can train others to reach the same level</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">▸</span><span>Continuously improves based on data</span></li>
+</ul>
+</div>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
+<h4 class="font-bold text-emerald-400 mb-2">💡 Analogy</h4>
+<p class="text-neutral-300 text-sm leading-relaxed">Think of two restaurants. One depends on the genius chef who improvises incredible dishes — when he's missing, the restaurant suffers. The other has documented recipes, clear processes and any trained cook delivers the same standard. Which one scales? Which survives in the long term?</p>
+</div>
+</section>
+TOPIC 2
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">📋</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">2. Script as a tool, not a prison</h2>
+<p class="text-neutral-400 mt-1">Free structure — does not bind</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">The most common objection when talking about "following a script" is:<em class="text-neutral-100">"But I don't want to look like a robot"</em>. This concern is valid, but it arises from a confusion between<strong class="text-emerald-400">rigid script</strong>(read word for word) and<strong class="text-emerald-400">structural script</strong>(follow the structure, use your words).</p>
+<p class="text-neutral-300 leading-relaxed">The structural script is like a musical score. The musician who knows the score can improvise on it safely. Someone who doesn't know any sheet music improvises without direction — sometimes it sounds good, most of the time it sounds confusing.</p>
+</div>
+Comparative grid
+<div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden">
+<div class="grid grid-cols-3 gap-0 text-sm">
+<div class="bg-dark-700 p-3 font-bold text-neutral-400 border-b border-r border-dark-600">Aspect</div>
+<div class="bg-dark-700 p-3 font-bold text-red-400 border-b border-r border-dark-600 text-center">No script</div>
+<div class="bg-dark-700 p-3 font-bold text-emerald-400 border-b border-dark-600 text-center">Structurally scripted</div>
+<div class="p-3 text-neutral-300 border-b border-r border-dark-700">Opening</div>
+<div class="p-3 text-neutral-400 border-b border-r border-dark-700">Different every time, often too long</div>
+<div class="p-3 text-neutral-300 border-b border-dark-700">Always efficient, tested and optimized</div>
+<div class="p-3 text-neutral-300 border-b border-r border-dark-700">Questions</div>
+<div class="p-3 text-neutral-400 border-b border-r border-dark-700">Forgets to ask crucial questions</div>
+<div class="p-3 text-neutral-300 border-b border-dark-700">All key questions are asked</div>
+<div class="p-3 text-neutral-300 border-b border-r border-dark-700">Transition</div>
+<div class="p-3 text-neutral-400 border-b border-r border-dark-700">Abrupt or non-existent</div>
+<div class="p-3 text-neutral-300 border-b border-dark-700">Natural and planned</div>
+<div class="p-3 text-neutral-300 border-b border-r border-dark-700">Value presentation</div>
+<div class="p-3 text-neutral-400 border-b border-r border-dark-700">Talk about features, not benefits</div>
+<div class="p-3 text-neutral-300 border-b border-dark-700">Connects value with customer pain</div>
+<div class="p-3 text-neutral-300 border-r border-dark-700">Closing</div>
+<div class="p-3 text-neutral-400 border-r border-dark-700">Waiting for the customer to decide</div>
+<div class="p-3 text-neutral-300">Take the next step safely</div>
+</div>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
+<h4 class="font-bold text-emerald-400 mb-2">🎵 Think like this</h4>
+<p class="text-neutral-300 text-sm leading-relaxed">Jazz — the most "improvised" music there is — is played by musicians who master musical theory, scales and progressions. Improvisation only works because there is a structure underneath. Sales is the same: you improvise better when you have structure.</p>
+</div>
+</section>
+TOPIC 3
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🧭</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">3. The driver's mentality</h2>
+<p class="text-neutral-400 mt-1">Guide the conversation with intention, without pressure</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">The salesperson does not "push" — he<strong class="text-emerald-400">guide</strong>. Think of a GPS: it doesn't force you to follow the route, but it shows you the best path and recalculates if you deviate. The driver does the same thing in the sales conversation.</p>
+<p class="text-neutral-300 leading-relaxed">The difference between leading and pressing is subtle but fundamental. Lead and be clear about where the conversation needs to go and use questions to get there. Pressure and ignore what the customer says and force the sale.</p>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-100 mb-4">Conductor vs Reactive vs Pressor</h4>
+<div class="space-y-4">
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-center space-x-2 mb-2">
+<span class="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded text-xs font-bold">DRIVER</span>
+<span class="text-neutral-400 text-sm">— The ideal</span>
+</div>
+<p class="text-neutral-300 text-sm"><em>"You mentioned that the main problem is X. If there was a way to solve X in Y days, would it make sense for you to explore that?"</em></p>
+</div>
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-center space-x-2 mb-2">
+<span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 rounded text-xs font-bold">REACTIVE</span>
+<span class="text-neutral-400 text-sm">— Common, but weak</span>
+</div>
+<p class="text-neutral-300 text-sm"><em>"I understand... and do you want to know anything else? I can send you some material..."</em></p>
+</div>
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-center space-x-2 mb-2">
+<span class="px-2 py-1 bg-red-500/20 text-red-400 rounded text-xs font-bold">PRESSER</span>
+<span class="text-neutral-400 text-sm">— Destructive</span>
+</div>
+<p class="text-neutral-300 text-sm"><em>"Look, this offer is for today only. If you don't close now, you're going to lose. Seriously, I'm helping you."</em></p>
+</div>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-100 mb-3">The 4 principles of the driver</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 font-bold text-lg">01</span>
+<div>
+<p class="text-neutral-100 font-semibold text-sm">You know where you want to get</p>
+<p class="text-neutral-400 text-sm">Each question and each sentence has a clear purpose in the journey of the conversation.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 font-bold text-lg">02</span>
+<div>
+<p class="text-neutral-100 font-semibold text-sm">Listen before speaking</p>
+<p class="text-neutral-400 text-sm">Adjusts the route based on what the customer reveals. Don't follow a blind script.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 font-bold text-lg">03</span>
+<div>
+<p class="text-neutral-100 font-semibold text-sm">Never lose control</p>
+<p class="text-neutral-400 text-sm">Even when the customer deviates, he reconnects the conversation naturally.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 font-bold text-lg">04</span>
+<div>
+<p class="text-neutral-100 font-semibold text-sm">Respects the customer's time</p>
+<p class="text-neutral-400 text-sm">If it's not the time, don't force it. Plant the seed and cultivate the relationship.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+TOPIC 4
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">👂</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">4. Ask well, listen well, explain value clearly</h2>
+<p class="text-neutral-400 mt-1">The 3 pillars of an effective salesperson</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">If you had to summarize sales into three skills, they would be these:<strong class="text-emerald-400">ask well, listen well and explain value clearly</strong>. Everything else — closing techniques, mental triggers, negotiation — is built on these three pillars.</p>
+</div>
+<div class="space-y-6">
+Pillar 1
+<div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<div class="flex items-center space-x-3 mb-4">
+<span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">1</span>
+<h4 class="font-bold text-emerald-400 text-lg">Ask well</h4>
+</div>
+<p class="text-neutral-300 text-sm leading-relaxed mb-3">Good questions make the customer think. Bad questions make the customer defend themselves. The difference lies in the intention and formulation.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-700 rounded-lg p-3">
+<p class="text-red-400 text-xs font-bold mb-1">❌ Bad question</p>
+<p class="text-neutral-400 text-sm">"Do you need a CRM?"</p>
+</div>
+<div class="bg-dark-700 rounded-lg p-3">
+<p class="text-emerald-400 text-xs font-bold mb-1">✅ Good question</p>
+<p class="text-neutral-400 text-sm">"How do you monitor today whether leads are being served on time?"</p>
+</div>
+</div>
+</div>
+Pillar 2
+<div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<div class="flex items-center space-x-3 mb-4">
+<span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">2</span>
+<h4 class="font-bold text-emerald-400 text-lg">Listen well</h4>
+</div>
+<p class="text-neutral-300 text-sm leading-relaxed mb-3">Listening is not waiting for your turn to speak. And process what the customer said and use that information for the next question or value presentation.</p>
+<div class="bg-dark-700 rounded-lg p-3">
+<p class="text-emerald-400 text-xs font-bold mb-1">Technique: Active listening with confirmation</p>
+<p class="text-neutral-400 text-sm">"If I understand correctly, your main challenge today is [X], and this is impacting [Y]. Is that right?" — This confirmation shows that you listened AND organizes the customer's thinking.</p>
+</div>
+</div>
+Pillar 3
+<div class="bg-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<div class="flex items-center space-x-3 mb-4">
+<span class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold">3</span>
+<h4 class="font-bold text-emerald-400 text-lg">Explain value clearly</h4>
+</div>
+<p class="text-neutral-300 text-sm leading-relaxed mb-3">Value is not what you think it is worth. And what the customer perceives solves their problem. The explanation of value must always connect the product's capacity with the customer's specific pain.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-700 rounded-lg p-3">
+<p class="text-red-400 text-xs font-bold mb-1">❌Features</p>
+<p class="text-neutral-400 text-sm">"Our system has a real-time dashboard."</p>
+</div>
+<div class="bg-dark-700 rounded-lg p-3">
+<p class="text-emerald-400 text-xs font-bold mb-1">✅ Connected Value</p>
+<p class="text-neutral-400 text-sm">"You mentioned that it takes 2 days to know if a lead has been answered. With the dashboard, you see this in real time and act on the same day."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+TOPIC 5
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🔬</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">5. Sales doesn’t need talent, it needs method</h2>
+<p class="text-neutral-400 mt-1">The central thesis of the entire 8020 course</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">This is the most important idea of ​​the entire course:<strong class="text-emerald-400">Sales is a trainable skill, not an innate talent</strong>. Talent can help someone get started faster, but it's the method that determines who gets good — and who stays good over time.</p>
+<p class="text-neutral-300 leading-relaxed">Sales performance research consistently shows that high-performing salespeople are not the most charismatic or extroverted. They are those who follow processes, train regularly and analyze their results with discipline.</p>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-100 mb-4">Talent vs Method over time</h4>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<span class="text-neutral-400 text-sm w-20">Month 1</span>
+<div class="flex-1 space-y-1">
+<div class="flex items-center space-x-2">
+<span class="text-yellow-400 text-xs w-16">Talent</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 70%"></div></div>
+</div>
+<div class="flex items-center space-x-2">
+<span class="text-emerald-400 text-xs w-16">Method</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 30%"></div></div>
+</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="text-neutral-400 text-sm w-20">Month 3</span>
+<div class="flex-1 space-y-1">
+<div class="flex items-center space-x-2">
+<span class="text-yellow-400 text-xs w-16">Talent</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 72%"></div></div>
+</div>
+<div class="flex items-center space-x-2">
+<span class="text-emerald-400 text-xs w-16">Method</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 55%"></div></div>
+</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="text-neutral-400 text-sm w-20">Month 6</span>
+<div class="flex-1 space-y-1">
+<div class="flex items-center space-x-2">
+<span class="text-yellow-400 text-xs w-16">Talent</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 73%"></div></div>
+</div>
+<div class="flex items-center space-x-2">
+<span class="text-emerald-400 text-xs w-16">Method</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 75%"></div></div>
+</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="text-neutral-400 text-sm w-20">Month 12</span>
+<div class="flex-1 space-y-1">
+<div class="flex items-center space-x-2">
+<span class="text-yellow-400 text-xs w-16">Talent</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-yellow-500/50 h-3 rounded-full" style="width: 68%"></div></div>
+</div>
+<div class="flex items-center space-x-2">
+<span class="text-emerald-400 text-xs w-16">Method</span>
+<div class="flex-1 bg-dark-700 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 90%"></div></div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-neutral-400 text-sm mt-4">Talent stagnates because there is nothing to optimize. The method grows because each iteration adds measurable improvement.</p>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-100 mb-3">Why does method beat talent?</h4>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Method and scalability</strong>— You can teach 50 people the same method. You can't teach 50 people to have charisma.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Method and measurable</strong>— You can identify which step is failing and correct it. With talent, you just know that "it's not working."</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Method and resistant</strong>— It works even when you are tired, unmotivated or having a bad day. Talent fluctuates with emotions.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">▸</span><span><strong class="text-neutral-100">Method and cumulative</strong>— Each improvement in the process adds to the previous ones. The result is exponential, not linear.</span></li>
+</ul>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
+<h4 class="font-bold text-emerald-400 mb-2">💡 Reflection</h4>
+<p class="text-neutral-300 text-sm leading-relaxed">If sales were talent, the best salespeople would always be the same. But in reality, ordinary people who adopt smart methods outperform "natural talents" all the time. The question is not "do I have a talent for sales?" — and "am I willing to follow a method?"</p>
+</div>
+</section>
+TOPIC 6
+<section class="space-y-6">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">➡️</span>
+<div>
+<h2 class="text-2xl font-bold text-neutral-100">6. The next step: from concept to practice</h2>
+<p class="text-neutral-400 mt-1">Summary of Track 1 and transition to the practical method</p>
+</div>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600 space-y-4">
+<p class="text-neutral-300 leading-relaxed">You have reached the end of<strong class="text-emerald-400">Track 1 — Fundamentals</strong>. Over the course of 8 modules, the conceptual basis was built that supports the rest of the course. Now you understand how sales really works, why people buy and how to communicate with each type of audience.</p>
+<p class="text-neutral-300 leading-relaxed">But concept without practice and just theory. In<strong class="text-emerald-400">Track 2 — Practical Sales Method</strong>, you will turn all of this into action. You will learn scripts, scripts, objection techniques and processes that you can use tomorrow.</p>
+</div>
+<div class="bg-dark-800 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-100 mb-4">What did you build on Track 1</h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.1</span>
+<span class="text-neutral-300 text-sm">The 80/20 principle applied to sales</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.2</span>
+<span class="text-neutral-300 text-sm">Why do people buy</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.3</span>
+<span class="text-neutral-300 text-sm">Pain, desire and decision</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.4</span>
+<span class="text-neutral-300 text-sm">The 5 levels of consciousness</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.5</span>
+<span class="text-neutral-300 text-sm">Perceived value vs price</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.6</span>
+<span class="text-neutral-300 text-sm">Trust as a bargaining chip</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.7</span>
+<span class="text-neutral-300 text-sm">The funnel of consciousness in practice</span>
+</div>
+<div class="bg-dark-700 rounded-lg p-3 flex items-start space-x-2">
+<span class="text-emerald-400 text-sm">1.8</span>
+<span class="text-neutral-300 text-sm">The seller as driver (you are here)</span>
+</div>
+</div>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5">
+<h4 class="font-bold text-emerald-400 mb-2">🎯 Your mission before heading to Trail 2</h4>
+<p class="text-neutral-300 text-sm leading-relaxed">Re-read the modules that generated the most doubts. Write down 3 insights that changed your view of sales. Identify 1 habit that you can change tomorrow. You don't need to wait to finish the course to start applying.</p>
+</div>
+</section>
+</main>
+SUMMARY
+<section class="bg-dark-800 border-t border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
+<h2 class="text-2xl font-bold text-neutral-100">📋 What did you learn in this module</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">Process generates predictability; improvisation generates randomness</span>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">Structural scripts free — they don’t bind</span>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">The driver's mentality: drive with intention, without pressure</span>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">The 3 pillars: ask, listen, explain value</span>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">Sales is a trainable method, not innate talent</span>
+</div>
+<div class="flex items-start space-x-3">
+<span class="text-emerald-400 text-lg">✅</span>
+<span class="text-neutral-300">Complete base of Trail 1 ready to apply in practice</span>
+</div>
+</div>
+Next module preview
+<div class="bg-gradient-to-r from-blue-900/30 to-dark-700 rounded-xl p-6 border border-blue-500/20">
+<div class="flex items-center space-x-2 text-sm text-neutral-400 mb-2">
+<span>Next track</span>
+<span>→</span>
+</div>
+<h3 class="text-xl font-bold text-neutral-100 mb-2">🔧 Track 2 — Practical Sales Method</h3>
+<p class="text-neutral-400">Now that you have the conceptual basis, it's time to put it into practice. Scripts, scripts, objection techniques, simulations and 7-day training that transforms theory into results.</p>
+<a class="inline-flex items-center space-x-2 mt-4 px-5 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors" href="../trilha2/index.html">
+<span>Go to Track 2</span><span>→</span>
+</a>
+</div>
+Nav buttons
+<div class="flex justify-between items-center pt-4">
+<a class="flex items-center space-x-2 text-neutral-400 hover:text-emerald-400 transition-colors" href="modulo-1-7.html">
+<span>←</span><span>Previous module</span>
+</a>
+<a class="text-neutral-400 hover:text-emerald-400 transition-colors" href="index.html">
+<span>Return to Track 1</span>
+</a>
+<a class="flex items-center space-x-2 text-neutral-400 hover:text-blue-400 transition-colors" href="../trilha2/index.html">
+<span>Track 2</span><span>→</span>
+</a>
+</div>
+</div>
+</section>
+FOOTER
+<footer class="bg-dark-900 border-t border-dark-600 py-8">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-neutral-400 text-sm">💰 8020 — Sales with intelligence</p>
+<p class="text-neutral-600 text-xs mt-2">A course<a class="text-sky-400 hover:text-sky-300" href="https://duclub">duclub</a></p>
+</div>
+</footer>
+THEME SCRIPT
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       html.classList.toggle('dark');

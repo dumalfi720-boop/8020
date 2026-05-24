@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 2.5: Adaptar o script por nivel de consciencia | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 2.5: Adapt the script by level of awareness | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,404 +32,349 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-blue-500/10 text-blue-400"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 2</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-blue-400 font-medium">Modulo 2.5</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MODULO 2.5</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧠 Adaptar o script por nivel de consciencia</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Nem todo cliente esta no mesmo estagio. Aprenda a identificar o nivel de consciencia e ajustar seu script para maximizar a conversao.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">~50</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">Avancado</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">Estrategico</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Visao geral dos niveis -->
-    <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-12">
-      <h3 class="text-lg font-semibold text-blue-400 mb-4">Os 5 niveis de consciencia (Eugene Schwartz)</h3>
-      <div class="grid grid-cols-5 gap-2 text-center text-xs">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-          <div class="text-lg mb-1">😶</div>
-          <div class="font-semibold text-neutral-300">Inconsciente</div>
-          <div class="text-neutral-500">Nao sabe que tem problema</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-          <div class="text-lg mb-1">😰</div>
-          <div class="font-semibold text-neutral-300">Problema</div>
-          <div class="text-neutral-500">Sabe que tem problema</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-          <div class="text-lg mb-1">🔎</div>
-          <div class="font-semibold text-neutral-300">Solucao</div>
-          <div class="text-neutral-500">Busca solucoes</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-          <div class="text-lg mb-1">📦</div>
-          <div class="font-semibold text-neutral-300">Produto</div>
-          <div class="text-neutral-500">Conhece seu produto</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
-          <div class="text-lg mb-1">🚀</div>
-          <div class="font-semibold text-neutral-300">Muito consciente</div>
-          <div class="text-neutral-500">So precisa do empurrao</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">😶 Script para publico inconsciente</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Esse cliente <strong class="text-blue-400">nao sabe que tem um problema</strong>. Tentar vender para ele e como oferecer remedio para quem acha que esta saudavel. Aqui, voce educa antes de vender.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Abordagem para inconscientes</h3>
-        <div class="space-y-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Objetivo</h4>
-            <p class="text-neutral-300 text-sm">Nao vender. Despertar consciencia sobre um problema que ele ainda nao percebeu.</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Exemplo de script</h4>
-            <p class="text-neutral-300 text-sm">"Voce sabia que a maioria dos restaurantes perde ate R$ 15 mil por mes com dias fracos e nem percebe? E porque normalmente a gente olha so o faturamento total e nao calcula o que esta deixando de ganhar."</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Canais ideais</h4>
-            <p class="text-neutral-300 text-sm">Conteudo educacional, posts em redes sociais, artigos, videos curtos, webinars gratuitos. Nao use abordagem direta — ele nao vai responder.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 A regra do inconsciente</h3>
-        <p class="text-neutral-300">
-          Com publico inconsciente, <strong class="text-primary">conteudo e a venda</strong>. Voce nao esta vendendo um produto — esta vendendo a consciencia de um problema. O produto vem depois, quando ele acordar.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">😰 Script para consciente do problema</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Esse cliente <strong class="text-blue-400">sabe que tem um problema, mas nao sabe como resolver</strong>. E o publico mais abundante e onde a venda consultiva brilha. Aqui voce aprofunda a dor e posiciona sua solucao como caminho logico.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Script para consciente do problema</h3>
-        <div class="space-y-3">
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-xs text-blue-400 font-semibold mb-1">VALIDAR A DOR</p>
-            <p class="text-neutral-300 text-sm">"Voce nao e o unico. A maioria dos [tipo de cliente] enfrenta exatamente isso. E normal — mas nao precisa continuar assim."</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-amber-500">
-            <p class="text-xs text-amber-400 font-semibold mb-1">APROFUNDAR</p>
-            <p class="text-neutral-300 text-sm">"Me conta mais sobre como isso afeta seu dia a dia. Quanto tempo/dinheiro voce acha que perde com isso?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-red-500">
-            <p class="text-xs text-red-400 font-semibold mb-1">PROJETAR CONSEQUENCIA</p>
-            <p class="text-neutral-300 text-sm">"Se continuar assim por mais 6 meses, o que acontece?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-xs text-emerald-400 font-semibold mb-1">APRESENTAR CAMINHO</p>
-            <p class="text-neutral-300 text-sm">"Existe uma forma estruturada de resolver isso. Posso te mostrar como outros clientes saíram dessa situacao?"</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Por que esse e o melhor publico</h3>
-        <p class="text-neutral-300">
-          O consciente do problema ja tem <strong class="text-blue-400">motivacao para agir</strong>. Ele so precisa de direcao. Se voce faz um bom diagnostico e mostra um caminho claro, a venda e consequencia natural.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🔎 Script para consciente da solucao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Esse cliente <strong class="text-blue-400">ja sabe que tipo de solucao precisa, mas ainda nao decidiu com quem</strong>. Ele esta comparando. Seu foco aqui e diferenciacao e provas.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Script focado em diferenciacao</h3>
-        <div class="space-y-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Entender o que ele ja sabe</h4>
-            <p class="text-neutral-300 text-sm">"Voce ja pesquisou sobre isso? O que voce ja viu no mercado? O que te agradou e o que nao te convenceu?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Mostrar o diferencial</h4>
-            <p class="text-neutral-300 text-sm">"A maioria das solucoes faz X. O que a gente faz de diferente e Y — porque entendemos que [razao conectada a dor do cliente]."</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-2">Prova social</h4>
-            <p class="text-neutral-300 text-sm">"O [nome do cliente] estava na mesma situacao. Escolheu a gente porque [diferencial]. Em [prazo], conseguiu [resultado]."</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-          <h4 class="font-bold text-blue-400 mb-4">✓ O que funciona</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>Cases de sucesso reais</li>
-            <li>Diferenciais claros e especificos</li>
-            <li>Garantias e reducao de risco</li>
-            <li>Comparacao honesta</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ O que nao funciona</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>Repetir o diagnostico (ele ja sabe)</li>
-            <li>Falar mal do concorrente</li>
-            <li>Ser generico sobre beneficios</li>
-            <li>Pressionar sem provas</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Dica pratica</h3>
-        <p class="text-neutral-300">
-          Tenha sempre <strong class="text-primary">3 cases de sucesso prontos</strong> para contar. Historias reais de clientes que tinham o mesmo problema e resolveram com voce. Prova social e o argumento mais poderoso nesse nivel.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">📦 Script para consciente do produto</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Esse cliente <strong class="text-blue-400">ja conhece seu produto</strong>. Ele sabe o que voce faz, talvez ja tenha visitado seu site ou recebido uma indicacao. O que falta e confianca final para tomar a decisao.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Elementos de confianca final</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4 text-center">
-            <div class="text-2xl mb-2">⭐</div>
-            <div class="font-semibold text-neutral-200 text-sm">Depoimentos</div>
-            <div class="text-xs text-neutral-400">Resultados de outros clientes</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 text-center">
-            <div class="text-2xl mb-2">🛡️</div>
-            <div class="font-semibold text-neutral-200 text-sm">Garantia</div>
-            <div class="text-xs text-neutral-400">Risco zero para o cliente</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 text-center">
-            <div class="text-2xl mb-2">🎯</div>
-            <div class="font-semibold text-neutral-200 text-sm">Demonstracao</div>
-            <div class="text-xs text-neutral-400">Mostrar funcionando</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 text-center">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Numeros</div>
-            <div class="text-xs text-neutral-400">ROI concreto e calculado</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Script modelo</h3>
-        <p class="text-neutral-300 text-sm mb-3">"Voce ja conhece o que a gente faz. O que posso te mostrar sao os resultados reais:"</p>
-        <ul class="space-y-2 text-neutral-300 text-sm">
-          <li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"O [cliente A] saiu de R$ X para R$ Y em [prazo]"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"A gente oferece garantia de [X dias] — se nao funcionar, voce nao paga"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"Posso te mostrar ao vivo como funciona em 10 minutos"</span></li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 O poder da garantia</h3>
-        <p class="text-neutral-300">
-          Uma garantia bem estruturada pode <strong class="text-blue-400">aumentar a conversao em ate 30%</strong>. Nao porque as pessoas devolvem (menos de 5% usam a garantia), mas porque a garantia elimina o medo da decisao errada.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🚀 Script para muito consciente</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Esse cliente <strong class="text-blue-400">ja sabe tudo</strong> — conhece o problema, a solucao e seu produto. Ele so precisa de um empurrao final. Com ele, menos e mais. Seja direto.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Scripts diretos para muito conscientes</h3>
-        <div class="space-y-3">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-1">Oferta direta</h4>
-            <p class="text-neutral-300 text-sm">"Voce ja conhece tudo. O investimento e R$ X. Quer comecar?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-1">Com condicao especial</h4>
-            <p class="text-neutral-300 text-sm">"Se voce fechar ate [data], consigo incluir [bonus] sem custo adicional. Faz sentido?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-semibold text-neutral-200 mb-1">Pergunta de acao</h4>
-            <p class="text-neutral-300 text-sm">"O que precisa acontecer para comecarmos essa semana?"</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-          <h4 class="font-bold text-blue-400 mb-4">✓ Com muito consciente</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>Seja direto e objetivo</li>
-            <li>Oferta clara e simples</li>
-            <li>Bonus ou condicao especial</li>
-            <li>Pergunte quando quer comecar</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Nao faca isso</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>Repetir todo o diagnostico</li>
-            <li>Fazer apresentacao longa</li>
-            <li>Explicar demais</li>
-            <li>Demorar para chegar no ponto</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Resumo dos 5 niveis</h3>
-        <p class="text-neutral-300">
-          <strong class="text-primary">Inconsciente → Eduque. Consciente do problema → Aprofunde. Consciente da solucao → Diferencie. Consciente do produto → Prove. Muito consciente → Oferte.</strong> O erro fatal e usar o script errado para o nivel errado.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📝</span> Resumo do Modulo</h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-blue-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script para publico inconsciente</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script para consciente do problema</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script para consciente da solucao</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script para consciente do produto</span></li>
-            <li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script para muito consciente</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-blue-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-blue-400 font-bold text-sm">2.6</span>
-            <h4 class="font-bold mt-1">🎭 Simulacao e treino pratico</h4>
-            <p class="text-neutral-400 text-sm mt-2">Metodos estruturados para treinar vendas com simulacoes realistas e feedback.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-2-4.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Modulo 2.4</a>
-        <a href="modulo-2-6.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">Proximo: Modulo 2.6 →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 2.5: Adaptar o script por nivel de consciencia</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-blue-500/10 text-blue-400" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 2</a>
+<span class="text-neutral-600">/</span>
+<span class="text-blue-400 font-medium">Module 2.5</span>
+</div>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MODULE 2.5</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🧠 Adapt the script by level of consciousness</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Not every client is at the same stage. Learn to identify the level of awareness and adjust your script to maximize conversion.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">~50</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">Advanced</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">Strategic</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Overview of levels
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-12">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">The 5 levels of consciousness (Eugene Schwartz)</h3>
+<div class="grid grid-cols-5 gap-2 text-center text-xs">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+<div class="text-lg mb-1">😶</div>
+<div class="font-semibold text-neutral-300">Unconscious</div>
+<div class="text-neutral-500">Don't know there's a problem</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+<div class="text-lg mb-1">😰</div>
+<div class="font-semibold text-neutral-300">Problem</div>
+<div class="text-neutral-500">You know there's a problem</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+<div class="text-lg mb-1">🔎</div>
+<div class="font-semibold text-neutral-300">Solution</div>
+<div class="text-neutral-500">Search for solutions</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+<div class="text-lg mb-1">📦</div>
+<div class="font-semibold text-neutral-300">Product</div>
+<div class="text-neutral-500">Know your product</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+<div class="text-lg mb-1">🚀</div>
+<div class="font-semibold text-neutral-300">Very aware</div>
+<div class="text-neutral-500">Just need the push</div>
+</div>
+</div>
+</div>
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">😶 Script for unconscious audience</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">This client<strong class="text-blue-400">don't know there's a problem</strong>. Trying to sell to him is like offering medicine to those who think they are healthy. Here, you educate before selling.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Approach to unconscious</h3>
+<div class="space-y-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Objective</h4>
+<p class="text-neutral-300 text-sm">Don't sell. Awakening awareness about a problem that he has not yet noticed.</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Example script</h4>
+<p class="text-neutral-300 text-sm">"Did you know that most restaurants lose up to R$15,000 a month on bad days and don't even realize it? And that's because normally we just look at total revenue and don't calculate what we're missing out on."</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Ideal channels</h4>
+<p class="text-neutral-300 text-sm">Educational content, social media posts, articles, short videos, free webinars. Don't use a direct approach — he won't respond.</p>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 The rule of the unconscious</h3>
+<p class="text-neutral-300">With an unconscious public,<strong class="text-primary">content and sale</strong>. You're not selling a product — you're selling awareness of a problem. The product comes later, when he wakes up.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">😰 Problem-aware script</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">This client<strong class="text-blue-400">You know you have a problem, but you don't know how to solve it</strong>. This is the most abundant audience and where consultative selling shines. Here you deepen the pain and position your solution as the logical path.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Script to aware of the problem</h3>
+<div class="space-y-3">
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-xs text-blue-400 font-semibold mb-1">VALIDATE PAIN</p>
+<p class="text-neutral-300 text-sm">"You're not the only one. Most [client types] face exactly this. It's normal—but it doesn't have to stay that way."</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-amber-500">
+<p class="text-xs text-amber-400 font-semibold mb-1">DEEPER</p>
+<p class="text-neutral-300 text-sm">"Tell me more about how this affects your daily life. How much time/money do you think you waste on this?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-red-500">
+<p class="text-xs text-red-400 font-semibold mb-1">DESIGN CONSEQUENCE</p>
+<p class="text-neutral-300 text-sm">"If it goes on like this for another 6 months, what happens?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-xs text-emerald-400 font-semibold mb-1">SUBMIT PATH</p>
+<p class="text-neutral-300 text-sm">"There is a structured way to resolve this. Can I show you how other clients have gotten out of this situation?"</p>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Why this is the best audience</h3>
+<p class="text-neutral-300">The awareness of the problem already has<strong class="text-blue-400">motivation to act</strong>. He just needs direction. If you make a good diagnosis and show a clear path, the sale is a natural consequence.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🔎 Solution-aware script</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">This client<strong class="text-blue-400">You already know what type of solution you need, but you haven't yet decided who to</strong>. He is comparing. Your focus here is differentiation and proofs.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Script focused on differentiation</h3>
+<div class="space-y-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Understand what he already knows</h4>
+<p class="text-neutral-300 text-sm">"Have you researched this? What have you seen on the market? What pleased you and what didn't convince you?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Show the difference</h4>
+<p class="text-neutral-300 text-sm">"Most solutions do X. What we do differently is Y — because we understand that [reason connected to the customer's pain]."</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2">Social proof</h4>
+<p class="text-neutral-300 text-sm">"[Client name] was in the same situation. He chose us because [differential]. In [deadline], he achieved [result]."</p>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h4 class="font-bold text-blue-400 mb-4">✓ What works</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>Real success stories</li>
+<li>Clear and specific differences</li>
+<li>Guarantees and risk reduction</li>
+<li>honest comparison</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ What doesn't work</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>Repeat the diagnosis (he already knows)</li>
+<li>Talking bad about your competitor</li>
+<li>Being generic about benefits</li>
+<li>Press without evidence</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical tip</h3>
+<p class="text-neutral-300">Always have<strong class="text-primary">3 ready-made success stories</strong>to count. Real stories from customers who had the same problem and resolved it with you. Social proof is the most powerful argument at this level.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">📦 Script for product conscious</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">This client<strong class="text-blue-400">already know your product</strong>. He knows what you do, maybe he has already visited your website or received a referral. What is missing is the final confidence to make the decision.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Elements of final trust</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4 text-center">
+<div class="text-2xl mb-2">⭐</div>
+<div class="font-semibold text-neutral-200 text-sm">Testimonials</div>
+<div class="text-xs text-neutral-400">Results from other customers</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 text-center">
+<div class="text-2xl mb-2">🛡️</div>
+<div class="font-semibold text-neutral-200 text-sm">Guarantee</div>
+<div class="text-xs text-neutral-400">Zero risk for the customer</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 text-center">
+<div class="text-2xl mb-2">🎯</div>
+<div class="font-semibold text-neutral-200 text-sm">Demonstration</div>
+<div class="text-xs text-neutral-400">Show working</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 text-center">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Numbers</div>
+<div class="text-xs text-neutral-400">Concrete and calculated ROI</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Template script</h3>
+<p class="text-neutral-300 text-sm mb-3">"You already know what we do. What I can show you are the real results:"</p>
+<ul class="space-y-2 text-neutral-300 text-sm">
+<li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"[Client A] went from R$X to R$Y in [deadline]"</span></li>
+<li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"We offer a guarantee of [X days] — if it doesn't work, you don't pay"</span></li>
+<li class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><span>"I can show you live how it works in 10 minutes"</span></li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 The power of guarantee</h3>
+<p class="text-neutral-300">A well-structured guarantee can<strong class="text-blue-400">increase conversion by up to 30%</strong>. Not because people return (less than 5% use the guarantee), but because the guarantee eliminates the fear of making the wrong decision.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🚀 Script for very conscious</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">This client<strong class="text-blue-400">you already know everything</strong>— knows the problem, the solution and your product. He just needs one final push. With him, less and more. Be direct.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Straightforward scripts for the very aware</h3>
+<div class="space-y-3">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-1">Direct offer</h4>
+<p class="text-neutral-300 text-sm">"You already know everything. The investment is R$X. Do you want to get started?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-1">With special condition</h4>
+<p class="text-neutral-300 text-sm">"If you close by [date], I can include [bonus] at no additional cost. Does that make sense?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-1">Action question</h4>
+<p class="text-neutral-300 text-sm">"What needs to happen to get us started this week?"</p>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h4 class="font-bold text-blue-400 mb-4">✓ Very consciously</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>Be direct and objective</li>
+<li>Clear and simple offer</li>
+<li>Bonus or special condition</li>
+<li>Ask when you want to start</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Don't do this</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>Repeat the entire diagnosis</li>
+<li>Make a long presentation</li>
+<li>Overexplain</li>
+<li>Take a while to get to the point</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Summary of the 5 levels</h3>
+<p class="text-neutral-300">
+<strong class="text-primary">Unconscious → Educate. Aware of the problem → Deepen. Aware of the solution → Differentiate. Product awareness → Taste. Very conscious → Offer.</strong>The fatal error is using the wrong script for the wrong level.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-blue-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script for unconscious audience</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script to aware of the problem</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script to be aware of the solution</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script for Product Aware</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Script for very aware</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-blue-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-blue-400 font-bold text-sm">2.6</span>
+<h4 class="font-bold mt-1">🎭 Simulation and practical training</h4>
+<p class="text-neutral-400 text-sm mt-2">Structured methods for training sales with realistic simulations and feedback.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-2-4.html">← Module 2.4</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-6.html">Next: Module 2.6 →</a>
+</div>
+</section>
+</main>
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 2.5: Adapt the script by level of consciousness</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement; const icon = document.getElementById('theme-icon');
       if (html.classList.contains('dark')) { html.classList.remove('dark'); icon.textContent = '☀️'; localStorage.setItem('theme', 'light'); }

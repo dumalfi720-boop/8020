@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 7.3: Mapa de Objecoes e Respostas | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 7.3: Map of Objections and Responses | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,332 +32,280 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 7</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-orange-400 font-medium">Modulo 7.3</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">MODULO 7.3</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🛡️ Mapa de Objecoes e Respostas</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        As 5 objecoes mais comuns com 3 variacoes de resposta cada. 15 respostas prontas para usar em qualquer situacao comercial.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">15</div>
-          <div class="text-xs text-neutral-400">Respostas</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">💸 "Esta caro"</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A objecao de preco quase nunca e sobre preco. E sobre <strong class="text-orange-400">valor percebido</strong>. Se o cliente enxerga o valor, o preco para de ser problema. Use a variacao certa conforme o contexto real da objecao.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
-          <h3 class="text-lg font-semibold text-orange-400 mb-3">Variacao 1: Falta de valor percebido</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando o cliente nao conectou o preco ao resultado</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
-            <p class="text-neutral-200 italic">"Entendo. Me diz uma coisa: se esse [problema] que voce me contou continuar por mais 6 meses, quanto isso vai te custar? Porque quando a gente compara o investimento com o custo de nao resolver, a conta muda bastante."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Reposiciona o preco como investimento vs custo da inacao.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3">Variacao 2: Comparacao com concorrente</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando o cliente tem outra referencia de preco</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-200 italic">"Faz sentido comparar. Posso te perguntar: na hora de escolher, o que e mais importante pra voce — o menor preco ou o que vai resolver de verdade? Porque o barato que nao funciona sai caro no final."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Desloca o criterio de preco para resultado. Posiciona qualidade vs custo.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <h3 class="text-lg font-semibold text-emerald-400 mb-3">Variacao 3: Limitacao real de orcamento</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando realmente nao cabe no bolso agora</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-200 italic">"Entendo que o momento e apertado. A gente pode ajustar a forma de pagamento ou comecar por uma versao mais enxuta. O importante e voce nao perder mais [tempo/dinheiro/clientes] esperando o momento perfeito. Qual formato ficaria mais confortavel?"</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Oferece flexibilidade sem dar desconto. Mantem o senso de urgencia.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🤔 "Preciso pensar"</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        "Preciso pensar" e a <strong class="text-orange-400">objecao mais perigosa</strong> porque parece educada mas mata a venda silenciosamente. Quem sai para "pensar" raramente volta. A chave e entender o que esta por tras.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
-          <h3 class="text-lg font-semibold text-orange-400 mb-3">Variacao 1: Faltou informacao</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando o cliente nao tem clareza suficiente para decidir</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
-            <p class="text-neutral-200 italic">"Claro, e uma decisao importante. Me ajuda a entender: o que exatamente voce precisa avaliar melhor? Assim eu posso te dar a informacao que falta agora e voce sai daqui com tudo que precisa pra decidir."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Identifica a duvida real e resolve na hora, impedindo que a venda esfrie.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3">Variacao 2: Medo de decidir</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando o cliente tem receio de se arrepender</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-200 italic">"Entendo perfeitamente. Normalmente quando alguem me diz isso, e porque ainda tem alguma preocupacao. Me fala: qual seria o pior cenario se voce fizesse e nao gostasse? Porque a gente tem [garantia/suporte/periodo de teste] exatamente pra isso."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Reduz o risco percebido. Mostra que a decisao e reversivel.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <h3 class="text-lg font-semibold text-emerald-400 mb-3">Variacao 3: Falta de urgencia</h3>
-          <p class="text-neutral-400 text-xs mb-2">Quando o cliente nao sente que precisa resolver agora</p>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-200 italic">"Sem problemas. So uma pergunta: voce me disse que [problema] esta te custando [impacto]. Se voce esperar mais um mes, esse custo para ou continua? Porque as vezes o 'pensar' acaba custando mais do que o 'agir'."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Usa as proprias palavras do cliente para criar urgencia genuina.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">⏰ "Vou ver depois"</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        "Depois" nunca chega. Se o vendedor aceita essa objecao passivamente, <strong class="text-orange-400">perde o timing</strong> e a venda esfria a cada dia que passa.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
-          <h3 class="text-lg font-semibold text-orange-400 mb-3">Variacao 1: Criar urgencia real</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
-            <p class="text-neutral-200 italic">"Entendo que o timing e importante. So quero ser transparente: a [condicao especial / disponibilidade / preco atual] vale ate [data]. Depois disso, [muda o preco / fecha a turma / perde a vaga]. Nao quero que voce perca essa janela."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Cria urgencia real com prazo concreto. Importante: a urgencia deve ser verdadeira.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3">Variacao 2: Evidenciar custo da espera</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-200 italic">"Posso te perguntar uma coisa? Esse problema que voce me contou — ele vai melhorar sozinho com o tempo ou tende a piorar? Porque se esta te custando [valor] por mes, cada mes que passa sao mais [valor] perdidos."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Mostra que esperar tem custo. Inacao nao e neutro — e prejuizo acumulado.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <h3 class="text-lg font-semibold text-emerald-400 mb-3">Variacao 3: Garantir proximo passo concreto</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-200 italic">"Tudo bem, respeito seu tempo. Mas para eu nao te perder de vista, posso ja deixar agendado uma ligacao rapida pra [data proxima]? Assim voce pensa com calma e a gente retoma sem voce precisar lembrar."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Se nao fecha agora, pelo menos garante um compromisso futuro concreto. Nunca aceite "vou te ligar".</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">⚖️ "Quero comparar"</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Comparar e natural, mas se o cliente sai sem criterios claros, <strong class="text-orange-400">compara apenas por preco</strong>. A estrategia e definir os criterios de comparacao antes dele sair.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
-          <h3 class="text-lg font-semibold text-orange-400 mb-3">Variacao 1: Definir criterios</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
-            <p class="text-neutral-200 italic">"Faz todo sentido comparar. Posso te ajudar com isso? Na hora de avaliar, os 3 pontos mais importantes para olhar sao: [criterio 1 onde voce e forte], [criterio 2 onde voce e forte], e [criterio 3]. Assim voce compara de forma justa e nao so por preco."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Voce define a regra do jogo. O cliente vai comparar usando SEUS criterios.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3">Variacao 2: Antecipar diferenciais</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-200 italic">"Otimo, compara sim. So pra voce ter como referencia: o que nos diferencia e [diferencial 1] e [diferencial 2]. Pergunta pro concorrente se ele oferece isso. Se sim, otimo — se nao, voce ja sabe o que esta abrindo mao."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Planta sementes de duvida sobre o concorrente usando seus pontos fortes.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <h3 class="text-lg font-semibold text-emerald-400 mb-3">Variacao 3: Facilitar a decisao agora</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-200 italic">"Entendo. Mas me diz: se tudo que voce precisa esta aqui — e pelo que conversamos, esta — qual seria o motivo de nao resolver isso agora? As vezes a comparacao e mais um habito do que uma necessidade real."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Questiona se a comparacao e necessaria ou e procrastinacao. Usa com cuidado — exige boa relacao.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🚫 "Nao e prioridade"</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Quando o cliente diz que nao e prioridade, significa que <strong class="text-orange-400">o diagnostico nao conectou a dor suficientemente</strong>. A resposta certa reconecta o problema a consequencias reais.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
-          <h3 class="text-lg font-semibold text-orange-400 mb-3">Variacao 1: Revelar o custo oculto</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
-            <p class="text-neutral-200 italic">"Entendo que tem muitas coisas no prato. Me deixa perguntar: voce sabe quanto essa situacao esta te custando por mes — em dinheiro, tempo ou energia? Porque as vezes o que nao parece prioridade e justamente o que esta drenando os recursos das suas prioridades."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Mostra que o problema "nao prioritario" pode ser a causa raiz de outros problemas prioritarios.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
-          <h3 class="text-lg font-semibold text-blue-400 mb-3">Variacao 2: Conectar com a prioridade real</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-200 italic">"Faz sentido. E qual e a prioridade principal agora? Pergunto porque em muitos casos o que a gente resolve impacta diretamente no que e prioridade. Por exemplo, [exemplo de conexao entre sua solucao e a prioridade do cliente]."</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Conecta sua solucao a prioridade real do cliente em vez de competir com ela.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
-          <h3 class="text-lg font-semibold text-emerald-400 mb-3">Variacao 3: Respeitar e manter porta aberta</h3>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-200 italic">"Respeito totalmente. Quando voce acha que isso pode se tornar prioridade? Pergunto pra eu nao te incomodar antes da hora, mas tambem pra estar pronto quando voce precisar. Posso te mandar um material rapido por e-mail e a gente retoma em [prazo]?"</p>
-          </div>
-          <p class="text-neutral-400 text-sm mt-3">Logica: Quando a objecao e real, respeitar e manter relacionamento vale mais que forcar uma venda.</p>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Principio Universal das Objecoes</h3>
-        <p class="text-neutral-300">
-          Toda objecao e uma <strong class="text-primary">pergunta disfarçada</strong>. "Esta caro" = "Me convença que vale". "Preciso pensar" = "Ainda nao estou seguro". "Nao e prioridade" = "Nao vi como isso me ajuda agora". Nunca discuta com a objecao — responda a pergunta por tras dela.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-orange-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 respostas para "Esta caro"</span></li>
-            <li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 respostas para "Preciso pensar"</span></li>
-            <li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 respostas para "Vou ver depois"</span></li>
-            <li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 respostas para "Quero comparar"</span></li>
-            <li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 respostas para "Nao e prioridade"</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-orange-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-orange-400 font-bold text-sm">7.4</span>
-            <h4 class="font-bold mt-1">✅ Checklist do Gestor Comercial</h4>
-            <p class="text-neutral-400 text-sm mt-2">Rotina completa do gestor: checklist semanal, mensal, o que observar e o que corrigir primeiro.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-7-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Modulo 7.2</a>
-        <a href="modulo-7-4.html" class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors">Proximo: Modulo 7.4 →</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 7.3: Mapa de Objecoes e Respostas</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400" href="index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 7</a>
+<span class="text-neutral-600">/</span>
+<span class="text-orange-400 font-medium">Module 7.3</span>
+</div>
+<span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">MODULE 7.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🛡️ Map of Objections and Responses</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The 5 most common objections with 3 answer variations each. 15 ready-made answers to use in any commercial situation.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">15</div>
+<div class="text-xs text-neutral-400">Answers</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">Practical</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">💸 "It's expensive"</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The price objection is almost never about price. And about<strong class="text-orange-400">perceived value</strong>. If the customer sees the value, price stops being a problem. Use the right variation depending on the real context of the objection.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
+<h3 class="text-lg font-semibold text-orange-400 mb-3">Variation 1: Lack of perceived value</h3>
+<p class="text-neutral-400 text-xs mb-2">When the customer did not connect the price to the result</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
+<p class="text-neutral-200 italic">"I understand. Tell me one thing: if this [problem] you told me about continues for another 6 months, how much will it cost you? Because when we compare the investment with the cost of not solving it, the calculation changes a lot."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Repositions the price as an investment vs. the cost of inaction.</p>
+</div>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">Variation 2: Comparison with competitor</h3>
+<p class="text-neutral-400 text-xs mb-2">When the customer has another price reference</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-200 italic">"It makes sense to compare. I can ask you: when choosing, what is more important to you — the lowest price or what will really solve the problem? Because the cheap thing that doesn't work is expensive in the end."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Shifts the criterion from price to result. Position quality vs cost.</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<h3 class="text-lg font-semibold text-emerald-400 mb-3">Variation 3: Real budget limitation</h3>
+<p class="text-neutral-400 text-xs mb-2">When it really doesn't fit in your pocket now</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-200 italic">"I understand that the moment is tight. We can adjust the payment method or start with a leaner version. The important thing is that you don't waste any more [time/money/customers] waiting for the perfect moment. Which format would be more comfortable?"</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Offers flexibility without giving discounts. Maintain a sense of urgency.</p>
+</div>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🤔 "I need to think"</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">"I need to think" and the<strong class="text-orange-400">most dangerous objection</strong>because it seems polite but silently kills the sale. Those who leave to "think" rarely come back. The key is to understand what’s behind it.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
+<h3 class="text-lg font-semibold text-orange-400 mb-3">Variation 1: Missing information</h3>
+<p class="text-neutral-400 text-xs mb-2">When the client does not have enough clarity to decide</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
+<p class="text-neutral-200 italic">"Of course, it's an important decision. Help me understand: what exactly do you need to evaluate better? That way I can give you the information you're missing now and you leave here with everything you need to decide."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Identifies the real doubt and resolves it immediately, preventing the sale from going cold.</p>
+</div>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">Variation 2: Fear of deciding</h3>
+<p class="text-neutral-400 text-xs mb-2">When the customer is afraid of regretting</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-200 italic">"I understand completely. Normally when someone tells me this, it's because they still have some concerns. Tell me: what would be the worst case scenario if you did it and didn't like it? Because we have [guarantee/support/trial period] exactly for that."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Reduces perceived risk. It shows that the decision is reversible.</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<h3 class="text-lg font-semibold text-emerald-400 mb-3">Variation 3: Lack of urgency</h3>
+<p class="text-neutral-400 text-xs mb-2">When the customer does not feel they need to resolve it now</p>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-200 italic">"No problem. Just one question: you told me that [problem] is costing you [impact]. If you wait another month, will this cost stop or continue? Because sometimes 'thinking' ends up costing more than 'acting'."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Uses the customer’s own words to create genuine urgency.</p>
+</div>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">⏰ "I'll see later"</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">"After" never comes. If the seller accepts this objection passively,<strong class="text-orange-400">lose your timing</strong>and sales get colder with each passing day.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
+<h3 class="text-lg font-semibold text-orange-400 mb-3">Variation 1: Create real urgency</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
+<p class="text-neutral-200 italic">"I understand that timing is important. I just want to be transparent: the [special condition / availability / current price] is valid until [date]. After that, [changes the price / closes the class / loses the spot]. I don't want you to miss this window."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Creates real urgency with a concrete deadline. Important: the urgency must be real.</p>
+</div>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">Variation 2: Highlight the cost of waiting</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-200 italic">"Can I ask you something? This problem you told me about — will it improve on its own over time or will it tend to get worse? Because if it's costing you [value] per month, each month that passes, more [value] is lost."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Shows that waiting has a cost. Inaction is not neutral — it is accumulated damage.</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<h3 class="text-lg font-semibold text-emerald-400 mb-3">Variation 3: Ensure concrete next step</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-200 italic">"Okay, I respect your time. But so I don't lose sight of you, can I schedule a quick call for [next date]? That way you can think calmly and we can get back to it without you needing to remember."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: If it doesn't close now, at least it guarantees a concrete future commitment. Never accept "I'll call you".</p>
+</div>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">⚖️ "I want to compare"</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Comparing is natural, but if the client leaves without clear criteria,<strong class="text-orange-400">compare only by price</strong>. The strategy is to define the comparison criteria before it leaves.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
+<h3 class="text-lg font-semibold text-orange-400 mb-3">Variation 1: Define criteria</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
+<p class="text-neutral-200 italic">"It makes perfect sense to compare. Can I help you with this? When evaluating, the 3 most important points to look at are: [criterion 1 where you are strong], [criterion 2 where you are strong], and [criterion 3]. This way you compare fairly and not just based on price."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: You define the rules of the game. The customer will compare using YOUR criteria.</p>
+</div>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">Variation 2: Anticipate differences</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-200 italic">"Great, yes, compare. Just so you can have a reference: what differentiates us is [differential 1] and [differential 2]. Ask your competitor if they offer this. If so, great — if not, you already know what you're giving up."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Plants seeds of doubt about the competitor using their strengths.</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<h3 class="text-lg font-semibold text-emerald-400 mb-3">Variation 3: Make the decision easier now</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-200 italic">"I understand. But tell me: if everything you need is here — and from what we talked about, it is — what would be the reason for not solving it now? Sometimes comparison is more of a habit than a real need."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Questions whether the comparison is necessary or is it procrastination. Use with care — requires a good relationship.</p>
+</div>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🚫 "It's not a priority"</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">When the client says it is not a priority, it means that<strong class="text-orange-400">the diagnosis did not connect the pain sufficiently</strong>. The right answer reconnects the problem to real consequences.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20">
+<h3 class="text-lg font-semibold text-orange-400 mb-3">Variation 1: Reveal the hidden cost</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-orange-500">
+<p class="text-neutral-200 italic">"I understand that you have a lot of things on your plate. Let me ask you: do you know how much this situation is costing you per month — in money, time or energy? Because sometimes what doesn't seem like a priority is precisely what is draining resources from your priorities."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Shows that the "non-priority" problem can be the root cause of other priority problems.</p>
+</div>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">Variation 2: Connect with real priority</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-200 italic">"It makes sense. And what is the main priority now? I ask because in many cases what we solve directly impacts what is a priority. For example, [example of connection between your solution and the customer's priority]."</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: Connects your solution to the customer's real priority instead of competing with it.</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20">
+<h3 class="text-lg font-semibold text-emerald-400 mb-3">Variation 3: Respect and keep the door open</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-200 italic">"I totally respect it. When do you think this can become a priority? I ask so I don't bother you too soon, but also so I'm ready when you need it. Can I send you some quick material via email and we'll get back to it within [deadline]?"</p>
+</div>
+<p class="text-neutral-400 text-sm mt-3">Logic: When the objection is real, respecting and maintaining the relationship is worth more than forcing a sale.</p>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Universal Principle of Objections</h3>
+<p class="text-neutral-300">Every objection is a<strong class="text-primary">disguised question</strong>. "It's expensive" = "Convince me it's worth it". "I need to think" = "I'm not sure yet." "It's not a priority" = "I don't see how it helps me now." Never argue with the objection — answer the question behind it.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-orange-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 responses to "It's expensive"</span></li>
+<li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 responses to "I need to think"</span></li>
+<li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 responses to "I'll see later"</span></li>
+<li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 responses to "I want to compare"</span></li>
+<li class="flex items-start space-x-2"><span class="text-orange-400">✓</span><span>3 responses to "Not a priority"</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-orange-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-orange-400 font-bold text-sm">7.4</span>
+<h4 class="font-bold mt-1">✅ Commercial Manager Checklist</h4>
+<p class="text-neutral-400 text-sm mt-2">Complete manager routine: weekly and monthly checklist, what to observe and what to correct first.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-7-2.html">← Module 7.2</a>
+<a class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors" href="modulo-7-4.html">Next: Module 7.4 →</a>
+</div>
+</section>
+</main>
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 7.3: Map of Objections and Responses</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -366,6 +314,5 @@
     }
     if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); document.getElementById('theme-icon').textContent = '☀️'; }
   </script>
-
 </body>
 </html>

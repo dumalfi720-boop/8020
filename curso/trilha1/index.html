@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha 1: Fundamentos de Vendas | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track 1: Sales Fundamentals | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,1694 +18,1580 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500/10 text-emerald-400">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300 text-sm">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-emerald-400 text-sm font-medium">Trilha 1</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">
-        TRILHA 1 - FUNDAMENTOS
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">💰 Fundamentos de Vendas</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Construa a base conceitual necessaria para vender com metodo, clareza e consistencia. Esta trilha muda sua mentalidade sobre vendas antes de qualquer tecnica.
-      </p>
-
-      <!-- Stats -->
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-emerald-400">8</div>
-          <div class="text-xs text-neutral-400">Modulos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-emerald-400">~40</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-emerald-400">~8h</div>
-          <div class="text-xs text-neutral-400">Duracao</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-emerald-400">Base</div>
-          <div class="text-xs text-neutral-400">Conceitual</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Modulos -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Modulo 1.1 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.1</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🎯 O que e vender de verdade</h3>
-        <p class="text-neutral-400 text-sm">Quebrar a ideia de que vender e empurrar produto e substituir por uma visao de resolucao de problemas.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">🔑</span>
-            <div class="flex-1">
-              <span class="font-medium">Vender nao e empurrar</span>
-              <span class="text-neutral-500 text-sm ml-2">- E resolver um problema real</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Vender de verdade e identificar uma dor real do cliente e oferecer uma solucao genuina. Nao e convencer alguem a comprar algo que nao precisa — e conectar necessidade com solucao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Muda completamente sua postura. Voce deixa de ser o "vendedor chato" e passa a ser alguem que o cliente quer ouvir. Isso gera confianca e recorrencia.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Venda como servico, resolucao de problemas, empatia comercial, relacionamento antes de transacao.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🧭</span>
-            <div class="flex-1">
-              <span class="font-medium">A diferenca entre convencer e conduzir</span>
-              <span class="text-neutral-500 text-sm ml-2">- Guiar decisao vs forcar decisao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Convencer pressupoe resistencia — voce esta tentando mudar a mente de alguem. Conduzir pressupoe parceria — voce guia o cliente ate a melhor decisao para ele.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">O vendedor que conduz gera menos objecoes, mais confianca e fechamentos mais naturais. O cliente sente que decidiu sozinho.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conducao vs persuasao, autonomia do cliente, venda consultiva, decisao guiada.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">💎</span>
-            <div class="flex-1">
-              <span class="font-medium">O papel do valor antes do preco</span>
-              <span class="text-neutral-500 text-sm ml-2">- Por que o valor vem primeiro</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando o cliente percebe o valor antes de saber o preco, o preco deixa de ser barreira. Valor e a percepcao de que aquilo resolve um problema que custa mais do que o investimento.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Evita a armadilha de competir por preco. Quem apresenta valor antes do preco vende mais caro e com menos resistencia.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Valor percebido, ancoragem de valor, sequencia de apresentacao, preco como consequencia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🩺</span>
-            <div class="flex-1">
-              <span class="font-medium">O vendedor como solucionador</span>
-              <span class="text-neutral-500 text-sm ml-2">- Diagnostico antes de prescricao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Assim como um medico nao prescreve sem diagnosticar, o vendedor profissional nao oferece solucao sem entender o problema. Primeiro voce pergunta, depois apresenta.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Elimina o desperdicio de falar sobre recursos que o cliente nao precisa. Cada palavra sua passa a ser relevante e direcionada.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diagnostico comercial, escuta ativa, venda como consultoria, solucao personalizada.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">⚖️</span>
-            <div class="flex-1">
-              <span class="font-medium">Venda consultiva vs venda transacional</span>
-              <span class="text-neutral-500 text-sm ml-2">- Dois modelos, dois resultados</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A venda transacional e rapida, focada em preco e conveniencia. A venda consultiva e baseada em relacionamento, diagnostico e solucao sob medida. Cada uma serve a um contexto.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Saber quando usar cada modelo evita desperdicio de esforco. Tentar vender consultivamente um produto commodity e tao errado quanto vender transacionalmente uma solucao complexa.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Venda consultiva, venda transacional, complexidade da solucao, ciclo de venda, ticket medio.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">🧠</span>
-            <div class="flex-1">
-              <span class="font-medium">A mentalidade do vendedor profissional</span>
-              <span class="text-neutral-500 text-sm ml-2">- Processo supera improviso</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O vendedor profissional segue um processo replicavel, nao depende de carisma ou sorte. Ele prepara, diagnostica, apresenta valor, trata objecoes e conduz o fechamento com metodo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Consistencia vence talento isolado. Um processo bem seguido gera resultados previsiveis, escalaveis e ensinaveis.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Mentalidade profissional, processo de vendas, disciplina comercial, consistencia, previsibilidade.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-1.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-1.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.2 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.2</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🧠 Os 5 niveis de consciencia do consumidor</h3>
-        <p class="text-neutral-400 text-sm">Entender onde o cliente esta na jornada de compra muda completamente como voce se comunica.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">😶</span>
-            <div class="flex-1">
-              <span class="font-medium">Totalmente inconsciente</span>
-              <span class="text-neutral-500 text-sm ml-2">- Nao percebe que tem um problema</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O consumidor nao sabe que tem um problema. Ele vive sua rotina sem perceber que algo poderia ser melhor. Nao adianta oferecer solucao — ele nem sabe que precisa de uma.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Tentar vender para quem esta nesse nivel e como oferecer remedio para quem nao sabe que esta doente. Voce precisa educar primeiro.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Eugene Schwartz, niveis de consciencia, educacao de mercado, conteudo de topo de funil.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">😟</span>
-            <div class="flex-1">
-              <span class="font-medium">Consciente do problema</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sabe da dor, nao conhece solucao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O consumidor sente a dor mas nao conhece caminhos para resolve-la. Ele sabe que algo esta errado mas nao sabe o que fazer. E o momento de mostrar que existem solucoes.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Esse publico e receptivo a conteudo educativo. Se voce for quem apresenta o caminho, sera lembrado quando ele decidir agir.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Dor consciente, busca por solucao, conteudo educativo, autoridade, nutricao de leads.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🔍</span>
-            <div class="flex-1">
-              <span class="font-medium">Consciente da solucao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sabe que existem caminhos</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O consumidor ja sabe que existem formas de resolver seu problema, mas ainda nao escolheu qual. Ele esta pesquisando, comparando abordagens e avaliando opcoes.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">E o momento de diferenciar sua abordagem. Mostrar por que seu metodo e superior, nao apenas que ele existe.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diferenciacao, proposta de valor, comparativo, mecanismo unico, prova social.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">📦</span>
-            <div class="flex-1">
-              <span class="font-medium">Consciente do produto</span>
-              <span class="text-neutral-500 text-sm ml-2">- Conhece sua oferta, esta comparando</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O consumidor ja conhece sua oferta e esta comparando com concorrentes. Ele quer saber por que deve escolher voce, nao o outro. E hora de prova, garantia e diferenciacao clara.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Neste nivel, o que convence sao detalhes: depoimentos, garantias, demonstracoes. Discurso generico nao funciona mais.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Prova social, garantia, demonstracao, case studies, objecoes especificas, comparacao direta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🔥</span>
-            <div class="flex-1">
-              <span class="font-medium">Muito consciente</span>
-              <span class="text-neutral-500 text-sm ml-2">- So falta o empurrao final</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O consumidor ja decidiu que quer comprar. So precisa de um gatilho final — uma oferta, um prazo, um bonus. Qualquer coisa que tire ele da inercia.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Muitos vendedores perdem vendas nesse nivel por nao pedir o fechamento. O cliente esta pronto — basta conduzir.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Gatilho de urgencia, escassez, oferta direta, CTA claro, fechamento natural.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">💡</span>
-            <div class="flex-1">
-              <span class="font-medium">Por que isso muda tudo na comunicacao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Cada nivel pede uma abordagem</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Usar a mesma mensagem para todos os niveis e desperdicar esforco. Cada nivel exige linguagem, tom e argumento diferentes. Alinhar a mensagem ao nivel e o segredo da comunicacao eficaz.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando voce fala a linguagem certa para o nivel certo, a conversao dispara. Sem isso, voce fala para todos e ninguem escuta.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Segmentacao por consciencia, comunicacao direcionada, copy por nivel, funil de conteudo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-2.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-2.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.3 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.3</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">💎 Construcao de valor antes do preco</h3>
-        <p class="text-neutral-400 text-sm">Dominar a arte de fazer o cliente perceber valor antes de saber quanto custa.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">📊</span>
-            <div class="flex-1">
-              <span class="font-medium">A regra dos 70%</span>
-              <span class="text-neutral-500 text-sm ml-2">- 7 em 10 aceitam pagar mais por valor claro</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Pesquisas mostram que 7 em cada 10 compradores aceitam pagar mais quando percebem valor claro e diferenciado. O preco so e barreira quando o valor nao foi construido.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Mostra que o problema raramente e o preco — e a percepcao de valor. Muda o foco de "baixar preco" para "aumentar valor percebido".</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Elasticidade de preco, valor percebido, disposicao de pagamento, premium pricing.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">⚖️</span>
-            <div class="flex-1">
-              <span class="font-medium">Valor percebido vs preco real</span>
-              <span class="text-neutral-500 text-sm ml-2">- A diferenca que define a venda</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Se o valor percebido e maior que o preco, a venda acontece. Se o preco parece maior que o valor, o cliente recua. Toda venda e essa equacao simples.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Permite diagnosticar por que vendas nao acontecem e corrigir a rota — quase sempre o problema e valor insuficiente, nao preco alto.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Equacao de valor, percepcao vs realidade, ancoragem, framing de preco.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">⏱️</span>
-            <div class="flex-1">
-              <span class="font-medium">Quando o preco deve entrar na conversa</span>
-              <span class="text-neutral-500 text-sm ml-2">- Timing e tudo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Revelar o preco cedo demais mata a venda. Revelar tarde demais gera desconfianca. O momento ideal e depois que o cliente ja entendeu o valor e esta engajado na solucao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Dominar o timing de revelacao de preco e uma das habilidades mais valiosas em vendas. Muda drasticamente a taxa de conversao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Timing de preco, sequencia de apresentacao, stack de valor, revelacao gradual.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🏗️</span>
-            <div class="flex-1">
-              <span class="font-medium">Como construir valor antes de revelar o preco</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sequencia pratica</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Uma sequencia pratica: identifique a dor, amplifique o custo da inacao, mostre a solucao, prove com resultados, so entao revele o preco como investimento (nao custo).</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Transforma qualquer apresentacao de vendas. O cliente passa a ver o preco como "barato" comparado ao problema que esta resolvendo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Stack de valor, amplificacao de dor, investimento vs custo, ROI emocional.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">⚔️</span>
-            <div class="flex-1">
-              <span class="font-medium">O erro de competir por preco</span>
-              <span class="text-neutral-500 text-sm ml-2">- Guerra de preco ninguem ganha</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Competir por preco e uma corrida para o fundo. Sempre havera alguem mais barato. A unica saida sustentavel e competir por valor — ser a melhor solucao, nao a mais barata.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Liberta o vendedor da pressao de "baixar preco". Quando voce compete por valor, a margem aumenta e o cliente fica mais satisfeito.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Comoditizacao, diferenciacao, margem, posicionamento, oceano azul vs oceano vermelho.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">🏢</span>
-            <div class="flex-1">
-              <span class="font-medium">Exemplos de construcao de valor em diferentes segmentos</span>
-              <span class="text-neutral-500 text-sm ml-2">- Aplicacao pratica</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Exemplos reais de como construir valor em SaaS, servicos, varejo, B2B e infoprodutos. Cada segmento tem particularidades, mas o principio e o mesmo: valor antes de preco.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Ver exemplos concretos facilita a aplicacao no seu contexto. Sair da teoria para a pratica em diferentes realidades de mercado.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Adaptacao por segmento, cases de valor, pratica contextualizada, benchmarking.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-3.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-3.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.4 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.4</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">❓ A arte de perguntar</h3>
-        <p class="text-neutral-400 text-sm">Dominar perguntas estrategicas que revelam a dor e o desejo do cliente.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">🩺</span>
-            <div class="flex-1">
-              <span class="font-medium">Por que perguntar antes de oferecer</span>
-              <span class="text-neutral-500 text-sm ml-2">- Diagnostico antes de prescricao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Oferecer sem perguntar e como dar remedio sem saber a doenca. Perguntas bem feitas revelam o cenario real do cliente e permitem oferecer a solucao certa.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Reduz objecoes porque a oferta se encaixa perfeitamente. O cliente sente que voce entende a situacao dele.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diagnostico comercial, escuta ativa, perguntas abertas, sequencia de descoberta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🔑</span>
-            <div class="flex-1">
-              <span class="font-medium">As 4 perguntas que mudam tudo</span>
-              <span class="text-neutral-500 text-sm ml-2">- O que incomoda, quanto custa, o que acontece, o que seria ideal</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quatro perguntas-chave: "O que te incomoda?", "Quanto isso te custa?", "O que acontece se nada mudar?", "O que seria ideal?". Juntas, revelam dor, custo, urgencia e desejo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sao perguntas universais que funcionam em qualquer segmento. Decorar e praticar essas 4 perguntas ja eleva dramaticamente a qualidade da conversa de vendas.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas-chave, revelacao de dor, custo da inacao, estado futuro desejado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🔥</span>
-            <div class="flex-1">
-              <span class="font-medium">Perguntas que ampliam a dor</span>
-              <span class="text-neutral-500 text-sm ml-2">- Fazer o cliente sentir o custo da inacao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas de implicacao que fazem o cliente calcular o custo real de nao resolver o problema. "Se isso continuar por mais 6 meses, qual o impacto?" O objetivo e criar urgencia real.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sem urgencia, o cliente adia. Perguntas de amplificacao criam a motivacao emocional para agir agora, nao depois.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas de implicacao, SPIN Selling, custo da inacao, urgencia real, dor amplificada.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🌟</span>
-            <div class="flex-1">
-              <span class="font-medium">Perguntas que revelam o desejo</span>
-              <span class="text-neutral-500 text-sm ml-2">- Descobrir o estado futuro desejado</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas que fazem o cliente visualizar o cenario ideal. "Se pudesse resolver isso, como seria?" O desejo e o motor da compra — quando o cliente ve o futuro desejado, paga para chegar la.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Pessoas compram por emocao e justificam com logica. Fazer o cliente sentir o desejo e mais poderoso que qualquer argumento racional.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Estado futuro, visualizacao, perguntas de necessidade de solucao, motivacao positiva, aspiracao.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🔄</span>
-            <div class="flex-1">
-              <span class="font-medium">SPIN como base</span>
-              <span class="text-neutral-500 text-sm ml-2">- Situacao, Problema, Implicacao, Necessidade de solucao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O modelo SPIN de Neil Rackham: Situacao (entender contexto), Problema (revelar dor), Implicacao (amplificar consequencias), Necessidade de solucao (criar visao do futuro). E o framework mais pesquisado de vendas consultivas.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">SPIN e baseado em pesquisa com mais de 35.000 conversas de vendas. Nao e opiniao — e ciencia aplicada a vendas.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">SPIN Selling, Neil Rackham, perguntas de situacao, problema, implicacao e necessidade.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">⚠️</span>
-            <div class="flex-1">
-              <span class="font-medium">Erros comuns ao perguntar</span>
-              <span class="text-neutral-500 text-sm ml-2">- O que evitar para nao parecer interrogatorio</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntar demais, perguntar sem ouvir, perguntas fechadas em excesso, tom de interrogatorio. O objetivo e conversa, nao inquerito. Pergunte, ouca, conecte, depois pergunte de novo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas mal feitas geram desconfianca e fecham o cliente. A diferenca entre um bom diagnostico e um interrogatorio esta na forma, nao no conteudo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Erros de abordagem, tom de conversa, equilibrio pergunta-resposta, rapport, naturalidade.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-4.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-4.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.5 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.5</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🔄 Traduzir caracteristicas em impacto</h3>
-        <p class="text-neutral-400 text-sm">Parar de listar funcionalidades e comecar a mostrar resultados reais para o cliente.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">📐</span>
-            <div class="flex-1">
-              <span class="font-medium">Caracteristica vs beneficio vs impacto</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tres niveis de comunicacao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Caracteristica: o que o produto TEM. Beneficio: o que o produto FAZ. Impacto: o que isso MUDA na vida do cliente. Exemplo: "Bateria de 5000mAh" → "Dura o dia todo" → "Voce nunca mais perde uma ligacao importante".</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">A maioria dos vendedores para na caracteristica. Quem chega no impacto vende muito mais porque conecta o produto com a vida real do cliente.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">FAB (Features, Advantages, Benefits), traducao de valor, comunicacao de impacto.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">A formula do impacto</span>
-              <span class="text-neutral-500 text-sm ml-2">- "Isso reduz / acelera / evita / aumenta"</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Use verbos de impacto: "Isso reduz seu tempo de...", "Isso acelera o processo de...", "Isso evita que voce...", "Isso aumenta sua...". Frases que comecam assim comunicam resultado imediato.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Ter uma formula pronta facilita a comunicacao no calor da conversa. Voce nunca mais fica sem saber como apresentar um recurso.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Verbos de impacto, formula de traducao, linguagem de resultado, comunicacao orientada a valor.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🚀</span>
-            <div class="flex-1">
-              <span class="font-medium">Sair de features para resultado</span>
-              <span class="text-neutral-500 text-sm ml-2">- Parar de listar e comecar a provar</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Em vez de "nosso software tem 47 funcionalidades", diga "nossos clientes economizam 12 horas por semana". O resultado e o que importa. Features sao meio, nao fim.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">O cliente nao compra funcionalidades — compra transformacao. Quanto mais rapido voce chega no resultado, mais rapido ele enxerga valor.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Resultado vs recurso, prova de valor, metricas de impacto, storytelling de resultado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🏢</span>
-            <div class="flex-1">
-              <span class="font-medium">Linguagem de valor por segmento</span>
-              <span class="text-neutral-500 text-sm ml-2">- Como adaptar para cada mercado</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Cada mercado tem sua linguagem de valor. Para SaaS: "reduz churn". Para varejo: "aumenta ticket medio". Para servicos: "reduz retrabalho". Falar a lingua do cliente e essencial.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Usar jargao generico nao funciona. Quando voce fala a linguagem especifica do segmento, o cliente sente que voce entende o mundo dele.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Jargao setorial, KPIs por segmento, linguagem do cliente, adaptacao de discurso.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">📝</span>
-            <div class="flex-1">
-              <span class="font-medium">Exemplos praticos de traducao</span>
-              <span class="text-neutral-500 text-sm ml-2">- De "temos isso" para "isso resolve aquilo"</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Exemplos reais: "Temos suporte 24h" → "Quando um problema surgir as 3h da manha, voce nao vai ficar sozinho". "Temos dashboard" → "Voce ve em tempo real onde esta perdendo dinheiro".</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Ver a traducao em acao treina seu cerebro para fazer o mesmo automaticamente. Com pratica, voce nunca mais lista features — sempre traduz em impacto.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Traducao pratica, antes e depois, reframing, comunicacao de resultado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">✏️</span>
-            <div class="flex-1">
-              <span class="font-medium">Exercicio: traduza suas 5 principais caracteristicas</span>
-              <span class="text-neutral-500 text-sm ml-2">- Pratica dirigida</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Exercicio pratico: liste 5 caracteristicas do seu produto/servico e traduza cada uma em beneficio e impacto. Use a formula: Caracteristica → Beneficio → Impacto na vida do cliente.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Teoria sem pratica nao muda resultado. Este exercicio e o primeiro passo para internalizar a traducao de valor como habito.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Pratica deliberada, internalizacao, habito de traducao, aplicacao imediata.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-5.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-5.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.6 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.6</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🛡️ Objecoes: o que sao e por que existem</h3>
-        <p class="text-neutral-400 text-sm">Entender objecoes como sinais de interesse e aprender a acolhe-las com confianca.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">O que e uma objecao de verdade</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sinal de interesse, nao de rejeicao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Uma objecao e uma duvida que impede a decisao. Quem nao tem interesse simplesmente vai embora. Quando alguem objeta, esta dizendo: "Me convenca — estou quase la".</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Muda a reacao emocional do vendedor. Em vez de medo, confianca. Em vez de defesa, acolhimento. A objecao vira oportunidade.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Objecao como sinal, interesse implicito, oportunidade de esclarecimento, postura acolhedora.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🖐️</span>
-            <div class="flex-1">
-              <span class="font-medium">As 5 objecoes universais</span>
-              <span class="text-neutral-500 text-sm ml-2">- Esta caro, preciso pensar, vou ver depois, quero comparar, nao e prioridade</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">95% das objecoes se resumem a 5 categorias: "Esta caro", "Preciso pensar", "Vou ver depois", "Quero comparar", "Nao e prioridade". Dominar essas 5 cobre quase tudo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando voce sabe que so existem 5 objecoes reais, pode preparar respostas para cada uma. Nao existe mais surpresa — existe preparo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Objecoes universais, mapa de objecoes, preparacao, antecipacao, script de resposta.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🔀</span>
-            <div class="flex-1">
-              <span class="font-medium">Objecao vs indecisao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Dois problemas diferentes que exigem respostas diferentes</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Objecao e uma barreira especifica ("esta caro"). Indecisao e paralisia geral ("nao sei"). A objecao se responde com argumento. A indecisao se resolve com simplificacao e seguranca.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Tratar indecisao como objecao nao funciona. Voce precisa identificar qual dos dois esta enfrentando para usar a estrategia certa.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diagnostico de objecao, indecisao, paralisia de analise, simplificacao, reducao de risco.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">😰</span>
-            <div class="flex-1">
-              <span class="font-medium">O medo por tras do "esta caro"</span>
-              <span class="text-neutral-500 text-sm ml-2">- Na maioria das vezes nao e sobre dinheiro</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">"Esta caro" quase nunca e sobre dinheiro. E sobre medo: medo de errar, de nao funcionar, de se arrepender. O preco e o escudo — por tras dele esta a inseguranca.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando voce para de baixar preco e comeca a tratar o medo, a conversao sobe dramaticamente. A resposta certa nao e desconto — e seguranca.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Medo de errar, risco percebido, garantia, prova social, reducao de incerteza.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🔍</span>
-            <div class="flex-1">
-              <span class="font-medium">Por que objecoes aparecem</span>
-              <span class="text-neutral-500 text-sm ml-2">- Valor insuficiente, medo de errar, falta de urgencia</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Tres causas raiz: valor percebido insuficiente (nao viu motivo), medo de errar (risco percebido), falta de urgencia (nao precisa agora). Cada causa pede uma resposta diferente.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diagnosticar a causa raiz evita respostas genericas. Em vez de uma resposta padrao, voce trata o problema real por tras da objecao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Causa raiz, diagnostico de objecao, valor insuficiente, risco percebido, falta de urgencia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">🤝</span>
-            <div class="flex-1">
-              <span class="font-medium">A postura certa diante de uma objecao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Acolher, entender, responder</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O protocolo: 1) Acolher ("entendo perfeitamente"), 2) Entender ("me conta mais sobre isso"), 3) Responder com empatia e dados. Nunca discutir, nunca invalidar, nunca pressionar.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">A postura errada transforma objecao em conflito. A postura certa transforma objecao em conexao e confianca.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Acolhimento, escuta ativa, empatia comercial, protocolo AER (Acolher-Entender-Responder).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-6.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-6.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.7 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.7</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">📊 O funil de consciencia na pratica</h3>
-        <p class="text-neutral-400 text-sm">Aplicar os niveis de consciencia em estrategia real de conteudo e comunicacao.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">🧊</span>
-            <div class="flex-1">
-              <span class="font-medium">Distribuicao real em publico frio</span>
-              <span class="text-neutral-500 text-sm ml-2">- 40-60% inconsciente, 20-30% consciente do problema</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Em publico frio (que nunca ouviu falar de voce), a maioria e inconsciente ou consciente do problema. Poucos estao prontos para comprar. Isso define que tipo de conteudo priorizar.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Evita a frustracao de tentar vender para quem ainda nao esta pronto. Ajusta expectativas e estrategia de comunicacao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Publico frio, distribuicao de consciencia, topo de funil, educacao de mercado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🌡️</span>
-            <div class="flex-1">
-              <span class="font-medium">Distribuicao em publico morno</span>
-              <span class="text-neutral-500 text-sm ml-2">- O impacto de quem ja interagiu</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Publico morno ja interagiu com voce — viu um post, assistiu um video, baixou um material. A distribuicao muda: mais gente consciente da solucao e do produto, menos inconscientes.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Comunicacao para publico morno e diferente. Voce pode ser mais direto, mais especifico, mais orientado a acao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Publico morno, remarketing, nutricao, meio de funil, engajamento progressivo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🔥</span>
-            <div class="flex-1">
-              <span class="font-medium">Distribuicao em publico quente</span>
-              <span class="text-neutral-500 text-sm ml-2">- Leads qualificados e remarketing</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Publico quente ja conhece sua oferta, ja confia em voce e esta considerando comprar. A maioria esta consciente do produto ou muito consciente. E hora de oferta direta.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Nao desperdicar publico quente com conteudo educativo basico. Eles querem oferta, prova e garantia — nao mais educacao.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Publico quente, fundo de funil, conversao direta, oferta, CTA, lead qualificado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🔻</span>
-            <div class="flex-1">
-              <span class="font-medium">Topo, meio e fundo de funil</span>
-              <span class="text-neutral-500 text-sm ml-2">- Onde cada nivel se encaixa</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Topo: inconscientes e conscientes do problema (educar). Meio: conscientes da solucao (diferenciar). Fundo: conscientes do produto e muito conscientes (converter). Cada etapa tem seu papel.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Organiza toda a estrategia de conteudo e vendas. Voce sabe exatamente o que comunicar em cada etapa do funil.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">ToFu, MoFu, BoFu, jornada do cliente, conteudo por etapa, estrategia de funil.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">⚖️</span>
-            <div class="flex-1">
-              <span class="font-medium">A regra 60/40</span>
-              <span class="text-neutral-500 text-sm ml-2">- 60-80% educacao, 20-40% oferta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A proporcao ideal de conteudo: 60-80% educacao e valor gratuito, 20-40% oferta e CTA. Quem so vende queima audiencia. Quem so educa nao fatura. O equilibrio e o segredo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Define a estrategia de conteudo sustentavel. Voce constroi autoridade e confianca enquanto monetiza de forma natural.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Proporcao conteudo/oferta, conteudo de valor, autoridade, monetizacao natural.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">Como gerar conteudo para todos os niveis simultaneamente</span>
-              <span class="text-neutral-500 text-sm ml-2">- Estrategia integrada</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Um unico conteudo pode falar com varios niveis ao mesmo tempo. Um post que educa (topo), diferencia sua abordagem (meio) e convida para uma conversa (fundo). A arte e empilhar niveis.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Maximiza o retorno de cada peca de conteudo. Voce faz menos e atinge mais — a essencia do 80/20.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conteudo multinivel, eficiencia de comunicacao, empilhamento de valor, 80/20 aplicado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-7.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-7.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 1.8 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-emerald-400 font-bold">1.8</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🧭 O vendedor como condutor, nao como ator</h3>
-        <p class="text-neutral-400 text-sm">Consolidar a mentalidade de vendas como processo e preparar a transicao para a pratica.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">⚙️</span>
-            <div class="flex-1">
-              <span class="font-medium">Processo vs improviso</span>
-              <span class="text-neutral-500 text-sm ml-2">- Por que consistencia vence talento isolado</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O vendedor com processo fecha em dias bons e ruins. O vendedor sem processo depende do humor, do cliente e da sorte. Consistencia e o que separa profissionais de amadores.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Previsibilidade e a base de qualquer negocio saudavel. Sem processo, voce nao pode melhorar porque nao sabe o que medir.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Processo de vendas, consistencia, previsibilidade, melhoria continua, KPIs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">📋</span>
-            <div class="flex-1">
-              <span class="font-medium">Script como ferramenta, nao como prisao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Estrutura liberta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Um script nao e para ser lido roboticamente. E uma estrutura que garante que voce nao esqueca pontos importantes. Assim como um musico ensaia a partitura para depois improvisar com seguranca.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Elimina o medo de "nao saber o que falar". Com um script base, voce tem confianca para adaptar e personalizar.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Script de vendas, estrutura flexivel, adaptacao, personalizacao, confianca.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">A mentalidade do condutor</span>
-              <span class="text-neutral-500 text-sm ml-2">- Guiar a conversa com intencao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O vendedor-condutor sabe onde a conversa precisa chegar e guia o cliente ate la com perguntas, pausas e transicoes intencionais. Ele nao reage — ele conduz.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conversas sem direcao nao fecham. O condutor garante que cada etapa do processo aconteca na ordem certa, no ritmo certo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conducao de conversa, intencionalidade, fluxo de venda, controle do ritmo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🔑</span>
-            <div class="flex-1">
-              <span class="font-medium">Perguntar bem, ouvir bem, explicar valor com clareza</span>
-              <span class="text-neutral-500 text-sm ml-2">- Os 3 pilares</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Os tres pilares da venda profissional: 1) Perguntar para entender, 2) Ouvir para captar o que importa, 3) Explicar valor com clareza e objetividade. Domine esses tres e venda qualquer coisa.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Simplifica toda a complexidade de vendas em tres acoes praticas. E o framework minimo para resultados maximos.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Tres pilares, simplicidade, foco no essencial, competencia comercial basica.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">📚</span>
-            <div class="flex-1">
-              <span class="font-medium">Vendas nao precisa de talento, precisa de metodo</span>
-              <span class="text-neutral-500 text-sm ml-2">- A tese central</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A tese central do curso 8020: vendas e uma habilidade que se aprende com metodo, nao um dom que se nasce com ele. Qualquer pessoa pode vender bem se seguir o processo certo.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Elimina a crenca limitante de "eu nao tenho perfil de vendedor". Se voce tem metodo, voce tem resultado. Ponto.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Metodo vs talento, democratizacao de vendas, aprendizado estruturado, mentalidade de crescimento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-            <span class="text-lg mr-2">➡️</span>
-            <div class="flex-1">
-              <span class="font-medium">O proximo passo: do conceito para a pratica</span>
-              <span class="text-neutral-500 text-sm ml-2">- Transicao para Trilha 2</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-emerald-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A Trilha 1 construiu a base conceitual. A Trilha 2 vai transformar esses conceitos em metodo pratico, com scripts, templates e exercicios para aplicar imediatamente.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conecta a teoria com a pratica. Voce agora tem a mentalidade — na proxima trilha, tera as ferramentas para agir.</p>
-              </div>
-              <div>
-                <span class="text-emerald-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Transicao teoria-pratica, ponte para acao, continuidade de aprendizado, proximos passos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-1-8.html')" class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-1-8.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Navegacao -->
-    <div class="mt-12 flex flex-col sm:flex-row gap-4">
-      <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-        ← Voltar ao Inicio
-      </a>
-      <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors">
-        Proxima: Trilha 2 - Metodo →
-      </a>
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Trilha 1: Fundamentos de Vendas</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Modal Overlay -->
-  <div id="modal-overlay" class="fixed inset-0 z-50 hidden">
-    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
-    <div class="relative flex items-start justify-center min-h-screen p-4 pt-8 overflow-y-auto">
-      <div class="relative bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl">
-        <div class="sticky top-0 z-10 flex items-center justify-between p-4 bg-dark-800 border-b border-dark-600">
-          <h3 class="font-bold text-lg text-emerald-400">Conteudo do Modulo</h3>
-          <button onclick="closeModal()" class="p-2 hover:bg-dark-700 rounded-lg transition-colors text-neutral-400 hover:text-white">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
-        <div id="modal-content" class="p-6 overflow-y-auto max-h-[calc(90vh-80px)]">
-          <div class="flex items-center justify-center py-12">
-            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-400"></div>
-            <span class="ml-3 text-neutral-400">Carregando...</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-emerald-500/10 text-emerald-400" href="index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4">
+<a class="text-neutral-500 hover:text-neutral-300 text-sm" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<span class="text-emerald-400 text-sm font-medium">Track 1</span>
+</div>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">TRACK 1 - FUNDAMENTALS</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">💰 Sales Fundamentals</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Build the conceptual foundation necessary to sell with method, clarity and consistency. This track changes your mindset about sales before any technique.</p>
+Stats
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-emerald-400">8</div>
+<div class="text-xs text-neutral-400">Modules</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-emerald-400">~40</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-emerald-400">~8h</div>
+<div class="text-xs text-neutral-400">Duration</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-emerald-400">Base</div>
+<div class="text-xs text-neutral-400">Conceptual</div>
+</div>
+</div>
+</div>
+</header>
+Modules
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Module 1.1
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.1</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🎯 What is really selling</h3>
+<p class="text-neutral-400 text-sm">Break the idea that selling is pushing products and replace it with a problem-solving vision.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">🔑</span>
+<div class="flex-1">
+<span class="font-medium">Selling is not pushing</span>
+<span class="text-neutral-500 text-sm ml-2">- And solve a real problem</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Real selling means identifying a real customer pain point and offering a genuine solution. It’s not about convincing someone to buy something they don’t need — it’s about connecting need with solution.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It completely changes your posture. You stop being the "boring salesperson" and become someone the customer wants to listen to. This generates trust and recurrence.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Selling as a service, problem solving, commercial empathy, relationships before transactions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🧭</span>
+<div class="flex-1">
+<span class="font-medium">The difference between convincing and leading</span>
+<span class="text-neutral-500 text-sm ml-2">- Guide decision vs force decision</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Convincing presupposes resistance — you are trying to change someone's mind. Leading presupposes partnership — you guide the client to the best decision for them.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The salesperson who leads generates fewer objections, more trust and more natural closings. The client feels like they decided on their own.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Driving vs persuasion, customer autonomy, consultative selling, guided decision making.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">💎</span>
+<div class="flex-1">
+<span class="font-medium">The role of value before price</span>
+<span class="text-neutral-500 text-sm ml-2">- Why value comes first</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">When the customer perceives the value before knowing the price, the price is no longer a barrier. Value is the perception that it solves a problem that costs more than the investment.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Avoid the trap of competing on price. Those who present value before price sell more expensively and with less resistance.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Perceived value, value anchoring, presentation sequence, price as a consequence.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🩺</span>
+<div class="flex-1">
+<span class="font-medium">The seller as a solver</span>
+<span class="text-neutral-500 text-sm ml-2">- Diagnosis before prescription</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Just as a doctor does not prescribe without diagnosing, a professional salesperson does not offer a solution without understanding the problem. First you ask, then you present.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It eliminates the waste of talking about features the customer doesn't need. Your every word becomes relevant and targeted.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Commercial diagnosis, active listening, sales as consultancy, personalized solution.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">⚖️</span>
+<div class="flex-1">
+<span class="font-medium">Consultative selling vs transactional selling</span>
+<span class="text-neutral-500 text-sm ml-2">- Two models, two results</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Transactional sales are fast, focused on price and convenience. Consultative selling is based on relationships, diagnosis and tailored solutions. Each serves a context.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Knowing when to use each model avoids wasted effort. Trying to sell a commodity product consultatively is as wrong as selling a complex solution transactionally.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Consultative selling, transactional selling, solution complexity, sales cycle, average ticket.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">🧠</span>
+<div class="flex-1">
+<span class="font-medium">The mentality of the professional salesperson</span>
+<span class="text-neutral-500 text-sm ml-2">- Process overcomes improvisation</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The professional salesperson follows a replicable process, does not depend on charisma or luck. He prepares, diagnoses, presents value, handles objections and conducts the closing methodically.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Consistency beats isolated talent. A well-followed process generates predictable, scalable and teachable results.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Professional mentality, sales process, commercial discipline, consistency, predictability.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-1.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-1.html">📄 See Full</a>
+</div>
+</div>
+Module 1.2
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.2</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🧠 The 5 levels of consumer awareness</h3>
+<p class="text-neutral-400 text-sm">Understanding where the customer is in the purchasing journey completely changes how you communicate.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">😶</span>
+<div class="flex-1">
+<span class="font-medium">Totally unconscious</span>
+<span class="text-neutral-500 text-sm ml-2">- Don't realize there's a problem</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The consumer does not know they have a problem. He lives his routine without realizing that something could be better. There's no point in offering a solution — he doesn't even know he needs one.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Trying to sell to those who are at that level is like offering medicine to those who don't know they are sick. You need to educate first.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Eugene Schwartz, awareness levels, market education, top-of-funnel content.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">😟</span>
+<div class="flex-1">
+<span class="font-medium">Aware of the problem</span>
+<span class="text-neutral-500 text-sm ml-2">- You know the pain, you don't know the solution</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The consumer feels the pain but does not know ways to resolve it. He knows something is wrong but doesn't know what to do. It's time to show that there are solutions.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">This audience is receptive to educational content. If you are the one who presents the path, you will be remembered when he decides to act.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Conscious pain, search for a solution, educational content, authority, lead nurturing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🔍</span>
+<div class="flex-1">
+<span class="font-medium">Aware of the solution</span>
+<span class="text-neutral-500 text-sm ml-2">- Know that there are paths</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The consumer already knows that there are ways to solve their problem, but has not yet chosen which one. He is researching, comparing approaches and evaluating options.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Now is the time to differentiate your approach. Show why your method is superior, not just that it exists.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Differentiation, value proposition, comparative, unique mechanism, social proof.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">📦</span>
+<div class="flex-1">
+<span class="font-medium">Product aware</span>
+<span class="text-neutral-500 text-sm ml-2">- Know your offer, are comparing</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The consumer already knows your offer and is comparing it with competitors. He wants to know why he should choose you, not someone else. It's time for proof, guarantee and clear differentiation.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">At this level, what convinces are details: testimonials, guarantees, demonstrations. Generic speech no longer works.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Social proof, guarantee, demonstration, case studies, specific objections, direct comparison.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🔥</span>
+<div class="flex-1">
+<span class="font-medium">Very aware</span>
+<span class="text-neutral-500 text-sm ml-2">- Just missing the final push</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The consumer has already decided they want to buy. All you need is a final trigger — an offer, a deadline, a bonus. Anything that takes him out of inertia.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Many sellers lose sales at this level by not asking for closure. The customer is ready — just drive.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Urgency trigger, scarcity, direct offer, clear CTA, natural closing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">💡</span>
+<div class="flex-1">
+<span class="font-medium">Why does this change everything in communication</span>
+<span class="text-neutral-500 text-sm ml-2">- Each level requires a different approach</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Using the same message for all levels is wasting effort. Each level requires different language, tone and argument. Aligning the message to the level is the secret to effective communication.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">When you speak the right language to the right level, conversion skyrockets. Without this, you talk to everyone and no one listens.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Segmentation by awareness, targeted communication, copy by level, content funnel.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-2.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-2.html">📄 See Full</a>
+</div>
+</div>
+Module 1.3
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.3</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">💎 Building value before price</h3>
+<p class="text-neutral-400 text-sm">Master the art of making the customer perceive value before knowing how much it costs.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">📊</span>
+<div class="flex-1">
+<span class="font-medium">The 70% rule</span>
+<span class="text-neutral-500 text-sm ml-2">- 7 out of 10 accept paying more for clear value</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Research shows that 7 out of 10 buyers accept paying more when they see clear and differentiated value. Price is only a barrier when value has not been built.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It shows that the problem is rarely the price — it's the perception of value. Changes the focus from “lowering price” to “increasing perceived value”.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Price elasticity, perceived value, willingness to pay, premium pricing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">⚖️</span>
+<div class="flex-1">
+<span class="font-medium">Perceived value vs real price</span>
+<span class="text-neutral-500 text-sm ml-2">- The difference that defines the sale</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">If the perceived value is greater than the price, the sale happens. If the price seems greater than the value, the customer backs off. Every sale is this simple equation.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It allows you to diagnose why sales are not happening and correct the course — almost always the problem is insufficient value, not a high price.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Value equation, perception vs reality, anchoring, price framing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">⏱️</span>
+<div class="flex-1">
+<span class="font-medium">When price should enter the conversation</span>
+<span class="text-neutral-500 text-sm ml-2">- Timing and everything</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Revealing the price too early kills the sale. Revealing too late creates distrust. The ideal moment is after the customer has already understood the value and is engaged in the solution.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Mastering price reveal timing is one of the most valuable skills in sales. Dramatically changes the conversion rate.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Price timing, presentation sequence, value stack, gradual revelation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🏗️</span>
+<div class="flex-1">
+<span class="font-medium">How to build value before revealing price</span>
+<span class="text-neutral-500 text-sm ml-2">- Practical sequence</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">A practical sequence: identify the pain, amplify the cost of inaction, show the solution, prove it with results, only then reveal the price as an investment (not a cost).</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Transforms any sales presentation. The customer starts to see the price as "cheap" compared to the problem it is solving.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Value stack, pain amplification, investment vs cost, emotional ROI.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">⚔️</span>
+<div class="flex-1">
+<span class="font-medium">The mistake of competing on price</span>
+<span class="text-neutral-500 text-sm ml-2">- Price war no one wins</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Competing on price is a race to the bottom. There will always be someone cheaper. The only sustainable way out is to compete on value — to be the best solution, not the cheapest.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It frees the seller from the pressure to "lower price". When you compete on value, the margin increases and the customer is more satisfied.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Commoditization, differentiation, margin, positioning, blue ocean vs red ocean.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">🏢</span>
+<div class="flex-1">
+<span class="font-medium">Examples of value construction in different segments</span>
+<span class="text-neutral-500 text-sm ml-2">- Practical application</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Real examples of how to build value in SaaS, services, retail, B2B and infoproducts. Each segment has particularities, but the principle is the same: value before price.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Seeing concrete examples makes it easier to apply in your context. Go from theory to practice in different market realities.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Adaptation by segment, value cases, contextualized practice, benchmarking.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-3.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-3.html">📄 See Full</a>
+</div>
+</div>
+Module 1.4
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.4</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">❓ The art of asking</h3>
+<p class="text-neutral-400 text-sm">Master strategic questions that reveal the client's pain and desire.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">🩺</span>
+<div class="flex-1">
+<span class="font-medium">Why ask before offering</span>
+<span class="text-neutral-500 text-sm ml-2">- Diagnosis before prescription</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Offering without asking is how to give medicine without knowing the disease. Well-asked questions reveal the customer's real situation and allow us to offer the right solution.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Reduces objections because the offer fits perfectly. The customer feels that you understand their situation.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Commercial diagnosis, active listening, open questions, discovery sequence.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🔑</span>
+<div class="flex-1">
+<span class="font-medium">The 4 questions that change everything</span>
+<span class="text-neutral-500 text-sm ml-2">- What bothers you, how much it costs, what happens, what would be ideal</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Four key questions: "What bothers you?", "How much does this cost you?", "What happens if nothing changes?", "What would be ideal?". Together, they reveal pain, cost, urgency and desire.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">These are universal questions that work in any segment. Memorizing and practicing these 4 questions dramatically increases the quality of the sales conversation.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Key questions, disclosure of pain, cost of inaction, desired future state.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🔥</span>
+<div class="flex-1">
+<span class="font-medium">Questions that magnify the pain</span>
+<span class="text-neutral-500 text-sm ml-2">- Make the customer feel the cost of inaction</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Implication questions that make the customer calculate the real cost of not solving the problem. “If this continues for another 6 months, what will be the impact?” The goal is to create real urgency.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Without urgency, the customer postpones. Amplifying questions create the emotional motivation to act now, not later.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Implication questions, SPIN Selling, cost of inaction, real urgency, amplified pain.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🌟</span>
+<div class="flex-1">
+<span class="font-medium">Questions that reveal desire</span>
+<span class="text-neutral-500 text-sm ml-2">- Discover the desired future state</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Questions that make the client visualize the ideal scenario. “If you could solve this, what would it be like?” Desire is the driving force behind the purchase — when the customer sees the desired future, they pay to get there.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">People buy on emotion and justify it with logic. Making the customer feel the desire is more powerful than any rational argument.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Future state, visualization, need-solution questions, positive motivation, aspiration.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🔄</span>
+<div class="flex-1">
+<span class="font-medium">SPIN as a basis</span>
+<span class="text-neutral-500 text-sm ml-2">- Situation, Problem, Implication, Need for solution</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Neil Rackham's SPIN model: Situation (understand context), Problem (reveal pain), Implication (amplify consequences), Need for solution (create vision of the future). It is the most researched consultative sales framework.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">SPIN and based on research with over 35,000 sales conversations. It's not opinion — it's science applied to sales.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">SPIN Selling, Neil Rackham, situation, problem, implication and need questions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">⚠️</span>
+<div class="flex-1">
+<span class="font-medium">Common mistakes when asking</span>
+<span class="text-neutral-500 text-sm ml-2">- What to avoid to avoid looking like an interrogator</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Asking too much, asking without listening, excessively closed questions, interrogatory tone. The goal is conversation, not inquiry. Ask, listen, connect, then ask again.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Poorly asked questions generate distrust and close the customer. The difference between a good diagnosis and an interrogation is in the form, not the content.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Errors in approach, tone of conversation, question-answer balance, rapport, naturalness.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-4.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-4.html">📄 See Full</a>
+</div>
+</div>
+Module 1.5
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.5</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🔄 Translate characteristics into impact</h3>
+<p class="text-neutral-400 text-sm">Stop listing features and start showing real results to the customer.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">📐</span>
+<div class="flex-1">
+<span class="font-medium">Feature vs benefit vs impact</span>
+<span class="text-neutral-500 text-sm ml-2">- Three levels of communication</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Feature: what the product HAS. Benefit: what the product DOES. Impact: what this CHANGES in the customer’s life. Example: "5000mAh battery" → "Lasts all day" → "You'll never miss an important call again."</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Most sellers stop at the feature. Those who achieve impact sell much more because they connect the product with the customer's real life.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">FAB (Features, Advantages, Benefits), value translation, impact communication.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">The impact formula</span>
+<span class="text-neutral-500 text-sm ml-2">- "It reduces/accelerates/avoids/increases"</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Use impact verbs: "This reduces your time...", "It speeds up the process of...", "It prevents you...", "It increases your...". Sentences that begin like this communicate immediate results.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Having a formula ready makes communication easier in the heat of the conversation. You will never be left without knowing how to present an appeal again.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Impact verbs, translation formula, result language, value-oriented communication.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🚀</span>
+<div class="flex-1">
+<span class="font-medium">Go from features to results</span>
+<span class="text-neutral-500 text-sm ml-2">- Stop listing and start tasting</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Instead of “our software has 47 features,” say “our customers save 12 hours a week.” The result is what matters. Features are a means, not an end.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The customer does not buy features — they buy transformation. The faster you get to the result, the faster he sees value.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Result vs resource, proof of value, impact metrics, result storytelling.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🏢</span>
+<div class="flex-1">
+<span class="font-medium">Value language by segment</span>
+<span class="text-neutral-500 text-sm ml-2">- How to adapt to each market</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Each market has its value language. For SaaS: “reduces churn”. For retail: "increases average ticket". For services: "reduces rework". Speaking the customer's language is essential.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Using generic jargon doesn't work. When you speak the specific language of the segment, the customer feels that you understand their world.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Sector jargon, KPIs by segment, customer language, speech adaptation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">📝</span>
+<div class="flex-1">
+<span class="font-medium">Practical translation examples</span>
+<span class="text-neutral-500 text-sm ml-2">- From "we have this" to "this solves that"</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Real examples: "We have 24-hour support" → "When a problem arises at 3 am, you won't be alone." "We have a dashboard" → "You can see in real time where you are losing money."</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Seeing the translation in action trains your brain to do the same automatically. With practice, you never list features again — it always translates into impact.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Practical translation, before and after, reframing, communication of results.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">✏️</span>
+<div class="flex-1">
+<span class="font-medium">Exercise: translate your 5 main characteristics</span>
+<span class="text-neutral-500 text-sm ml-2">- Directed practice</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Practical exercise: list 5 characteristics of your product/service and translate each one into benefit and impact. Use the formula: Feature → Benefit → Impact on the customer’s life.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Theory without practice does not change results. This exercise is the first step towards internalizing the translation of value as a habit.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Deliberate practice, internalization, translation habit, immediate application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-5.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-5.html">📄 See Full</a>
+</div>
+</div>
+Module 1.6
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.6</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🛡️ Objections: what they are and why they exist</h3>
+<p class="text-neutral-400 text-sm">Understand objections as signs of interest and learn to welcome them with confidence.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">What is a real objection</span>
+<span class="text-neutral-500 text-sm ml-2">- A sign of interest, not rejection</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">An objection is a doubt that prevents a decision. Those who are not interested simply leave. When someone objects, they are saying, "Convince me—I'm almost there."</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Changes the seller's emotional reaction. Instead of fear, trust. Instead of defense, acceptance. The objection becomes an opportunity.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Objection as a signal, implicit interest, opportunity for clarification, welcoming posture.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🖐️</span>
+<div class="flex-1">
+<span class="font-medium">The 5 universal objections</span>
+<span class="text-neutral-500 text-sm ml-2">- It's expensive, I need to think about it, I'll look at it later, I want to compare, it's not a priority</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">95% of objections come down to 5 categories: "It's expensive", "I need to think about it", "I'll see later", "I want to compare", "It's not a priority". Mastering these 5 covers almost everything.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">When you know there are only 5 real objections, you can prepare answers for each one. There is no longer any surprise — there is preparation.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Universal objections, objection map, preparation, anticipation, response script.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🔀</span>
+<div class="flex-1">
+<span class="font-medium">Objection vs indecision</span>
+<span class="text-neutral-500 text-sm ml-2">- Two different problems that require different answers</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Objection is a specific barrier ("it's expensive"). Indecision and general paralysis ("I don't know"). The objection is answered with argument. Indecision can be resolved with simplification and security.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Treating indecision as an objection doesn’t work. You need to identify which of the two you are facing to use the right strategy.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Diagnosis of objection, indecision, analysis paralysis, simplification, risk reduction.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">😰</span>
+<div class="flex-1">
+<span class="font-medium">The fear behind “it’s expensive”</span>
+<span class="text-neutral-500 text-sm ml-2">- Most of the time it's not about money</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">"It's expensive" is almost never about money. It's about fear: fear of making mistakes, of not working, of regretting it. The price is the shield — behind it is insecurity.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">When you stop lowering prices and start addressing fear, conversion goes up dramatically. The right answer isn't discounting — it's security.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Fear of making mistakes, perceived risk, guarantee, social proof, reduction of uncertainty.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🔍</span>
+<div class="flex-1">
+<span class="font-medium">Why do objections appear?</span>
+<span class="text-neutral-500 text-sm ml-2">- Insufficient value, fear of making mistakes, lack of urgency</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Three root causes: insufficient perceived value (didn't see a reason), fear of making mistakes (perceived risk), lack of urgency (no need now). Each cause calls for a different response.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Diagnosing the root cause avoids generic answers. Instead of a standard response, you address the real problem behind the objection.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Root cause, objection diagnosis, insufficient value, perceived risk, lack of urgency.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">🤝</span>
+<div class="flex-1">
+<span class="font-medium">The right stance when faced with an objection</span>
+<span class="text-neutral-500 text-sm ml-2">- Welcome, understand, respond</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The protocol: 1) Welcome ("I understand perfectly"), 2) Understand ("tell me more about this"), 3) Respond with empathy and data. Never argue, never invalidate, never pressure.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The wrong stance turns objection into conflict. The right posture transforms objection into connection and trust.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Welcoming, active listening, commercial empathy, AER (Welcome-Understand-Respond) protocol.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-6.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-6.html">📄 See Full</a>
+</div>
+</div>
+Module 1.7
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.7</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">📊 The awareness funnel in practice</h3>
+<p class="text-neutral-400 text-sm">Apply levels of awareness in real content and communication strategy.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">🧊</span>
+<div class="flex-1">
+<span class="font-medium">Real distribution in cold public</span>
+<span class="text-neutral-500 text-sm ml-2">- 40-60% unconscious, 20-30% aware of the problem</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">In a cold public (who have never heard of you), the majority are unaware or aware of the problem. Few are ready to buy. This defines what type of content to prioritize.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Avoid the frustration of trying to sell to people who aren't ready yet. Adjusts expectations and communication strategy.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Cold public, awareness distribution, top of the funnel, market education.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🌡️</span>
+<div class="flex-1">
+<span class="font-medium">Distribution in warm public</span>
+<span class="text-neutral-500 text-sm ml-2">- The impact of those who have already interacted</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">A warm audience has already interacted with you — saw a post, watched a video, downloaded material. Distribution changes: more people are aware of the solution and the product, fewer are unaware.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Communication for a warm and different public. You can be more direct, more specific, more action-oriented.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Warm audience, remarketing, nutrition, middle of the funnel, progressive engagement.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🔥</span>
+<div class="flex-1">
+<span class="font-medium">Hot public distribution</span>
+<span class="text-neutral-500 text-sm ml-2">- Qualified leads and remarketing</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Hot audiences already know your offer, already trust you and are considering buying. Most are aware of the product or very aware. And time for a direct offer.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Don't waste hot audiences on basic educational content. They want supply, proof and assurance — not more education.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Hot audience, bottom of the funnel, direct conversation, offer, CTA, qualified lead.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🔻</span>
+<div class="flex-1">
+<span class="font-medium">Top, middle and bottom of funnel</span>
+<span class="text-neutral-500 text-sm ml-2">- Where each level fits</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Top: unconscious and aware of the problem (educate). Middle: aware of the solution (differentiate). Background: product aware and very aware (convert). Each step has its role.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Organizes the entire content and sales strategy. You know exactly what to communicate at each stage of the funnel.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">ToFu, MoFu, BoFu, customer journey, content by stage, funnel strategy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">⚖️</span>
+<div class="flex-1">
+<span class="font-medium">The 60/40 rule</span>
+<span class="text-neutral-500 text-sm ml-2">- 60-80% education, 20-40% supply</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The ideal content ratio: 60-80% education and free value, 20-40% offer and CTA. Those who only sell burn their audience. Those who only educate do not earn money. Balance and secret.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Defines the sustainable content strategy. You build authority and trust while monetizing naturally.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Content/offer ratio, valuable content, authority, natural monetization.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">How to generate content for all levels simultaneously</span>
+<span class="text-neutral-500 text-sm ml-2">- Integrated strategy</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">A single piece of content can speak to several levels at the same time. A post that educates (top), differentiates your approach (middle) and invites you to a conversation (bottom). The art is stacking levels.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Maximizes the return on each piece of content. You do less and achieve more — the essence of 80/20.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Multi-level content, communication efficiency, value stacking, 80/20 applied.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-7.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-7.html">📄 See Full</a>
+</div>
+</div>
+Module 1.8
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-emerald-400 font-bold">1.8</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🧭 The salesperson as a driver, not as an actor</h3>
+<p class="text-neutral-400 text-sm">Consolidate the sales mentality as a process and prepare the transition to practice.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">⚙️</span>
+<div class="flex-1">
+<span class="font-medium">Process vs improvisation</span>
+<span class="text-neutral-500 text-sm ml-2">- Why consistency beats isolated talent</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The seller with a process closes on good and bad days. The processless seller depends on mood, the customer and luck. Consistency is what separates professionals from amateurs.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Predictability is the basis of any healthy business. Without process, you can't improve because you don't know what to measure.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Sales process, consistency, predictability, continuous improvement, KPIs.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">📋</span>
+<div class="flex-1">
+<span class="font-medium">Script as a tool, not as a prison</span>
+<span class="text-neutral-500 text-sm ml-2">- Free structure</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">A script is not to be read robotically. It's a structure that ensures you don't forget important points. Just as a musician rehearses the score and then improvises safely.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Eliminates the fear of "not knowing what to say". With a base script, you have the confidence to adapt and customize.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Sales script, flexible structure, adaptation, personalization, trust.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">The driver's mentality</span>
+<span class="text-neutral-500 text-sm ml-2">- Guide the conversation with intention</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The salesperson-conductor knows where the conversation needs to go and guides the customer there with questions, pauses and intentional transitions. He doesn't react — he leads.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Conversations without direction don't end. The driver ensures that each step of the process happens in the right order, at the right pace.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Conducting conversation, intentionality, sales flow, controlling the pace.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🔑</span>
+<div class="flex-1">
+<span class="font-medium">Ask well, listen well, explain value clearly</span>
+<span class="text-neutral-500 text-sm ml-2">- The 3 pillars</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The three pillars of professional sales: 1) Ask to understand, 2) Listen to capture what matters, 3) Explain value clearly and objectively. Master these three and sell anything.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Simplifies all the complexity of sales into three practical actions. It is the minimum framework for maximum results.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Three pillars, simplicity, focus on the essential, basic commercial competence.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">📚</span>
+<div class="flex-1">
+<span class="font-medium">Sales doesn't need talent, it needs method</span>
+<span class="text-neutral-500 text-sm ml-2">- The central thesis</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The central thesis of the 8020 course: sales is a skill that is learned methodically, not a gift that is born with. Anyone can sell well if they follow the right process.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Eliminates the limiting belief of "I don't have a sales profile". If you have a method, you will have results. Point.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Method vs talent, democratization of sales, structured learning, growth mindset.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg mr-2">➡️</span>
+<div class="flex-1">
+<span class="font-medium">The next step: from concept to practice</span>
+<span class="text-neutral-500 text-sm ml-2">- Transition to Trail 2</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-emerald-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Track 1 built the conceptual foundation. Track 2 will transform these concepts into a practical method, with scripts, templates and exercises to apply immediately.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Connects theory with practice. You now have the mindset — on the next path, you will have the tools to act.</p>
+</div>
+<div>
+<span class="text-emerald-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Theory-practice transition, bridge to action, continuity of learning, next steps.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-1-8.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-medium transition-colors" href="modulo-1-8.html">📄 See Full</a>
+</div>
+</div>
+Navigation
+<div class="mt-12 flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../../index.html">← Back to Top</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Next: Track 2 - Method →</a>
+</div>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Track 1: Sales Fundamentals</div>
+</div>
+</div>
+</footer>
+Modal Overlay
+<div class="fixed inset-0 z-50 hidden" id="modal-overlay">
+<div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+<div class="relative flex items-start justify-center min-h-screen p-4 pt-8 overflow-y-auto">
+<div class="relative bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl">
+<div class="sticky top-0 z-10 flex items-center justify-between p-4 bg-dark-800 border-b border-dark-600">
+<h3 class="font-bold text-lg text-emerald-400">Module Content</h3>
+<button class="p-2 hover:bg-dark-700 rounded-lg transition-colors text-neutral-400 hover:text-white" onclick="closeModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[calc(90vh-80px)]" id="modal-content">
+<div class="flex items-center justify-center py-12">
+<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-400"></div>
+<span class="ml-3 text-neutral-400">Loading...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+Scripts
+<script data-notranslate="True">
     function toggleTopic(button) {
       const topicItem = button.closest('.topic-item');
       const explanation = topicItem.querySelector('.topic-explanation');
@@ -1781,6 +1667,5 @@
       if (e.key === 'Escape') closeModal();
     });
   </script>
-
 </body>
 </html>

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 4.1: O papel do gestor comercial | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 4.1: The role of the commercial manager | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,454 +32,389 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <!-- Breadcrumb -->
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 4</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-amber-400 font-medium">Modulo 4.1</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 4.1
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🏗️ O papel do gestor comercial</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        O gestor comercial nao e um cobrador de metas — e o arquiteto que projeta as condicoes para que resultados acontecam de forma consistente e sustentavel.
-      </p>
-
-      <!-- Stats -->
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Base</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Gestao</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🎯 Nao e so cobrar meta</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A maioria dos gestores comerciais foi promovida por ser um bom vendedor. O problema? <strong class="text-amber-400">Vender e gerir sao habilidades completamente diferentes</strong>. O gestor que apenas cobra metas esta fazendo o minimo — e o minimo nao gera equipes de alta performance.
-      </p>
-
-      <!-- Box Principal -->
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">O que o gestor como arquiteto faz de diferente?</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span>Projeta o processo de vendas antes de cobrar resultado</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span>Diagnostica perfis antes de distribuir carteira</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span>Cria condicoes para que o vendedor performe, nao apenas exige performance</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span>Mede atividades e comportamentos, nao apenas resultados finais</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Grid de Comparacao -->
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
-          <h4 class="font-bold text-amber-400 mb-4">✓ Gestor Arquiteto</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Vamos ajustar o processo para esse perfil"</li>
-            <li>"Qual objecao travou? Vamos treinar isso"</li>
-            <li>"Esse lead e melhor para o vendedor X"</li>
-            <li>"Vamos simular esse cenario antes"</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Gestor Cobrador</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Cadê a meta? Voce ta atrasado"</li>
-            <li>"Faz mais ligacoes"</li>
-            <li>"O problema e motivacao"</li>
-            <li>"Se vira, voce ja sabe vender"</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Dica Pratica -->
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Liste suas 5 atividades mais frequentes como gestor na ultima semana. Classifique cada uma: "cobranca" ou "construcao". Se mais de 60% for cobranca, voce esta operando como cobrador, nao como arquiteto. O primeiro passo e a consciencia.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🔍 Diagnosticar, posicionar, treinar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        As tres funcoes essenciais do gestor comercial formam um ciclo continuo. Primeiro voce <strong class="text-amber-400">diagnostica</strong> o perfil de cada vendedor. Depois <strong class="text-amber-400">posiciona</strong> cada um na funcao e carteira ideais. Por fim, <strong class="text-amber-400">treina</strong> com o metodo adequado ao perfil.
-      </p>
-
-      <!-- Box de Detalhamento -->
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">O Ciclo do Gestor Eficaz</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Diagnosticar</h4>
-              <p class="text-sm text-neutral-400">Observar, escutar ligacoes, analisar metricas. Entender: este vendedor e talentoso, treinavel ou resistente? Quais sao seus pontos fortes e gaps?</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Posicionar</h4>
-              <p class="text-sm text-neutral-400">Alocar na funcao certa: closer, SDR, farmer, hunter. Distribuir carteira adequada ao perfil. Colocar no nivel de cliente onde tem mais impacto.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Treinar</h4>
-              <p class="text-sm text-neutral-400">Desenvolver com metodo adequado: autonomia para o talentoso, script e acompanhamento para o treinavel, reposicionamento para o resistente.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Insight -->
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspectiva</h3>
-        <p class="text-neutral-300">
-          A maioria dos gestores pula direto para "treinar" sem diagnosticar. Resultado: treinamento generico que nao funciona para ninguem. <strong class="text-blue-400">O diagnostico e o passo mais importante</strong> — e o mais ignorado.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🔀 Combinar vendedor com cliente</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O <strong class="text-amber-400">match entre vendedor e cliente</strong> e uma das alavancas mais poderosas e menos utilizadas na gestao comercial. Nao e sobre quem vende mais — e sobre quem vende melhor para qual tipo de cliente.
-      </p>
-
-      <!-- Box de Conceito -->
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">A Logica do Cruzamento</h3>
-        <p class="text-neutral-300 mb-4">
-          Cada nivel de consciencia do cliente exige um tipo diferente de abordagem. E cada perfil de vendedor tem forcas naturais que se encaixam melhor em determinados niveis.
-        </p>
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-dark-800/50 rounded-lg p-3">
-            <div class="text-2xl mb-1">⭐</div>
-            <div class="text-xs text-neutral-400">Talentoso → Baixa consciencia</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-3">
-            <div class="text-2xl mb-1">📏</div>
-            <div class="text-xs text-neutral-400">Treinavel → Media consciencia</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-3">
-            <div class="text-2xl mb-1">🔄</div>
-            <div class="text-xs text-neutral-400">Resistente → Alta consciencia (suporte)</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dica -->
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra Pratica</h3>
-        <p class="text-neutral-300">
-          Antes de redistribuir carteira, faca um mapa simples: liste seus vendedores em uma coluna e os tipos de cliente na outra. Conecte cada vendedor ao tipo onde ele historicamente converte mais. Voce vai descobrir padroes que estavam escondidos nos dados.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">⚖️ O gestor que forma vs o gestor que cobra</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Existem duas filosofias de gestao comercial. A <strong class="text-amber-400">cobranca</strong> funciona no curto prazo: pressao gera movimento. A <strong class="text-amber-400">formacao</strong> funciona no longo prazo: desenvolvimento gera capacidade. Os melhores gestores combinam as duas, mas priorizam a formacao.
-      </p>
-
-      <!-- Box Visual -->
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Impacto ao longo do tempo</h3>
-        <div class="flex items-center justify-between text-center">
-          <div class="flex-1">
-            <div class="text-4xl mb-2">📢</div>
-            <div class="font-semibold text-neutral-200">Cobrar</div>
-            <div class="text-xs text-neutral-500">Resultado rapido, queda depois</div>
-          </div>
-          <div class="flex-1 px-4">
-            <div class="h-1 bg-gradient-to-r from-red-500 to-amber-500 rounded-full mb-2"></div>
-            <div class="text-xs text-neutral-400">← Curva de resultado →</div>
-            <div class="text-xs text-amber-400 mt-1">Combinar e o ideal</div>
-          </div>
-          <div class="flex-1">
-            <div class="text-4xl mb-2">🌱</div>
-            <div class="font-semibold text-neutral-200">Formar</div>
-            <div class="text-xs text-neutral-500">Mais lento, crescimento exponencial</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comparacao -->
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600">
-          <h4 class="font-bold text-neutral-200 mb-4">Gestor que so cobra</h4>
-          <ul class="space-y-2 text-sm text-neutral-400">
-            <li>→ Turnover alto (acima de 40%/ano)</li>
-            <li>→ Equipe depende de pressao externa</li>
-            <li>→ Quando o gestor sai, resultados desabam</li>
-            <li>→ Burnout frequente na equipe</li>
-          </ul>
-        </div>
-        <div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
-          <h4 class="font-bold text-amber-400 mb-4">Gestor que forma</h4>
-          <ul class="space-y-2 text-sm text-neutral-300">
-            <li>→ Turnover controlado (abaixo de 15%)</li>
-            <li>→ Equipe autonoma e auto-motivada</li>
-            <li>→ Resultados se mantem mesmo sem o gestor</li>
-            <li>→ Cultura de aprendizado continuo</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Insight -->
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Por que isso importa?</h3>
-        <p class="text-neutral-300">
-          O custo de substituir um vendedor e estimado em 6 a 9 meses de salario (recrutamento, treinamento, ramp-up). Um gestor que forma economiza <strong class="text-blue-400">centenas de milhares de reais</strong> por ano apenas em retencao.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">📋 O dia a dia do gestor comercial eficaz</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O gestor eficaz nao improvisa seu dia. Ele tem uma <strong class="text-amber-400">rotina estruturada</strong> que garante que diagnostico, posicionamento e treinamento acontecam de forma consistente, nao quando "sobra tempo".
-      </p>
-
-      <!-- Box Principal -->
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Rotina semanal do gestor eficaz</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Segunda: Pipeline Review</div>
-            <div class="text-xs text-neutral-400">Analisar funil, identificar gargalos</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🎧</div>
-            <div class="font-semibold text-neutral-200 text-sm">Terca/Quarta: Escuta e 1:1</div>
-            <div class="text-xs text-neutral-400">Ouvir ligacoes, coaching individual</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🎭</div>
-            <div class="font-semibold text-neutral-200 text-sm">Quinta: Role Play</div>
-            <div class="text-xs text-neutral-400">Simulacoes em grupo, pratica de objecoes</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📝</div>
-            <div class="font-semibold text-neutral-200 text-sm">Sexta: Revisao e Planejamento</div>
-            <div class="text-xs text-neutral-400">Resultados da semana, plano da proxima</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dica -->
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 A boa noticia</h3>
-        <p class="text-neutral-300">
-          Voce nao precisa implementar tudo de uma vez. Comece com <strong class="text-primary">uma atividade por semana</strong>: o pipeline review na segunda. Quando virar habito, adicione o 1:1. Construa a rotina tijolo por tijolo.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>O gestor e arquiteto de resultados, nao cobrador</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>As 3 funcoes: diagnosticar, posicionar, treinar</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>O match vendedor-cliente multiplica resultado</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Formar supera cobrar no longo prazo</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>A rotina estruturada e a base de tudo</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-amber-400 font-bold text-sm">4.2</span>
-            <h4 class="font-bold mt-1">⭐ Trilha para o vendedor talentoso</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Como desenvolver quem ja tem talento natural para vendas e levar ao proximo nivel de performance.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Voltar para Trilha 4
-        </a>
-        <a href="modulo-4-2.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors">
-          Proximo: Modulo 4.2 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 4.1: O papel do gestor comercial</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400" href="index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Breadcrumb
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 4</a>
+<span class="text-neutral-600">/</span>
+<span class="text-amber-400 font-medium">Module 4.1</span>
+</div>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🏗️ The role of the commercial manager</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The commercial manager is not a goal-getter — he is the architect who designs the conditions for results to happen in a consistent and sustainable way.</p>
+Stats
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Base</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Management</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🎯 It’s not just about setting a goal</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Most commercial managers were promoted for being a good salesperson. The problem?<strong class="text-amber-400">Selling and managing are completely different skills</strong>. The manager who only demands goals is doing the minimum — and the minimum does not generate high-performance teams.</p>
+Main Box
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">What does the manager as an architect do differently?</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span>Design the sales process before demanding results</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span>Diagnose profiles before distributing wallets</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span>Creates conditions for the seller to perform, not just demand performance</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span>Measures activities and behaviors, not just final results</span>
+</li>
+</ul>
+</div>
+Comparison Grid
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
+<h4 class="font-bold text-amber-400 mb-4">✓ Architect Manager</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"We will adjust the process for this profile"</li>
+<li>"What objection stuck? Let's practice this"</li>
+<li>"This lead is best for seller X"</li>
+<li>"Let's simulate this scenario first"</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Billing Manager</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Where's the goal? You're late"</li>
+<li>"Make more calls"</li>
+<li>"The problem is motivation"</li>
+<li>"If you turn around, you already know how to sell"</li>
+</ul>
+</div>
+</div>
+Practical Tip
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">List your 5 most frequent activities as a manager in the last week. Classify each one: "billing" or "construction". If more than 60% is billing, you are operating as a bill collector, not as an architect. The first step is awareness.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🔍 Diagnose, position, train</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The three essential functions of the commercial manager form a continuous cycle. First you<strong class="text-amber-400">diagnose</strong>the profile of each seller. After<strong class="text-amber-400">positions</strong>each in the ideal role and portfolio. Finally,<strong class="text-amber-400">train</strong>with the method appropriate to the profile.</p>
+Detail Box
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">The Effective Manager Cycle</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Diagnose</h4>
+<p class="text-sm text-neutral-400">Observe, listen to calls, analyze metrics. Understand: is this salesperson talented, trainable or resilient? What are your strengths and gaps?</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Position</h4>
+<p class="text-sm text-neutral-400">Allocate to the right role: closer, SDR, farmer, hunter. Distribute a portfolio suited to the profile. Place it at the customer level where it has the most impact.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">To train</h4>
+<p class="text-sm text-neutral-400">Develop with an appropriate method: autonomy for the talented, script and monitoring for the trainable, repositioning for the resistant.</p>
+</div>
+</div>
+</div>
+</div>
+Insight
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspective</h3>
+<p class="text-neutral-300">Most managers jump straight to “coaching” without diagnosing. Result: generic training that doesn't work for anyone.<strong class="text-blue-400">Diagnosis is the most important step</strong>— and the most ignored.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🔀 Match seller with customer</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">
+        O <strong class="text-amber-400">match between seller and customer</strong>It is one of the most powerful and least used levers in commercial management. It's not about who sells more — it's about who sells best to which type of customer.</p>
+Concept Box
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">The Logic of Crossing</h3>
+<p class="text-neutral-300 mb-4">Each level of customer awareness requires a different type of approach. And each salesperson profile has natural strengths that fit better at certain levels.</p>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="bg-dark-800/50 rounded-lg p-3">
+<div class="text-2xl mb-1">⭐</div>
+<div class="text-xs text-neutral-400">Talented → Low conscientiousness</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3">
+<div class="text-2xl mb-1">📏</div>
+<div class="text-xs text-neutral-400">Trainable → Media awareness</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3">
+<div class="text-2xl mb-1">🔄</div>
+<div class="text-xs text-neutral-400">Resistant → High awareness (support)</div>
+</div>
+</div>
+</div>
+Tip
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of Thumb</h3>
+<p class="text-neutral-300">Before redistributing your portfolio, make a simple map: list your salespeople in one column and the types of customers in the other. Connect each seller to the type where they historically convert the most. You will discover patterns that were hidden in the data.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">⚖️ The manager who trains vs the manager who charges</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">There are two commercial management philosophies. THE<strong class="text-amber-400">charge</strong>It works in the short term: pressure generates movement. THE<strong class="text-amber-400">training</strong>works in the long term: development generates capacity. The best managers combine the two, but prioritize training.</p>
+Box Visual
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Impact over time</h3>
+<div class="flex items-center justify-between text-center">
+<div class="flex-1">
+<div class="text-4xl mb-2">📢</div>
+<div class="font-semibold text-neutral-200">Charge</div>
+<div class="text-xs text-neutral-500">Quick result, fall later</div>
+</div>
+<div class="flex-1 px-4">
+<div class="h-1 bg-gradient-to-r from-red-500 to-amber-500 rounded-full mb-2"></div>
+<div class="text-xs text-neutral-400">← Result curve →</div>
+<div class="text-xs text-amber-400 mt-1">Combining is ideal</div>
+</div>
+<div class="flex-1">
+<div class="text-4xl mb-2">🌱</div>
+<div class="font-semibold text-neutral-200">Form</div>
+<div class="text-xs text-neutral-500">Slower, exponential growth</div>
+</div>
+</div>
+</div>
+Comparison
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600">
+<h4 class="font-bold text-neutral-200 mb-4">Manager who only demands</h4>
+<ul class="space-y-2 text-sm text-neutral-400">
+<li>→ High turnover (above 40%/year)</li>
+<li>→ Team depends on external pressure</li>
+<li>→ When the manager leaves, results collapse</li>
+<li>→ Frequent burnout in the team</li>
+</ul>
+</div>
+<div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
+<h4 class="font-bold text-amber-400 mb-4">Manager who forms</h4>
+<ul class="space-y-2 text-sm text-neutral-300">
+<li>→ Controlled turnover (below 15%)</li>
+<li>→ Autonomous and self-motivated team</li>
+<li>→ Results are maintained even without the manager</li>
+<li>→ Culture of continuous learning</li>
+</ul>
+</div>
+</div>
+Insight
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Why does this matter?</h3>
+<p class="text-neutral-300">The cost of replacing a salesperson is estimated at 6 to 9 months' salary (recruitment, training, ramp-up). A manager who saves money<strong class="text-blue-400">hundreds of thousands of reais</strong>per year on retention only.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">📋 The daily life of an effective commercial manager</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">An effective manager does not improvise his day. He has a<strong class="text-amber-400">structured routine</strong>which ensures that diagnosis, positioning and training happen consistently, not when there is “time left”.</p>
+Main Box
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Effective manager's weekly routine</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Monday: Pipeline Review</div>
+<div class="text-xs text-neutral-400">Analyze funnel, identify bottlenecks</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🎧</div>
+<div class="font-semibold text-neutral-200 text-sm">Tuesday/Wednesday: Listening and 1:1</div>
+<div class="text-xs text-neutral-400">Listen to calls, individual coaching</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🎭</div>
+<div class="font-semibold text-neutral-200 text-sm">Thursday: Role Play</div>
+<div class="text-xs text-neutral-400">Group simulations, objection practice</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📝</div>
+<div class="font-semibold text-neutral-200 text-sm">Friday: Review and Planning</div>
+<div class="text-xs text-neutral-400">Results of the week, plan for next week</div>
+</div>
+</div>
+</div>
+Tip
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 The good news</h3>
+<p class="text-neutral-300">You don't need to implement everything at once. Start with<strong class="text-primary">one activity per week</strong>: the pipeline review on Monday. When it becomes a habit, add 1:1. Build the routine brick by brick.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>The manager is an architect of results, not a collector</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>The 3 functions: diagnose, position, train</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>The seller-customer match multiplies results</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Training beats charging in the long run</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>A structured routine is the basis of everything</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-amber-400 font-bold text-sm">4.2</span>
+<h4 class="font-bold mt-1">⭐ Track for the talented salesperson</h4>
+<p class="text-neutral-400 text-sm mt-2">How to develop those who already have a natural talent for sales and take them to the next level of performance.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Return to Track 4</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Next: Module 4.2 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 4.1: The role of the commercial manager</div>
+</div>
+</div>
+</footer>
+Scripts
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -499,6 +434,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

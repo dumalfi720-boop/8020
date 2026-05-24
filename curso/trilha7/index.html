@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha 7: Avaliacao e Ferramentas | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track 7: Assessment and Tools | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
@@ -34,1135 +34,1051 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300 text-sm">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-orange-400 text-sm font-medium">Trilha 7</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">
-        TRILHA 7 - AVALIACAO E FERRAMENTAS
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧰 Avaliacao e Ferramentas</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Templates prontos, scripts de vendas, checklists e ferramentas praticas para aplicar imediatamente no seu comercial. Tudo o que voce precisa para executar sem inventar do zero.
-      </p>
-
-      <!-- Stats -->
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">6</div>
-          <div class="text-xs text-neutral-400">Modulos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">~30</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">~6h</div>
-          <div class="text-xs text-neutral-400">Duracao</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Foco</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Modulos -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Modulo 7.1 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.1</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">📋 Questionario de Diagnostico Comercial</h3>
-        <p class="text-neutral-400 text-sm">As 20 perguntas que revelam o perfil comercial real de qualquer vendedor. Ferramenta pronta para aplicar.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">As 20 perguntas completas</span>
-              <span class="text-neutral-500 text-sm ml-2">- 4 blocos de 5 perguntas</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Um questionario estruturado em 4 blocos (aptidao, vontade, aprendizagem e execucao) com 5 perguntas cada, totalizando 20 perguntas que mapeiam o perfil comercial completo de qualquer profissional.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sem diagnostico, voce trata todos iguais. Com o questionario, voce sabe exatamente onde cada vendedor precisa evoluir e pode criar planos individuais de desenvolvimento.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Aptidao comercial, vontade de vender, capacidade de aprendizagem, disciplina de execucao, Fit Comercial.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">📊</span>
-            <div class="flex-1">
-              <span class="font-medium">Como pontuar</span>
-              <span class="text-neutral-500 text-sm ml-2">- Escala de 1 a 5</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sistema de pontuacao de 1 a 5 para cada pergunta. 1 = nunca/muito fraco, 2 = raramente/fraco, 3 = as vezes/medio, 4 = frequentemente/bom, 5 = sempre/excelente. Total por bloco: 5 a 25 pontos.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">A pontuacao transforma percepcao subjetiva em numero objetivo. Permite comparar vendedores, acompanhar evolucao e tomar decisoes baseadas em dados.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Escala Likert, pontuacao objetiva, avaliacao padronizada, baseline, medicao de performance.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🏷️</span>
-            <div class="flex-1">
-              <span class="font-medium">Como classificar</span>
-              <span class="text-neutral-500 text-sm ml-2">- Alta, media, baixa</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Classificacao por bloco: 21-25 pontos = alta competencia, 14-20 pontos = media competencia, 5-13 pontos = baixa competencia. Cada bloco e avaliado separadamente para identificar gaps especificos.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Permite identificar com precisao onde investir em treinamento. Um vendedor com alta aptidao mas baixa execucao precisa de acompanhamento, nao de curso de tecnica.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Faixas de competencia, gap analysis, diagnostico por dimensao, priorizacao de desenvolvimento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">📈</span>
-            <div class="flex-1">
-              <span class="font-medium">Fit Comercial = media dos 4 blocos</span>
-              <span class="text-neutral-500 text-sm ml-2">- Score geral do vendedor</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">O Fit Comercial e a media das notas dos 4 blocos convertida para escala de 0-10. Score de 8.5-10 = forte, 7-8.4 = bom, 5.5-6.9 = parcial, abaixo de 5.5 = baixo fit comercial.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">O Fit Comercial e o indicador unico que resume a capacidade comercial. Permite decisoes rapidas sobre contratacao, promocao, investimento em treinamento ou realocacao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Fit Comercial, score geral, media ponderada, classificacao de perfil, decisao baseada em dados.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🖨️</span>
-            <div class="flex-1">
-              <span class="font-medium">Template pronto para impressao/uso</span>
-              <span class="text-neutral-500 text-sm ml-2">- Aplicar imediatamente</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Formulario completo formatado e pronto para imprimir ou usar digitalmente. Inclui instrucoes, escala, todas as 20 perguntas, espaco para pontuacao, calculo automatico e area de observacoes.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Elimina a desculpa de "nao tenho ferramenta". O template esta pronto — basta imprimir e aplicar. Zero tempo de preparacao, 100% execucao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Template padronizado, formulario de avaliacao, ferramenta de gestao, aplicacao imediata.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-1.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-1.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 7.2 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.2</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🎙️ Script Pronto de Vendas</h3>
-        <p class="text-neutral-400 text-sm">Scripts completos de abertura, diagnostico, apresentacao de valor e fechamento prontos para usar.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">👋</span>
-            <div class="flex-1">
-              <span class="font-medium">Script de abertura</span>
-              <span class="text-neutral-500 text-sm ml-2">- Iniciar sem parecer vendedor</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Roteiro de abertura que cria conexao genuina antes de qualquer oferta. Inclui modelo de apresentacao pessoal, pergunta de contexto e transicao natural para a conversa comercial.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Os primeiros 30 segundos definem se o cliente vai te ouvir ou criar uma barreira. Um bom script de abertura elimina a resistencia inicial.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Rapport, primeira impressao, abertura consultiva, quebra de resistencia, pergunta de contexto.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🔍</span>
-            <div class="flex-1">
-              <span class="font-medium">Script de diagnostico</span>
-              <span class="text-neutral-500 text-sm ml-2">- 4 perguntas em sequencia</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sequencia de 4 perguntas que revelam situacao atual, problema, impacto e urgencia do cliente. Flui como conversa natural, nao como interrogatorio.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Sem diagnostico, voce apresenta solucao generica. Com diagnostico, voce conecta sua oferta ao problema real do cliente e ele se sente compreendido.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Perguntas de situacao, perguntas de problema, perguntas de impacto, perguntas de necessidade, venda consultiva.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">💎</span>
-            <div class="flex-1">
-              <span class="font-medium">Script de apresentacao de valor</span>
-              <span class="text-neutral-500 text-sm ml-2">- Modelo "Pelo que voce me disse..."</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Modelo de apresentacao que conecta o diagnostico a solucao usando a frase-ponte "Pelo que voce me disse...". Personaliza a proposta usando as proprias palavras do cliente.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando o cliente ouve suas proprias palavras na apresentacao, sente que a solucao foi feita para ele. Isso aumenta dramaticamente a taxa de conversao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Frase-ponte, espelhamento, proposta personalizada, conexao diagnostico-solucao, valor percebido.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🤝</span>
-            <div class="flex-1">
-              <span class="font-medium">Script de fechamento</span>
-              <span class="text-neutral-500 text-sm ml-2">- Conduzir a decisao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Tecnicas de conduzir o cliente para a decisao sem pressao. Inclui perguntas de fechamento, alternativa assumida, e transicao natural para proximos passos.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Muitos vendedores fazem tudo certo ate o final e perdem a venda por nao saber conduzir o fechamento. O script elimina esse gap.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Fechamento consultivo, pergunta de compromisso, alternativa assumida, proximos passos, call to action.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🔄</span>
-            <div class="flex-1">
-              <span class="font-medium">Variacoes por segmento</span>
-              <span class="text-neutral-500 text-sm ml-2">- Servicos, produtos, B2B, B2C</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Adaptacoes do script base para diferentes contextos de venda: servicos (intangivel), produtos (tangivel), B2B (empresas) e B2C (consumidor final). Cada segmento tem linguagem e abordagem proprias.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Um script generico nao funciona para todos. As adaptacoes por segmento garantem que a abordagem seja relevante e natural para cada tipo de cliente.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Segmentacao, adaptacao de linguagem, B2B vs B2C, venda de servicos vs produtos, contextualizacao.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-2.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-2.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 7.3 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.3</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">🛡️ Mapa de Objecoes e Respostas</h3>
-        <p class="text-neutral-400 text-sm">As 5 objecoes mais comuns com 3 variacoes de resposta cada. 15 respostas prontas para usar.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">💸</span>
-            <div class="flex-1">
-              <span class="font-medium">"Esta caro"</span>
-              <span class="text-neutral-500 text-sm ml-2">- 3 variacoes de resposta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A objecao de preco e a mais comum e geralmente esconde outra objecao real. As 3 variacoes de resposta abordam: falta de valor percebido, comparacao com concorrente, e limitacao real de orcamento.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Vendedores que nao sabem responder "esta caro" perdem vendas desnecessariamente. Com as 3 variacoes, voce tem resposta para qualquer contexto de preco.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Objecao de preco, valor percebido, ancoragem, comparacao, reformulacao de investimento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">🤔</span>
-            <div class="flex-1">
-              <span class="font-medium">"Preciso pensar"</span>
-              <span class="text-neutral-500 text-sm ml-2">- 3 variacoes de resposta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando o cliente diz "preciso pensar", geralmente significa que faltou informacao, confianca ou urgencia. As 3 variacoes tratam cada causa raiz de forma diferente.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">"Preciso pensar" e a objecao mais perigosa porque parece educada mas mata a venda silenciosamente. Quem sai para "pensar" raramente volta.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Objecao de adiamento, falta de urgencia, informacao insuficiente, medo de decidir, resgate de interesse.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">⏰</span>
-            <div class="flex-1">
-              <span class="font-medium">"Vou ver depois"</span>
-              <span class="text-neutral-500 text-sm ml-2">- 3 variacoes de resposta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Variacao do "preciso pensar" com enfase em timing. As 3 respostas abordam: criar urgencia real, evidenciar custo da espera, e garantir proximo passo concreto.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">"Depois" nunca chega. Se o vendedor nao tratar essa objecao na hora, perde o timing e a venda esfria. Cada dia de atraso reduz a chance de fechamento.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Urgencia, custo da inacao, timing de venda, proximo passo concreto, follow-up estruturado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">⚖️</span>
-            <div class="flex-1">
-              <span class="font-medium">"Quero comparar"</span>
-              <span class="text-neutral-500 text-sm ml-2">- 3 variacoes de resposta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Quando o cliente quer comparar, pode ser inseguranca, habito de pesquisa ou falta de diferenciacao clara. As 3 respostas ajudam a posicionar antes da comparacao acontecer.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Se o cliente sai para comparar sem criterios claros, compara so preco. As respostas ajudam a definir os criterios de comparacao a seu favor.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Diferenciacao, criterios de comparacao, posicionamento, ancoragem de valor, vantagem competitiva.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🚫</span>
-            <div class="flex-1">
-              <span class="font-medium">"Nao e prioridade"</span>
-              <span class="text-neutral-500 text-sm ml-2">- 3 variacoes de resposta</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">A objecao de prioridade revela que o cliente nao conectou sua solucao a uma dor urgente. As 3 respostas ajudam a evidenciar o impacto de nao resolver agora.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Se o cliente diz que nao e prioridade, o diagnostico falhou. As respostas ajudam a reconectar a conversa ao problema real e criar urgencia genuina.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Prioridade, dor vs desejo, custo da inacao, reformulacao de problema, urgencia genuina.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-3.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-3.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 7.4 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.4</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">✅ Checklist do Gestor Comercial</h3>
-        <p class="text-neutral-400 text-sm">Rotina completa do gestor comercial: o que fazer por semana, por mes, o que observar e o que corrigir.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">📅</span>
-            <div class="flex-1">
-              <span class="font-medium">Checklist semanal</span>
-              <span class="text-neutral-500 text-sm ml-2">- O que fazer toda semana</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Lista de atividades que o gestor comercial deve executar toda semana: reuniao de pipeline, escuta de ligacoes, feedback individual, analise de metricas e planejamento da semana seguinte.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Gestor sem rotina apaga incendio. Gestor com checklist semanal previne problemas antes de acontecerem e mantem a equipe no ritmo.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Rotina de gestao, reuniao de pipeline, one-on-one, analise semanal, planejamento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">📆</span>
-            <div class="flex-1">
-              <span class="font-medium">Checklist mensal</span>
-              <span class="text-neutral-500 text-sm ml-2">- O que revisar todo mes</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Revisao mensal que inclui: analise de resultados vs metas, avaliacao individual de cada vendedor, revisao de processos, ajuste de estrategia e planejamento do mes seguinte.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">O ciclo mensal e onde o gestor faz ajustes estrategicos. Sem essa revisao, problemas se acumulam e so aparecem quando ja e tarde.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Revisao mensal, metas vs realizado, avaliacao individual, ajuste de estrategia, ciclo PDCA.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">👀</span>
-            <div class="flex-1">
-              <span class="font-medium">O que observar na equipe</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sinais de alerta e progresso</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Indicadores comportamentais que revelam se o vendedor esta progredindo ou regredindo: energia, volume de atividades, qualidade das conversas, atitude em reunioes, pontualidade em follow-ups.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Numeros mostram o passado. Comportamento mostra o futuro. O gestor que observa sinais precoces age antes dos resultados caiarem.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Indicadores de comportamento, sinais de alerta, leading indicators, observacao ativa, intervencao precoce.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🎯</span>
-            <div class="flex-1">
-              <span class="font-medium">O que corrigir primeiro</span>
-              <span class="text-neutral-500 text-sm ml-2">- Prioridades de gestao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Hierarquia de prioridades de correcao: 1) Volume de atividade, 2) Qualidade da abordagem, 3) Gestao de pipeline, 4) Tecnica de fechamento. Sempre corrigir na ordem certa.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Corrigir na ordem errada desperdicamos tempo. Nao adianta ensinar tecnica de fechamento para quem nao faz atividade suficiente. Prioridade salva tempo e resultado.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Priorizacao, hierarquia de correcao, causa raiz, impacto vs esforco, quick wins.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">📋</span>
-            <div class="flex-1">
-              <span class="font-medium">Template de rotina do gestor</span>
-              <span class="text-neutral-500 text-sm ml-2">- Agenda modelo completa</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Agenda modelo com distribuicao de atividades por dia da semana. Inclui blocos de tempo para reunioes, analises, feedbacks, treinamentos e planejamento.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Gestor sem agenda modelo perde o dia reagindo. Com o template, cada dia tem proposito definido e a equipe sabe quando contar com o lider.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Gestao de tempo, blocos de foco, agenda modelo, disciplina de gestao, previsibilidade.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-4.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-4.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 7.5 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.5</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">📢 Plano de Conteudo por Nivel de Consciencia</h3>
-        <p class="text-neutral-400 text-sm">Templates completos de conteudo para cada nivel de consciencia do cliente: tipo, canal, frequencia e exemplos.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">😴</span>
-            <div class="flex-1">
-              <span class="font-medium">Template para inconsciente</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tipo, canal, frequencia, exemplo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Plano de conteudo para pessoas que ainda nao sabem que tem um problema. Foco em conteudo de entretenimento e educacao leve que desperta curiosidade sem vender.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">A maior fatia do mercado e inconsciente. Se voce so fala com quem ja quer comprar, perde 80% das oportunidades futuras.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Conteudo de topo de funil, despertar de interesse, educacao de mercado, awareness, alcance.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">😟</span>
-            <div class="flex-1">
-              <span class="font-medium">Template para consciente do problema</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tipo, canal, frequencia, exemplo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Plano para quem ja sabe que tem um problema mas nao sabe como resolver. Conteudo focado em nomear a dor, amplificar consequencias e mostrar que existe caminho.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Esse publico esta pronto para ser educado. O conteudo certo transforma alguem frustrado em alguem que busca ativamente uma solucao — a sua.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Agitacao de problema, conteudo educativo, nome da dor, consequencia de nao agir, meio de funil.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">🔎</span>
-            <div class="flex-1">
-              <span class="font-medium">Template para consciente da solucao</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tipo, canal, frequencia, exemplo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Plano para quem sabe que precisa de algo mas nao conhece seu produto. Conteudo comparativo, demonstracoes, cases de sucesso e provas sociais.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Esse publico esta avaliando opcoes. O conteudo certo posiciona voce como a melhor escolha antes mesmo da conversa de vendas acontecer.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Prova social, comparacao, diferenciacao, autoridade, consideracao.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🎁</span>
-            <div class="flex-1">
-              <span class="font-medium">Template para consciente do produto</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tipo, canal, frequencia, exemplo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Plano para quem ja conhece seu produto mas ainda nao comprou. Conteudo de oferta, garantias, depoimentos, demonstracoes e reducao de risco.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Esse publico esta quase pronto. O conteudo certo remove as ultimas objecoes e cria o impulso para a decisao de compra.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Oferta irresistivel, garantia, depoimento, reducao de risco, gatilho de decisao.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">🔥</span>
-            <div class="flex-1">
-              <span class="font-medium">Template para muito consciente</span>
-              <span class="text-neutral-500 text-sm ml-2">- Tipo, canal, frequencia, exemplo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Plano para quem ja quer comprar e so precisa do empurrao final. Conteudo de urgencia, escassez, bonus, condicoes especiais e call-to-action direto.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Nao tratar o muito consciente de forma diferente e desperdicar dinheiro. Ele nao precisa de mais educacao — precisa de facilidade para comprar agora.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Urgencia real, escassez, CTA direto, fundo de funil, conversao, oferta relampago.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-5.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-5.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <!-- Modulo 7.6 -->
-    <div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
-      <div class="p-6 border-b border-dark-600">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-orange-400 font-bold">7.6</span>
-          <span class="text-xs text-neutral-500">~60 min</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2">📊 Avaliacao de Desempenho Comercial</h3>
-        <p class="text-neutral-400 text-sm">Sistema completo de avaliacao: indicadores, acompanhamento, feedback e plano de desenvolvimento individual.</p>
-      </div>
-
-      <div class="divide-y divide-dark-600">
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-            <span class="text-lg mr-2">📏</span>
-            <div class="flex-1">
-              <span class="font-medium">Indicadores por perfil</span>
-              <span class="text-neutral-500 text-sm ml-2">- O que medir em cada grupo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Metricas especificas para cada perfil de vendedor: hunters (volume de prospecacao), farmers (retencao e upsell), closers (taxa de conversao), e SDRs (qualificacao de leads).</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Medir todo mundo pela mesma metrica e injusto e ineficaz. Cada perfil tem indicadores proprios que revelam performance real.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">KPIs por perfil, metricas de atividade, metricas de resultado, indicadores de eficiencia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-            <span class="text-lg mr-2">📅</span>
-            <div class="flex-1">
-              <span class="font-medium">Modelo de acompanhamento mensal</span>
-              <span class="text-neutral-500 text-sm ml-2">- Template de avaliacao</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Template estruturado para avaliacao mensal de cada vendedor. Inclui metricas quantitativas, avaliacao qualitativa, comparacao com meses anteriores e plano de acao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Acompanhamento mensal consistente e o que separa gestao amadora de profissional. Cria historico, permite comparacao e documenta evolucao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Avaliacao periodica, historico de performance, tendencias, comparacao temporal, registro.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-            <span class="text-lg mr-2">💬</span>
-            <div class="flex-1">
-              <span class="font-medium">Como dar feedback baseado em dados</span>
-              <span class="text-neutral-500 text-sm ml-2">- Sem achismo</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Metodologia de feedback que usa numeros e evidencias em vez de opiniao. Estrutura: dado + comportamento + impacto + sugestao. Remove subjetividade e defensividade.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Feedback sem dados gera resistencia. Feedback com dados gera acao. O vendedor nao pode discutir com seus proprios numeros.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Feedback baseado em dados, SBI (Situacao-Comportamento-Impacto), objetividade, plano de acao, accountability.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-            <span class="text-lg mr-2">🗺️</span>
-            <div class="flex-1">
-              <span class="font-medium">Plano de desenvolvimento individual</span>
-              <span class="text-neutral-500 text-sm ml-2">- Template por vendedor</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Template de PDI (Plano de Desenvolvimento Individual) com metas especificas, prazos, recursos, responsaveis e indicadores de sucesso por vendedor.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">Treinamento generico nao funciona. Cada vendedor tem gaps diferentes. O PDI personaliza o desenvolvimento e acelera resultados.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">PDI, metas SMART, gap analysis, plano de acao individual, acompanhamento de desenvolvimento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
-            <span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-            <span class="text-lg mr-2">📊</span>
-            <div class="flex-1">
-              <span class="font-medium">Dashboard de equipe</span>
-              <span class="text-neutral-500 text-sm ml-2">- Visao consolidada</span>
-            </div>
-            <span class="text-neutral-500 text-sm">+</span>
-          </button>
-          <div class="topic-explanation px-6 pb-4">
-            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
-              <div>
-                <span class="text-orange-400 font-semibold">O que e:</span>
-                <p class="text-neutral-300 text-sm mt-1">Painel visual consolidado com metricas da equipe inteira: ranking, tendencias, gaps coletivos, comparacao entre vendedores e evolucao temporal.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Por que aprender:</span>
-                <p class="text-neutral-300 text-sm mt-1">O dashboard permite visao rapida da saude comercial da equipe. Em 5 minutos o gestor sabe onde esta o problema e pode agir com precisao.</p>
-              </div>
-              <div>
-                <span class="text-orange-400 font-semibold">Conceitos-chave:</span>
-                <p class="text-neutral-300 text-sm mt-1">Dashboard, metricas consolidadas, ranking, tendencia, visao gerencial, tomada de decisao rapida.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
-        <button onclick="openModal('modulo-7-6.html')" class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors">
-          📖 Ver em Modal
-        </button>
-        <a href="modulo-7-6.html" class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors">
-          📄 Ver Completo
-        </a>
-      </div>
-    </div>
-
-    <div class="mt-12 flex flex-col sm:flex-row gap-4">
-      <a href="../trilha6/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-        ← Trilha 6: Treinamento
-      </a>
-      <a href="../trilha8/index.html" class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors">
-        Proxima: Trilha 8 - Avancado →
-      </a>
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Trilha 7: Avaliacao e Ferramentas</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Modal Overlay -->
-  <div id="modal-overlay" class="fixed inset-0 z-50 hidden">
-    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
-    <div class="relative flex items-start justify-center min-h-screen p-4 pt-8 overflow-y-auto">
-      <div class="relative bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl">
-        <div class="sticky top-0 z-10 flex items-center justify-between p-4 bg-dark-800 border-b border-dark-600">
-          <h3 class="font-bold text-lg text-orange-400">Conteudo do Modulo</h3>
-          <button onclick="closeModal()" class="p-2 hover:bg-dark-700 rounded-lg transition-colors text-neutral-400 hover:text-white">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
-        <div id="modal-content" class="p-6 overflow-y-auto max-h-[calc(90vh-80px)]">
-          <div class="flex items-center justify-center py-12">
-            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-400"></div>
-            <span class="ml-3 text-neutral-400">Carregando...</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400" href="index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4">
+<a class="text-neutral-500 hover:text-neutral-300 text-sm" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<span class="text-orange-400 text-sm font-medium">Track 7</span>
+</div>
+<span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">TRACK 7 - ASSESSMENT AND TOOLS</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🧰 Assessment and Tools</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Ready-made templates, sales scripts, checklists and practical tools to immediately apply to your commercial. Everything you need to execute without inventing from scratch.</p>
+Stats
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">6</div>
+<div class="text-xs text-neutral-400">Modules</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">~30</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">~6h</div>
+<div class="text-xs text-neutral-400">Duration</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">Practical</div>
+<div class="text-xs text-neutral-400">Focus</div>
+</div>
+</div>
+</div>
+</header>
+Modules
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Module 7.1
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.1</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">📋 Commercial Diagnostic Questionnaire</h3>
+<p class="text-neutral-400 text-sm">The 20 questions that reveal the real commercial profile of any salesperson. Tool ready to apply.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">The complete 20 questions</span>
+<span class="text-neutral-500 text-sm ml-2">- 4 blocks of 5 questions</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">A questionnaire structured into 4 blocks (aptitude, desire, learning and execution) with 5 questions each, totaling 20 questions that map the complete commercial profile of any professional.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Without diagnosis, you treat everyone the same. With the questionnaire, you know exactly where each salesperson needs to evolve and can create individual development plans.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Commercial aptitude, desire to sell, learning capacity, execution discipline, Commercial Fit.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">📊</span>
+<div class="flex-1">
+<span class="font-medium">How to score</span>
+<span class="text-neutral-500 text-sm ml-2">- Scale from 1 to 5</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Scoring system from 1 to 5 for each question. 1 = never/very weak, 2 = rarely/weak, 3 = sometimes/average, 4 = often/good, 5 = always/excellent. Total per block: 5 to 25 points.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The score transforms subjective perception into an objective number. It allows you to compare sellers, monitor progress and make decisions based on data.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Likert scale, objective scoring, standardized assessment, baseline, performance measurement.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🏷️</span>
+<div class="flex-1">
+<span class="font-medium">How to sort</span>
+<span class="text-neutral-500 text-sm ml-2">- High, medium, low</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Classification by block: 21-25 points = high competence, 14-20 points = medium competence, 5-13 points = low competence. Each block is evaluated separately to identify specific gaps.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">It allows you to identify precisely where to invest in training. A salesperson with high aptitude but low execution needs monitoring, not a technical course.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Competency ranges, gap analysis, diagnosis by dimension, development prioritization.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">📈</span>
+<div class="flex-1">
+<span class="font-medium">Commercial Fit = average of the 4 blocks</span>
+<span class="text-neutral-500 text-sm ml-2">- Overall seller score</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The Commercial Fit is the average of the scores from the 4 blocks converted to a scale of 0-10. Score of 8.5-10 = strong, 7-8.4 = good, 5.5-6.9 = partial, below 5.5 = low commercial fit.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Commercial Fit is the only indicator that summarizes commercial capacity. Allows quick decisions about hiring, promotion, investment in training or relocation.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Commercial Fit, general score, weighted average, profile classification, data-based decision.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🖨️</span>
+<div class="flex-1">
+<span class="font-medium">Template ready for printing/use</span>
+<span class="text-neutral-500 text-sm ml-2">- Apply immediately</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Complete form formatted and ready to print or use digitally. Includes instructions, scale, all 20 questions, space for scoring, automatic calculation and observation area.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Eliminates the “I don’t have a tool” excuse. The template is ready — just print and apply. Zero preparation time, 100% execution.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Standardized template, evaluation form, management tool, immediate application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-1.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-1.html">📄 See Full</a>
+</div>
+</div>
+Module 7.2
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.2</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🎙️ Ready-made Sales Script</h3>
+<p class="text-neutral-400 text-sm">Complete opening, diagnosis, value presentation and closing scripts ready to use.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">👋</span>
+<div class="flex-1">
+<span class="font-medium">Opening script</span>
+<span class="text-neutral-500 text-sm ml-2">- Start without sounding like a salesman</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Opening script that creates genuine connection before any offer. Includes personal presentation model, context question and natural transition to the business conversation.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The first 30 seconds define whether the customer will listen to you or create a barrier. A good opening script eliminates initial resistance.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Rapport, first impression, consultative opening, breaking resistance, context question.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🔍</span>
+<div class="flex-1">
+<span class="font-medium">Diagnostic script</span>
+<span class="text-neutral-500 text-sm ml-2">- 4 questions in sequence</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Sequence of 4 questions that reveal the customer's current situation, problem, impact and urgency. It flows like a natural conversation, not like an interrogation.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Without diagnosis, you present a generic solution. With diagnosis, you connect your offer to the customer's real problem and they feel understood.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Situation questions, problem questions, impact questions, need questions, consultative selling.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">💎</span>
+<div class="flex-1">
+<span class="font-medium">Value presentation script</span>
+<span class="text-neutral-500 text-sm ml-2">- Model "From what you told me..."</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Presentation model that connects the diagnosis to the solution using the bridge phrase "From what you told me...". Personalize the proposal using the client’s own words.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">When the customer hears their own words in the presentation, they feel that the solution was made for them. This dramatically increases the conversion rate.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Bridge phrase, mirroring, personalized proposal, diagnosis-solution connection, perceived value.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🤝</span>
+<div class="flex-1">
+<span class="font-medium">Closing script</span>
+<span class="text-neutral-500 text-sm ml-2">- Drive the decision</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Techniques for leading the customer to make a decision without pressure. Includes closing questions, assumed alternative, and natural transition to next steps.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Many sellers do everything right until the end and lose the sale because they don't know how to close. The script eliminates this gap.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Consultative closing, commitment question, alternative assumed, next steps, call to action.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🔄</span>
+<div class="flex-1">
+<span class="font-medium">Variations by segment</span>
+<span class="text-neutral-500 text-sm ml-2">- Services, products, B2B, B2C</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Adaptations of the base script for different sales contexts: services (intangible), products (tangible), B2B (companies) and B2C (end consumer). Each segment has its own language and approach.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">A generic script does not work for everyone. Adaptations by segment ensure that the approach is relevant and natural for each type of customer.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Segmentation, language adaptation, B2B vs B2C, selling services vs products, contextualization.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-2.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-2.html">📄 See Full</a>
+</div>
+</div>
+Module 7.3
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.3</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">🛡️ Map of Objections and Responses</h3>
+<p class="text-neutral-400 text-sm">The 5 most common objections with 3 answer variations each. 15 ready-to-use answers.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">💸</span>
+<div class="flex-1">
+<span class="font-medium">"It's expensive"</span>
+<span class="text-neutral-500 text-sm ml-2">- 3 answer variations</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The price objection is the most common and usually hides another real objection. The 3 response variations address: lack of perceived value, comparison with competitors, and real budget limitations.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Salespeople who don't know how to answer "it's expensive" lose sales unnecessarily. With the 3 variations, you have an answer for any price context.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Price objection, perceived value, anchoring, comparison, investment reformulation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">🤔</span>
+<div class="flex-1">
+<span class="font-medium">"I need to think"</span>
+<span class="text-neutral-500 text-sm ml-2">- 3 answer variations</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">When a client says “I need to think,” it usually means they lacked information, confidence, or urgency. The 3 variations treat each root cause differently.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">"I need to think" is the most dangerous objection because it sounds polite but silently kills the sale. Those who leave to "think" rarely come back.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Objection to postponement, lack of urgency, insufficient information, fear of deciding, rescue of interest.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">⏰</span>
+<div class="flex-1">
+<span class="font-medium">"I'll see later"</span>
+<span class="text-neutral-500 text-sm ml-2">- 3 answer variations</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Variation of "I need to think" with an emphasis on timing. The 3 answers address: creating real urgency, highlighting the cost of waiting, and ensuring the next concrete step.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">"After" never comes. If the seller does not address this objection right away, the timing will be lost and the sale will go cold. Every day of delay reduces the chance of closing.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Urgency, cost of inaction, sales timing, concrete next step, structured follow-up.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">⚖️</span>
+<div class="flex-1">
+<span class="font-medium">"I want to compare"</span>
+<span class="text-neutral-500 text-sm ml-2">- 3 answer variations</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">When the customer wants to compare, it may be due to insecurity, research habits or a lack of clear differentiation. The 3 answers help to position yourself before the comparison takes place.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">If the customer goes out to compare without clear criteria, they only compare price. The answers help to define the comparison criteria in your favor.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Differentiation, comparison criteria, positioning, value anchoring, competitive advantage.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🚫</span>
+<div class="flex-1">
+<span class="font-medium">"It's not a priority"</span>
+<span class="text-neutral-500 text-sm ml-2">- 3 answer variations</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">The priority objection reveals that the customer did not connect your solution to an urgent pain. The 3 answers help to highlight the impact of not resolving it now.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">If the client says it is not a priority, the diagnosis has failed. Responses help reconnect the conversation to the real problem and create genuine urgency.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Priority, pain vs desire, cost of inaction, problem reformulation, genuine urgency.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-3.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-3.html">📄 See Full</a>
+</div>
+</div>
+Module 7.4
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.4</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">✅ Commercial Manager Checklist</h3>
+<p class="text-neutral-400 text-sm">Complete commercial manager routine: what to do per week, per month, what to observe and what to correct.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">📅</span>
+<div class="flex-1">
+<span class="font-medium">Weekly checklist</span>
+<span class="text-neutral-500 text-sm ml-2">- What to do every week</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">List of activities that the commercial manager must perform every week: pipeline meeting, listening to calls, individual feedback, analyzing metrics and planning the following week.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Manager without a routine puts out fires. A manager with a weekly checklist prevents problems before they happen and keeps the team on pace.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Management routine, pipeline meeting, one-on-one, weekly analysis, planning.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">📆</span>
+<div class="flex-1">
+<span class="font-medium">Monthly checklist</span>
+<span class="text-neutral-500 text-sm ml-2">- What to review every month</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Monthly review that includes: analysis of results vs goals, individual assessment of each salesperson, process review, strategy adjustment and planning for the following month.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The monthly cycle is where the manager makes strategic adjustments. Without this review, problems accumulate and only appear when it is too late.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Monthly review, goals vs achieved, individual assessment, strategy adjustment, PDCA cycle.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">👀</span>
+<div class="flex-1">
+<span class="font-medium">What to watch for in the team</span>
+<span class="text-neutral-500 text-sm ml-2">- Warning and progress signals</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Behavioral indicators that reveal whether the salesperson is progressing or regressing: energy, volume of activities, quality of conversations, attitude in meetings, punctuality in follow-ups.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Numbers show the past. Behavior shows the future. The manager who observes early signs acts before results suffer.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Behavior indicators, warning signs, leading indicators, active observation, early intervention.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🎯</span>
+<div class="flex-1">
+<span class="font-medium">What to fix first</span>
+<span class="text-neutral-500 text-sm ml-2">- Management priorities</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Hierarchy of correction priorities: 1) Volume of activity, 2) Quality of approach, 3) Pipeline management, 4) Closing technique. Always fix in the right order.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Correcting in the wrong order wastes time. There is no point teaching closing technique to those who do not do enough activity. Priority saves time and results.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Prioritization, correction hierarchy, root cause, impact vs effort, quick wins.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">📋</span>
+<div class="flex-1">
+<span class="font-medium">Manager routine template</span>
+<span class="text-neutral-500 text-sm ml-2">- Complete template agenda</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Model agenda with distribution of activities by day of the week. Includes blocks of time for meetings, analysis, feedback, training and planning.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Managers without a model agenda waste their day reacting. With the template, each day has a defined purpose and the team knows when to count on the leader.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Time management, focus blocks, model agenda, management discipline, predictability.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-4.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-4.html">📄 See Full</a>
+</div>
+</div>
+Module 7.5
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.5</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">📢 Content Plan by Level of Awareness</h3>
+<p class="text-neutral-400 text-sm">Complete content templates for each level of customer awareness: type, channel, frequency and examples.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">😴</span>
+<div class="flex-1">
+<span class="font-medium">Template for unconscious</span>
+<span class="text-neutral-500 text-sm ml-2">- Type, channel, frequency, example</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Content plan for people who don't yet know they have a problem. Focus on light entertainment and educational content that sparks curiosity without selling.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The largest share of the market is unconscious. If you only talk to those who already want to buy, you miss 80% of future opportunities.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Top of the funnel content, awakening interest, market education, awareness, reach.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">😟</span>
+<div class="flex-1">
+<span class="font-medium">Template for problem aware</span>
+<span class="text-neutral-500 text-sm ml-2">- Type, channel, frequency, example</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Plan for those who already know they have a problem but don't know how to solve it. Content focused on naming the pain, amplifying consequences and showing that there is a way.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">This audience is ready to be educated. The right content turns someone frustrated into someone actively looking for a solution — yours.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Problem agitation, educational content, name of the pain, consequence of not acting, middle of the funnel.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">🔎</span>
+<div class="flex-1">
+<span class="font-medium">Template for solution aware</span>
+<span class="text-neutral-500 text-sm ml-2">- Type, channel, frequency, example</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Plan for those who know they need something but don't know your product. Comparative content, demonstrations, success stories and social proof.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">This public is evaluating options. The right content positions you as the best choice even before the sales conversation takes place.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Social proof, comparison, differentiation, authority, consideration.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🎁</span>
+<div class="flex-1">
+<span class="font-medium">Product Aware Template</span>
+<span class="text-neutral-500 text-sm ml-2">- Type, channel, frequency, example</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Plan for those who already know your product but haven't purchased it yet. Offer content, guarantees, testimonials, demonstrations and risk reduction.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">This audience is almost ready. The right content removes the last objections and creates the momentum for the purchasing decision.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Irresistible offer, guarantee, testimonial, risk reduction, decision trigger.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">🔥</span>
+<div class="flex-1">
+<span class="font-medium">Template for very conscious</span>
+<span class="text-neutral-500 text-sm ml-2">- Type, channel, frequency, example</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Plan for those who already want to buy and just need the final push. Urgent content, scarcity, bonuses, special conditions and direct call-to-action.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Not treating the very conscious differently and wasting money. He doesn't need more education — he needs ease in buying now.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Real urgency, scarcity, direct CTA, bottom of the funnel, conversion, lightning offer.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-5.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-5.html">📄 See Full</a>
+</div>
+</div>
+Module 7.6
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6 overflow-hidden">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2">
+<span class="text-orange-400 font-bold">7.6</span>
+<span class="text-xs text-neutral-500">~60 min</span>
+</div>
+<h3 class="text-xl font-bold mb-2">📊 Commercial Performance Assessment</h3>
+<p class="text-neutral-400 text-sm">Complete evaluation system: indicators, monitoring, feedback and individual development plan.</p>
+</div>
+<div class="divide-y divide-dark-600">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg mr-2">📏</span>
+<div class="flex-1">
+<span class="font-medium">Indicators by profile</span>
+<span class="text-neutral-500 text-sm ml-2">- What to measure in each group</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Specific metrics for each seller profile: hunters (prospecting volume), farmers (retention and upsell), closers (conversion rate), and SDRs (lead qualification).</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Measuring everyone by the same metric is unfair and ineffective. Each profile has its own indicators that reveal real performance.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">KPIs by profile, activity metrics, result metrics, efficiency indicators.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg mr-2">📅</span>
+<div class="flex-1">
+<span class="font-medium">Monthly tracking model</span>
+<span class="text-neutral-500 text-sm ml-2">- Evaluation template</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Structured template for monthly evaluation of each seller. Includes quantitative metrics, qualitative assessment, comparison with previous months and action plan.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Consistent monthly monitoring is what separates amateur management from professional management. Creates history, allows comparison and documents evolution.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Periodic evaluation, performance history, trends, temporal comparison, recording.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg mr-2">💬</span>
+<div class="flex-1">
+<span class="font-medium">How to give data-driven feedback</span>
+<span class="text-neutral-500 text-sm ml-2">- No guesswork</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Feedback methodology that uses numbers and evidence instead of opinion. Structure: data + behavior + impact + suggestion. Removes subjectivity and defensiveness.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Feedback without data generates resistance. Feedback with data generates action. The seller cannot argue with his own numbers.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Data-based feedback, SBI (Situation-Behavior-Impact), objectivity, action plan, accountability.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg mr-2">🗺️</span>
+<div class="flex-1">
+<span class="font-medium">Individual development plan</span>
+<span class="text-neutral-500 text-sm ml-2">- Template by seller</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">PDI (Individual Development Plan) template with specific goals, deadlines, resources, people responsible and success indicators per salesperson.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">Generic training doesn't work. Each seller has different gaps. PDI personalizes development and accelerates results.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">PDI, SMART goals, gap analysis, individual action plan, development monitoring.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
+<span class="w-7 h-7 rounded-full bg-orange-500/20 text-orange-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg mr-2">📊</span>
+<div class="flex-1">
+<span class="font-medium">Team Dashboard</span>
+<span class="text-neutral-500 text-sm ml-2">- Consolidated vision</span>
+</div>
+<span class="text-neutral-500 text-sm">+</span>
+</button>
+<div class="topic-explanation px-6 pb-4">
+<div class="bg-dark-700/50 rounded-lg p-4 space-y-3">
+<div>
+<span class="text-orange-400 font-semibold">What is it:</span>
+<p class="text-neutral-300 text-sm mt-1">Consolidated visual dashboard with metrics for the entire team: ranking, trends, collective gaps, comparison between sellers and temporal evolution.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Why learn:</span>
+<p class="text-neutral-300 text-sm mt-1">The dashboard allows a quick view of the team's commercial health. In 5 minutes the manager knows where the problem is and can act precisely.</p>
+</div>
+<div>
+<span class="text-orange-400 font-semibold">Key concepts:</span>
+<p class="text-neutral-300 text-sm mt-1">Dashboard, consolidated metrics, ranking, trend, management vision, quick decision making.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+<button class="px-4 py-2 text-sm bg-orange-600/20 hover:bg-orange-600/30 text-orange-400 border border-orange-500/30 rounded-lg font-medium transition-colors" onclick="openModal('modulo-7-6.html')">📖 View in Modal</button>
+<a class="px-4 py-2 text-sm bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-medium transition-colors" href="modulo-7-6.html">📄 See Full</a>
+</div>
+</div>
+<div class="mt-12 flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha6/index.html">← Track 6: Training</a>
+<a class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors" href="../trilha8/index.html">Next: Track 8 - Advanced →</a>
+</div>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Track 7: Assessment and Tools</div>
+</div>
+</div>
+</footer>
+Modal Overlay
+<div class="fixed inset-0 z-50 hidden" id="modal-overlay">
+<div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+<div class="relative flex items-start justify-center min-h-screen p-4 pt-8 overflow-y-auto">
+<div class="relative bg-dark-800 rounded-2xl border border-dark-600 w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl">
+<div class="sticky top-0 z-10 flex items-center justify-between p-4 bg-dark-800 border-b border-dark-600">
+<h3 class="font-bold text-lg text-orange-400">Module Content</h3>
+<button class="p-2 hover:bg-dark-700 rounded-lg transition-colors text-neutral-400 hover:text-white" onclick="closeModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<div class="p-6 overflow-y-auto max-h-[calc(90vh-80px)]" id="modal-content">
+<div class="flex items-center justify-center py-12">
+<div class="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-400"></div>
+<span class="ml-3 text-neutral-400">Loading...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+Scripts
+<script data-notranslate="True">
     function toggleTopic(button) {
       const topicItem = button.closest('.topic-item');
       const explanation = topicItem.querySelector('.topic-explanation');
@@ -1238,6 +1154,5 @@
       if (e.key === 'Escape') closeModal();
     });
   </script>
-
 </body>
 </html>

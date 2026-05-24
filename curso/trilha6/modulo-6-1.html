@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 6.1: Como montar um programa de treinamento | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 6.1: How to set up a training program | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,503 +32,439 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-cyan-500/10 text-cyan-400">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-cyan-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 6</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-cyan-400 font-medium">Modulo 6.1</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 6.1
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">📋 Como montar um programa de treinamento</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Construa um programa de treinamento do zero: do diagnostico ao calendario de implementacao. Simples, pratico e funcional desde o primeiro dia.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-cyan-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-cyan-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-cyan-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-cyan-400">Execucao</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🔍 Diagnostico antes de treinar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O erro mais comum em treinamento e <strong class="text-cyan-400">ensinar sem saber o que falta</strong>. Antes de montar qualquer programa, voce precisa mapear onde cada pessoa esta. Diagnostico nao e opcional - e o alicerce de tudo.
-      </p>
-
-      <div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Como fazer o diagnostico</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-cyan-400 mt-1">✓</span>
-            <span>Ouca gravacoes de atendimentos reais de cada vendedor</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-cyan-400 mt-1">✓</span>
-            <span>Observe 3-5 atendimentos ao vivo sem interferir</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-cyan-400 mt-1">✓</span>
-            <span>Analise as metricas individuais dos ultimos 30 dias</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-cyan-400 mt-1">✓</span>
-            <span>Pergunte ao vendedor: "onde voce sente mais dificuldade?"</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-cyan-900/20 rounded-xl p-6 border border-cyan-500/30">
-          <h4 class="font-bold text-cyan-400 mb-4">✓ Com diagnostico</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Joao nao faz perguntas de diagnostico"</li>
-            <li>"Maria pula a etapa de valor"</li>
-            <li>"Pedro congela nas objecoes"</li>
-            <li>Treinamento cirurgico e eficiente</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Sem diagnostico</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Vamos treinar todo mundo igual"</li>
-            <li>"O tema de hoje e motivacao"</li>
-            <li>"Assistam esse video de vendas"</li>
-            <li>Generico e sem impacto</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Escolha 3 vendedores. Ouca 2 atendimentos de cada. Anote em uma tabela: (1) Fez perguntas? (2) Identificou dor? (3) Apresentou valor? (4) Contornou objecao? (5) Tentou fechamento? Voce tera o diagnostico em 1 hora.
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-cyan-500/10 text-cyan-400" href="index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-cyan-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 6</a>
+<span class="text-neutral-600">/</span>
+<span class="text-cyan-400 font-medium">Module 6.1</span>
+</div>
+<span class="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-semibold rounded-full mb-4">MODULE 6.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">📋 How to set up a training program</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Build a training program from scratch: from diagnosis to implementation schedule. Simple, practical and functional from day one.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-cyan-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-cyan-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-cyan-400">Practical</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-cyan-400">Execution</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🔍 Diagnosis before training</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The most common mistake in training and<strong class="text-cyan-400">teach without knowing what is missing</strong>. Before putting together any program, you need to map out where each person is. Diagnosis is not optional - it is the foundation of everything.</p>
+<div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">How to make the diagnosis</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-cyan-400 mt-1">✓</span>
+<span>Listen to recordings of real customer service from each seller</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-cyan-400 mt-1">✓</span>
+<span>Observe 3-5 live calls without interfering</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-cyan-400 mt-1">✓</span>
+<span>Analyze individual metrics from the last 30 days</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-cyan-400 mt-1">✓</span>
+<span>Ask the seller: "where do you have the most difficulty?"</span>
+</li>
+</ul>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-cyan-900/20 rounded-xl p-6 border border-cyan-500/30">
+<h4 class="font-bold text-cyan-400 mb-4">✓ With diagnosis</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Joao doesn't ask diagnostic questions"</li>
+<li>"Maria skips the value stage"</li>
+<li>"Peter freezes in his objections"</li>
+<li>Efficient surgical training</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ No diagnosis</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Let's train everyone the same"</li>
+<li>"Today's theme is motivation"</li>
+<li>"Watch this sales video"</li>
+<li>Generic and without impact</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">Choose 3 sellers. Listen to 2 sessions of each. Write down in a table: (1) Did you ask questions? (2) Did you identify pain? (3) Did it present value? (4) Did you get around the objection? (5) Did you try to close? You will have the diagnosis in 1 hour.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🎯 Set clear goals</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">"Improve sales" is not the objective. And desire. Purpose and:<strong class="text-cyan-400">"In 30 days, 100% of the team will ask the 4 diagnostic questions in all consultations"</strong>. The difference is that one can be measured and the other cannot.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">Training Objectives Framework</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+<span class="text-cyan-400 font-bold text-sm">S</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Specific</h4>
+<p class="text-sm text-neutral-400">"Ask the 4 diagnostic questions" (not "provide better service")</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+<span class="text-cyan-400 font-bold text-sm">M</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Measurable</h4>
+<p class="text-sm text-neutral-400">"In 100% of cases" (not "in the majority")</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+<span class="text-cyan-400 font-bold text-sm">A</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Attainable</h4>
+<p class="text-sm text-neutral-400">"4 questions" is possible for any trained salesperson</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+<span class="text-cyan-400 font-bold text-sm">R</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Relevant</h4>
+<p class="text-sm text-neutral-400">Diagnosis directly improves conversion</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+<span class="text-cyan-400 font-bold text-sm">T</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Temporal</h4>
+<p class="text-sm text-neutral-400">"In 30 days" (not "soon")</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspective</h3>
+<p class="text-neutral-300">Companies with clear training objectives have<strong class="text-blue-400">3x more chance</strong>to see results in the numbers. Not because the training is better, but because they know what they are looking for.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🧱 Minimum viable structure</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">You don't need an e-learning platform, professional handbooks or an HR department. THE<strong class="text-cyan-400">minimum viable structure</strong>A training program fits into 3 elements that you can start tomorrow.</p>
+<div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">The 3 pillars of minimal training</h3>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-3xl mb-2">📚</div>
+<div class="font-semibold text-neutral-200 text-sm">Theme of the Day</div>
+<div class="text-xs text-neutral-400 mt-1">One concept per session</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-3xl mb-2">🎯</div>
+<div class="font-semibold text-neutral-200 text-sm">Guided Practice</div>
+<div class="text-xs text-neutral-400 mt-1">Apply instantly</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-3xl mb-2">💬</div>
+<div class="font-semibold text-neutral-200 text-sm">Feedback</div>
+<div class="text-xs text-neutral-400 mt-1">Fix immediately</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">Example of a 15-minute session</h3>
+<div class="space-y-3">
+<div class="flex items-center space-x-3">
+<span class="text-cyan-400 font-bold text-sm w-16">0-3 min</span>
+<span class="text-neutral-300">Review the concept: "Today we will practice diagnostic questions"</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="text-cyan-400 font-bold text-sm w-16">3-10 min</span>
+<span class="text-neutral-300">Double simulation: one plays the seller, the other the customer</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="text-cyan-400 font-bold text-sm w-16">10-15 min</span>
+<span class="text-neutral-300">Group feedback: what worked, what to adjust</span>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of Thumb</h3>
+<p class="text-neutral-300">If you're expecting to have everything perfect to start, you'll never start.<strong class="text-primary">Start with the minimum and improve every week</strong>. An imperfect program that runs is infinitely better than a perfect program that never gets off the ground.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">📅 Implementation calendar</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">A training calendar turns intention into<strong class="text-cyan-400">commitment</strong>. When it's on the calendar, it happens. When it's "for when" it never happens. Time structure is what separates shows that work from shows that die in the second week.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">Weekly calendar template</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-dark-600">
+<th class="text-left py-2 text-cyan-400">Day</th>
+<th class="text-left py-2 text-cyan-400">Activity</th>
+<th class="text-left py-2 text-cyan-400">Duration</th>
+<th class="text-left py-2 text-cyan-400">Responsible</th>
+</tr>
+</thead>
+<tbody class="text-neutral-300">
+<tr class="border-b border-dark-600/50">
+<td class="py-2">Second</td>
+<td class="py-2">Microtraining: theme of the week</td>
+<td class="py-2">15 min</td>
+<td class="py-2">Manager</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-2">Third</td>
+<td class="py-2">Practice in pairs</td>
+<td class="py-2">15 min</td>
+<td class="py-2">Doubles</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-2">Fourth</td>
+<td class="py-2">Role play with feedback</td>
+<td class="py-2">30 min</td>
+<td class="py-2">Manager</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-2">Fifth</td>
+<td class="py-2">Review of real services</td>
+<td class="py-2">15 min</td>
+<td class="py-2">Team</td>
+</tr>
+<tr>
+<td class="py-2">Friday</td>
+<td class="py-2">Metrics review + celebration</td>
+<td class="py-2">15 min</td>
+<td class="py-2">Manager</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Quick account</h3>
+<p class="text-neutral-300">Weekly total:<strong class="text-blue-400">1h30 training</strong>. In a month: 6 hours. In a quarter: 18 hours. More than 90% of companies invest in an entire year. And without taking the team out of operation.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🛠️ Required resources</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The good news:<strong class="text-cyan-400">you already have almost everything you need</strong>. Effective training does not require financial investment. It requires intention, structure and consistency. See what you need and what you probably already have.</p>
+<div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">Resource checklist</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📱</div>
+<div class="font-semibold text-neutral-200 text-sm">Cell phone</div>
+<div class="text-xs text-neutral-400">To record simulations</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📋</div>
+<div class="font-semibold text-neutral-200 text-sm">Printed checklist</div>
+<div class="text-xs text-neutral-400">To evaluate services</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📝</div>
+<div class="font-semibold text-neutral-200 text-sm">Sales Script</div>
+<div class="text-xs text-neutral-400">To guide training</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">⏱️</div>
+<div class="font-semibold text-neutral-200 text-sm">15 minutes/day</div>
+<div class="text-xs text-neutral-400">Time commitment</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-cyan-400 mb-4">What is NOT necessary</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">✗</span>
+<span>Expensive e-learning platform</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">✗</span>
+<span>External training consultant</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">✗</span>
+<span>Exclusive training room</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">✗</span>
+<span>Professional handouts and materials</span>
+</li>
+</ul>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Immediate action</h3>
+<p class="text-neutral-300">Today: print the sales script, create the assessment checklist on an A4 sheet, and define the time for the first training.<strong class="text-primary">In 30 minutes you have everything ready to start tomorrow</strong>.
         </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🎯 Definir objetivos claros</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        "Melhorar as vendas" nao e objetivo. E desejo. Objetivo e: <strong class="text-cyan-400">"Em 30 dias, 100% da equipe fara as 4 perguntas de diagnostico em todos os atendimentos"</strong>. A diferenca e que um pode ser medido e o outro nao.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Framework de Objetivos de Treinamento</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <span class="text-cyan-400 font-bold text-sm">S</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Especifico</h4>
-              <p class="text-sm text-neutral-400">"Fazer as 4 perguntas de diagnostico" (nao "atender melhor")</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <span class="text-cyan-400 font-bold text-sm">M</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Mensuravel</h4>
-              <p class="text-sm text-neutral-400">"Em 100% dos atendimentos" (nao "na maioria")</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <span class="text-cyan-400 font-bold text-sm">A</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Atingivel</h4>
-              <p class="text-sm text-neutral-400">"4 perguntas" e possivel para qualquer vendedor com treino</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <span class="text-cyan-400 font-bold text-sm">R</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Relevante</h4>
-              <p class="text-sm text-neutral-400">Diagnostico melhora conversao diretamente</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <span class="text-cyan-400 font-bold text-sm">T</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Temporal</h4>
-              <p class="text-sm text-neutral-400">"Em 30 dias" (nao "em breve")</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspectiva</h3>
-        <p class="text-neutral-300">
-          Empresas com objetivos de treinamento claros tem <strong class="text-blue-400">3x mais chance</strong> de ver resultado nos numeros. Nao porque o treinamento e melhor, mas porque sabem o que estao buscando.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🧱 Estrutura minima viavel</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Voce nao precisa de uma plataforma de e-learning, apostilas profissionais ou um departamento de RH. A <strong class="text-cyan-400">estrutura minima viavel</strong> de um programa de treinamento cabe em 3 elementos que voce pode comecar amanha.
-      </p>
-
-      <div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Os 3 pilares do treinamento minimo</h3>
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-3xl mb-2">📚</div>
-            <div class="font-semibold text-neutral-200 text-sm">Tema do Dia</div>
-            <div class="text-xs text-neutral-400 mt-1">Um conceito por sessao</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-3xl mb-2">🎯</div>
-            <div class="font-semibold text-neutral-200 text-sm">Pratica Guiada</div>
-            <div class="text-xs text-neutral-400 mt-1">Aplicar na hora</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-3xl mb-2">💬</div>
-            <div class="font-semibold text-neutral-200 text-sm">Feedback</div>
-            <div class="text-xs text-neutral-400 mt-1">Corrigir imediatamente</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Exemplo de sessao de 15 minutos</h3>
-        <div class="space-y-3">
-          <div class="flex items-center space-x-3">
-            <span class="text-cyan-400 font-bold text-sm w-16">0-3 min</span>
-            <span class="text-neutral-300">Revisar o conceito: "Hoje vamos praticar perguntas de diagnostico"</span>
-          </div>
-          <div class="flex items-center space-x-3">
-            <span class="text-cyan-400 font-bold text-sm w-16">3-10 min</span>
-            <span class="text-neutral-300">Simulacao em dupla: um faz o vendedor, outro o cliente</span>
-          </div>
-          <div class="flex items-center space-x-3">
-            <span class="text-cyan-400 font-bold text-sm w-16">10-15 min</span>
-            <span class="text-neutral-300">Feedback do grupo: o que funcionou, o que ajustar</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra Pratica</h3>
-        <p class="text-neutral-300">
-          Se voce esta esperando ter tudo perfeito para comecar, nunca vai comecar. <strong class="text-primary">Comece com o minimo e melhore a cada semana</strong>. Um programa imperfeito que roda e infinitamente melhor que um programa perfeito que nunca sai do papel.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">📅 Calendario de implementacao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Um calendario de treinamento transforma intencao em <strong class="text-cyan-400">compromisso</strong>. Quando esta no calendario, acontece. Quando fica "para quando der", nunca da. A estrutura temporal e o que separa programas que funcionam de programas que morrem na segunda semana.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Template de calendario semanal</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-dark-600">
-                <th class="text-left py-2 text-cyan-400">Dia</th>
-                <th class="text-left py-2 text-cyan-400">Atividade</th>
-                <th class="text-left py-2 text-cyan-400">Duracao</th>
-                <th class="text-left py-2 text-cyan-400">Responsavel</th>
-              </tr>
-            </thead>
-            <tbody class="text-neutral-300">
-              <tr class="border-b border-dark-600/50">
-                <td class="py-2">Segunda</td>
-                <td class="py-2">Microtreinamento: tema da semana</td>
-                <td class="py-2">15 min</td>
-                <td class="py-2">Gestor</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-2">Terca</td>
-                <td class="py-2">Pratica em dupla</td>
-                <td class="py-2">15 min</td>
-                <td class="py-2">Duplas</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-2">Quarta</td>
-                <td class="py-2">Role play com feedback</td>
-                <td class="py-2">30 min</td>
-                <td class="py-2">Gestor</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-2">Quinta</td>
-                <td class="py-2">Revisao de atendimentos reais</td>
-                <td class="py-2">15 min</td>
-                <td class="py-2">Equipe</td>
-              </tr>
-              <tr>
-                <td class="py-2">Sexta</td>
-                <td class="py-2">Revisao de metricas + celebracao</td>
-                <td class="py-2">15 min</td>
-                <td class="py-2">Gestor</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Conta rapida</h3>
-        <p class="text-neutral-300">
-          Total semanal: <strong class="text-blue-400">1h30 de treinamento</strong>. Em um mes: 6 horas. Em um trimestre: 18 horas. Mais do que 90% das empresas investem em um ano inteiro. E sem tirar a equipe da operacao.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🛠️ Recursos necessarios</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A boa noticia: <strong class="text-cyan-400">voce ja tem quase tudo que precisa</strong>. Treinamento eficaz nao exige investimento financeiro. Exige intencao, estrutura e consistencia. Veja o que voce precisa e o que provavelmente ja tem.
-      </p>
-
-      <div class="bg-gradient-to-br from-cyan-900/20 to-dark-800 rounded-xl p-6 border border-cyan-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Checklist de recursos</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📱</div>
-            <div class="font-semibold text-neutral-200 text-sm">Celular</div>
-            <div class="text-xs text-neutral-400">Para gravar simulacoes</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📋</div>
-            <div class="font-semibold text-neutral-200 text-sm">Checklist impresso</div>
-            <div class="text-xs text-neutral-400">Para avaliar atendimentos</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📝</div>
-            <div class="font-semibold text-neutral-200 text-sm">Script de vendas</div>
-            <div class="text-xs text-neutral-400">Para guiar o treinamento</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">⏱️</div>
-            <div class="font-semibold text-neutral-200 text-sm">15 minutos/dia</div>
-            <div class="text-xs text-neutral-400">Compromisso de tempo</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">O que NAO e necessario</h3>
-        <ul class="space-y-2 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">✗</span>
-            <span>Plataforma de e-learning cara</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">✗</span>
-            <span>Consultor externo de treinamento</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">✗</span>
-            <span>Sala de treinamento exclusiva</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">✗</span>
-            <span>Apostilas e materiais profissionais</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Acao imediata</h3>
-        <p class="text-neutral-300">
-          Hoje mesmo: imprima o script de vendas, crie o checklist de avaliacao em uma folha A4, e defina o horario do primeiro treinamento. <strong class="text-primary">Em 30 minutos voce tem tudo pronto para comecar amanha</strong>.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-cyan-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-cyan-400">✓</span>
-              <span>Diagnostico e o primeiro passo obrigatorio</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-cyan-400">✓</span>
-              <span>Objetivos precisam ser SMART</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-cyan-400">✓</span>
-              <span>A estrutura minima tem 3 pilares</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-cyan-400">✓</span>
-              <span>Calendario transforma intencao em compromisso</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-cyan-400">✓</span>
-              <span>Recursos necessarios sao minimos e acessiveis</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-cyan-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-cyan-400 font-bold text-sm">6.2</span>
-            <h4 class="font-bold mt-1">👥 Treinamento por perfil</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Como personalizar o treinamento para cada grupo: A, B e C. Intensidade, formato e expectativa diferentes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Voltar para Trilha 6
-        </a>
-        <a href="modulo-6-2.html" class="flex-1 text-center px-6 py-3 bg-cyan-600 text-white rounded-lg font-semibold hover:bg-cyan-500 transition-colors">
-          Proximo: Modulo 6.2 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 6.1: Como montar um programa de treinamento</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-cyan-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-cyan-400">✓</span>
+<span>Diagnosis is the first mandatory step</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-cyan-400">✓</span>
+<span>Goals need to be SMART</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-cyan-400">✓</span>
+<span>The minimum structure has 3 pillars</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-cyan-400">✓</span>
+<span>Calendar turns intention into commitment</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-cyan-400">✓</span>
+<span>Required resources are minimal and accessible</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-cyan-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-cyan-400 font-bold text-sm">6.2</span>
+<h4 class="font-bold mt-1">👥 Profile training</h4>
+<p class="text-neutral-400 text-sm mt-2">How to customize training for each group: A, B and C. Different intensity, format and expectations.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Return to Track 6</a>
+<a class="flex-1 text-center px-6 py-3 bg-cyan-600 text-white rounded-lg font-semibold hover:bg-cyan-500 transition-colors" href="modulo-6-2.html">Next: Module 6.2 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 6.1: How to set up a training program</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -548,6 +484,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

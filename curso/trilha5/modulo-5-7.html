@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 5.7: Integrando equipe e estrategia | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 5.7: Integrating team and strategy | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -20,450 +20,423 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100">
-
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
-          <span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-rose-500/10 text-rose-400"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-red-400 hover:bg-red-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
-    <!-- Header -->
-    <div class="mb-8">
-      <div class="flex items-center space-x-3 mb-4">
-        <a href="index.html" class="text-rose-400 hover:text-rose-300 text-sm transition-colors">← Trilha 5</a>
-        <span class="text-neutral-600">|</span>
-        <span class="text-neutral-400 text-sm">Modulo 5.7</span>
-      </div>
-      <div class="bg-gradient-to-r from-rose-900/30 to-dark-800 border border-rose-500/20 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-start space-x-4">
-          <span class="text-4xl sm:text-5xl">🔗</span>
-          <div>
-            <h1 class="text-2xl sm:text-3xl font-bold text-neutral-100 mb-2">Integrando equipe e estrategia</h1>
-            <p class="text-neutral-300 text-lg">Marketing, vendas e gestao nao sao departamentos separados — sao engrenagens de uma maquina so. Neste modulo, voce aprende a orquestrar tudo: qual perfil de vendedor atua em cada nivel, quando escalar, e como montar o modelo integrado.</p>
-            <div class="flex flex-wrap gap-3 mt-4">
-              <span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">5 Topicos</span>
-              <span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">~45 min</span>
-              <span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">Estrategico</span>
-              <span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">Integracao</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Topico 1 -->
-    <section class="mb-10">
-      <div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center space-x-3 mb-4">
-          <span class="text-2xl">🎯</span>
-          <h2 class="text-xl sm:text-2xl font-bold text-rose-400">1. Qual perfil de vendedor atende melhor cada nivel</h2>
-        </div>
-        <p class="text-neutral-300 mb-6">Nem todo vendedor serve para toda etapa do funil. O talentoso brilha no fechamento. O treinavel executa bem com script no topo e meio. O resistente pode gerar valor na pre-venda. A chave e posicionar cada um onde seu perfil gera mais resultado.</p>
-
-        <div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
-          <h3 class="font-bold text-rose-400 mb-4">Matriz: Perfil x Nivel de consciencia</h3>
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b border-dark-600">
-                  <th class="text-left py-3 px-3 text-neutral-400 font-semibold">Perfil</th>
-                  <th class="text-center py-3 px-3 text-neutral-400 font-semibold">Topo (Inconsciente)</th>
-                  <th class="text-center py-3 px-3 text-neutral-400 font-semibold">Meio (Consciente)</th>
-                  <th class="text-center py-3 px-3 text-neutral-400 font-semibold">Fundo (Pronto)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-dark-600/50">
-                  <td class="py-3 px-3 font-semibold text-emerald-400">Grupo A — Talentoso</td>
-                  <td class="py-3 px-3 text-center text-neutral-300">Funciona, mas e desperdicio</td>
-                  <td class="py-3 px-3 text-center text-emerald-400 font-semibold">Brilha</td>
-                  <td class="py-3 px-3 text-center text-emerald-400 font-semibold">Brilha muito</td>
-                </tr>
-                <tr class="border-b border-dark-600/50">
-                  <td class="py-3 px-3 font-semibold text-blue-400">Grupo B — Treinavel</td>
-                  <td class="py-3 px-3 text-center text-blue-400 font-semibold">Otimo com script</td>
-                  <td class="py-3 px-3 text-center text-blue-400 font-semibold">Bom com processo</td>
-                  <td class="py-3 px-3 text-center text-neutral-300">Precisa de suporte</td>
-                </tr>
-                <tr>
-                  <td class="py-3 px-3 font-semibold text-orange-400">Grupo C — Resistente</td>
-                  <td class="py-3 px-3 text-center text-orange-400 font-semibold">Pre-venda e conteudo</td>
-                  <td class="py-3 px-3 text-center text-neutral-300">Limitado</td>
-                  <td class="py-3 px-3 text-center text-neutral-500">Nao recomendado</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-emerald-400 mb-2">Talentoso (Grupo A)</div>
-            <p class="text-neutral-300 text-sm">Coloque no meio e fundo do funil. E quem converte leads quentes e fecha negocios complexos. Desperdicar talentoso no topo e como usar Ferrari para ir ao mercado.</p>
-          </div>
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-blue-400 mb-2">Treinavel (Grupo B)</div>
-            <p class="text-neutral-300 text-sm">Melhor no topo e meio com script bem definido. Qualifica leads, faz diagnostico padronizado, agenda com o closer. Evolui para meio/fundo com treinamento.</p>
-          </div>
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-orange-400 mb-2">Resistente (Grupo C)</div>
-            <p class="text-neutral-300 text-sm">Se nao pode demitir, reposicione. Conteudo, pre-venda, qualificacao inicial. Tarefas estruturadas onde a personalidade nao interfere tanto na conversao.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section class="mb-10">
-      <div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center space-x-3 mb-4">
-          <span class="text-2xl">📢</span>
-          <h2 class="text-xl sm:text-2xl font-bold text-rose-400">2. O papel do marketing em cada nivel</h2>
-        </div>
-        <p class="text-neutral-300 mb-6">Marketing nao existe para "fazer post bonito". Marketing existe para mover pessoas de um nivel de consciencia para o proximo. Cada nivel exige um tipo diferente de conteudo e acao.</p>
-
-        <div class="space-y-4 mb-6">
-          <div class="bg-gradient-to-r from-red-900/20 to-dark-700 border border-red-500/20 rounded-xl p-5">
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">TOPO</span>
-              <h3 class="font-bold text-neutral-100">Educacao e identificacao</h3>
-            </div>
-            <p class="text-neutral-300 mb-3">A pessoa nao sabe que tem um problema. Marketing no topo precisa fazer ela perceber. Conteudo educativo, provocativo, que gera o "nossa, isso sou eu".</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Formatos que funcionam</div>
-                <ul class="text-neutral-400 text-sm space-y-1">
-                  <li>▸ Posts educativos em redes sociais</li>
-                  <li>▸ Videos curtos com diagnostico rapido</li>
-                  <li>▸ Quizzes e assessments gratuitos</li>
-                  <li>▸ Blog posts com dados do mercado</li>
-                </ul>
-              </div>
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Objetivo</div>
-                <p class="text-neutral-400 text-sm">Fazer a pessoa se identificar com o problema. Nao vender nada. Nao mencionar produto. Apenas gerar consciencia de que algo precisa mudar.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gradient-to-r from-yellow-900/20 to-dark-700 border border-yellow-500/20 rounded-xl p-5">
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="bg-yellow-600 text-white text-xs font-bold px-2 py-1 rounded">MEIO</span>
-              <h3 class="font-bold text-neutral-100">Autoridade e prova</h3>
-            </div>
-            <p class="text-neutral-300 mb-3">A pessoa sabe que tem o problema. Agora precisa acreditar que voce pode resolver. Marketing no meio constroi autoridade e mostra resultados.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Formatos que funcionam</div>
-                <ul class="text-neutral-400 text-sm space-y-1">
-                  <li>▸ Cases de sucesso detalhados</li>
-                  <li>▸ Webinars com conteudo aprofundado</li>
-                  <li>▸ Comparativos (antes/depois)</li>
-                  <li>▸ Depoimentos e prova social</li>
-                </ul>
-              </div>
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Objetivo</div>
-                <p class="text-neutral-400 text-sm">Construir confianca. Provar que funciona para pessoas parecidas com ela. Gerar desejo pela solucao — nao pela oferta ainda.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-gradient-to-r from-emerald-900/20 to-dark-700 border border-emerald-500/20 rounded-xl p-5">
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded">FUNDO</span>
-              <h3 class="font-bold text-neutral-100">Oferta e urgencia</h3>
-            </div>
-            <p class="text-neutral-300 mb-3">A pessoa quer comprar. Marketing no fundo remove as ultimas barreiras e cria o momento certo para a decisao. Aqui entra a oferta direta.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Formatos que funcionam</div>
-                <ul class="text-neutral-400 text-sm space-y-1">
-                  <li>▸ Paginas de venda com oferta clara</li>
-                  <li>▸ Emails de lancamento com deadline</li>
-                  <li>▸ Garantias e reversao de risco</li>
-                  <li>▸ Bonus por tempo limitado</li>
-                </ul>
-              </div>
-              <div class="bg-dark-800 rounded-lg p-3">
-                <div class="text-sm font-semibold text-neutral-100 mb-1">Objetivo</div>
-                <p class="text-neutral-400 text-sm">Converter. Tirar da inercia. Criar urgencia real (nao falsa). O lead ja esta pronto — marketing so precisa empurrar o ultimo passo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5">
-          <h3 class="font-bold text-rose-400 mb-2">Regra de ouro</h3>
-          <p class="text-neutral-300 text-lg font-medium">Marketing nutre, vendas converte. Quando marketing tenta vender cedo demais, queima o lead. Quando vendas tenta nutrir, perde tempo. Cada um no seu papel.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section class="mb-10">
-      <div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center space-x-3 mb-4">
-          <span class="text-2xl">🤝</span>
-          <h2 class="text-xl sm:text-2xl font-bold text-rose-400">3. O papel do vendedor em cada nivel</h2>
-        </div>
-        <p class="text-neutral-300 mb-6">O vendedor nao precisa estar em todas as etapas. Na verdade, colocar vendedor no lugar errado custa caro e atrapalha. Aqui voce aprende exatamente quando o humano entra e quando nao entra.</p>
-
-        <div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
-          <h3 class="font-bold text-rose-400 mb-4">Mapa do vendedor no funil</h3>
-          <div class="space-y-4">
-            <div class="bg-dark-700 rounded-lg p-4 border-l-4 border-red-500">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-red-400 font-bold">TOPO — Papel do vendedor: quase nenhum</span>
-              </div>
-              <p class="text-neutral-300 text-sm mb-2">No topo, o custo de colocar vendedor e altissimo e o retorno e baixo. A pessoa ainda nao sabe que tem um problema — nao esta pronta para conversar com vendedor.</p>
-              <div class="bg-dark-800 rounded p-3 text-sm">
-                <span class="text-neutral-100 font-semibold">Quem atua:</span>
-                <span class="text-neutral-300"> Automacao (email, chatbot, conteudo). Se precisar de humano, use Grupo C em funcao de pre-venda ou qualificacao automatizada.</span>
-              </div>
-            </div>
-
-            <div class="bg-dark-700 rounded-lg p-4 border-l-4 border-yellow-500">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-yellow-400 font-bold">MEIO — Papel do vendedor: consultor</span>
-              </div>
-              <p class="text-neutral-300 text-sm mb-2">A pessoa sabe que tem o problema e esta buscando solucoes. O vendedor aqui e um consultor — faz diagnostico, entende a situacao, educa sobre opcoes e constroi confianca.</p>
-              <div class="bg-dark-800 rounded p-3 text-sm">
-                <span class="text-neutral-100 font-semibold">Quem atua:</span>
-                <span class="text-neutral-300"> Grupo B com script e processo definido. Grupo A em negocios de maior valor. Ligacoes consultivas, calls de diagnostico.</span>
-              </div>
-            </div>
-
-            <div class="bg-dark-700 rounded-lg p-4 border-l-4 border-emerald-500">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-emerald-400 font-bold">FUNDO — Papel do vendedor: closer</span>
-              </div>
-              <p class="text-neutral-300 text-sm mb-2">A pessoa quer comprar. O vendedor aqui e o closer — resolve objecoes finais, apresenta a proposta, negocia e fecha. Cada minuto do closer no fundo vale 10x mais que no topo.</p>
-              <div class="bg-dark-800 rounded p-3 text-sm">
-                <span class="text-neutral-100 font-semibold">Quem atua:</span>
-                <span class="text-neutral-300"> Grupo A prioritariamente. Grupo B treinado para fechamento em negocios mais simples. Reunioes de proposta, negociacao, follow-up final.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
-          <h3 class="font-bold text-neutral-100 mb-3">Quando o humano entra e quando nao entra</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <div class="font-semibold text-emerald-400 mb-2">Humano ENTRA quando:</div>
-              <ul class="space-y-1 text-neutral-300 text-sm">
-                <li>✓ Lead demonstrou interesse ativo</li>
-                <li>✓ Negocio e complexo ou de alto valor</li>
-                <li>✓ Cliente precisa de customizacao</li>
-                <li>✓ Existe objecao emocional a resolver</li>
-                <li>✓ Concorrente esta na disputa</li>
-              </ul>
-            </div>
-            <div>
-              <div class="font-semibold text-red-400 mb-2">Humano NAO entra quando:</div>
-              <ul class="space-y-1 text-neutral-300 text-sm">
-                <li>✗ Lead ainda e frio (topo do funil)</li>
-                <li>✗ Informacao pode ser automatizada</li>
-                <li>✗ Volume e muito alto para atender 1:1</li>
-                <li>✗ Ticket medio nao justifica o custo</li>
-                <li>✗ Sequencia de emails resolve</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section class="mb-10">
-      <div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center space-x-3 mb-4">
-          <span class="text-2xl">📈</span>
-          <h2 class="text-xl sm:text-2xl font-bold text-rose-400">4. Quando escalar a operacao</h2>
-        </div>
-        <p class="text-neutral-300 mb-6">Escalar antes da hora e a forma mais rapida de quebrar uma operacao comercial. Escalar depois da hora e a forma mais rapida de perder oportunidade. Aqui voce aprende a ler os sinais e diagnosticar o momento certo.</p>
-
-        <div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
-          <h3 class="font-bold text-rose-400 mb-4">Diagnostico: onde esta o gargalo?</h3>
-          <div class="space-y-4">
-            <div class="bg-dark-700 rounded-lg p-4">
-              <div class="flex items-start space-x-3">
-                <span class="text-2xl">🔍</span>
-                <div>
-                  <div class="font-semibold text-neutral-100 mb-1">Funil cheio + conversao baixa = precisa de mais closers (ou melhores)</div>
-                  <p class="text-neutral-300 text-sm">Voce tem muitos leads entrando mas poucos fecham. O problema nao e volume — e conversao. Solucoes: treinar a equipe atual, contratar closers (Grupo A), ou melhorar o script de fechamento.</p>
-                  <div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Sinal: taxa de conversao abaixo do benchmark do seu segmento por 2+ meses consecutivos.</div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-dark-700 rounded-lg p-4">
-              <div class="flex items-start space-x-3">
-                <span class="text-2xl">🔍</span>
-                <div>
-                  <div class="font-semibold text-neutral-100 mb-1">Funil vazio + equipe ociosa = precisa de mais topo</div>
-                  <p class="text-neutral-300 text-sm">Seus vendedores sao bons mas nao tem com quem falar. O problema e geracao de leads. Solucoes: investir mais em marketing, abrir novos canais de aquisicao, criar parcerias.</p>
-                  <div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Sinal: vendedores com menos de 10 conversas por semana ou pipeline estagnado.</div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-dark-700 rounded-lg p-4">
-              <div class="flex items-start space-x-3">
-                <span class="text-2xl">🔍</span>
-                <div>
-                  <div class="font-semibold text-neutral-100 mb-1">Funil cheio + conversao boa + equipe esgotada = hora de contratar</div>
-                  <p class="text-neutral-300 text-sm">Tudo funciona mas nao da conta do volume. Este e o unico cenario onde contratar e a resposta certa. Primeiro valide o processo, depois multiplique.</p>
-                  <div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Sinal: tempo de resposta ao lead aumentando, follow-ups sendo esquecidos, vendedores pedindo socorro.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
-          <h3 class="font-bold text-neutral-100 mb-3">Regra de escalabilidade</h3>
-          <div class="space-y-3">
-            <div class="flex items-start space-x-2">
-              <span class="text-rose-400 mt-1 font-bold">1.</span>
-              <span class="text-neutral-300"><strong class="text-neutral-100">Primeiro: processo.</strong> Documente e padronize o que funciona. Se nao esta documentado, nao pode ser replicado.</span>
-            </div>
-            <div class="flex items-start space-x-2">
-              <span class="text-rose-400 mt-1 font-bold">2.</span>
-              <span class="text-neutral-300"><strong class="text-neutral-100">Segundo: metricas.</strong> Saiba exatamente seus numeros: custo por lead, taxa de conversao por etapa, ticket medio, ciclo de venda.</span>
-            </div>
-            <div class="flex items-start space-x-2">
-              <span class="text-rose-400 mt-1 font-bold">3.</span>
-              <span class="text-neutral-300"><strong class="text-neutral-100">Terceiro: pessoas.</strong> So agora contrate. Contrate para replicar algo que ja funciona, nao para inventar algo novo.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section class="mb-10">
-      <div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center space-x-3 mb-4">
-          <span class="text-2xl">🏗️</span>
-          <h2 class="text-xl sm:text-2xl font-bold text-rose-400">5. O modelo integrado: marketing + vendas + gestao</h2>
-        </div>
-        <p class="text-neutral-300 mb-6">O gestor comercial nao e so um "chefe de vendedores" — e o orquestrador de todo o sistema. Ele conecta marketing (que gera consciencia), vendas (que converte) e gestao (que alinha tudo). Quando esses tres funcionam juntos, o resultado e exponencial.</p>
-
-        <div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
-          <h3 class="font-bold text-rose-400 mb-4">Fluxo visual: o modelo integrado</h3>
-          <div class="space-y-3">
-            <div class="flex items-center space-x-3">
-              <div class="bg-red-600/20 text-red-400 border border-red-500/30 rounded-xl px-4 py-3 text-center flex-1">
-                <div class="font-bold text-sm">MARKETING</div>
-                <div class="text-xs mt-1">Gera consciencia</div>
-                <div class="text-xs text-neutral-400">Atrai → Educa → Nutre</div>
-              </div>
-              <span class="text-neutral-500 text-2xl">→</span>
-              <div class="bg-yellow-600/20 text-yellow-400 border border-yellow-500/30 rounded-xl px-4 py-3 text-center flex-1">
-                <div class="font-bold text-sm">VENDAS</div>
-                <div class="text-xs mt-1">Converte</div>
-                <div class="text-xs text-neutral-400">Diagnostica → Propoe → Fecha</div>
-              </div>
-              <span class="text-neutral-500 text-2xl">→</span>
-              <div class="bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-xl px-4 py-3 text-center flex-1">
-                <div class="font-bold text-sm">RESULTADO</div>
-                <div class="text-xs mt-1">Cliente</div>
-                <div class="text-xs text-neutral-400">Receita → Retencao → Indicacao</div>
-              </div>
-            </div>
-            <div class="flex justify-center">
-              <div class="bg-rose-600/20 text-rose-400 border border-rose-500/30 rounded-xl px-6 py-3 text-center">
-                <div class="font-bold text-sm">GESTAO</div>
-                <div class="text-xs mt-1">Orquestra tudo: alinha marketing + vendas, mede resultados, corrige rota</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-red-400 mb-2">Marketing entrega para Vendas:</div>
-            <ul class="text-neutral-300 text-sm space-y-1">
-              <li>▸ Leads qualificados (nao apenas nomes)</li>
-              <li>▸ Informacao sobre nivel de consciencia</li>
-              <li>▸ Conteudo que o lead ja consumiu</li>
-              <li>▸ Dados de engajamento</li>
-            </ul>
-          </div>
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-yellow-400 mb-2">Vendas retroalimenta Marketing:</div>
-            <ul class="text-neutral-300 text-sm space-y-1">
-              <li>▸ Objecoes mais frequentes</li>
-              <li>▸ Perfil de quem compra vs quem nao compra</li>
-              <li>▸ Qualidade dos leads por canal</li>
-              <li>▸ Linguagem que o cliente usa</li>
-            </ul>
-          </div>
-          <div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
-            <div class="font-semibold text-rose-400 mb-2">Gestao conecta os dois:</div>
-            <ul class="text-neutral-300 text-sm space-y-1">
-              <li>▸ Reuniao semanal marketing + vendas</li>
-              <li>▸ Dashboard compartilhado de metricas</li>
-              <li>▸ Feedback loop estruturado</li>
-              <li>▸ Metas alinhadas (nao conflitantes)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
-          <h3 class="font-bold text-neutral-100 mb-3">O erro mais comum: silos</h3>
-          <p class="text-neutral-300 mb-3">Marketing reclama que vendas nao converte. Vendas reclama que marketing manda lead ruim. Gestao nao fala com nenhum dos dois. Resultado: todo mundo frustrado e o cliente percebe a desconexao.</p>
-          <p class="text-neutral-300"><strong class="text-rose-400">A solucao e simples:</strong> uma reuniao semanal de 15 minutos entre marketing e vendas, mediada pela gestao. Pauta: o que marketing mandou, como vendas recebeu, o que precisa mudar. Esse unico ritual resolve 80% dos conflitos.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Navegacao -->
-    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 mb-8">
-      <a href="modulo-5-6.html" class="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3 bg-dark-800 border border-dark-600 rounded-xl text-neutral-300 hover:text-rose-400 hover:border-rose-500/30 transition-all">
-        <span>←</span><span>Modulo anterior</span>
-      </a>
-      <a href="../trilha6/index.html" class="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl transition-all">
-        <span>Trilha 6 — Plano Estrategico de Treinamento</span><span>→</span>
-      </a>
-    </div>
-
-  </main>
-
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4"><span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a></div>
-        <div class="text-neutral-500 text-sm">Modulo 5.7: Integrando equipe e estrategia</div>
-      </div>
-    </div>
-  </footer>
-  <script>
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
+<span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-rose-500/10 text-rose-400" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-red-400 hover:bg-red-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+Header
+<div class="mb-8">
+<div class="flex items-center space-x-3 mb-4">
+<a class="text-rose-400 hover:text-rose-300 text-sm transition-colors" href="index.html">← Trail 5</a>
+<span class="text-neutral-600">|</span>
+<span class="text-neutral-400 text-sm">Module 5.7</span>
+</div>
+<div class="bg-gradient-to-r from-rose-900/30 to-dark-800 border border-rose-500/20 rounded-2xl p-6 sm:p-8">
+<div class="flex items-start space-x-4">
+<span class="text-4xl sm:text-5xl">🔗</span>
+<div>
+<h1 class="text-2xl sm:text-3xl font-bold text-neutral-100 mb-2">Integrating team and strategy</h1>
+<p class="text-neutral-300 text-lg">Marketing, sales and management are not separate departments — they are cogs in a single machine. In this module, you learn how to orchestrate everything: which salesperson profile works at each level, when to scale, and how to set up the integrated model.</p>
+<div class="flex flex-wrap gap-3 mt-4">
+<span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">5 Topics</span>
+<span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">~45 min</span>
+<span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">Strategic</span>
+<span class="px-3 py-1 bg-rose-900/20 text-rose-400 rounded-full text-sm font-medium">Integration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+Topic 1
+<section class="mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
+<div class="flex items-center space-x-3 mb-4">
+<span class="text-2xl">🎯</span>
+<h2 class="text-xl sm:text-2xl font-bold text-rose-400">1. Which seller profile best suits each level</h2>
+</div>
+<p class="text-neutral-300 mb-6">Not every salesperson is suitable for every stage of the funnel. Talent shines in closing. The trainable performs well with script in the top and middle. The resistant can generate value in pre-sale. The key is to position each person where their profile generates the most results.</p>
+<div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
+<h3 class="font-bold text-rose-400 mb-4">Matrix: Profile x Level of awareness</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-dark-600">
+<th class="text-left py-3 px-3 text-neutral-400 font-semibold">Profile</th>
+<th class="text-center py-3 px-3 text-neutral-400 font-semibold">Top (Unconscious)</th>
+<th class="text-center py-3 px-3 text-neutral-400 font-semibold">Middle (Conscious)</th>
+<th class="text-center py-3 px-3 text-neutral-400 font-semibold">Background (Ready)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-3 font-semibold text-emerald-400">Group A — Talented</td>
+<td class="py-3 px-3 text-center text-neutral-300">It works, but it's wasteful</td>
+<td class="py-3 px-3 text-center text-emerald-400 font-semibold">Shine</td>
+<td class="py-3 px-3 text-center text-emerald-400 font-semibold">Shines a lot</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-3 font-semibold text-blue-400">Group B — Trainable</td>
+<td class="py-3 px-3 text-center text-blue-400 font-semibold">Great with script</td>
+<td class="py-3 px-3 text-center text-blue-400 font-semibold">Good with process</td>
+<td class="py-3 px-3 text-center text-neutral-300">Need support</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-semibold text-orange-400">Group C — Resistant</td>
+<td class="py-3 px-3 text-center text-orange-400 font-semibold">Pre-sale and content</td>
+<td class="py-3 px-3 text-center text-neutral-300">Limited</td>
+<td class="py-3 px-3 text-center text-neutral-500">Not recommended</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-emerald-400 mb-2">Talented (Group A)</div>
+<p class="text-neutral-300 text-sm">Place in the middle and bottom of the funnel. And who converts hot leads and closes complex deals. Wasting talent at the top and how to use Ferrari to go to market.</p>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-blue-400 mb-2">Trainable (Group B)</div>
+<p class="text-neutral-300 text-sm">Best in the top and middle with a well-defined script. Qualifies leads, performs standardized diagnosis, schedules with the closer. Evolves to middle/deep with training.</p>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-orange-400 mb-2">Resistant (Group C)</div>
+<p class="text-neutral-300 text-sm">If you can't fire, reposition. Content, pre-sale, initial qualification. Structured tasks where personality does not interfere so much in the conversation.</p>
+</div>
+</div>
+</div>
+</section>
+Topic 2
+<section class="mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
+<div class="flex items-center space-x-3 mb-4">
+<span class="text-2xl">📢</span>
+<h2 class="text-xl sm:text-2xl font-bold text-rose-400">2. The role of marketing at each level</h2>
+</div>
+<p class="text-neutral-300 mb-6">Marketing does not exist to “make a pretty post”. Marketing exists to move people from one level of consciousness to the next. Each level requires a different type of content and action.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-gradient-to-r from-red-900/20 to-dark-700 border border-red-500/20 rounded-xl p-5">
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">TOP</span>
+<h3 class="font-bold text-neutral-100">Education and identification</h3>
+</div>
+<p class="text-neutral-300 mb-3">The person doesn't know they have a problem. Marketing at the top needs to make her notice. Educational, provocative content that generates "wow, that's me".</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Formats that work</div>
+<ul class="text-neutral-400 text-sm space-y-1">
+<li>▸ Educational posts on social media</li>
+<li>▸ Short videos with quick diagnosis</li>
+<li>▸ Free quizzes and assessments</li>
+<li>▸ Blog posts with market data</li>
+</ul>
+</div>
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Objective</div>
+<p class="text-neutral-400 text-sm">Make the person identify with the problem. Don't sell anything. Do not mention product. Just generate awareness that something needs to change.</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-yellow-900/20 to-dark-700 border border-yellow-500/20 rounded-xl p-5">
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-yellow-600 text-white text-xs font-bold px-2 py-1 rounded">QUITE</span>
+<h3 class="font-bold text-neutral-100">Authority and proof</h3>
+</div>
+<p class="text-neutral-300 mb-3">The person knows they have the problem. Now you need to believe that you can solve it. Marketing in the medium builds authority and shows results.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Formats that work</div>
+<ul class="text-neutral-400 text-sm space-y-1">
+<li>▸ Detailed success stories</li>
+<li>▸ Webinars with in-depth content</li>
+<li>▸ Comparisons (before/after)</li>
+<li>▸ Testimonials and social proof</li>
+</ul>
+</div>
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Objective</div>
+<p class="text-neutral-400 text-sm">Build trust. Prove that it works for people like her. Generate desire for the solution — not for the offer yet.</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-emerald-900/20 to-dark-700 border border-emerald-500/20 rounded-xl p-5">
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded">BOTTOM</span>
+<h3 class="font-bold text-neutral-100">Offer and urgency</h3>
+</div>
+<p class="text-neutral-300 mb-3">The person wants to buy. Marketing ultimately removes the last barriers and creates the right moment for decision. This is where the direct offer comes in.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Formats that work</div>
+<ul class="text-neutral-400 text-sm space-y-1">
+<li>▸ Sales pages with clear offer</li>
+<li>▸ Launch emails with deadline</li>
+<li>▸ Guarantees and risk reversal</li>
+<li>▸ Limited time bonus</li>
+</ul>
+</div>
+<div class="bg-dark-800 rounded-lg p-3">
+<div class="text-sm font-semibold text-neutral-100 mb-1">Objective</div>
+<p class="text-neutral-400 text-sm">Convert. Get rid of inertia. Create real (not fake) urgency. The lead is already ready — marketing just needs to push the last step.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5">
+<h3 class="font-bold text-rose-400 mb-2">Rule of thumb</h3>
+<p class="text-neutral-300 text-lg font-medium">Marketing nurtures, sales converts. When marketing tries to sell too early, it burns the lead. When sales tries to nurture, it wastes time. Each one in their role.</p>
+</div>
+</div>
+</section>
+Topic 3
+<section class="mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
+<div class="flex items-center space-x-3 mb-4">
+<span class="text-2xl">🤝</span>
+<h2 class="text-xl sm:text-2xl font-bold text-rose-400">3. The role of the seller at each level</h2>
+</div>
+<p class="text-neutral-300 mb-6">The seller does not need to be at every stage. In fact, putting salespeople in the wrong place is costly and disruptive. Here you learn exactly when the human enters and when he doesn't.</p>
+<div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
+<h3 class="font-bold text-rose-400 mb-4">Seller map in the funnel</h3>
+<div class="space-y-4">
+<div class="bg-dark-700 rounded-lg p-4 border-l-4 border-red-500">
+<div class="flex items-center space-x-2 mb-2">
+<span class="text-red-400 font-bold">TOP — Salesperson’s role: almost none</span>
+</div>
+<p class="text-neutral-300 text-sm mb-2">At the top, the cost of placing a seller is very high and the return is low. The person doesn't yet know they have a problem — they're not ready to talk to a salesperson.</p>
+<div class="bg-dark-800 rounded p-3 text-sm">
+<span class="text-neutral-100 font-semibold">Who works:</span>
+<span class="text-neutral-300">Automation (email, chatbot, content). If you need a human, use Group C for pre-sales or automated qualification.</span>
+</div>
+</div>
+<div class="bg-dark-700 rounded-lg p-4 border-l-4 border-yellow-500">
+<div class="flex items-center space-x-2 mb-2">
+<span class="text-yellow-400 font-bold">MEDIUM — Seller’s role: consultant</span>
+</div>
+<p class="text-neutral-300 text-sm mb-2">The person knows they have the problem and is looking for solutions. The salesperson here is a consultant — he diagnoses, understands the situation, educates about options and builds trust.</p>
+<div class="bg-dark-800 rounded p-3 text-sm">
+<span class="text-neutral-100 font-semibold">Who works:</span>
+<span class="text-neutral-300">Group B with defined script and process. Group A in higher value businesses. Consultative calls, diagnostic calls.</span>
+</div>
+</div>
+<div class="bg-dark-700 rounded-lg p-4 border-l-4 border-emerald-500">
+<div class="flex items-center space-x-2 mb-2">
+<span class="text-emerald-400 font-bold">FUND — Seller’s role: closer</span>
+</div>
+<p class="text-neutral-300 text-sm mb-2">The person wants to buy. The seller here is the closer — resolves final objections, presents the proposal, negotiates and closes. Every minute spent closer at the bottom is worth 10x more than at the top.</p>
+<div class="bg-dark-800 rounded p-3 text-sm">
+<span class="text-neutral-100 font-semibold">Who works:</span>
+<span class="text-neutral-300">Group A priority. Group B trained to close simpler deals. Proposal meetings, negotiation, final follow-up.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
+<h3 class="font-bold text-neutral-100 mb-3">When the human enters and when he does not enter</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<div class="font-semibold text-emerald-400 mb-2">Human ENTER when:</div>
+<ul class="space-y-1 text-neutral-300 text-sm">
+<li>✓ Lead demonstrated active interest</li>
+<li>✓ Business is complex or high value</li>
+<li>✓ Customer needs customization</li>
+<li>✓ There is an emotional objection to resolve</li>
+<li>✓ Competitor is in the running</li>
+</ul>
+</div>
+<div>
+<div class="font-semibold text-red-400 mb-2">Human DOES NOT enter when:</div>
+<ul class="space-y-1 text-neutral-300 text-sm">
+<li>✗ Lead is still cold (top of the funnel)</li>
+<li>✗ Information can be automated</li>
+<li>✗ Volume is too loud to meet 1:1</li>
+<li>✗ Average ticket does not justify the cost</li>
+<li>✗ Sequence of emails resolves</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 4
+<section class="mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
+<div class="flex items-center space-x-3 mb-4">
+<span class="text-2xl">📈</span>
+<h2 class="text-xl sm:text-2xl font-bold text-rose-400">4. When to scale the operation</h2>
+</div>
+<p class="text-neutral-300 mb-6">Escalating prematurely is the quickest way to break a commercial operation. Climbing late is the quickest way to miss an opportunity. Here you learn to read the signs and diagnose the right moment.</p>
+<div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
+<h3 class="font-bold text-rose-400 mb-4">Diagnosis: where is the bottleneck?</h3>
+<div class="space-y-4">
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🔍</span>
+<div>
+<div class="font-semibold text-neutral-100 mb-1">Full funnel + low conversion = needs more (or better) closers</div>
+<p class="text-neutral-300 text-sm">You have many leads coming in but few close. The problem isn't volume — it's conversion. Solutions: train the current team, hire closers (Group A), or improve the closing script.</p>
+<div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Signal: conversion rate below your segment benchmark for 2+ consecutive months.</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🔍</span>
+<div>
+<div class="font-semibold text-neutral-100 mb-1">Empty funnel + idle team = needs more top</div>
+<p class="text-neutral-300 text-sm">Their salespeople are good but there is no one to talk to. The problem is lead generation. Solutions: invest more in marketing, open new acquisition channels, create partnerships.</p>
+<div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Sign: salespeople having fewer than 10 conversations per week or a stagnant pipeline.</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700 rounded-lg p-4">
+<div class="flex items-start space-x-3">
+<span class="text-2xl">🔍</span>
+<div>
+<div class="font-semibold text-neutral-100 mb-1">Full funnel + good conversation + exhausted team = time to hire</div>
+<p class="text-neutral-300 text-sm">Everything works but I don't care about the volume. This is the only scenario where hiring is the right answer. First validate the process, then multiply.</p>
+<div class="mt-2 bg-dark-800 rounded p-2 text-sm text-rose-400">Sign: lead response time increasing, follow-ups being forgotten, salespeople asking for help.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
+<h3 class="font-bold text-neutral-100 mb-3">Scalability rule</h3>
+<div class="space-y-3">
+<div class="flex items-start space-x-2">
+<span class="text-rose-400 mt-1 font-bold">1.</span>
+<span class="text-neutral-300"><strong class="text-neutral-100">First: process.</strong>Document and standardize what works. If it is not documented, it cannot be replicated.</span>
+</div>
+<div class="flex items-start space-x-2">
+<span class="text-rose-400 mt-1 font-bold">2.</span>
+<span class="text-neutral-300"><strong class="text-neutral-100">Second: metrics.</strong>Know exactly your numbers: cost per lead, conversion rate per stage, average ticket, sales cycle.</span>
+</div>
+<div class="flex items-start space-x-2">
+<span class="text-rose-400 mt-1 font-bold">3.</span>
+<span class="text-neutral-300"><strong class="text-neutral-100">Third: people.</strong>Just hire now. Hire to replicate something that already works, not to invent something new.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 5
+<section class="mb-10">
+<div class="bg-dark-800 border border-dark-600 rounded-2xl p-6 sm:p-8">
+<div class="flex items-center space-x-3 mb-4">
+<span class="text-2xl">🏗️</span>
+<h2 class="text-xl sm:text-2xl font-bold text-rose-400">5. The integrated model: marketing + sales + management</h2>
+</div>
+<p class="text-neutral-300 mb-6">The commercial manager is not just a “head of salespeople” — he is the orchestrator of the entire system. It connects marketing (which generates awareness), sales (which converts) and management (which aligns everything). When these three work together, the result is exponential.</p>
+<div class="bg-rose-900/20 border border-rose-500/20 rounded-xl p-5 mb-6">
+<h3 class="font-bold text-rose-400 mb-4">Visual flow: the integrated model</h3>
+<div class="space-y-3">
+<div class="flex items-center space-x-3">
+<div class="bg-red-600/20 text-red-400 border border-red-500/30 rounded-xl px-4 py-3 text-center flex-1">
+<div class="font-bold text-sm">MARKETING</div>
+<div class="text-xs mt-1">Generates awareness</div>
+<div class="text-xs text-neutral-400">Attracts → Educates → Nourishes</div>
+</div>
+<span class="text-neutral-500 text-2xl">→</span>
+<div class="bg-yellow-600/20 text-yellow-400 border border-yellow-500/30 rounded-xl px-4 py-3 text-center flex-1">
+<div class="font-bold text-sm">SALES</div>
+<div class="text-xs mt-1">Convert</div>
+<div class="text-xs text-neutral-400">Diagnose → Propose → Close</div>
+</div>
+<span class="text-neutral-500 text-2xl">→</span>
+<div class="bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-xl px-4 py-3 text-center flex-1">
+<div class="font-bold text-sm">RESULT</div>
+<div class="text-xs mt-1">Customer</div>
+<div class="text-xs text-neutral-400">Revenue → Retention → Indication</div>
+</div>
+</div>
+<div class="flex justify-center">
+<div class="bg-rose-600/20 text-rose-400 border border-rose-500/30 rounded-xl px-6 py-3 text-center">
+<div class="font-bold text-sm">MANAGEMENT</div>
+<div class="text-xs mt-1">Orchestrates everything: aligns marketing + sales, measures results, corrects route</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-red-400 mb-2">Marketing delivers to Sales:</div>
+<ul class="text-neutral-300 text-sm space-y-1">
+<li>▸ Qualified leads (not just names)</li>
+<li>▸ Information about level of consciousness</li>
+<li>▸ Content that the lead has already consumed</li>
+<li>▸ Engagement data</li>
+</ul>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-yellow-400 mb-2">Sales feeds back to Marketing:</div>
+<ul class="text-neutral-300 text-sm space-y-1">
+<li>▸ Most frequent objections</li>
+<li>▸ Profile of those who buy vs those who don’t buy</li>
+<li>▸ Quality of leads by channel</li>
+<li>▸ Language the customer uses</li>
+</ul>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-4">
+<div class="font-semibold text-rose-400 mb-2">Management connects the two:</div>
+<ul class="text-neutral-300 text-sm space-y-1">
+<li>▸ Weekly marketing + sales meeting</li>
+<li>▸ Shared metrics dashboard</li>
+<li>▸ Structured feedback loop</li>
+<li>▸ Aligned goals (not conflicting)</li>
+</ul>
+</div>
+</div>
+<div class="bg-dark-700 border border-dark-600 rounded-xl p-5">
+<h3 class="font-bold text-neutral-100 mb-3">The most common mistake: silos</h3>
+<p class="text-neutral-300 mb-3">Marketing complains that sales don't convert. Sales complains that marketing sends bad leads. Management does not speak to either of them. Result: everyone is frustrated and the customer notices the disconnect.</p>
+<p class="text-neutral-300"><strong class="text-rose-400">The solution is simple:</strong>a weekly 15-minute meeting between marketing and sales, mediated by management. Agenda: what marketing sent, how sales received it, what needs to change. This single ritual resolves 80% of conflicts.</p>
+</div>
+</div>
+</section>
+Navigation
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 mb-8">
+<a class="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3 bg-dark-800 border border-dark-600 rounded-xl text-neutral-300 hover:text-rose-400 hover:border-rose-500/30 transition-all" href="modulo-5-6.html">
+<span>←</span><span>Previous module</span>
+</a>
+<a class="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl transition-all" href="../trilha6/index.html">
+<span>Track 6 — Strategic Training Plan</span><span>→</span>
+</a>
+</div>
+</main>
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4"><span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a></div>
+<div class="text-neutral-500 text-sm">Module 5.7: Integrating team and strategy</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() { const html = document.documentElement; const icon = document.getElementById('theme-icon'); if (html.classList.contains('dark')) { html.classList.remove('dark'); icon.textContent = '☀️'; localStorage.setItem('theme', 'light'); } else { html.classList.add('dark'); icon.textContent = '🌙'; localStorage.setItem('theme', 'dark'); } }
     if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); document.getElementById('theme-icon').textContent = '☀️'; }
   </script>
-
 </body>
 </html>

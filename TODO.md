@@ -1,122 +1,122 @@
-# TODO — Projeto 8020: Controle de Implementacao
+# TODO — Project 8020: Implementation Control
 
-## Legenda
-- [ ] Pendente
-- [x] Concluido
-- [~] Em andamento
-
----
-
-## Estrutura Base
-
-- [x] Criar diretorios de trilhas (curso/trilha1 ate trilha8)
-- [x] Criar landing page (index.html)
+## Caption
+- [ ] Pending
+- [x] Done
+- [~] In progress
 
 ---
 
-## Trilha 1 — Fundamentos de Vendas (emerald)
+## Base Structure
 
-- [x] index.html (index da trilha)
-- [x] modulo-1-1.html — O que e vender de verdade
-- [x] modulo-1-2.html — Os 5 niveis de consciencia do consumidor
-- [x] modulo-1-3.html — Construcao de valor antes do preco
-- [x] modulo-1-4.html — A arte de perguntar
-- [x] modulo-1-5.html — Traduzir caracteristicas em impacto
-- [x] modulo-1-6.html — Objecoes: o que sao e por que existem
-- [x] modulo-1-7.html — O funil de consciencia na pratica
-- [x] modulo-1-8.html — O vendedor como condutor, nao como ator
+- [x] Create trail directories (course/trail1 to trail8)
+- [x] Create landing page (index.html)
 
 ---
 
-## Trilha 2 — Metodo Pratico de Vendas (blue)
+## Track 1 — Sales Fundamentals (emerald)
 
-- [x] index.html (index da trilha)
-- [x] modulo-2-1.html — O roteiro de valor em 5 passos
-- [x] modulo-2-2.html — As 4 perguntas que mudam tudo
-- [x] modulo-2-3.html — Script completo para iniciantes
-- [x] modulo-2-4.html — Como responder as 5 objecoes mais comuns
-- [x] modulo-2-5.html — Adaptar o script por nivel de consciencia
-- [x] modulo-2-6.html — Simulacao e treino pratico
-- [x] modulo-2-7.html — O treinamento de 7 dias
-
----
-
-## Trilha 3 — Diagnostico Comercial (purple)
-
-- [x] index.html (index da trilha)
-- [x] modulo-3-1.html — Os 4 fatores do perfil comercial
-- [x] modulo-3-2.html — O quadrante Aptidao x Vontade
-- [x] modulo-3-3.html — Matriz de avaliacao com score
-- [x] modulo-3-4.html — Grupos A, B, C e D
-- [x] modulo-3-5.html — Diagnostico na pratica
-- [x] modulo-3-6.html — Reavaliacao e evolucao
+- [x] index.html (track index)
+- [x] modulo-1-1.html — What is real selling
+- [x] modulo-1-2.html — The 5 levels of consumer awareness
+- [x] modulo-1-3.html — Construction of value before price
+- [x] modulo-1-4.html — The art of asking
+- [x] modulo-1-5.html — Translate features into impact
+- [x] modulo-1-6.html — Objections: what they are and why they exist
+- [x] modulo-1-7.html — The funnel of consciousness in practice
+- [x] modulo-1-8.html — The salesperson as a driver, not as an actor
 
 ---
 
-## Trilha 4 — Gestao de Equipe Comercial (amber)
+## Track 2 — Practical Sales Method (blue)
 
-- [x] index.html (index da trilha)
-- [x] modulo-4-1.html — O papel do gestor comercial
-- [x] modulo-4-2.html — Trilha para o vendedor talentoso
-- [x] modulo-4-3.html — Trilha para o vendedor treinavel
-- [x] modulo-4-4.html — Trilha para o perfil resistente
-- [x] modulo-4-5.html — Quando redirecionar alguem
-- [x] modulo-4-6.html — A matriz vendedor x nivel de consciencia
-- [x] modulo-4-7.html — Rotina de gestao comercial
-
----
-
-## Trilha 5 — Estrategia por Nivel de Consciencia (rose)
-
-- [x] index.html (index da trilha)
-- [x] modulo-5-1.html — Estrategia para o publico inconsciente
-- [x] modulo-5-2.html — Estrategia para consciente do problema
-- [x] modulo-5-3.html — Estrategia para consciente da solucao
-- [x] modulo-5-4.html — Estrategia para consciente do produto
-- [x] modulo-5-5.html — Estrategia para muito consciente
-- [x] modulo-5-6.html — Plano de conteudo para todos os niveis
-- [x] modulo-5-7.html — Integrando equipe e estrategia
+- [x] index.html (track index)
+- [x] modulo-2-1.html — The value roadmap in 5 steps
+- [x] modulo-2-2.html — The 4 questions that change everything
+- [x] modulo-2-3.html — Complete script for beginners
+- [x] modulo-2-4.html — How to answer the 5 most common objections
+- [x] modulo-2-5.html — Adapt the script by awareness level
+- [x] modulo-2-6.html — Simulation and practical training
+- [x] modulo-2-7.html — The 7-day training
 
 ---
 
-## Trilha 6 — Plano Estrategico de Treinamento (cyan)
+## Track 3 — Commercial Diagnosis (purple)
 
-- [x] index.html (index da trilha)
-- [x] modulo-6-1.html — Como montar um programa de treinamento
-- [x] modulo-6-2.html — Treinamento por perfil
-- [x] modulo-6-3.html — O metodo de 7 dias na pratica
-- [x] modulo-6-4.html — Simulacao e role play
-- [x] modulo-6-5.html — Metricas de evolucao
-- [x] modulo-6-6.html — Treinamento continuo vs pontual
-
----
-
-## Trilha 7 — Avaliacao e Ferramentas (orange)
-
-- [x] index.html (index da trilha)
-- [x] modulo-7-1.html — Questionario de diagnostico comercial
-- [x] modulo-7-2.html — Script pronto de vendas
-- [x] modulo-7-3.html — Mapa de objecoes e respostas
-- [x] modulo-7-4.html — Checklist do gestor comercial
-- [x] modulo-7-5.html — Plano de conteudo por nivel de consciencia
-- [x] modulo-7-6.html — Avaliacao de desempenho comercial
+- [x] index.html (track index)
+- [x] modulo-3-1.html — The 4 factors of the commercial profile
+- [x] modulo-3-2.html — The Aptitude x Will quadrant
+- [x] modulo-3-3.html — Evaluation matrix with score
+- [x] modulo-3-4.html — Groups A, B, C and D
+- [x] modulo-3-5.html — Diagnosis in practice
+- [x] modulo-3-6.html — Reevaluation and evolution
 
 ---
 
-## Trilha 8 — Referencias e Pensamento Avancado (indigo)
+## Track 4 — Commercial Team Management (amber)
 
-- [x] index.html (index da trilha)
-- [x] modulo-8-1.html — Os 10 livros essenciais
-- [x] modulo-8-2.html — Os 6 pensamentos mais avancados em vendas (2026)
-- [x] modulo-8-3.html — Vendas B2B vs B2C: o que muda
-- [x] modulo-8-4.html — O futuro: IA, autoservico e o papel humano
+- [x] index.html (track index)
+- [x] modulo-4-1.html — The role of the commercial manager
+- [x] modulo-4-2.html — Path for the talented salesperson
+- [x] modulo-4-3.html — Track for the trainable salesperson
+- [x] modulo-4-4.html — Track for resistant profile
+- [x] modulo-4-5.html — When redirecting someone
+- [x] modulo-4-6.html — The seller x awareness level matrix
+- [x] modulo-4-7.html — Commercial management routine
 
 ---
 
-## Totais
+## Track 5 — Strategy by Level of Consciousness (rose)
+
+- [x] index.html (track index)
+- [x] modulo-5-1.html — Strategy for the unconscious public
+- [x] modulo-5-2.html — Strategy for problem awareness
+- [x] modulo-5-3.html — Strategy for solution awareness
+- [x] modulo-5-4.html — Strategy for product awareness
+- [x] modulo-5-5.html — Strategy for very conscious
+- [x] modulo-5-6.html — Content plan for all levels
+- [x] modulo-5-7.html — Integrating team and strategy
+
+---
+
+## Track 6 — Strategic Training Plan (cyan)
+
+- [x] index.html (track index)
+- [x] modulo-6-1.html — How to put together a training program
+- [x] modulo-6-2.html — Profile training
+- [x] modulo-6-3.html — The 7-day method in practice
+- [x] modulo-6-4.html — Simulation and role play
+- [x] modulo-6-5.html — Evolution metrics
+- [x] modulo-6-6.html — Continuous vs punctual training
+
+---
+
+## Track 7 — Assessment and Tools (orange)
+
+- [x] index.html (track index)
+- [x] modulo-7-1.html — Commercial diagnostic questionnaire
+- [x] modulo-7-2.html — Ready sales script
+- [x] modulo-7-3.html — Map of objections and responses
+- [x] modulo-7-4.html — Commercial manager checklist
+- [x] modulo-7-5.html — Content plan by level of awareness
+- [x] modulo-7-6.html — Commercial performance evaluation
+
+---
+
+## Track 8 — References and Advanced Thinking (indigo)
+
+- [x] index.html (track index)
+- [x] modulo-8-1.html — The 10 essential books
+- [x] modulo-8-2.html — The 6 most advanced thoughts in sales (2026)
+- [x] modulo-8-3.html — B2B vs B2C sales: what changes
+- [x] modulo-8-4.html — The future: AI, self-service and the human role
+
+---
+
+## Totals
 
 - **Landing page:** 1 ✅
-- **Index de trilha:** 8 ✅
-- **Modulos:** 51 ✅
-- **Total de arquivos HTML:** 60 ✅
-- **Status: COMPLETO**
+- **Track index:** 8 ✅
+- **Modules:** 51 ✅
+- **Total HTML files:** 60 ✅
+- **Status: COMPLETE**

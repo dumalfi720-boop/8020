@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 4.3: Trilha para o vendedor treinavel | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 4.3: Trainable Salesperson Path | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,407 +32,349 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 4</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-amber-400 font-medium">Modulo 4.3</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULO 4.3</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">📏 Trilha para o vendedor treinavel</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        O grupo mais importante da sua equipe. Disciplina, processo e acompanhamento proximo transformam o treinavel no pilar de resultado consistente.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Essenc.</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Perfil</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">💎 Por que este grupo e o mais importante</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Em qualquer equipe comercial, os treinaveis representam <strong class="text-amber-400">60 a 70% do time</strong>. Eles nao tem o brilho natural do talentoso, mas tem algo ainda mais valioso: <strong class="text-amber-400">disciplina, vontade de aprender e coachability</strong>. Investir neste grupo e onde o gestor gera o maior impacto.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">A matematica do investimento</h3>
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-dark-800/50 rounded-lg p-3">
-            <div class="text-2xl mb-1">⭐</div>
-            <div class="text-sm font-semibold text-neutral-200">Talentosos</div>
-            <div class="text-xs text-neutral-400">15-20% da equipe</div>
-            <div class="text-xs text-amber-400">Ja performam sozinhos</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-3 border-2 border-amber-500/30">
-            <div class="text-2xl mb-1">📏</div>
-            <div class="text-sm font-semibold text-amber-400">Treinaveis</div>
-            <div class="text-xs text-neutral-400">60-70% da equipe</div>
-            <div class="text-xs text-amber-400">Maior ROI de gestao</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-3">
-            <div class="text-2xl mb-1">🔄</div>
-            <div class="text-sm font-semibold text-neutral-200">Resistentes</div>
-            <div class="text-xs text-neutral-400">10-20% da equipe</div>
-            <div class="text-xs text-amber-400">Precisam reposicionamento</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspectiva</h3>
-        <p class="text-neutral-300">
-          Se voce melhorar a performance dos treinaveis em apenas <strong class="text-blue-400">20%</strong>, o impacto total na receita e maior do que dobrar o resultado de um unico talentoso. Os numeros nao mentem: o ROI esta nos treinaveis.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">📝 Script como muleta que vira habilidade</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O script tem ma fama porque muitos o usam errado. <strong class="text-amber-400">Script nao e para ser lido roboticamente — e para ser internalizado ate virar segunda natureza</strong>. Pense como um musico que primeiro le a partitura e depois toca de memoria.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">As 4 fases do script</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Leitura</h4>
-              <p class="text-sm text-neutral-400">O vendedor le o script durante as primeiras ligacoes. Soa artificial, mas garante que os pontos certos sejam cobertos.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Referencia</h4>
-              <p class="text-sm text-neutral-400">O vendedor consulta o script apenas nos pontos que ainda nao domina. Ja fala com naturalidade a maior parte.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Internalizacao</h4>
-              <p class="text-sm text-neutral-400">O script esta na cabeca. O vendedor segue a estrutura sem ler, adicionando seu estilo pessoal.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">4</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Adaptacao</h4>
-              <p class="text-sm text-neutral-400">O vendedor adapta o script para cada situacao, mantendo a essencia mas personalizando a abordagem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Crie um script de abertura de 60 segundos. Faca o treinavel ler <strong class="text-primary">10 vezes em voz alta</strong>. Na 5a vez ele ja soa mais natural. Na 10a, quase nao precisa olhar. Esse e o caminho: repeticao vira fluencia.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">👁️ Acompanhamento proximo</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O treinavel precisa de <strong class="text-amber-400">feedback frequente e especifico</strong>. Nao e microgestao — e coaching. A diferenca: microgestao controla, coaching desenvolve. O acompanhamento proximo no inicio acelera exponencialmente o aprendizado.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Cadencia de acompanhamento recomendada</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📅</div>
-            <div class="font-semibold text-neutral-200 text-sm">Semana 1-4: Diario</div>
-            <div class="text-xs text-neutral-400">Escutar ligacoes, feedback imediato, correcao de rota</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Semana 5-8: 3x/semana</div>
-            <div class="text-xs text-neutral-400">Revisao de pipeline, role play, feedback estruturado</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🎯</div>
-            <div class="font-semibold text-neutral-200 text-sm">Semana 9-12: 2x/semana</div>
-            <div class="text-xs text-neutral-400">1:1 semanal + revisao de metricas</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🚀</div>
-            <div class="font-semibold text-neutral-200 text-sm">Apos 90 dias: Semanal</div>
-            <div class="text-xs text-neutral-400">1:1 regular com foco em desenvolvimento continuo</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
-          <h4 class="font-bold text-amber-400 mb-4">✓ Coaching eficaz</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Na ligacao das 10h, quando o cliente disse X, voce respondeu Y. Uma alternativa seria..."</li>
-            <li>"Sua taxa de conversao subiu 5% essa semana. O que voce fez diferente?"</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Microgestao</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Por que voce nao fez 50 ligacoes hoje?"</li>
-            <li>"Voce precisa melhorar" (sem especificar o que)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">🎭 Role play semanal</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Nenhum atleta compete sem treinar. Nenhum musico toca sem ensaiar. <strong class="text-amber-400">Por que vendedores deveriam ir para ligacoes reais sem simular antes?</strong> O role play semanal e o treino que separa equipes amadoras de profissionais.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Como montar um role play eficaz</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Escolher cenario real</h4>
-              <p class="text-sm text-neutral-400">Use objecoes e situacoes que realmente aconteceram na semana. Nao invente cenarios — use a realidade.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Simular em duplas</h4>
-              <p class="text-sm text-neutral-400">Um faz o vendedor, outro faz o cliente. O "cliente" deve ser desafiador mas realista. 5-7 minutos por rodada.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Feedback imediato</h4>
-              <p class="text-sm text-neutral-400">Apos cada rodada: o que funcionou, o que ajustar, o que tentar diferente. Feedback especifico e acionavel.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra Pratica</h3>
-        <p class="text-neutral-300">
-          Reserve <strong class="text-primary">45 minutos por semana</strong> para role play. Parece pouco? Em um ano, sao quase 40 horas de pratica deliberada. Equipes que fazem role play semanal convertem em media 23% mais do que equipes que nao fazem.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">📐 Processo muito claro</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O treinavel prospera com <strong class="text-amber-400">clareza absoluta</strong>. Ele precisa saber exatamente: quantas ligacoes fazer, quando enviar follow-up, como registrar no CRM, quando escalar para o gestor. Ambiguidade e inimiga deste perfil.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Processo claro ponto a ponto</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span><strong class="text-amber-400">Atividade diaria:</strong> X ligacoes, Y e-mails, Z follow-ups — numeros especificos</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span><strong class="text-amber-400">Cadencia de follow-up:</strong> Dia 1, Dia 3, Dia 7, Dia 14 — com template para cada etapa</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span><strong class="text-amber-400">Criterios de qualificacao:</strong> Quando o lead e qualificado? Checklist claro com 5 criterios</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span><strong class="text-amber-400">Escalonamento:</strong> Quando envolver o gestor? Regras claras de quando pedir ajuda</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">✓</span>
-            <span><strong class="text-amber-400">CRM:</strong> O que registrar, quando registrar, em qual campo — sem margem para duvida</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 O resultado</h3>
-        <p class="text-neutral-300">
-          Um treinavel com processo claro gera <strong class="text-blue-400">resultados previsiveis</strong>. Voce sabe exatamente o que esperar porque sabe exatamente o que ele esta fazendo. Previsibilidade e o maior presente que um gestor pode dar a diretoria.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Os treinaveis sao 60-70% da equipe e o maior ROI</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Script evolui de muleta para habilidade em 4 fases</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Acompanhamento proximo e coaching, nao microgestao</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Role play semanal aumenta conversao em 23%</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Processo claro gera previsibilidade</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-amber-400 font-bold text-sm">4.4</span>
-            <h4 class="font-bold mt-1">🔄 Trilha para o perfil resistente</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Como reposicionar quem resiste ao modelo tradicional de vendas em funcoes que geram valor real.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-4-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 4.2
-        </a>
-        <a href="modulo-4-4.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors">
-          Proximo: Modulo 4.4 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 4.3: Trilha para o vendedor treinavel</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 4</a>
+<span class="text-neutral-600">/</span>
+<span class="text-amber-400 font-medium">Module 4.3</span>
+</div>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">📏Trail for the trainable salesperson</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The most important group on your team. Discipline, process and close monitoring transform the trainable into the pillar of consistent results.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Essenc.</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Profile</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">💎 Why this group is the most important</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">In any commercial team, trainable people represent<strong class="text-amber-400">60 to 70% of the team</strong>. They don't have the natural brilliance of the talented, but they have something even more valuable:<strong class="text-amber-400">discipline, willingness to learn and coachability</strong>. Invest in this group and where the manager generates the greatest impact.</p>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">The mathematics of investment</h3>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="bg-dark-800/50 rounded-lg p-3">
+<div class="text-2xl mb-1">⭐</div>
+<div class="text-sm font-semibold text-neutral-200">Talented</div>
+<div class="text-xs text-neutral-400">15-20% of the team</div>
+<div class="text-xs text-amber-400">They already perform alone</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border-2 border-amber-500/30">
+<div class="text-2xl mb-1">📏</div>
+<div class="text-sm font-semibold text-amber-400">Trainable</div>
+<div class="text-xs text-neutral-400">60-70% of the team</div>
+<div class="text-xs text-amber-400">Greater management ROI</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3">
+<div class="text-2xl mb-1">🔄</div>
+<div class="text-sm font-semibold text-neutral-200">Resistant</div>
+<div class="text-xs text-neutral-400">10-20% of the team</div>
+<div class="text-xs text-amber-400">Need repositioning</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspective</h3>
+<p class="text-neutral-300">If you improve the performance of trainables in just<strong class="text-blue-400">20%</strong>, the total impact on revenue is greater than doubling the result of a single talent. The numbers don't lie: the ROI is in the trainable.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">📝 Script as a crutch that becomes a skill</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The script has a bad reputation because many use it wrong.<strong class="text-amber-400">Script is not to be read robotically — it is to be internalized until it becomes second nature</strong>. Think like a musician who first reads the score and then plays from memory.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">The 4 phases of the script</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Reading</h4>
+<p class="text-sm text-neutral-400">The salesperson reads the script during the first few calls. It sounds artificial, but it ensures that the right points are covered.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Reference</h4>
+<p class="text-sm text-neutral-400">The seller consults the script only on the points he has not yet mastered. He already speaks naturally for the most part.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Internalization</h4>
+<p class="text-sm text-neutral-400">The script is in your head. The seller follows the structure without reading, adding his personal style.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">4</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Adaptation</h4>
+<p class="text-sm text-neutral-400">The salesperson adapts the script to each situation, maintaining the essence but personalizing the approach.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">Create a 60-second opening script. Make the trainable read<strong class="text-primary">10 times out loud</strong>. By the 5th time it sounds more natural. In 10th, you almost don't need to look. This is the way: repetition becomes fluency.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">👁️ Close follow-up</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The trainable needs<strong class="text-amber-400">frequent and specific feedback</strong>. It's not micromanagement — it's coaching. The difference: micromanagement controls, coaching develops. Close monitoring at the beginning exponentially accelerates learning.</p>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Recommended tracking cadence</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📅</div>
+<div class="font-semibold text-neutral-200 text-sm">Week 1-4: Diary</div>
+<div class="text-xs text-neutral-400">Listen to calls, immediate feedback, route correction</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Week 5-8: 3x/week</div>
+<div class="text-xs text-neutral-400">Pipeline review, role play, structured feedback</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🎯</div>
+<div class="font-semibold text-neutral-200 text-sm">Week 9-12: 2x/week</div>
+<div class="text-xs text-neutral-400">1:1 weekly + metrics review</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🚀</div>
+<div class="font-semibold text-neutral-200 text-sm">After 90 days: Weekly</div>
+<div class="text-xs text-neutral-400">Regular 1:1 with a focus on continuous development</div>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
+<h4 class="font-bold text-amber-400 mb-4">✓ Effective coaching</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"On the 10am call, when the customer said X, you responded Y. An alternative would be..."</li>
+<li>"Your conversion rate went up 5% this week. What did you do differently?"</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Micromanagement</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Why didn't you make 50 calls today?"</li>
+<li>"You need to improve" (without specifying what)</li>
+</ul>
+</div>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">🎭 Weekly role play</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">No athlete competes without training. No musician plays without rehearsing.<strong class="text-amber-400">Why should salespeople go for real calls without simulating them first?</strong>The weekly role play and training that separates amateur teams from professionals.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">How to set up an effective role play</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Choose real scenario</h4>
+<p class="text-sm text-neutral-400">Use objections and situations that actually happened that week. Don't invent scenarios — use reality.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Simulate in pairs</h4>
+<p class="text-sm text-neutral-400">One is the seller, the other is the customer. The "client" must be challenging but realistic. 5-7 minutes per round.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Immediate feedback</h4>
+<p class="text-sm text-neutral-400">After each round: what worked, what to adjust, what to try differently. Specific and actionable feedback.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of Thumb</h3>
+<p class="text-neutral-300">Book<strong class="text-primary">45 minutes per week</strong>for role play. Does it seem like little? In a year, there are almost 40 hours of deliberate practice. Teams that do weekly role play convert on average 23% more than teams that don't.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">📐 Very clear process</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The trainable thrives on<strong class="text-amber-400">absolute clarity</strong>. He needs to know exactly: how many calls to make, when to send follow-ups, how to register in the CRM, when to escalate to the manager. Ambiguity is the enemy of this profile.</p>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Clear end-to-end process</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span><strong class="text-amber-400">Daily activity:</strong>X calls, Y emails, Z follow-ups — specific numbers</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span><strong class="text-amber-400">Follow-up cadence:</strong>Day 1, Day 3, Day 7, Day 14 — with template for each stage</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span><strong class="text-amber-400">Qualification criteria:</strong>When is the lead qualified? Clear checklist with 5 criteria</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span><strong class="text-amber-400">Escalation:</strong>When to involve the manager? Clear rules for when to ask for help</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">✓</span>
+<span><strong class="text-amber-400">CRM:</strong>What to record, when to record, in which field — no room for doubt</span>
+</li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 The result</h3>
+<p class="text-neutral-300">A trainable with a clear process generates<strong class="text-blue-400">predictable results</strong>. You know exactly what to expect because you know exactly what he's doing. Predictability is the greatest gift a manager can give to the board.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Trainables are 60-70% of the team and have the highest ROI</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Script evolves from crutch to skill in 4 phases</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Close monitoring and coaching, not micromanagement</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Weekly role play increases conversion by 23%</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Clear process generates predictability</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-amber-400 font-bold text-sm">4.4</span>
+<h4 class="font-bold mt-1">🔄 Tough Profile Track</h4>
+<p class="text-neutral-400 text-sm mt-2">How to reposition those who resist the traditional sales model into roles that generate real value.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-4-2.html">← Module 4.2</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-4.html">Next: Module 4.4 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 4.3: Trainable Salesperson Path</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -441,6 +383,5 @@
     }
     if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); document.getElementById('theme-icon').textContent = '☀️'; }
   </script>
-
 </body>
 </html>

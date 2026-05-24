@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 7.1: Questionario de Diagnostico Comercial | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 7.1: Commercial Diagnostic Questionnaire | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,660 +32,599 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <!-- Breadcrumb -->
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 7</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-orange-400 font-medium">Modulo 7.1</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 7.1
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">📋 Questionario de Diagnostico Comercial</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        As 20 perguntas que revelam o perfil comercial real de qualquer vendedor. Ferramenta completa pronta para imprimir e aplicar imediatamente.
-      </p>
-
-      <!-- Stats -->
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-orange-400">Template</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🎯 As 20 Perguntas Completas</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O questionario e dividido em <strong class="text-orange-400">4 blocos de 5 perguntas</strong> cada. Cada bloco avalia uma dimensao fundamental do perfil comercial: aptidao, vontade, aprendizagem e execucao. Juntas, as 20 perguntas criam o mapa completo do vendedor.
-      </p>
-
-      <!-- Bloco 1: Aptidao -->
-      <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-orange-400 mb-4">Bloco 1: APTIDAO (Habilidade Natural)</h3>
-        <p class="text-neutral-400 text-sm mb-4">Avalia a capacidade inata de se comunicar e influenciar em contextos comerciais.</p>
-        <div class="space-y-3">
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-orange-400 font-bold text-sm mt-0.5">A1</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Cria conexao rapido com pessoas novas?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia rapport natural. 1 = trava com desconhecidos, 5 = conecta em segundos.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-orange-400 font-bold text-sm mt-0.5">A2</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Sustenta conversa com seguranca e fluencia?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia comunicacao verbal. 1 = perde o fio, 5 = articula com clareza e confianca.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-orange-400 font-bold text-sm mt-0.5">A3</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Escuta ativamente e percebe sinais do cliente?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia escuta ativa. 1 = fala mais que ouve, 5 = capta nuances e entrelinhas.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-orange-400 font-bold text-sm mt-0.5">A4</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Argumenta com naturalidade sem parecer forcado?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia poder de persuasao. 1 = parece roteiro decorado, 5 = convence com naturalidade.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-orange-400 font-bold text-sm mt-0.5">A5</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Transmite confianca e credibilidade?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia presenca. 1 = inseguro e hesitante, 5 = inspira confianca imediatamente.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bloco 2: Vontade -->
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Bloco 2: VONTADE (Motivacao Interna)</h3>
-        <p class="text-neutral-400 text-sm mb-4">Avalia o desejo genuino de atuar na area comercial e a resiliencia emocional.</p>
-        <div class="space-y-3">
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-blue-400 font-bold text-sm mt-0.5">V1</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Gosta de negociar e interagir com clientes?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia afinidade com vendas. 1 = evita contato, 5 = energizado por conversas comerciais.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-blue-400 font-bold text-sm mt-0.5">V2</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Topa meta e pressao sem reclamar?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia tolerancia a pressao. 1 = desmorona com cobranca, 5 = funciona melhor sob pressao.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-blue-400 font-bold text-sm mt-0.5">V3</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Lida bem com rejeicao e "nao"?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia resiliencia. 1 = leva para o pessoal, 5 = processa rapido e segue em frente.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-blue-400 font-bold text-sm mt-0.5">V4</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Procura oportunidades ativamente?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia proatividade. 1 = espera o lead chegar, 5 = caca oportunidades o tempo todo.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-blue-400 font-bold text-sm mt-0.5">V5</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Quer genuinamente melhorar em vendas?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia ambicao de crescimento. 1 = acomodado, 5 = busca aprender e evoluir constantemente.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bloco 3: Aprendizagem -->
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Bloco 3: APRENDIZAGEM (Capacidade de Evoluir)</h3>
-        <p class="text-neutral-400 text-sm mb-4">Avalia a velocidade e disposicao para absorver conhecimento e mudar comportamento.</p>
-        <div class="space-y-3">
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-purple-400 font-bold text-sm mt-0.5">P1</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Aceita feedback sem se defender?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia coachability. 1 = justifica tudo, 5 = ouve, anota e agradece.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-purple-400 font-bold text-sm mt-0.5">P2</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Corrige rapido apos identificar erro?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia velocidade de correcao. 1 = repete o mesmo erro, 5 = corrige na proxima tentativa.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-purple-400 font-bold text-sm mt-0.5">P3</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Aprende observando os melhores da equipe?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia aprendizado social. 1 = ignora referencias, 5 = estuda e replica o que funciona.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-purple-400 font-bold text-sm mt-0.5">P4</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Testa novas abordagens por conta propria?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia experimentacao. 1 = faz sempre igual, 5 = testa variacoes e mede resultados.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-purple-400 font-bold text-sm mt-0.5">P5</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Evolui visivelmente entre uma semana e outra?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia curva de aprendizado. 1 = estagnado ha meses, 5 = melhora notavel a cada semana.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bloco 4: Execucao -->
-      <div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-emerald-400 mb-4">Bloco 4: EXECUCAO (Disciplina e Processo)</h3>
-        <p class="text-neutral-400 text-sm mb-4">Avalia a capacidade de transformar conhecimento em acao consistente e diaria.</p>
-        <div class="space-y-3">
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-emerald-400 font-bold text-sm mt-0.5">E1</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Faz follow-up de forma consistente?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia persistencia. 1 = esquece apos primeiro contato, 5 = segue ate o fechamento ou descarte.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-emerald-400 font-bold text-sm mt-0.5">E2</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Mantem rotina comercial diaria?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia disciplina. 1 = dias inteiros sem atividade, 5 = rotina previsivel e cumprida.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-emerald-400 font-bold text-sm mt-0.5">E3</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Usa CRM/processo de forma organizada?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia organizacao. 1 = nao registra nada, 5 = pipeline atualizado e organizado.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-emerald-400 font-bold text-sm mt-0.5">E4</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Cumpre a atividade comercial minima?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia volume. 1 = muito abaixo da meta de atividade, 5 = supera a meta consistentemente.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
-            <span class="text-emerald-400 font-bold text-sm mt-0.5">E5</span>
-            <div>
-              <span class="text-neutral-200 font-medium">Transforma treinamento em acao na pratica?</span>
-              <p class="text-neutral-400 text-sm mt-1">Avalia aplicacao. 1 = assiste e esquece, 5 = implementa na primeira oportunidade.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">📊 Como Pontuar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Cada pergunta recebe uma nota de <strong class="text-orange-400">1 a 5</strong>. A pontuacao deve refletir o comportamento real e observavel, nao a intencao ou o potencial do vendedor. Se possivel, use evidencias concretas.
-      </p>
-
-      <div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-orange-400 mb-4">Escala de Pontuacao</h3>
-        <div class="space-y-3">
-          <div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500/20 text-red-400 font-bold text-lg">1</span>
-            <div>
-              <span class="font-semibold text-red-400">Nunca / Muito fraco</span>
-              <p class="text-neutral-400 text-sm">Nao demonstra a competencia. Ausencia total ou quase total do comportamento.</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold text-lg">2</span>
-            <div>
-              <span class="font-semibold text-orange-400">Raramente / Fraco</span>
-              <p class="text-neutral-400 text-sm">Demonstra em situacoes isoladas. Comportamento inconsistente e abaixo do esperado.</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-500/20 text-yellow-400 font-bold text-lg">3</span>
-            <div>
-              <span class="font-semibold text-yellow-400">As vezes / Medio</span>
-              <p class="text-neutral-400 text-sm">Demonstra com frequencia moderada. Oscila entre bom e ruim sem padrao claro.</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold text-lg">4</span>
-            <div>
-              <span class="font-semibold text-blue-400">Frequentemente / Bom</span>
-              <p class="text-neutral-400 text-sm">Demonstra na maioria das situacoes. Comportamento consistente com falhas pontuais.</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-lg">5</span>
-            <div>
-              <span class="font-semibold text-emerald-400">Sempre / Excelente</span>
-              <p class="text-neutral-400 text-sm">Demonstra consistentemente. Comportamento solido que pode servir de referencia para outros.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra de Ouro da Pontuacao</h3>
-        <p class="text-neutral-300">
-          Na duvida entre duas notas, escolha a <strong class="text-primary">mais baixa</strong>. E melhor identificar um gap e descobrir que nao existe do que ignorar um gap real. A avaliacao e ferramenta de desenvolvimento, nao de elogio.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🏷️ Como Classificar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Apos somar os pontos de cada bloco (5 perguntas x nota maxima 5 = <strong class="text-orange-400">maximo 25 pontos por bloco</strong>), classifique cada dimensao:
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-6 mb-6">
-        <div class="bg-emerald-900/20 rounded-xl p-6 border border-emerald-500/30">
-          <h4 class="font-bold text-emerald-400 mb-2">21 a 25 pontos</h4>
-          <div class="text-2xl font-bold text-emerald-400 mb-2">ALTA</div>
-          <p class="text-neutral-300 text-sm">Competencia solida. Manter e refinar. Pode ser referencia para outros vendedores da equipe.</p>
-        </div>
-        <div class="bg-yellow-900/20 rounded-xl p-6 border border-yellow-500/30">
-          <h4 class="font-bold text-yellow-400 mb-2">14 a 20 pontos</h4>
-          <div class="text-2xl font-bold text-yellow-400 mb-2">MEDIA</div>
-          <p class="text-neutral-300 text-sm">Espaco para crescimento. Priorizar treinamento e acompanhamento proximo nesta dimensao.</p>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-2">5 a 13 pontos</h4>
-          <div class="text-2xl font-bold text-red-400 mb-2">BAIXA</div>
-          <p class="text-neutral-300 text-sm">Gap critico. Intervencao urgente necessaria. Avaliar se e treinavel ou se e limitacao estrutural.</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-orange-400 mb-4">Exemplo Pratico de Classificacao</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-dark-600">
-                <th class="text-left py-2 text-neutral-400">Vendedor</th>
-                <th class="text-center py-2 text-orange-400">Aptidao</th>
-                <th class="text-center py-2 text-blue-400">Vontade</th>
-                <th class="text-center py-2 text-purple-400">Aprendiz.</th>
-                <th class="text-center py-2 text-emerald-400">Execucao</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-2 text-neutral-300">Carlos</td>
-                <td class="text-center py-2"><span class="text-emerald-400 font-bold">22 Alta</span></td>
-                <td class="text-center py-2"><span class="text-emerald-400 font-bold">24 Alta</span></td>
-                <td class="text-center py-2"><span class="text-yellow-400 font-bold">16 Media</span></td>
-                <td class="text-center py-2"><span class="text-red-400 font-bold">11 Baixa</span></td>
-              </tr>
-              <tr>
-                <td class="py-2 text-neutral-300">Ana</td>
-                <td class="text-center py-2"><span class="text-yellow-400 font-bold">18 Media</span></td>
-                <td class="text-center py-2"><span class="text-emerald-400 font-bold">23 Alta</span></td>
-                <td class="text-center py-2"><span class="text-emerald-400 font-bold">21 Alta</span></td>
-                <td class="text-center py-2"><span class="text-emerald-400 font-bold">22 Alta</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-neutral-400 text-sm mt-4">Carlos tem talento e vontade mas nao executa — precisa de acompanhamento de rotina, nao de treinamento de tecnica. Ana e consistente e treinavel — investir nela da retorno rapido.</p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">📈 Fit Comercial = Media dos 4 Blocos</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O <strong class="text-orange-400">Fit Comercial</strong> e o indicador unico que resume o potencial comercial. Calcule a media dos 4 blocos e converta para escala de 0 a 10. Formula: (soma dos 4 blocos / 100) x 10.
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-emerald-900/20 rounded-xl p-6 border border-emerald-500/30">
-          <h4 class="font-bold text-emerald-400 mb-2">8.5 a 10.0</h4>
-          <div class="text-xl font-bold text-emerald-400 mb-2">FIT FORTE</div>
-          <p class="text-neutral-300 text-sm">Vendedor completo. Investir em desafios maiores, metas agressivas e posicao de lideranca. Alto retorno sobre investimento.</p>
-        </div>
-        <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-          <h4 class="font-bold text-blue-400 mb-2">7.0 a 8.4</h4>
-          <div class="text-xl font-bold text-blue-400 mb-2">FIT BOM</div>
-          <p class="text-neutral-300 text-sm">Base solida com pontos de melhoria. Investir em treinamento direcionado nos gaps. Potencial de se tornar top performer.</p>
-        </div>
-        <div class="bg-yellow-900/20 rounded-xl p-6 border border-yellow-500/30">
-          <h4 class="font-bold text-yellow-400 mb-2">5.5 a 6.9</h4>
-          <div class="text-xl font-bold text-yellow-400 mb-2">FIT PARCIAL</div>
-          <p class="text-neutral-300 text-sm">Gaps significativos. Avaliar se os gaps sao treinaveis. Se sim, investir com prazo definido. Se nao, considerar realocacao.</p>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-2">Abaixo de 5.5</h4>
-          <div class="text-xl font-bold text-red-400 mb-2">FIT BAIXO</div>
-          <p class="text-neutral-300 text-sm">Desalinhamento com funcao comercial. Conversa honesta necessaria. Pode ser excelente em outra area mas nao em vendas.</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600">
-        <h3 class="text-lg font-semibold text-orange-400 mb-4">Exemplo de Calculo</h3>
-        <div class="bg-dark-800/50 rounded-lg p-4 font-mono text-sm">
-          <p class="text-neutral-300">Vendedor: Carlos</p>
-          <p class="text-neutral-400 mt-2">Aptidao: 22 | Vontade: 24 | Aprendizagem: 16 | Execucao: 11</p>
-          <p class="text-neutral-400">Total: 22 + 24 + 16 + 11 = 73</p>
-          <p class="text-orange-400 mt-2 font-bold">Fit Comercial: (73 / 100) x 10 = 7.3 → FIT BOM</p>
-          <p class="text-neutral-400 mt-2">Mas atencao: o Fit Bom esconde um gap critico em Execucao (11 = Baixa).</p>
-          <p class="text-neutral-400">A media sozinha nao conta a historia completa — sempre olhe os blocos individuais.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🖨️ Template Pronto para Impressao/Uso</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Abaixo esta o template completo, pronto para <strong class="text-orange-400">copiar, imprimir ou adaptar</strong>. Use como formulario fisico em reunioes de avaliacao ou digitalize em planilha.
-      </p>
-
-      <div class="bg-dark-800 rounded-xl p-8 border-2 border-orange-500/30 mb-6">
-        <div class="text-center mb-8">
-          <h3 class="text-2xl font-bold text-orange-400">DIAGNOSTICO COMERCIAL 8020</h3>
-          <p class="text-neutral-400 mt-2">Formulario de Avaliacao de Perfil Comercial</p>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
-          <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
-            <span class="text-neutral-400">Nome:</span>
-            <span class="text-neutral-300 ml-2">_________________________________</span>
-          </div>
-          <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
-            <span class="text-neutral-400">Data:</span>
-            <span class="text-neutral-300 ml-2">____/____/________</span>
-          </div>
-          <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
-            <span class="text-neutral-400">Avaliador:</span>
-            <span class="text-neutral-300 ml-2">____________________________</span>
-          </div>
-          <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
-            <span class="text-neutral-400">Cargo:</span>
-            <span class="text-neutral-300 ml-2">______________________________</span>
-          </div>
-        </div>
-
-        <p class="text-neutral-400 text-sm mb-4">Instrucoes: Pontue cada item de 1 (nunca/muito fraco) a 5 (sempre/excelente).</p>
-
-        <!-- Template resumido -->
-        <div class="space-y-6">
-          <div class="border border-orange-500/30 rounded-lg p-4">
-            <h4 class="font-bold text-orange-400 mb-3">BLOCO A — APTIDAO</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex justify-between items-center"><span class="text-neutral-300">A1. Cria conexao rapido?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">A2. Sustenta conversa com seguranca?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">A3. Escuta e percebe sinais?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">A4. Argumenta com naturalidade?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">A5. Transmite confianca?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-            </div>
-            <div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
-              <span class="text-orange-400">SUBTOTAL APTIDAO:</span>
-              <span class="text-neutral-400">_____ / 25 → [ ] Alta [ ] Media [ ] Baixa</span>
-            </div>
-          </div>
-
-          <div class="border border-blue-500/30 rounded-lg p-4">
-            <h4 class="font-bold text-blue-400 mb-3">BLOCO V — VONTADE</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex justify-between items-center"><span class="text-neutral-300">V1. Gosta de negociar?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">V2. Topa meta e pressao?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">V3. Lida bem com rejeicao?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">V4. Procura oportunidades?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">V5. Quer melhorar em vendas?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-            </div>
-            <div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
-              <span class="text-blue-400">SUBTOTAL VONTADE:</span>
-              <span class="text-neutral-400">_____ / 25 → [ ] Alta [ ] Media [ ] Baixa</span>
-            </div>
-          </div>
-
-          <div class="border border-purple-500/30 rounded-lg p-4">
-            <h4 class="font-bold text-purple-400 mb-3">BLOCO P — APRENDIZAGEM</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex justify-between items-center"><span class="text-neutral-300">P1. Aceita feedback sem se defender?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">P2. Corrige rapido?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">P3. Aprende observando os melhores?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">P4. Testa novas abordagens?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">P5. Evolui entre uma semana e outra?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-            </div>
-            <div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
-              <span class="text-purple-400">SUBTOTAL APRENDIZAGEM:</span>
-              <span class="text-neutral-400">_____ / 25 → [ ] Alta [ ] Media [ ] Baixa</span>
-            </div>
-          </div>
-
-          <div class="border border-emerald-500/30 rounded-lg p-4">
-            <h4 class="font-bold text-emerald-400 mb-3">BLOCO E — EXECUCAO</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex justify-between items-center"><span class="text-neutral-300">E1. Faz follow-up?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">E2. Mantem rotina?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">E3. Usa CRM/processo?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">E4. Cumpre atividade comercial?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-              <div class="flex justify-between items-center"><span class="text-neutral-300">E5. Transforma treinamento em acao?</span><span class="text-neutral-500">[ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]</span></div>
-            </div>
-            <div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
-              <span class="text-emerald-400">SUBTOTAL EXECUCAO:</span>
-              <span class="text-neutral-400">_____ / 25 → [ ] Alta [ ] Media [ ] Baixa</span>
-            </div>
-          </div>
-
-          <div class="border-2 border-orange-500/50 rounded-lg p-6 bg-orange-900/10">
-            <h4 class="font-bold text-orange-400 text-lg mb-3">RESULTADO FINAL</h4>
-            <div class="space-y-2 text-sm">
-              <p class="text-neutral-300">Total Geral: _____ / 100</p>
-              <p class="text-neutral-300">Fit Comercial: (Total / 100) x 10 = _____ / 10</p>
-              <div class="mt-4 flex flex-wrap gap-4">
-                <span class="text-neutral-400">[ ] 8.5-10 Forte</span>
-                <span class="text-neutral-400">[ ] 7.0-8.4 Bom</span>
-                <span class="text-neutral-400">[ ] 5.5-6.9 Parcial</span>
-                <span class="text-neutral-400">[ ] &lt;5.5 Baixo</span>
-              </div>
-            </div>
-            <div class="mt-4 pt-4 border-t border-orange-500/30">
-              <p class="text-neutral-400 text-sm">Observacoes e Plano de Acao:</p>
-              <p class="text-neutral-500 text-sm mt-2">_______________________________________________________________</p>
-              <p class="text-neutral-500 text-sm mt-1">_______________________________________________________________</p>
-              <p class="text-neutral-500 text-sm mt-1">_______________________________________________________________</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-orange-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-orange-400">✓</span>
-              <span>As 20 perguntas divididas em 4 blocos</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-orange-400">✓</span>
-              <span>Escala de pontuacao de 1 a 5</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-orange-400">✓</span>
-              <span>Classificacao Alta/Media/Baixa por bloco</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-orange-400">✓</span>
-              <span>Calculo do Fit Comercial</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-orange-400">✓</span>
-              <span>Template pronto para usar</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-orange-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-orange-400 font-bold text-sm">7.2</span>
-            <h4 class="font-bold mt-1">🎙️ Script Pronto de Vendas</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Scripts completos de abertura, diagnostico, apresentacao de valor e fechamento prontos para usar.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Voltar para Trilha 7
-        </a>
-        <a href="modulo-7-2.html" class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors">
-          Proximo: Modulo 7.2 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 7.1: Questionario de Diagnostico Comercial</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400" href="index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-orange-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Breadcrumb
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 7</a>
+<span class="text-neutral-600">/</span>
+<span class="text-orange-400 font-medium">Module 7.1</span>
+</div>
+<span class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-semibold rounded-full mb-4">MODULE 7.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">📋 Commercial Diagnostic Questionnaire</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The 20 questions that reveal the real commercial profile of any salesperson. Complete tool ready to print and apply immediately.</p>
+Stats
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">Practical</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-orange-400">Template</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🎯 The Complete 20 Questions</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The questionnaire is divided into<strong class="text-orange-400">4 blocks of 5 questions</strong>each. Each block assesses a fundamental dimension of the commercial profile: aptitude, desire, learning and execution. Together, the 20 questions create the complete salesperson map.</p>
+Block 1: Aptitude
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20 mb-6">
+<h3 class="text-lg font-semibold text-orange-400 mb-4">Block 1: APTITUDE (Natural Ability)</h3>
+<p class="text-neutral-400 text-sm mb-4">Assesses the innate ability to communicate and influence in commercial contexts.</p>
+<div class="space-y-3">
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-orange-400 font-bold text-sm mt-0.5">A1</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you quickly create connections with new people?</span>
+<p class="text-neutral-400 text-sm mt-1">Assesses natural rapport. 1 = hangs with strangers, 5 = connects in seconds.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-orange-400 font-bold text-sm mt-0.5">A2</span>
+<div>
+<span class="text-neutral-200 font-medium">Can you hold a conversation confidently and fluently?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates verbal communication. 1 = loses the thread, 5 = articulates clearly and confidently.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-orange-400 font-bold text-sm mt-0.5">A3</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you actively listen and notice customer signals?</span>
+<p class="text-neutral-400 text-sm mt-1">Assesses active listening. 1 = speaks more than listens, 5 = captures nuances and between the lines.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-orange-400 font-bold text-sm mt-0.5">A4</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you argue naturally without seeming forced?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates power of persuasion. 1 = looks like a memorized script, 5 = convinces naturally.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-orange-400 font-bold text-sm mt-0.5">A5</span>
+<div>
+<span class="text-neutral-200 font-medium">Does it convey trust and credibility?</span>
+<p class="text-neutral-400 text-sm mt-1">Assess presence. 1 = insecure and hesitant, 5 = immediately inspires confidence.</p>
+</div>
+</div>
+</div>
+</div>
+Block 2: Will
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Block 2: WILL (Internal Motivation)</h3>
+<p class="text-neutral-400 text-sm mb-4">Assesses the genuine desire to work in the commercial area and emotional resilience.</p>
+<div class="space-y-3">
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-blue-400 font-bold text-sm mt-0.5">V1</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you like negotiating and interacting with customers?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates affinity with sales. 1 = avoids contact, 5 = energized by business conversations.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-blue-400 font-bold text-sm mt-0.5">V2</span>
+<div>
+<span class="text-neutral-200 font-medium">Meet the goal and the pressure without complaining?</span>
+<p class="text-neutral-400 text-sm mt-1">Assess pressure tolerance. 1 = falls apart under pressure, 5 = works best under pressure.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-blue-400 font-bold text-sm mt-0.5">V3</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you handle rejection and “no” well?</span>
+<p class="text-neutral-400 text-sm mt-1">Assess resilience. 1 = takes it personally, 5 = processes it quickly and moves on.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-blue-400 font-bold text-sm mt-0.5">V4</span>
+<div>
+<span class="text-neutral-200 font-medium">Actively looking for opportunities?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates proactivity. 1 = waits for the lead to arrive, 5 = hunts for opportunities all the time.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-blue-400 font-bold text-sm mt-0.5">V5</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you genuinely want to improve in sales?</span>
+<p class="text-neutral-400 text-sm mt-1">Assess growth ambition. 1 = accommodated, 5 = constantly seeks to learn and evolve.</p>
+</div>
+</div>
+</div>
+</div>
+Block 3: Learning
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Block 3: LEARNING (Ability to Evolve)</h3>
+<p class="text-neutral-400 text-sm mb-4">Assesses the speed and willingness to absorb knowledge and change behavior.</p>
+<div class="space-y-3">
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-purple-400 font-bold text-sm mt-0.5">P1</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you accept feedback without defending yourself?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates coachability. 1 = justifies everything, 5 = listens, takes notes and thanks.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-purple-400 font-bold text-sm mt-0.5">P2</span>
+<div>
+<span class="text-neutral-200 font-medium">Correct quickly after identifying an error?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates correction speed. 1 = repeats the same error, 5 = corrects it on the next attempt.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-purple-400 font-bold text-sm mt-0.5">P3</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you learn by watching the best on the team?</span>
+<p class="text-neutral-400 text-sm mt-1">Assesses social learning. 1 = ignores references, 5 = studies and replicates what works.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-purple-400 font-bold text-sm mt-0.5">P4</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you test new approaches on your own?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluate experimentation. 1 = always does the same thing, 5 = tests variations and measures results.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-purple-400 font-bold text-sm mt-0.5">P5</span>
+<div>
+<span class="text-neutral-200 font-medium">Does it visibly evolve from one week to the next?</span>
+<p class="text-neutral-400 text-sm mt-1">Assess learning curve. 1 = stagnant for months, 5 = notable improvement each week.</p>
+</div>
+</div>
+</div>
+</div>
+Block 4: Execution
+<div class="bg-gradient-to-br from-emerald-900/20 to-dark-800 rounded-xl p-6 border border-emerald-500/20 mb-6">
+<h3 class="text-lg font-semibold text-emerald-400 mb-4">Block 4: EXECUTION (Discipline and Process)</h3>
+<p class="text-neutral-400 text-sm mb-4">Assesses the ability to transform knowledge into consistent, daily action.</p>
+<div class="space-y-3">
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-emerald-400 font-bold text-sm mt-0.5">E1</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you follow up consistently?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates persistence. 1 = forget after first contact, 5 = continue until closure or discard.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-emerald-400 font-bold text-sm mt-0.5">E2</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you maintain a daily business routine?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluates discipline. 1 = entire days without activity, 5 = predictable and followed routine.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-emerald-400 font-bold text-sm mt-0.5">E3</span>
+<div>
+<span class="text-neutral-200 font-medium">Do you use CRM/process in an organized way?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluate organization. 1 = does not record anything, 5 = pipeline updated and organized.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-emerald-400 font-bold text-sm mt-0.5">E4</span>
+<div>
+<span class="text-neutral-200 font-medium">Does it meet the minimum commercial activity?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluate volume. 1 = well below activity target, 5 = consistently exceeds target.</p>
+</div>
+</div>
+<div class="flex items-start space-x-3 bg-dark-800/50 rounded-lg p-4">
+<span class="text-emerald-400 font-bold text-sm mt-0.5">E5</span>
+<div>
+<span class="text-neutral-200 font-medium">Does it turn training into practical action?</span>
+<p class="text-neutral-400 text-sm mt-1">Evaluate application. 1 = watch and forget, 5 = implement at the first opportunity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">📊 How to Score</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Each question receives a grade of<strong class="text-orange-400">1 to 5</strong>. The score should reflect actual, observable behavior, not the seller's intent or potential. If possible, use concrete evidence.</p>
+<div class="bg-gradient-to-br from-orange-900/20 to-dark-800 rounded-xl p-6 border border-orange-500/20 mb-6">
+<h3 class="text-lg font-semibold text-orange-400 mb-4">Scoring Scale</h3>
+<div class="space-y-3">
+<div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500/20 text-red-400 font-bold text-lg">1</span>
+<div>
+<span class="font-semibold text-red-400">Never / Very weak</span>
+<p class="text-neutral-400 text-sm">Does not demonstrate competence. Total or almost total absence of behavior.</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold text-lg">2</span>
+<div>
+<span class="font-semibold text-orange-400">Rarely / Weak</span>
+<p class="text-neutral-400 text-sm">Demonstrates in isolated situations. Inconsistent and below-expected behavior.</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-500/20 text-yellow-400 font-bold text-lg">3</span>
+<div>
+<span class="font-semibold text-yellow-400">Sometimes / Average</span>
+<p class="text-neutral-400 text-sm">Demonstrates with moderate frequency. It oscillates between good and bad without a clear pattern.</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold text-lg">4</span>
+<div>
+<span class="font-semibold text-blue-400">Often / Good</span>
+<p class="text-neutral-400 text-sm">It shows in most situations. Behavior consistent with occasional failures.</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 bg-dark-800/50 rounded-lg p-4">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-lg">5</span>
+<div>
+<span class="font-semibold text-emerald-400">Always / Excellent</span>
+<p class="text-neutral-400 text-sm">Demonstrates consistently. Solid behavior that can serve as a reference for others.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Golden Rule of Punctuation</h3>
+<p class="text-neutral-300">When in doubt between two notes, choose the one<strong class="text-primary">lowest</strong>. It is better to identify a gap and discover that it does not exist than to ignore a real gap. Assessment is a development tool, not praise.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🏷️ How to Sort</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">After adding up the points for each block (5 questions x maximum score 5 =<strong class="text-orange-400">maximum 25 points per block</strong>), classify each dimension:</p>
+<div class="grid md:grid-cols-3 gap-6 mb-6">
+<div class="bg-emerald-900/20 rounded-xl p-6 border border-emerald-500/30">
+<h4 class="font-bold text-emerald-400 mb-2">21 to 25 points</h4>
+<div class="text-2xl font-bold text-emerald-400 mb-2">HIGH</div>
+<p class="text-neutral-300 text-sm">Solid competence. Maintain and refine. Can be a reference for other salespeople on the team.</p>
+</div>
+<div class="bg-yellow-900/20 rounded-xl p-6 border border-yellow-500/30">
+<h4 class="font-bold text-yellow-400 mb-2">14 to 20 points</h4>
+<div class="text-2xl font-bold text-yellow-400 mb-2">AVERAGE</div>
+<p class="text-neutral-300 text-sm">Room for growth. Prioritize training and close monitoring in this dimension.</p>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-2">5 to 13 points</h4>
+<div class="text-2xl font-bold text-red-400 mb-2">LOW</div>
+<p class="text-neutral-300 text-sm">Critical gap. Urgent intervention required. Assess whether it is trainable or whether it is a structural limitation.</p>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-orange-400 mb-4">Practical Classification Example</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-dark-600">
+<th class="text-left py-2 text-neutral-400">Seller</th>
+<th class="text-center py-2 text-orange-400">Fitness</th>
+<th class="text-center py-2 text-blue-400">Willing</th>
+<th class="text-center py-2 text-purple-400">Apprentice.</th>
+<th class="text-center py-2 text-emerald-400">Execution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-dark-600/50">
+<td class="py-2 text-neutral-300">Carlos</td>
+<td class="text-center py-2"><span class="text-emerald-400 font-bold">22 High</span></td>
+<td class="text-center py-2"><span class="text-emerald-400 font-bold">24 High</span></td>
+<td class="text-center py-2"><span class="text-yellow-400 font-bold">16 Media</span></td>
+<td class="text-center py-2"><span class="text-red-400 font-bold">11 Low</span></td>
+</tr>
+<tr>
+<td class="py-2 text-neutral-300">Dwarf</td>
+<td class="text-center py-2"><span class="text-yellow-400 font-bold">18 Media</span></td>
+<td class="text-center py-2"><span class="text-emerald-400 font-bold">23 High</span></td>
+<td class="text-center py-2"><span class="text-emerald-400 font-bold">21 High</span></td>
+<td class="text-center py-2"><span class="text-emerald-400 font-bold">22 High</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-neutral-400 text-sm mt-4">Carlos has talent and desire but he doesn't execute — he needs routine monitoring, not technique training. Ana is consistent and trainable — investing in her pays off quickly.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">📈 Commercial Fit = Media of the 4 Blocks</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">
+        O <strong class="text-orange-400">Fit Commercial</strong>It is the only indicator that summarizes commercial potential. Calculate the average of the 4 blocks and convert to a scale of 0 to 10. Formula: (sum of 4 blocks / 100) x 10.</p>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-emerald-900/20 rounded-xl p-6 border border-emerald-500/30">
+<h4 class="font-bold text-emerald-400 mb-2">8.5 to 10.0</h4>
+<div class="text-xl font-bold text-emerald-400 mb-2">FIT STRONG</div>
+<p class="text-neutral-300 text-sm">Complete seller. Invest in bigger challenges, aggressive goals and a leadership position. High return on investment.</p>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h4 class="font-bold text-blue-400 mb-2">7.0 to 8.4</h4>
+<div class="text-xl font-bold text-blue-400 mb-2">GOOD FIT</div>
+<p class="text-neutral-300 text-sm">Solid base with points for improvement. Invest in targeted training on gaps. Potential to become a top performer.</p>
+</div>
+<div class="bg-yellow-900/20 rounded-xl p-6 border border-yellow-500/30">
+<h4 class="font-bold text-yellow-400 mb-2">5.5 to 6.9</h4>
+<div class="text-xl font-bold text-yellow-400 mb-2">PARTIAL FIT</div>
+<p class="text-neutral-300 text-sm">Significant gaps. Assess whether the gaps are trainable. If yes, invest with a defined period. If not, consider relocation.</p>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-2">Below 5.5</h4>
+<div class="text-xl font-bold text-red-400 mb-2">FIT LOW</div>
+<p class="text-neutral-300 text-sm">Misalignment with commercial function. Honest conversation necessary. It may be excellent in another area, but not in sales.</p>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600">
+<h3 class="text-lg font-semibold text-orange-400 mb-4">Calculation Example</h3>
+<div class="bg-dark-800/50 rounded-lg p-4 font-mono text-sm">
+<p class="text-neutral-300">Seller: Carlos</p>
+<p class="text-neutral-400 mt-2">Aptitude: 22 | Will: 24 | Learning: 16 | Execution: 11</p>
+<p class="text-neutral-400">Total: 22 + 24 + 16 + 11 = 73</p>
+<p class="text-orange-400 mt-2 font-bold">Commercial Fit: (73 / 100) x 10 = 7.3 → GOOD FIT</p>
+<p class="text-neutral-400 mt-2">But be careful: Fit Bom hides a critical gap in Execution (11 = Low).</p>
+<p class="text-neutral-400">The average alone doesn't tell the full story — always look at the individual blocks.</p>
+</div>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🖨️ Template Ready for Print/Use</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Below is the complete template, ready to use.<strong class="text-orange-400">copy, print or adapt</strong>. Use as a physical form in evaluation meetings or scan it into a spreadsheet.</p>
+<div class="bg-dark-800 rounded-xl p-8 border-2 border-orange-500/30 mb-6">
+<div class="text-center mb-8">
+<h3 class="text-2xl font-bold text-orange-400">COMMERCIAL DIAGNOSIS 8020</h3>
+<p class="text-neutral-400 mt-2">Commercial Profile Assessment Form</p>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
+<span class="text-neutral-400">Name:</span>
+<span class="text-neutral-300 ml-2">_________________________________</span>
+</div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
+<span class="text-neutral-400">Date:</span>
+<span class="text-neutral-300 ml-2">____/____/________</span>
+</div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
+<span class="text-neutral-400">Evaluator:</span>
+<span class="text-neutral-300 ml-2">____________________________</span>
+</div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600">
+<span class="text-neutral-400">Position:</span>
+<span class="text-neutral-300 ml-2">______________________________</span>
+</div>
+</div>
+<p class="text-neutral-400 text-sm mb-4">Instructions: Score each item from 1 (never/very weak) to 5 (always/excellent).</p>
+Summary template
+<div class="space-y-6">
+<div class="border border-orange-500/30 rounded-lg p-4">
+<h4 class="font-bold text-orange-400 mb-3">BLOCK A — FITNESS</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center"><span class="text-neutral-300">A1. Creates connection quickly?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">A2. Can you hold a conversation safely?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">A3. Do you listen and perceive signals?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">A4. Do you argue naturally?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">A5. Does it convey confidence?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+</div>
+<div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
+<span class="text-orange-400">SUBTOTAL FITNESS:</span>
+<span class="text-neutral-400">_____ / 25 → [ ] High [ ] Medium [ ] Low</span>
+</div>
+</div>
+<div class="border border-blue-500/30 rounded-lg p-4">
+<h4 class="font-bold text-blue-400 mb-3">BLOCK V — WILL</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center"><span class="text-neutral-300">V1. Do you like trading?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">V2. Do you meet the goal and the pressure?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">V3. Do you handle rejection well?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">V4. Looking for opportunities?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">V5. Want to improve in sales?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+</div>
+<div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
+<span class="text-blue-400">SUBTOTAL WILL:</span>
+<span class="text-neutral-400">_____ / 25 → [ ] High [ ] Medium [ ] Low</span>
+</div>
+</div>
+<div class="border border-purple-500/30 rounded-lg p-4">
+<h4 class="font-bold text-purple-400 mb-3">BLOCK P — LEARNING</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center"><span class="text-neutral-300">P1. Do you accept feedback without defending yourself?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">P2. Fix it quickly?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">P3. Do you learn by watching the best?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">P4. Do you test new approaches?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">P5. Does it evolve from one week to the next?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+</div>
+<div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
+<span class="text-purple-400">SUBTOTAL LEARNING:</span>
+<span class="text-neutral-400">_____ / 25 → [ ] High [ ] Medium [ ] Low</span>
+</div>
+</div>
+<div class="border border-emerald-500/30 rounded-lg p-4">
+<h4 class="font-bold text-emerald-400 mb-3">BLOCK E — EXECUTION</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between items-center"><span class="text-neutral-300">E1. Do you follow-up?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">E2. Do you maintain a routine?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">E3. Do you use CRM/process?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">E4. Do you carry out commercial activity?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+<div class="flex justify-between items-center"><span class="text-neutral-300">E5. Turn training into action?</span><span class="text-neutral-500">[1] [2] [3] [4] [5]</span></div>
+</div>
+<div class="mt-3 pt-3 border-t border-dark-600 flex justify-between text-sm font-bold">
+<span class="text-emerald-400">SUBTOTAL EXECUTION:</span>
+<span class="text-neutral-400">_____ / 25 → [ ] High [ ] Medium [ ] Low</span>
+</div>
+</div>
+<div class="border-2 border-orange-500/50 rounded-lg p-6 bg-orange-900/10">
+<h4 class="font-bold text-orange-400 text-lg mb-3">FINAL RESULT</h4>
+<div class="space-y-2 text-sm">
+<p class="text-neutral-300">Grand Total: _____ / 100</p>
+<p class="text-neutral-300">Commercial Fit: (Total / 100) x 10 = _____ / 10</p>
+<div class="mt-4 flex flex-wrap gap-4">
+<span class="text-neutral-400">[ ] 8.5-10 Strong</span>
+<span class="text-neutral-400">[ ] 7.0-8.4 Good</span>
+<span class="text-neutral-400">[ ] 5.5-6.9 Partial</span>
+<span class="text-neutral-400">[ ] &lt;5.5 Low</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-orange-500/30">
+<p class="text-neutral-400 text-sm">Observations and Action Plan:</p>
+<p class="text-neutral-500 text-sm mt-2">_______________________________________________________________</p>
+<p class="text-neutral-500 text-sm mt-1">_______________________________________________________________</p>
+<p class="text-neutral-500 text-sm mt-1">_______________________________________________________________</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-orange-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-orange-400">✓</span>
+<span>The 20 questions divided into 4 blocks</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-orange-400">✓</span>
+<span>Scoring scale from 1 to 5</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-orange-400">✓</span>
+<span>High/Medium/Low rating per block</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-orange-400">✓</span>
+<span>Commercial Fit Calculation</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-orange-400">✓</span>
+<span>Ready-to-use template</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-orange-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-orange-400 font-bold text-sm">7.2</span>
+<h4 class="font-bold mt-1">🎙️ Ready-made Sales Script</h4>
+<p class="text-neutral-400 text-sm mt-2">Complete opening, diagnosis, value presentation and closing scripts ready to use.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Return to Trail 7</a>
+<a class="flex-1 text-center px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-500 transition-colors" href="modulo-7-2.html">Next: Module 7.2 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 7.1: Commercial Diagnostic Questionnaire</div>
+</div>
+</div>
+</footer>
+Scripts
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -705,6 +644,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

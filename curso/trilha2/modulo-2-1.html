@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 2.1: O roteiro de valor em 5 passos | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 2.1: The value roadmap in 5 steps | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,514 +32,441 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-blue-500/10 text-blue-400">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 2</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-blue-400 font-medium">Modulo 2.1</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 2.1
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🗺️ O roteiro de valor em 5 passos</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Um caminho estruturado para conduzir qualquer conversa de vendas. Do diagnostico ao fechamento, cada passo constroi sobre o anterior.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">6</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">~60</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-blue-400">Script</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🔍 Passo 1: Diagnosticar a situacao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O primeiro passo de qualquer venda bem-sucedida e <strong class="text-blue-400">entender antes de propor</strong>. A maioria dos vendedores comeca falando do produto. Vendedores 8020 comecam ouvindo o cliente.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Como diagnosticar na pratica</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Faca perguntas abertas: "Me conta como funciona hoje..."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Escute sem interromper — anote mentalmente os pontos de dor</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Repita o que ouviu para validar: "Entao voce esta dizendo que..."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Identifique 2-3 problemas principais antes de avancar</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-          <h4 class="font-bold text-blue-400 mb-4">✓ Vendedor Consultivo</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Me conta como funciona hoje?"</li>
-            <li>"O que mais te incomoda nisso?"</li>
-            <li>"Ha quanto tempo e assim?"</li>
-            <li>"O que ja tentou para resolver?"</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Vendedor Transacional</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Nosso produto faz X, Y e Z"</li>
-            <li>"Temos o melhor preco do mercado"</li>
-            <li>"Posso te fazer uma proposta?"</li>
-            <li>"Quando posso enviar o contrato?"</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Na proxima conversa com qualquer pessoa, pratique fazer 3 perguntas antes de dar qualquer opiniao. Observe como a pessoa se abre mais quando voce pergunta com genuino interesse.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🎯 Passo 2: Explorar o problema</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Depois de entender a situacao geral, voce precisa <strong class="text-blue-400">aprofundar a dor</strong>. O objetivo e fazer o cliente verbalizar o problema com detalhes — porque quando ele fala a dor em voz alta, ela se torna mais real e urgente.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">A tecnica do aprofundamento</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span class="text-blue-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Cliente menciona problema superficial</h4>
-              <p class="text-sm text-neutral-400">"As vendas caíram um pouco"</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span class="text-blue-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Voce aprofunda com pergunta</h4>
-              <p class="text-sm text-neutral-400">"Quanto cairam? Em quanto tempo? O que voce acha que causou?"</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span class="text-blue-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Cliente revela a dor real</h4>
-              <p class="text-sm text-neutral-400">"Na verdade, cairam 30% em 3 meses. Estou perdendo meus melhores clientes para o concorrente"</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspectiva</h3>
-        <p class="text-neutral-300">
-          Pesquisas mostram que vendedores que fazem <strong class="text-blue-400">5 ou mais perguntas de aprofundamento</strong> fecham 74% mais que aqueles que fazem 1-2 perguntas. A profundidade do diagnostico e diretamente proporcional a taxa de conversao.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">⚠️ Passo 3: Mostrar a consequencia</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Agora que o cliente verbalizou a dor, voce ajuda ele a enxergar <strong class="text-blue-400">o custo de nao resolver</strong>. Pessoas compram mais para evitar perdas do que para obter ganhos — esse e o principio da aversao a perda.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Frases que projetam consequencia</h3>
-        <div class="space-y-3">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <p class="text-neutral-300 text-sm">"Se isso continuar por mais 6 meses, quanto voce vai ter perdido no total?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <p class="text-neutral-300 text-sm">"E alem do financeiro, como isso afeta sua equipe? Seu sono?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <p class="text-neutral-300 text-sm">"Voce ja calculou quantos clientes esta perdendo por mes por causa disso?"</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <p class="text-neutral-300 text-sm">"O que acontece com o negocio se esse problema escalar?"</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Matematica da consequencia</h3>
-        <div class="flex items-center justify-between text-center">
-          <div class="flex-1">
-            <div class="text-4xl mb-2">😰</div>
-            <div class="font-semibold text-neutral-200">Problema hoje</div>
-            <div class="text-xs text-neutral-500">R$ 5k/mes perdido</div>
-          </div>
-          <div class="flex-1 px-4">
-            <div class="h-1 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-2"></div>
-            <div class="text-xs text-neutral-400">← 12 meses sem resolver →</div>
-            <div class="text-xs text-red-400 mt-1">Custo acumulado</div>
-          </div>
-          <div class="flex-1">
-            <div class="text-4xl mb-2">💸</div>
-            <div class="font-semibold text-neutral-200">Consequencia</div>
-            <div class="text-xs text-neutral-500">R$ 60k perdido</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra Pratica</h3>
-        <p class="text-neutral-300">
-          Nunca invente consequencias — ajude o cliente a calcular as dele. Quando o numero vem dele, nao ha discussao. <strong class="text-primary">A consequencia que o cliente calcula e sempre mais poderosa que a que voce apresenta.</strong>
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">💡 Passo 4: Apresentar a solucao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        So agora — depois de diagnosticar, explorar e mostrar consequencia — voce apresenta sua solucao. E faz isso <strong class="text-blue-400">conectando cada beneficio diretamente a uma dor que o cliente mencionou</strong>. Nao e uma lista de features. E uma resposta personalizada.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">A formula da apresentacao</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">😰</div>
-            <div class="font-semibold text-neutral-200 text-sm">Dor do cliente</div>
-            <div class="text-xs text-neutral-400">"Voce disse que..."</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🔗</div>
-            <div class="font-semibold text-neutral-200 text-sm">Conexao</div>
-            <div class="text-xs text-neutral-400">"E exatamente por isso que..."</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">✅</div>
-            <div class="font-semibold text-neutral-200 text-sm">Beneficio</div>
-            <div class="text-xs text-neutral-400">"Voce vai conseguir..."</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-          <h4 class="font-bold text-blue-400 mb-4">✓ Apresentacao com valor</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Voce mencionou que perde 2h/dia com isso. Nosso sistema automatiza esse processo, devolvendo essas 2h para voce focar em vendas."</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Apresentacao sem valor</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Nosso sistema tem dashboard, relatorios automaticos, integracao com 50 ferramentas e suporte 24h."</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Por que isso funciona?</h3>
-        <p class="text-neutral-300">
-          Quando voce conecta sua solucao a dor que o cliente acabou de verbalizar, ele <strong class="text-blue-400">sente que voce criou aquilo para ele</strong>. A mesma oferta generica se torna personalizada so pela forma como voce apresenta.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">💰 Passo 5: Falar o preco</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O preco e a ultima coisa que voce fala. Quando o cliente ja entendeu o problema, a consequencia e a solucao, <strong class="text-blue-400">o preco e comparado com o custo de nao resolver</strong> — nao com o quanto ele tem no bolso.
-      </p>
-
-      <div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">A ancoragem natural</h3>
-        <div class="space-y-4">
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-red-500">
-            <p class="text-neutral-300 text-sm"><strong class="text-red-400">Custo de nao resolver:</strong> R$ 60.000/ano em perdas</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-neutral-300 text-sm"><strong class="text-blue-400">Investimento na solucao:</strong> R$ 5.000/ano</p>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-neutral-300 text-sm"><strong class="text-emerald-400">Economia liquida:</strong> R$ 55.000/ano (ROI de 12x)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Como falar o preco com confianca</h3>
-        <ul class="space-y-2 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Fale o preco com voz firme, sem pedir desculpa</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Conecte ao valor: "Considerando que voce perde R$ 5k/mes..."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Faca silencio depois de falar o preco — deixe o cliente processar</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-400 mt-1">✓</span>
-            <span>Nunca oferca desconto antes de ser pedido</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra de Ouro</h3>
-        <p class="text-neutral-300">
-          Depois de falar o preco, <strong class="text-primary">fique em silencio</strong>. O primeiro que fala depois do preco perde. Deixe o cliente processar. Na maioria das vezes, o silencio trabalha a seu favor.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 6 -->
-    <section id="topico-6" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">6</span>
-        <h2 class="text-2xl font-bold">🎬 O roteiro completo na pratica</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Vamos ver os 5 passos em acao em um exemplo completo de conversa. Note como cada passo <strong class="text-blue-400">flui naturalmente para o proximo</strong> sem parecer um interrogatorio ou um pitch forcado.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Exemplo: Venda de consultoria para restaurante</h3>
-        <div class="space-y-4">
-          <div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-xs text-blue-400 font-semibold mb-1">PASSO 1 — DIAGNOSTICO</p>
-            <p class="text-neutral-300 text-sm"><strong>Vendedor:</strong> "Me conta, como esta o movimento do restaurante nos ultimos meses?"</p>
-            <p class="text-neutral-400 text-sm mt-1"><strong>Cliente:</strong> "Olha, os dias de semana estao fracos. Fim de semana ainda vai, mas durante a semana esta morto."</p>
-          </div>
-          <div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-blue-500">
-            <p class="text-xs text-blue-400 font-semibold mb-1">PASSO 2 — EXPLORAR O PROBLEMA</p>
-            <p class="text-neutral-300 text-sm"><strong>Vendedor:</strong> "Quanto voce acha que perde por semana com esses dias fracos? Se fosse levar o movimento do fim de semana para a terca, quarta, por exemplo?"</p>
-            <p class="text-neutral-400 text-sm mt-1"><strong>Cliente:</strong> "Facil uns R$ 3.000 a R$ 4.000 por semana. E uns R$ 15 mil por mes que deixo na mesa."</p>
-          </div>
-          <div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-amber-500">
-            <p class="text-xs text-amber-400 font-semibold mb-1">PASSO 3 — CONSEQUENCIA</p>
-            <p class="text-neutral-300 text-sm"><strong>Vendedor:</strong> "R$ 15 mil por mes... em um ano sao R$ 180 mil. E durante esse tempo, os custos fixos — aluguel, funcionarios — continuam iguais, certo?"</p>
-            <p class="text-neutral-400 text-sm mt-1"><strong>Cliente:</strong> "Exatamente. O custo e o mesmo, vendendo ou nao."</p>
-          </div>
-          <div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-emerald-500">
-            <p class="text-xs text-emerald-400 font-semibold mb-1">PASSO 4 — SOLUCAO</p>
-            <p class="text-neutral-300 text-sm"><strong>Vendedor:</strong> "Entao voce precisa de um jeito de trazer gente durante a semana sem depender so de boca a boca. E exatamente isso que a gente faz — criamos uma estrategia de marketing local que atrai clientes nos dias fracos."</p>
-          </div>
-          <div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-primary">
-            <p class="text-xs text-primary font-semibold mb-1">PASSO 5 — PRECO</p>
-            <p class="text-neutral-300 text-sm"><strong>Vendedor:</strong> "O investimento e R$ 2.000 por mes. Considerando que voce perde R$ 15 mil, basta a gente trazer 15% do que falta para ja se pagar."</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 O que torna esse exemplo eficaz</h3>
-        <p class="text-neutral-300">
-          Note que o vendedor nunca falou "nosso servico tem X features". Ele <strong class="text-blue-400">deixou o cliente calcular a propria perda</strong> e depois posicionou a solucao como uma fracao do custo de nao resolver. O preco de R$ 2.000 parece pequeno perto de R$ 15.000/mes de perda.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-blue-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>Diagnosticar antes de propor</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>Explorar o problema com profundidade</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>Mostrar o custo de nao resolver</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>Apresentar solucao conectada a dor</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>Falar preco depois de construir valor</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-blue-400">✓</span>
-              <span>O roteiro completo em acao</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-blue-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-blue-400 font-bold text-sm">2.2</span>
-            <h4 class="font-bold mt-1">❓ As 4 perguntas que mudam tudo</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Quatro perguntas estrategicas que revelam a dor, quantificam o problema e abrem caminho para a venda.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Voltar para Trilha 2
-        </a>
-        <a href="modulo-2-2.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">
-          Proximo: Modulo 2.2 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 2.1: O roteiro de valor em 5 passos</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-blue-500/10 text-blue-400" href="index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 2</a>
+<span class="text-neutral-600">/</span>
+<span class="text-blue-400 font-medium">Module 2.1</span>
+</div>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MODULE 2.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🗺️ The value roadmap in 5 steps</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A structured path to conduct any sales conversation. From diagnosis to closure, each step builds on the previous one.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">6</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">~60</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">Practical</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-blue-400">Script</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🔍 Step 1: Diagnose the situation</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The first step of any successful sale and<strong class="text-blue-400">understand before proposing</strong>. Most salespeople start by talking about the product. 8020 salespeople start by listening to the customer.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">How to diagnose in practice</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Ask open-ended questions: "Tell me how it works today..."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Listen without interrupting — make a mental note of pain points</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Repeat what you heard to validate: "So you're saying that..."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Identify 2-3 main problems before moving forward</span>
+</li>
+</ul>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h4 class="font-bold text-blue-400 mb-4">✓ Consultative Seller</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Tell me how it works today?"</li>
+<li>"What bothers you most about this?"</li>
+<li>"How long has it been like this?"</li>
+<li>"What have you tried to resolve it?"</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Transactional Seller</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Our product does X, Y and Z"</li>
+<li>"We have the best price on the market"</li>
+<li>"Can I make you an offer?"</li>
+<li>"When can I send the contract?"</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">In your next conversation with anyone, practice asking 3 questions before giving any opinion. Notice how the person opens up more when you ask with genuine interest.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🎯 Step 2: Explore the problem</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">After understanding the general situation, you need to<strong class="text-blue-400">deepen the pain</strong>. The goal is to get the client to verbalize the problem in detail — because when they say the pain out loud, it becomes more real and urgent.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">The deepening technique</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+<span class="text-blue-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Customer mentions superficial problem</h4>
+<p class="text-sm text-neutral-400">"Sales have dropped a little"</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+<span class="text-blue-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">You go deeper with questions</h4>
+<p class="text-sm text-neutral-400">"How much did they fall? How quickly? What do you think caused it?"</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+<span class="text-blue-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Client reveals real pain</h4>
+<p class="text-sm text-neutral-400">"In fact, they dropped 30% in 3 months. I'm losing my best customers to the competitor"</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspective</h3>
+<p class="text-neutral-300">Research shows that salespeople who do<strong class="text-blue-400">5 or more in-depth questions</strong>close 74% more than those who ask 1-2 questions. The depth of the diagnosis is directly proportional to the conversion rate.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">⚠️ Step 3: Show the consequence</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Now that the client has verbalized the pain, you help them see<strong class="text-blue-400">the cost of not resolving</strong>. People buy more to avoid losses than to make gains — this is the principle of loss aversion.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Phrases that project consequence</h3>
+<div class="space-y-3">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm">"If this continues for another 6 months, how much will you have lost in total?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm">"And beyond the financial, how does this affect your team? Your sleep?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm">"Have you calculated how many customers you are losing per month because of this?"</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm">“What happens to the business if this problem escalates?”</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Consequence mathematics</h3>
+<div class="flex items-center justify-between text-center">
+<div class="flex-1">
+<div class="text-4xl mb-2">😰</div>
+<div class="font-semibold text-neutral-200">Problem today</div>
+<div class="text-xs text-neutral-500">R$5k/month lost</div>
+</div>
+<div class="flex-1 px-4">
+<div class="h-1 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-2"></div>
+<div class="text-xs text-neutral-400">← 12 months without resolution →</div>
+<div class="text-xs text-red-400 mt-1">Accumulated cost</div>
+</div>
+<div class="flex-1">
+<div class="text-4xl mb-2">💸</div>
+<div class="font-semibold text-neutral-200">Consequence</div>
+<div class="text-xs text-neutral-500">R$60k lost</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of Thumb</h3>
+<p class="text-neutral-300">Never invent consequences — help the client calculate theirs. When the number comes from him, there is no discussion.<strong class="text-primary">The consequence the client calculates is always more powerful than the one you present.</strong>
+</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">💡 Step 4: Present the solution</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Only now — after diagnosing, exploring and showing consequences — do you present your solution. And it does this<strong class="text-blue-400">connecting each benefit directly to a pain that the customer mentioned</strong>. It's not a list of features. And a personalized response.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">The presentation formula</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">😰</div>
+<div class="font-semibold text-neutral-200 text-sm">Customer pain</div>
+<div class="text-xs text-neutral-400">"You said..."</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🔗</div>
+<div class="font-semibold text-neutral-200 text-sm">Connection</div>
+<div class="text-xs text-neutral-400">"And that's exactly why..."</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">✅</div>
+<div class="font-semibold text-neutral-200 text-sm">Benefit</div>
+<div class="text-xs text-neutral-400">"You'll make it..."</div>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h4 class="font-bold text-blue-400 mb-4">✓ Presentation with value</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"You mentioned that you lose 2 hours a day on this. Our system automates this process, giving you those 2 hours back to focus on sales."</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Valueless presentation</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Our system has a dashboard, automatic reports, integration with 50 tools and 24-hour support."</li>
+</ul>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Why does this work?</h3>
+<p class="text-neutral-300">When you connect your solution to the pain the customer just verbalized, they<strong class="text-blue-400">feels like you created that for him</strong>. The same generic offer becomes personalized just by the way you present it.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">💰 Step 5: Speak the price</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Price is the last thing you talk about. When the customer already understands the problem, the consequence and the solution,<strong class="text-blue-400">the price is compared to the cost of not solving</strong>— not with how much he has in his pocket.</p>
+<div class="bg-gradient-to-br from-blue-900/20 to-dark-800 rounded-xl p-6 border border-blue-500/20 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Natural anchoring</h3>
+<div class="space-y-4">
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-red-500">
+<p class="text-neutral-300 text-sm"><strong class="text-red-400">Cost of not resolving:</strong>R$60,000/year in losses</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-neutral-300 text-sm"><strong class="text-blue-400">Investment in the solution:</strong>R$5,000/year</p>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-neutral-300 text-sm"><strong class="text-emerald-400">Net savings:</strong>R$55,000/year (12x ROI)</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">How to say the price with confidence</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Speak the price in a firm voice, without apologizing</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Connect to the value: "Considering that you lose R$5k/month..."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Be silent after mentioning the price — let the customer process</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-blue-400 mt-1">✓</span>
+<span>Never offer a discount before asking</span>
+</li>
+</ul>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Golden Rule</h3>
+<p class="text-neutral-300">After saying the price,<strong class="text-primary">stay silent</strong>. The first person to speak after the price loses. Let the customer process. Most of the time, silence works in your favor.</p>
+</div>
+</section>
+Topic 6
+<section class="mb-16" id="topico-6">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold">6</span>
+<h2 class="text-2xl font-bold">🎬 The complete itinerary in practice</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Let's see the 5 steps in action in a complete example conversation. Notice how each step<strong class="text-blue-400">flows naturally to the next</strong>without seeming like an interrogation or a forced pitch.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-blue-400 mb-4">Example: Sale of consultancy for a restaurant</h3>
+<div class="space-y-4">
+<div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-xs text-blue-400 font-semibold mb-1">STEP 1 — DIAGNOSIS</p>
+<p class="text-neutral-300 text-sm"><strong>Seller:</strong>"Tell me, how has the restaurant been in recent months?"</p>
+<p class="text-neutral-400 text-sm mt-1"><strong>Customer:</strong>"Look, the weekdays are slow. The weekends are still there, but during the week it's dead."</p>
+</div>
+<div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-blue-500">
+<p class="text-xs text-blue-400 font-semibold mb-1">STEP 2 — EXPLORE THE PROBLEM</p>
+<p class="text-neutral-300 text-sm"><strong>Seller:</strong>"How much do you think you lose per week with these slow days? If you were to take the weekend movement to Tuesday, Wednesday, for example?"</p>
+<p class="text-neutral-400 text-sm mt-1"><strong>Customer:</strong>"It makes about R$3,000 to R$4,000 a week. And about R$15,000 a month that I leave on the table."</p>
+</div>
+<div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-amber-500">
+<p class="text-xs text-amber-400 font-semibold mb-1">STEP 3 — CONSEQUENCE</p>
+<p class="text-neutral-300 text-sm"><strong>Seller:</strong>"R$15 thousand per month... in a year it's R$180 thousand. And during that time, the fixed costs — rent, employees — remain the same, right?"</p>
+<p class="text-neutral-400 text-sm mt-1"><strong>Customer:</strong>"Exactly. The cost is the same whether you sell it or not."</p>
+</div>
+<div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-emerald-500">
+<p class="text-xs text-emerald-400 font-semibold mb-1">STEP 4 — SOLUTION</p>
+<p class="text-neutral-300 text-sm"><strong>Seller:</strong>"So you need a way to bring in people during the week without relying solely on word of mouth. That's exactly what we do — we create a local marketing strategy that attracts customers on slow days."</p>
+</div>
+<div class="bg-blue-900/10 rounded-lg p-4 border-l-4 border-primary">
+<p class="text-xs text-primary font-semibold mb-1">STEP 5 — PRICE</p>
+<p class="text-neutral-300 text-sm"><strong>Seller:</strong>"The investment is R$2,000 per month. Considering that you lose R$15,000, we just need to bring in 15% of what's left to pay for it."</p>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 What makes this example effective</h3>
+<p class="text-neutral-300">Note that the seller never said "our service has X features". He<strong class="text-blue-400">let the client calculate their own loss</strong>and then positioned the solution as a fraction of the cost of not solving it. The price of R$2,000 seems small compared to R$15,000/month of loss.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-blue-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>Diagnose before proposing</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>Explore the problem in depth</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>Show the cost of not solving</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>Present a solution connected to pain</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>Talking price after building value</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-blue-400">✓</span>
+<span>The complete script in action</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-blue-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-blue-400 font-bold text-sm">2.2</span>
+<h4 class="font-bold mt-1">❓ The 4 questions that change everything</h4>
+<p class="text-neutral-400 text-sm mt-2">Four strategic questions that reveal the pain, quantify the problem and pave the way for the sale.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Return to Track 2</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-2.html">Next: Module 2.2 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 2.1: The value roadmap in 5 steps</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -558,6 +485,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

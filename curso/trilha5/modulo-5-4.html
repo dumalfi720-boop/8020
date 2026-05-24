@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 5.4: Estrategia para Consciente do Produto | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 5.4: Strategy for Product Awareness | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } } }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -22,281 +22,240 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-rose-500/10 text-rose-400"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <header class="bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a><span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 5</a><span class="text-neutral-600">/</span>
-        <span class="text-rose-400 font-medium">Modulo 5.4</span>
-      </div>
-      <span class="inline-block px-3 py-1 bg-rose-500/20 text-rose-400 text-xs font-semibold rounded-full mb-4">MODULO 5.4</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🛒 Estrategia para Consciente do Produto</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">A pessoa conhece sua oferta e esta comparando. Agora e hora de prova social, reducao de risco e construcao de confianca para fechar a venda.</p>
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">5</div><div class="text-xs text-neutral-400">Topicos</div></div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">~60</div><div class="text-xs text-neutral-400">Minutos</div></div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">Estrategico</div><div class="text-xs text-neutral-400">Nivel</div></div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">Pratico</div><div class="text-xs text-neutral-400">Tipo</div></div>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🏷️ O que caracteriza esse nivel</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O consciente do produto <strong class="text-rose-400">ja conhece voce e sua oferta</strong>. Ja visitou seu site, viu seus conteudos, talvez ate conversou com seu time. Mas ainda nao comprou. Esta no momento de avaliacao final — comparando, medindo risco, buscando seguranca.
-      </p>
-
-      <div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">O que esta passando na cabeca dele</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Sera que funciona para o MEU caso?"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"E se eu investir e nao der resultado?"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Outras pessoas tiveram resultado de verdade?"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Sera que eu consigo implementar?"</span></li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Dado critico</h3>
-        <p class="text-neutral-300">
-          <strong class="text-blue-400">67% dos leads qualificados</strong> que nao convertem e porque faltou prova social ou reducao de risco, nao porque o preco estava alto. A objecao "e caro" quase sempre esconde "nao tenho certeza que funciona".
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">⭐ Prova social</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Prova social e a evidencia de que <strong class="text-rose-400">outras pessoas ja obtiveram resultado com voce</strong>. E o gatilho mais poderoso neste nivel porque transfere confianca de quem ja comprou para quem esta pensando em comprar.
-      </p>
-
-      <div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">Hierarquia de Prova Social (do mais ao menos poderoso)</h3>
-        <div class="space-y-3">
-          <div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
-            <span class="text-rose-400 font-bold">1.</span>
-            <span class="text-neutral-300"><strong class="text-neutral-200">Video de depoimento</strong> — Cliente falando com emocao sobre o resultado</span>
-          </div>
-          <div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
-            <span class="text-rose-400 font-bold">2.</span>
-            <span class="text-neutral-300"><strong class="text-neutral-200">Case detalhado com numeros</strong> — Antes/depois com dados verificaveis</span>
-          </div>
-          <div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
-            <span class="text-rose-400 font-bold">3.</span>
-            <span class="text-neutral-300"><strong class="text-neutral-200">Print de mensagem</strong> — WhatsApp, email, DM do cliente agradecendo</span>
-          </div>
-          <div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
-            <span class="text-rose-400 font-bold">4.</span>
-            <span class="text-neutral-300"><strong class="text-neutral-200">Depoimento escrito</strong> — Texto com nome, foto e empresa</span>
-          </div>
-          <div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
-            <span class="text-rose-400 font-bold">5.</span>
-            <span class="text-neutral-300"><strong class="text-neutral-200">Numero de clientes/resultados</strong> — "Mais de 500 empresas atendidas"</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio</h3>
-        <p class="text-neutral-300">Colete HOJE pelo menos 3 depoimentos de clientes. Peca permissao para usar. Um video de 30 segundos de um cliente satisfeito vale mais que 10 paginas de copy.</p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🛡️ Reducao de risco percebido</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Mesmo com prova social, o medo persiste: <strong class="text-rose-400">"e se nao funcionar para MIM?"</strong>. Sua missao e eliminar esse medo com mecanismos de reducao de risco — garantias, testes, demonstracoes.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">Mecanismos de Reducao de Risco</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🔄</div>
-            <div class="font-semibold text-neutral-200 text-sm">Garantia de reembolso</div>
-            <div class="text-xs text-neutral-400">"30 dias ou seu dinheiro de volta, sem perguntas"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🆓</div>
-            <div class="font-semibold text-neutral-200 text-sm">Periodo de teste</div>
-            <div class="text-xs text-neutral-400">"7 dias gratis para testar antes de decidir"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🎥</div>
-            <div class="font-semibold text-neutral-200 text-sm">Demonstracao ao vivo</div>
-            <div class="text-xs text-neutral-400">"Agende uma sessao para ver como funciona"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Garantia de resultado</div>
-            <div class="text-xs text-neutral-400">"Se nao atingir X resultado, continuamos gratis"</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Principio</h3>
-        <p class="text-neutral-300">
-          <strong class="text-blue-400">Inversao de risco:</strong> transfira o risco de quem compra para quem vende. Quando o cliente sente que o risco e seu (vendedor), nao dele (comprador), a barreira cai drasticamente.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">🏆 Autoridade e confianca</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Neste nivel, autoridade e confianca sao os <strong class="text-rose-400">ultimos filtros antes da compra</strong>. A pessoa precisa sentir que esta em boas maos — que voce tem experiencia, track record e credibilidade para entregar o que promete.
-      </p>
-
-      <div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">Elementos de Confianca</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Tempo de mercado:</strong> "10 anos atuando em vendas consultivas"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Volume de clientes:</strong> "Mais de 300 empresas atendidas"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Reconhecimento:</strong> "Palestrante em X eventos", "Mencionado em Y publicacoes"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Parceiros:</strong> "Parceiro oficial de Z", "Certificado por W"</span></li>
-          <li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Transparencia:</strong> Mostrar bastidores, erros aprendidos, humanizar</span></li>
-        </ul>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra de Ouro</h3>
-        <p class="text-neutral-300">
-          Confianca se constroi em <strong class="text-primary">meses mas se destroi em segundos</strong>. Nunca prometa o que nao pode entregar. E melhor prometer menos e surpreender do que prometer muito e decepcionar.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">💬 Exemplos de abordagem para esse nivel</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Para o consciente do produto, a comunicacao e <strong class="text-rose-400">focada em eliminar objecoes e gerar seguranca</strong>. Cada peca de conteudo deve responder uma duvida especifica que impede a compra.
-      </p>
-
-      <div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">Exemplo 1: Email de Follow-Up</h3>
-        <div class="bg-dark-800/50 rounded-lg p-4">
-          <p class="text-neutral-300 text-sm font-medium mb-2">Assunto: O que a Maria fez nos primeiros 30 dias</p>
-          <p class="text-neutral-400 text-sm italic">"Joao, sei que voce esta avaliando. Deixa eu te contar o que aconteceu com a Maria, que tinha exatamente o mesmo perfil de empresa que voce:</p>
-          <p class="text-neutral-400 text-sm italic mt-1">Semana 1: Implementou o processo de follow-up<br>Semana 2: Comecou a medir taxa de conversao<br>Semana 3: Ajustou o script baseado nos dados<br>Semana 4: Conversao subiu de 8% para 14%</p>
-          <p class="text-neutral-400 text-sm italic mt-1">Em 30 dias, R$ 23.000 a mais no caixa. Com a mesma equipe.</p>
-          <p class="text-neutral-400 text-sm italic mt-1">Quer que eu te mostre como isso funcionaria na sua empresa?"</p>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-rose-400 mb-4">Exemplo 2: Pagina de FAQ Estrategica</h3>
-        <div class="bg-dark-800/50 rounded-lg p-4">
-          <p class="text-neutral-300 text-sm font-medium mb-2">Cada FAQ responde uma objecao real:</p>
-          <p class="text-neutral-400 text-sm mt-2"><strong class="text-neutral-300">"Funciona para empresas pequenas?"</strong> → Case de empresa com 3 funcionarios</p>
-          <p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"Quanto tempo leva para ver resultado?"</strong> → Media de 30-45 dias com dados</p>
-          <p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"E se nao funcionar?"</strong> → Garantia detalhada</p>
-          <p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"Preciso de equipe tecnica?"</strong> → Nao, o processo e simples</p>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">Liste as 10 objecoes mais comuns que seus leads levantam antes de comprar. Crie uma resposta para cada uma com prova social ou dados. Essas respostas viram seu FAQ, seus emails e seus scripts de venda.</p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📝</span> Resumo do Modulo</h2>
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-rose-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Comportamento do consciente do produto</span></li>
-            <li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Hierarquia de prova social</span></li>
-            <li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Mecanismos de reducao de risco</span></li>
-            <li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Elementos de autoridade e confianca</span></li>
-            <li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Exemplos de abordagem para conversao</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-rose-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-rose-400 font-bold text-sm">5.5</span>
-            <h4 class="font-bold mt-1">🚀 Estrategia para Muito Consciente</h4>
-            <p class="text-neutral-400 text-sm mt-2">Conduza ao fechamento quem ja esta pronto para comprar. Oferta direta e urgencia real.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-5-3.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Modulo 5.3</a>
-        <a href="modulo-5-5.html" class="flex-1 text-center px-6 py-3 bg-rose-600 text-white rounded-lg font-semibold hover:bg-rose-500 transition-colors">Proximo: Modulo 5.5 →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4"><span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a></div>
-        <div class="text-neutral-500 text-sm">Modulo 5.4: Estrategia para Consciente do Produto</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html"><span class="text-3xl">💰</span><span class="font-bold text-xl hidden sm:inline">8020</span></a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-rose-500/10 text-rose-400" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<header class="bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a><span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 5</a><span class="text-neutral-600">/</span>
+<span class="text-rose-400 font-medium">Module 5.4</span>
+</div>
+<span class="inline-block px-3 py-1 bg-rose-500/20 text-rose-400 text-xs font-semibold rounded-full mb-4">MODULE 5.4</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🛒 Strategy for Product Awareness</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The person knows your offer and is comparing. Now is the time for social proof, risk reduction and trust building to close the sale.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">5</div><div class="text-xs text-neutral-400">Topics</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">~60</div><div class="text-xs text-neutral-400">Minutes</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">Strategic</div><div class="text-xs text-neutral-400">Level</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-xl font-bold text-rose-400">Practical</div><div class="text-xs text-neutral-400">Type</div></div>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🏷️ What characterizes this level</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The product conscious<strong class="text-rose-400">already know you and your offer</strong>. Have you visited your website, seen your content, maybe even talked to your team. But he hasn't bought it yet. This is the time for final assessment — comparing, measuring risk, seeking safety.</p>
+<div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">What's going through his head</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Will it work for MY case?"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"What if I invest and it doesn't pay off?"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Other people had real results?"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span>"Can I implement it?"</span></li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Critical data</h3>
+<p class="text-neutral-300">
+<strong class="text-blue-400">67% of qualified leads</strong>that don't convert is because there was a lack of social proof or risk reduction, not because the price was high. The objection "it's expensive" almost always hides "I'm not sure it works".</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">⭐ Social proof</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Social proof and the evidence that<strong class="text-rose-400">other people have already had results with you</strong>. It is the most powerful trigger at this level because it transfers confidence from those who have already purchased to those who are thinking about buying.</p>
+<div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">Social Proof Hierarchy (from most to least powerful)</h3>
+<div class="space-y-3">
+<div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
+<span class="text-rose-400 font-bold">1.</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">Testimonial video</strong>— Customer talking emotionally about the result</span>
+</div>
+<div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
+<span class="text-rose-400 font-bold">2.</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">Detailed case with numbers</strong>— Before/after with verifiable data</span>
+</div>
+<div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
+<span class="text-rose-400 font-bold">3.</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">Message printout</strong>— WhatsApp, email, DM from the customer thanking</span>
+</div>
+<div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
+<span class="text-rose-400 font-bold">4.</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">Written statement</strong>— Text with name, photo and company</span>
+</div>
+<div class="flex items-center space-x-3 bg-dark-800/50 rounded-lg p-3">
+<span class="text-rose-400 font-bold">5.</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">Number of clients/results</strong>— "More than 500 companies served"</span>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Exercise</h3>
+<p class="text-neutral-300">Collect at least 3 customer testimonials TODAY. Ask permission to use. A 30-second video of a satisfied customer is worth more than 10 pages of copy.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🛡️ Reduction of perceived risk</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Even with social proof, fear persists:<strong class="text-rose-400">"What if it doesn't work for ME?"</strong>. Your mission is to eliminate this fear with risk reduction mechanisms — guarantees, tests, demonstrations.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">Risk Reduction Mechanisms</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🔄</div>
+<div class="font-semibold text-neutral-200 text-sm">Money-back guarantee</div>
+<div class="text-xs text-neutral-400">"30 days or your money back, no questions asked"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🆓</div>
+<div class="font-semibold text-neutral-200 text-sm">Trial period</div>
+<div class="text-xs text-neutral-400">"7 days free to test before deciding"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🎥</div>
+<div class="font-semibold text-neutral-200 text-sm">Live demonstration</div>
+<div class="text-xs text-neutral-400">"Book a session to see how it works"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Result guarantee</div>
+<div class="text-xs text-neutral-400">"If we don't achieve X result, we're still free"</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Principle</h3>
+<p class="text-neutral-300">
+<strong class="text-blue-400">Risk inversion:</strong>transfer the risk from the buyer to the seller. When the customer feels that the risk is theirs (seller), not theirs (buyer), the barrier drops drastically.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">🏆 Authority and trust</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">At this level, authority and trust are the<strong class="text-rose-400">last filters before purchase</strong>. The person needs to feel that they are in good hands — that you have the experience, track record and credibility to deliver what you promise.</p>
+<div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">Elements of Trust</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Market time:</strong>"10 years working in consultative sales"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Customer volume:</strong>"More than 300 companies served"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Recognition:</strong>"Speaker at X events", "Mentioned in Y publications"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Partners:</strong>"Official Partner of Z", "Certified by W"</span></li>
+<li class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><span><strong class="text-neutral-200">Transparency:</strong>Show behind the scenes, mistakes learned, humanize</span></li>
+</ul>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Golden Rule</h3>
+<p class="text-neutral-300">Trust is built in<strong class="text-primary">months but destroys itself in seconds</strong>. Never promise what you cannot deliver. It's better to promise less and surprise than to promise too much and disappoint.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-rose-500/20 text-rose-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">💬 Examples of approaches for this level</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">For the product conscious, communication is<strong class="text-rose-400">focused on eliminating objections and generating security</strong>. Each piece of content must answer a specific question that prevents purchase.</p>
+<div class="bg-gradient-to-br from-rose-900/20 to-dark-800 rounded-xl p-6 border border-rose-500/20 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">Example 1: Follow-Up Email</h3>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm font-medium mb-2">Subject: What Maria did in the first 30 days</p>
+<p class="text-neutral-400 text-sm italic">"João, I know you are evaluating. Let me tell you what happened to Maria, who had exactly the same company profile as you:</p>
+<p class="text-neutral-400 text-sm italic mt-1">Week 1: Implemented the follow-up process<br/>Week 2: Started measuring conversion rate<br/>Week 3: Adjusted the script based on data<br/>Week 4: Conversion rose from 8% to 14%</p>
+<p class="text-neutral-400 text-sm italic mt-1">In 30 days, R$23,000 more in the cash register. With the same team.</p>
+<p class="text-neutral-400 text-sm italic mt-1">Do you want me to show you how this would work in your company?"</p>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-rose-400 mb-4">Example 2: Strategic FAQ Page</h3>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<p class="text-neutral-300 text-sm font-medium mb-2">Each FAQ answers a real objection:</p>
+<p class="text-neutral-400 text-sm mt-2"><strong class="text-neutral-300">“Does it work for small businesses?”</strong>→ Case of a company with 3 employees</p>
+<p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"How long does it take to see results?"</strong>→ Average of 30-45 days with data</p>
+<p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"What if it doesn't work?"</strong>→ Detailed warranty</p>
+<p class="text-neutral-400 text-sm mt-1"><strong class="text-neutral-300">"Do I need a technical team?"</strong>→ No, the process is simple</p>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">List the 10 most common objections your leads raise before purchasing. Create a response for each with social proof or data. These answers become your FAQ, your emails and your sales scripts.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-rose-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Product conscious behavior</span></li>
+<li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Social proof hierarchy</span></li>
+<li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Risk reduction mechanisms</span></li>
+<li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Elements of authority and trust</span></li>
+<li class="flex items-start space-x-2"><span class="text-rose-400">✓</span><span>Examples of conversational approaches</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-rose-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-rose-400 font-bold text-sm">5.5</span>
+<h4 class="font-bold mt-1">🚀 Strategy for Very Conscious</h4>
+<p class="text-neutral-400 text-sm mt-2">Lead those who are ready to buy to closing. Direct offer and real urgency.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-5-3.html">← Module 5.3</a>
+<a class="flex-1 text-center px-6 py-3 bg-rose-600 text-white rounded-lg font-semibold hover:bg-rose-500 transition-colors" href="modulo-5-5.html">Next: Module 5.5 →</a>
+</div>
+</section>
+</main>
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4"><span class="text-2xl">💰</span><span class="font-bold text-neutral-200">8020</span><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a></div>
+<div class="text-neutral-500 text-sm">Module 5.4: Strategy for Product Awareness</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() { const html = document.documentElement; const icon = document.getElementById('theme-icon'); if (html.classList.contains('dark')) { html.classList.remove('dark'); icon.textContent = '☀️'; localStorage.setItem('theme', 'light'); } else { html.classList.add('dark'); icon.textContent = '🌙'; localStorage.setItem('theme', 'dark'); } }
     if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); document.getElementById('theme-icon').textContent = '☀️'; }
   </script>

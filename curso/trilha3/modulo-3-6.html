@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 3.6: Reavaliacao e evolucao | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 3.6: Reassessment and evolution | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,491 +32,432 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 3</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-purple-400 font-medium">Modulo 3.6</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 3.6
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔄 Reavaliacao e evolucao</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        O diagnostico nao e uma foto estatica - e um filme. Aprenda quando reavaliar, como medir progresso e quando mover alguem de grupo.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">4</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">~50</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Gestao</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Processo</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">📅 Quando reavaliar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O diagnostico precisa de <strong class="text-purple-400">frequencia fixa e gatilhos de excecao</strong>. A frequencia garante que o retrato se mantenha atualizado. Os gatilhos permitem reagir rapidamente quando algo muda fora do ciclo normal.
-      </p>
-
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Calendario de reavaliacao</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">Q</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Trimestral (padrao)</h4>
-              <p class="text-sm text-neutral-400">Reavaliar todos os vendedores a cada 90 dias. E tempo suficiente para ver evolucao real sem ser tao longo que perca mudancas importantes.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">M</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Mensal (para Grupo B em ramp-up)</h4>
-              <p class="text-sm text-neutral-400">Vendedores do Grupo B nos primeiros 90 dias de desenvolvimento merecem acompanhamento mensal para ajustar o plano rapidamente.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Gatilhos de reavaliacao imediata</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📉</div>
-            <div class="font-semibold text-neutral-200 text-sm">Queda brusca de performance</div>
-            <div class="text-xs text-neutral-400">Resultado cai mais de 30% em 30 dias sem causa aparente</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📈</div>
-            <div class="font-semibold text-neutral-200 text-sm">Salto inesperado</div>
-            <div class="text-xs text-neutral-400">Vendedor do Grupo B comeca a performar como Grupo A</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🔄</div>
-            <div class="font-semibold text-neutral-200 text-sm">Mudanca de funcao/territorio</div>
-            <div class="text-xs text-neutral-400">Novo segmento, novo produto, nova carteira</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">💭</div>
-            <div class="font-semibold text-neutral-200 text-sm">Evento pessoal relevante</div>
-            <div class="text-xs text-neutral-400">Casamento, divorcio, doenca, nascimento, luto</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra de ouro</h3>
-        <p class="text-neutral-300">
-          <strong class="text-primary">Diagnostico sem reavaliacao vira rotulo.</strong> Se voce classifica alguem como "Grupo D" uma vez e nunca mais reavalia, voce nao esta diagnosticando - esta rotulando. O processo so funciona se for vivo.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">📊 Como medir progresso</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Cada fator tem <strong class="text-purple-400">indicadores especificos</strong> que permitem medir evolucao objetivamente. Nao dependa apenas da percepcao - use dados.
-      </p>
-
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Indicadores por fator</h3>
-        <div class="space-y-4">
-          <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-            <h4 class="font-semibold text-neutral-200 mb-2">🗣️ Aptidao — Indicadores</h4>
-            <ul class="text-sm text-neutral-400 space-y-1">
-              <li>→ Taxa de conversao de ligacao/reuniao em proxima etapa</li>
-              <li>→ Feedback dos clientes (NPS de atendimento)</li>
-              <li>→ Avaliacao de pares e gestores em role play</li>
-              <li>→ Duracao media de ciclo de venda (menor = melhor comunicacao)</li>
-            </ul>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-            <h4 class="font-semibold text-neutral-200 mb-2">🔥 Vontade — Indicadores</h4>
-            <ul class="text-sm text-neutral-400 space-y-1">
-              <li>→ Volume de atividades (ligacoes, emails, reunioes) vs meta</li>
-              <li>→ Proatividade em prospeccao (leads proprios vs recebidos)</li>
-              <li>→ Velocidade de recuperacao apos mes ruim</li>
-              <li>→ Participacao voluntaria em treinamentos e projetos</li>
-            </ul>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-            <h4 class="font-semibold text-neutral-200 mb-2">📈 Aprendizagem — Indicadores</h4>
-            <ul class="text-sm text-neutral-400 space-y-1">
-              <li>→ Tempo entre feedback e aplicacao (quanto menor, melhor)</li>
-              <li>→ Reducao de erros repetidos mes a mes</li>
-              <li>→ Evolucao de score em avaliacoes de qualidade de ligacao</li>
-              <li>→ Consumo de materiais de estudo e treinamento</li>
-            </ul>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-            <h4 class="font-semibold text-neutral-200 mb-2">⚙️ Execucao — Indicadores</h4>
-            <ul class="text-sm text-neutral-400 space-y-1">
-              <li>→ Aderencia a rotina diaria (% de atividades cumpridas)</li>
-              <li>→ Atualizacao de CRM (% de registros em dia)</li>
-              <li>→ Follow-up dentro do prazo (% de follow-ups no timing)</li>
-              <li>→ Atingimento de meta (% da meta alcancada)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Dashboard de evolucao (exemplo)</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-dark-600">
-                <th class="text-left py-3 px-4 text-neutral-400">Fator</th>
-                <th class="text-center py-3 px-4 text-neutral-400">Jan</th>
-                <th class="text-center py-3 px-4 text-neutral-400">Abr</th>
-                <th class="text-center py-3 px-4 text-neutral-400">Jul</th>
-                <th class="text-center py-3 px-4 text-neutral-400">Tendencia</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-3 px-4 text-neutral-300">Aptidao</td>
-                <td class="py-3 px-4 text-center text-red-400">12</td>
-                <td class="py-3 px-4 text-center text-yellow-400">15</td>
-                <td class="py-3 px-4 text-center text-yellow-400">17</td>
-                <td class="py-3 px-4 text-center text-green-400">↑ +5</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-3 px-4 text-neutral-300">Vontade</td>
-                <td class="py-3 px-4 text-center text-green-400">23</td>
-                <td class="py-3 px-4 text-center text-green-400">22</td>
-                <td class="py-3 px-4 text-center text-green-400">24</td>
-                <td class="py-3 px-4 text-center text-green-400">→ Estavel</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-3 px-4 text-neutral-300">Aprendizagem</td>
-                <td class="py-3 px-4 text-center text-green-400">21</td>
-                <td class="py-3 px-4 text-center text-green-400">22</td>
-                <td class="py-3 px-4 text-center text-green-400">23</td>
-                <td class="py-3 px-4 text-center text-green-400">↑ +2</td>
-              </tr>
-              <tr>
-                <td class="py-3 px-4 text-neutral-300">Execucao</td>
-                <td class="py-3 px-4 text-center text-red-400">11</td>
-                <td class="py-3 px-4 text-center text-yellow-400">16</td>
-                <td class="py-3 px-4 text-center text-yellow-400">19</td>
-                <td class="py-3 px-4 text-center text-green-400">↑ +8</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-sm text-neutral-400 mt-3">Este vendedor (Grupo B) evoluiu significativamente em 6 meses. A execucao saltou de baixa para media-alta. A aptidao melhorou com treinamento. Candidato a reclassificacao para Grupo A.</p>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Insight</h3>
-        <p class="text-neutral-300">
-          O historico de scores e <strong class="text-blue-400">mais valioso que o score atual</strong>. Um vendedor com score 15 que veio de 10 esta em trajetoria ascendente. Um vendedor com score 20 que veio de 24 esta em trajetoria descendente. A tendencia importa mais que a foto.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">🔀 Quando mudar alguem de grupo</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Mudar alguem de grupo e uma <strong class="text-purple-400">decisao importante que precisa de criterios claros</strong>. Sem criterios, o sistema perde credibilidade. Com criterios, ele se torna um motor de motivacao e desenvolvimento.
-      </p>
-
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Criterios para mudanca de grupo</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Minimo 2 avaliacoes consecutivas</strong> com score compativel com o novo grupo. Uma avaliacao pode ser anomalia - duas formam padrao.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Evidencia comportamental consistente</strong> que sustenta o novo score. Os numeros precisam bater com o que se observa no dia a dia.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Resultados alinhados</strong> com o novo grupo. Se vai para o Grupo A, precisa estar entregando como Grupo A em termos de receita e atividades.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Estabilidade</strong> — a mudanca nao pode ser baseada em um pico ou vale temporario. Precisa ser tendencia.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-green-900/20 rounded-xl p-6 border border-green-500/30">
-          <h4 class="font-bold text-green-400 mb-4">↑ Promocao de grupo</h4>
-          <ul class="space-y-2 text-sm text-neutral-300">
-            <li>→ Celebre publicamente (com permissao)</li>
-            <li>→ Ajuste a estrategia de desenvolvimento</li>
-            <li>→ Aumente desafios e autonomia</li>
-            <li>→ Use como exemplo para o time</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">↓ Rebaixamento de grupo</h4>
-          <ul class="space-y-2 text-sm text-neutral-300">
-            <li>→ Comunique em particular</li>
-            <li>→ Investigue a causa da queda</li>
-            <li>→ Redefina o plano de desenvolvimento</li>
-            <li>→ Ofereca suporte, nao punicao</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Importante</h3>
-        <p class="text-neutral-300">
-          A mobilidade entre grupos deve ser <strong class="text-primary">visivel para toda a equipe</strong> (de forma anonimizada se necessario). Quando o time ve que e possivel subir de grupo, o diagnostico vira ferramenta de motivacao, nao de rotulacao.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">💎 A frase-chave da trilha</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Toda a Trilha 3 se resume em uma unica frase que deve guiar sua gestao comercial daqui para frente:
-      </p>
-
-      <!-- Frase destaque -->
-      <div class="bg-gradient-to-br from-purple-900/30 to-purple-800/20 rounded-xl p-8 border border-purple-500/30 mb-6 text-center">
-        <p class="text-2xl sm:text-3xl font-bold text-purple-400 leading-relaxed">
-          "Talento ajuda a entrar rapido, vontade e aprendizado determinam quem fica bom."
-        </p>
-      </div>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">O que isso significa na pratica</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Nao contrate so por talento</h4>
-              <p class="text-sm text-neutral-400">O vendedor mais talentoso da entrevista pode ser o primeiro a sair. Busque sinais de vontade e capacidade de aprender alem da aptidao.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Invista no Grupo B</h4>
-              <p class="text-sm text-neutral-400">Vendedores com vontade e aprendizagem altas sao o melhor investimento de longo prazo. Eles evoluem, ficam e retribuem.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Nao ignore a execucao</h4>
-              <p class="text-sm text-neutral-400">Potencial sem execucao e promessa. Resultado exige disciplina diaria. O melhor vendedor e o que faz o basico todos os dias.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">4</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Reavalie sempre</h4>
-              <p class="text-sm text-neutral-400">Pessoas mudam. Contextos mudam. O diagnostico e uma bussola, nao um mapa fixo. Mantenha-o vivo e atualizado.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 O resultado de aplicar este sistema</h3>
-        <p class="text-neutral-300">
-          Gestores que aplicam o diagnostico comercial de forma consistente reportam: <strong class="text-blue-400">redução de 40% em turnover</strong>, <strong class="text-blue-400">aumento de 25% em produtividade por vendedor</strong> e <strong class="text-blue-400">reducao de 60% no tempo de ramp-up</strong> de novos vendedores. O diagnostico nao e burocracia - e a base da gestao comercial profissional.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo da Trilha 3
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">O que voce aprendeu nesta trilha:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Os 4 fatores do perfil comercial</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>O quadrante Aptidao x Vontade</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>20 perguntas para avaliacao objetiva</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Classificacao em Grupos A, B, C e D</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Como aplicar na pratica e dar devolutiva</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Reavaliacao e evolucao continua</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">Proxima trilha:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-amber-400 font-bold text-sm">TRILHA 4</span>
-            <h4 class="font-bold mt-1">📋 Gestao Comercial</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Ferramentas e processos para gerir a equipe no dia a dia: rotinas, reunioes, acompanhamento e tomada de decisao.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-3-5.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 3.5
-        </a>
-        <a href="../trilha4/index.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors">
-          Proxima: Trilha 4 - Gestao →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 3.6: Reavaliacao e evolucao</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400" href="index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 3</a>
+<span class="text-neutral-600">/</span>
+<span class="text-purple-400 font-medium">Module 3.6</span>
+</div>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULE 3.6</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🔄 Reevaluation and evolution</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Diagnosis is not a static photo - it is a movie. Learn when to reassess, how to measure progress, and when to move someone from group to group.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">4</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">~50</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Management</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Process</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">📅 When to reevaluate</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The diagnosis requires<strong class="text-purple-400">fixed frequency and exception triggers</strong>. Frequency ensures that the portrait remains up to date. Triggers allow you to react quickly when something changes outside of the normal cycle.</p>
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Reevaluation calendar</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">Q</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Quarterly (default)</h4>
+<p class="text-sm text-neutral-400">Reevaluate all sellers every 90 days. It's enough time to see real evolution without being so long that you miss important changes.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">M</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Monthly (for Group B in ramp-up)</h4>
+<p class="text-sm text-neutral-400">Group B sellers in the first 90 days of development deserve monthly monitoring to adjust the plan quickly.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Immediate reassessment triggers</h3>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📉</div>
+<div class="font-semibold text-neutral-200 text-sm">Sudden drop in performance</div>
+<div class="text-xs text-neutral-400">Result drops by more than 30% in 30 days without apparent cause</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📈</div>
+<div class="font-semibold text-neutral-200 text-sm">Unexpected jump</div>
+<div class="text-xs text-neutral-400">Salesperson from Group B starts performing as Group A</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🔄</div>
+<div class="font-semibold text-neutral-200 text-sm">Change of role/territory</div>
+<div class="text-xs text-neutral-400">New segment, new product, new portfolio</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">💭</div>
+<div class="font-semibold text-neutral-200 text-sm">Relevant personal event</div>
+<div class="text-xs text-neutral-400">Marriage, divorce, illness, birth, bereavement</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of thumb</h3>
+<p class="text-neutral-300">
+<strong class="text-primary">Diagnosis without reevaluation becomes a label.</strong>If you classify someone as "Group D" once and never reevaluate again, you're not diagnosing - you're labeling. The process only works if it is alive.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">📊 How to measure progress</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Each factor has<strong class="text-purple-400">specific indicators</strong>that allow us to measure evolution objectively. Don't just rely on perception - use data.</p>
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Indicators by factor</h3>
+<div class="space-y-4">
+<div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-2">🗣️ Aptitude — Indicators</h4>
+<ul class="text-sm text-neutral-400 space-y-1">
+<li>→ Call/meeting conversion rate in next step</li>
+<li>→ Customer feedback (service NPS)</li>
+<li>→ Assessment of peers and managers in role play</li>
+<li>→ Average sales cycle duration (shorter = better communication)</li>
+</ul>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-2">🔥 Will — Indicators</h4>
+<ul class="text-sm text-neutral-400 space-y-1">
+<li>→ Volume of activities (calls, emails, meetings) vs target</li>
+<li>→ Proactivity in prospecting (own vs received leads)</li>
+<li>→ Recovery speed after month is poor</li>
+<li>→ Voluntary participation in training and projects</li>
+</ul>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-2">📈 Learning — Indicators</h4>
+<ul class="text-sm text-neutral-400 space-y-1">
+<li>→ Time between feedback and application (the shorter the better)</li>
+<li>→ Reduction of repeated errors month after month</li>
+<li>→ Score evolution in call quality assessments</li>
+<li>→ Consumption of study and training materials</li>
+</ul>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-2">⚙️ Execution — Indicators</h4>
+<ul class="text-sm text-neutral-400 space-y-1">
+<li>→ Adheres to daily routine (% of activities completed)</li>
+<li>→ CRM update (% of records up to date)</li>
+<li>→ Follow-up on time (% of follow-ups on time)</li>
+<li>→ Goal achievement (% of goal achieved)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Evolution dashboard (example)</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-dark-600">
+<th class="text-left py-3 px-4 text-neutral-400">Factor</th>
+<th class="text-center py-3 px-4 text-neutral-400">Jan</th>
+<th class="text-center py-3 px-4 text-neutral-400">Apr</th>
+<th class="text-center py-3 px-4 text-neutral-400">Jul</th>
+<th class="text-center py-3 px-4 text-neutral-400">Trend</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-4 text-neutral-300">Fitness</td>
+<td class="py-3 px-4 text-center text-red-400">12</td>
+<td class="py-3 px-4 text-center text-yellow-400">15</td>
+<td class="py-3 px-4 text-center text-yellow-400">17</td>
+<td class="py-3 px-4 text-center text-green-400">↑ +5</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-4 text-neutral-300">Willing</td>
+<td class="py-3 px-4 text-center text-green-400">23</td>
+<td class="py-3 px-4 text-center text-green-400">22</td>
+<td class="py-3 px-4 text-center text-green-400">24</td>
+<td class="py-3 px-4 text-center text-green-400">→ Stable</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-4 text-neutral-300">Learning</td>
+<td class="py-3 px-4 text-center text-green-400">21</td>
+<td class="py-3 px-4 text-center text-green-400">22</td>
+<td class="py-3 px-4 text-center text-green-400">23</td>
+<td class="py-3 px-4 text-center text-green-400">↑ +2</td>
+</tr>
+<tr>
+<td class="py-3 px-4 text-neutral-300">Execution</td>
+<td class="py-3 px-4 text-center text-red-400">11</td>
+<td class="py-3 px-4 text-center text-yellow-400">16</td>
+<td class="py-3 px-4 text-center text-yellow-400">19</td>
+<td class="py-3 px-4 text-center text-green-400">↑ +8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-sm text-neutral-400 mt-3">This seller (Group B) evolved significantly in 6 months. Execution jumped from low to medium-high. Fitness improved with training. Candidate for reclassification to Group A.</p>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Insight</h3>
+<p class="text-neutral-300">The history of scores and<strong class="text-blue-400">more valuable than the current score</strong>. A salesperson with a score of 15 who came from 10 is on an upward trajectory. A salesperson with a score of 20 who came from 24 is on a downward trajectory. The trend matters more than the photo.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">🔀 When changing someone group</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Changing someone's group and<strong class="text-purple-400">important decision that needs clear criteria</strong>. Without criteria, the system loses credibility. With criteria, it becomes an engine of motivation and development.</p>
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Criteria for changing groups</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Minimum 2 consecutive assessments</strong>with a score compatible with the new group. One assessment can be an anomaly - two form a pattern.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Consistent behavioral evidence</strong>that supports the new score. The numbers need to match what is observed on a daily basis.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Aligned results</strong>with the new group. If it goes to Group A, it needs to be delivering like Group A in terms of revenue and activities.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Stability</strong>— change cannot be based on a temporary peak or valley. It needs to be a trend.</span>
+</li>
+</ul>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-green-900/20 rounded-xl p-6 border border-green-500/30">
+<h4 class="font-bold text-green-400 mb-4">↑ Group promotion</h4>
+<ul class="space-y-2 text-sm text-neutral-300">
+<li>→ Celebrate publicly (with permission)</li>
+<li>→ Adjust the development strategy</li>
+<li>→ Increase challenges and autonomy</li>
+<li>→ Use as an example for the team</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">↓ Group relegation</h4>
+<ul class="space-y-2 text-sm text-neutral-300">
+<li>→ Communicate privately</li>
+<li>→ Investigate the cause of the fall</li>
+<li>→ Redefine the development plan</li>
+<li>→ Offer support, not punishment</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Important</h3>
+<p class="text-neutral-300">Mobility between groups must be<strong class="text-primary">visible to the entire team</strong>(anonymously if necessary). When the team sees that it is possible to move up a group, the diagnosis becomes a motivation tool, not a labeling tool.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">💎 The trail's key phrase</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The entire Track 3 can be summarized in a single sentence that should guide your commercial management from now on:</p>
+Highlight phrase
+<div class="bg-gradient-to-br from-purple-900/30 to-purple-800/20 rounded-xl p-8 border border-purple-500/30 mb-6 text-center">
+<p class="text-2xl sm:text-3xl font-bold text-purple-400 leading-relaxed">"Talent helps you enter quickly, desire and learning determine who becomes good."</p>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">What does this mean in practice</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Don't hire just for talent</h4>
+<p class="text-sm text-neutral-400">The most talented salesperson in the interview may be the first to leave. Look for signs of willingness and ability to learn beyond aptitude.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Invest in Group B</h4>
+<p class="text-sm text-neutral-400">Salespeople with high desire and learning are the best long-term investment. They evolve, stay and give back.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Don't ignore execution</h4>
+<p class="text-sm text-neutral-400">Potential without execution and promise. Result requires daily discipline. The best salesperson is the one who does the basics every day.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">4</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Always reevaluate</h4>
+<p class="text-sm text-neutral-400">People change. Contexts change. The diagnosis is a compass, not a fixed map. Keep it alive and updated.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 The result of applying this system</h3>
+<p class="text-neutral-300">Managers who apply business diagnosis consistently report:<strong class="text-blue-400">40% reduction in turnover</strong>, <strong class="text-blue-400">25% increase in productivity per salesperson</strong> e <strong class="text-blue-400">60% reduction in ramp-up time</strong>of new sellers. Diagnosis is not bureaucracy - it is the basis of professional commercial management.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Track 3 Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">What did you learn on this trail:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>The 4 factors of the business profile</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>The Aptitude x Will quadrant</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>20 questions for objective assessment</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Classification into Groups A, B, C and D</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>How to apply it in practice and give feedback</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Reevaluation and continuous evolution</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">Next track:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-amber-400 font-bold text-sm">TRACK 4</span>
+<h4 class="font-bold mt-1">📋 Commercial Management</h4>
+<p class="text-neutral-400 text-sm mt-2">Tools and processes to manage the team on a daily basis: routines, meetings, monitoring and decision making.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-3-5.html">← Module 3.5</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="../trilha4/index.html">Next: Track 4 - Management →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 3.6: Reassessment and evolution</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -536,6 +477,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

@@ -1,157 +1,155 @@
-# Plano do Curso — Projeto 8020: Vendas, Gestao e Estrategia Comercial
+# Course Plan — Project 8020: Sales, Management and Commercial Strategy
 
-## Visao Geral
+## General View
 
-Curso completo no formato INEMA.CLUB com 8 trilhas, 51 modulos, cobrindo vendas, gestao comercial, diagnostico de equipe e estrategia por nivel de consciencia do consumidor.
+Complete course in duclub format with 8 tracks, 51 modules, covering sales, commercial management, team diagnosis and strategy by consumer awareness level.
 
-O curso trabalha 3 eixos:
-- **Eixo 1 — O vendedor (quem vende):** perfis diferentes precisam de trilhas diferentes
-- **Eixo 2 — O cliente (para quem vende):** os 5 niveis de consciencia, trabalhados simultaneamente
-- **Eixo 3 — O gestor (quem coordena):** diagnostica vendedor, entende cliente, cruza os dois
+The course works on 3 axes:
+- **Axis 1 — The seller (who sells):** different profiles need different tracks
+- **Axis 2 — The customer (for those who sell):** the 5 levels of consciousness, worked simultaneously
+- **Axis 3 — The manager (who coordinates):** diagnoses the salesperson, understands the customer, crosses the two
 
 ---
 
-## Estrutura de Trilhas
+## Trail Structure
 
-| Trilha | Foco | Publico | Modulos | Cor |
+| Trail | Focus | Public | Modules | Color |
 |--------|------|---------|---------|-----|
-| 1. Fundamentos de Vendas | Conceitos base | Todos | 8 | emerald |
-| 2. Metodo Pratico de Vendas | Script e execucao | Vendedores | 7 | blue |
-| 3. Diagnostico Comercial | Identificar perfis | Gestores | 6 | purple |
-| 4. Gestao de Equipe Comercial | Coordenar perfis | Gestores | 7 | amber |
-| 5. Estrategia por Nivel de Consciencia | Plano por nivel do consumidor | Gestores | 7 | rose |
-| 6. Plano Estrategico de Treinamento | Capacitacao da equipe | Gestores | 6 | cyan |
-| 7. Avaliacao e Ferramentas | Ferramentas praticas | Todos | 6 | orange |
-| 8. Referencias e Pensamento Avancado | Livros e visao de futuro | Todos | 4 | indigo |
+| 1. Sales Fundamentals | Basic concepts | All | 8 | emerald |
+| 2. Practical Sales Method | Script and execution | Sellers | 7 | blue |
+| 3. Commercial Diagnosis | Identify profiles | Managers | 6 | purple |
+| 4. Commercial Team Management | Coordinate profiles | Managers | 7 | amber |
+| 5. Strategy by Level of Consciousness | Plan by consumer level | Managers | 7 | rose |
+| 6. Strategic Training Plan | Team training | Managers | 6 | cyan |
+| 7. Assessment and Tools | Practical tools | All | 6 | orange |
+| 8. References and Advanced Thinking | Books and vision of the future | All | 4 | indigo |
 
 ---
 
-## TRILHA 1 — Fundamentos de Vendas (emerald)
+## TRACK 1 — Sales Fundamentals (emerald)
 
-Base conceitual para qualquer perfil.
+Conceptual basis for any profile.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 1.1 | O que e vender de verdade | Vender nao e empurrar, e resolver. Diferenca entre convencer e conduzir. O papel do valor antes do preco. |
-| 1.2 | Os 5 niveis de consciencia do consumidor | Inconsciente a Muito consciente. O que comunicar em cada nivel. Por que a maioria erra focando so no fundo do funil. |
-| 1.3 | Construcao de valor antes do preco | Por que 7 em 10 aceitam pagar mais. Valor percebido vs preco real. Quando o preco entra na conversa. |
-| 1.4 | A arte de perguntar | Perguntas de diagnostico. Perguntas que ampliam dor. Perguntas que revelam desejo. SPIN como base. |
-| 1.5 | Traduzir caracteristicas em impacto | "Isso reduz / acelera / evita / aumenta". Sair de features para resultado. Linguagem de valor. |
-| 1.6 | Objecoes: o que sao e por que existem | As 5 objecoes universais. Objecao vs indecisao. O medo por tras do "esta caro". |
-| 1.7 | O funil de consciencia na pratica | Distribuicao real por tipo de publico (frio/morno/quente). Como gerar conteudo para todos os niveis simultaneamente. |
-| 1.8 | O vendedor como condutor, nao como ator | Processo vs improviso. Script como ferramenta, nao como prisao. A mentalidade profissional. |
+| 1.1 | What is real selling | Selling is not pushing, it is solving. Difference between convincing and leading. The role of value before price. |
+| 1.2 | The 5 levels of consumer awareness | Unconscious to Very conscious. What to communicate at each level. Why most people make the mistake of focusing only on the bottom of the funnel. |
+| 1.3 | Building value before price | Why 7 out of 10 agree to pay more. Perceived value vs real price. When price comes into the conversation. |
+| 1.4 | The art of asking | Diagnostic questions. Questions that magnify pain. Questions that reveal desire. SPIN as a base. |
+| 1.5 | Translate characteristics into impact | "It reduces/accelerates/prevents/increases." Go from features to results. Value language. |
+| 1.6 | Objections: what they are and why they exist | The 5 universal objections. Objection vs indecision. The fear behind “it’s expensive”. |
+| 1.7 | The funnel of consciousness in practice | Actual distribution by type of audience (cold/warm/hot). How to generate content for all levels simultaneously. |
+| 1.8 | The salesperson as a driver, not as an actor | Process vs improvisation. Script as a tool, not as a prison. The professional mentality. |
 
 ---
 
-## TRILHA 2 — Metodo Pratico de Vendas (blue)
+## TRACK 2 — Practical Sales Method (blue)
 
-Script, roteiro e execucao para qualquer pessoa.
+Script, script and execution for anyone.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 2.1 | O roteiro de valor em 5 passos | Diagnosticar, Explorar problema, Mostrar consequencia, Apresentar solucao, Falar preco. |
-| 2.2 | As 4 perguntas que mudam tudo | O que incomoda? Quanto custa? O que acontece se nada mudar? O que seria ideal? |
-| 2.3 | Script completo para iniciantes | Modelo pronto de conversa. Abertura, desenvolvimento, transicao, fechamento. |
-| 2.4 | Como responder as 5 objecoes mais comuns | "Esta caro" / "Preciso pensar" / "Vou ver depois" / "Quero comparar" / "Nao e prioridade". Respostas prontas e humanas. |
-| 2.5 | Adaptar o script por nivel de consciencia | Qual abordagem usar para cada nivel. O que nao dizer para quem ainda nao percebeu o problema. |
-| 2.6 | Simulacao e treino pratico | 15 min teoria + 30 min simulacao + 15 min correcao. Como gravar e corrigir. |
-| 2.7 | O treinamento de 7 dias | Dia a dia: perguntas, dor e desejo, valor, script, objecoes, simulacao, atendimento real. |
+| 2.1 | The value roadmap in 5 steps | Diagnose, Explore problem, Show consequence, Present solution, Speak price. |
+| 2.2 | The 4 questions that change everything | What bothers you? How much does it cost? What happens if nothing changes? What would be ideal? |
+| 2.3 | Complete Script for Beginners | Ready conversation template. Opening, development, transition, closing. |
+| 2.4 | How to answer the 5 most common objections | "It's expensive" / "I need to think about it" / "I'll see later" / "I want to compare" / "It's not a priority". Prompt and human responses. |
+| 2.5 | Adapt the script by level of consciousness | Which approach to use for each level. What not to say to those who haven't noticed the problem yet. |
+| 2.6 | Simulation and practical training | 15 min theory + 30 min simulation + 15 min correction. How to record and correct. |
+| 2.7 | The 7 Day Training | Day to day: questions, pain and desire, value, script, objections, simulation, real service. |
 
 ---
 
-## TRILHA 3 — Diagnostico Comercial (purple)
+## TRACK 3 — Commercial Diagnosis (purple)
 
-Trilha de gestao: identificar perfis e definir trilhas.
+Management trail: identify profiles and define trails.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 3.1 | Os 4 fatores do perfil comercial | Aptidao natural, vontade, capacidade de aprender, execucao. O que cada um mede. |
-| 3.2 | O quadrante Aptidao x Vontade | 4 perfis: vendedor nato, talento que rejeita, treinavel, sem fit. Como identificar cada um. |
-| 3.3 | Matriz de avaliacao com score | 20 perguntas (5 por bloco). Pontuacao, classificacao, interpretacao. |
-| 3.4 | Grupos A, B, C e D | Talento natural, talento construivel, resistencia comercial, sem fit. Acao recomendada para cada grupo. |
-| 3.5 | Diagnostico na pratica | Como aplicar a avaliacao. Como dar devolutiva. Erros comuns do gestor ao classificar. |
-| 3.6 | Reavaliacao e evolucao | Quando reavaliar. Como medir progresso. Quando mudar alguem de grupo. |
+| 3.1 | The 4 factors of the commercial profile | Natural aptitude, desire, ability to learn, execution. What each one measures. |
+| 3.2 | The Aptitude x Will quadrant | 4 profiles: born salesman, talent that rejects, trainable, unfit. How to identify each one. |
+| 3.3 | Evaluation matrix with score | 20 questions (5 per block). Scoring, classification, interpretation. |
+| 3.4 | Groups A, B, C and D | Natural talent, buildable talent, commercial resistance, no fit. Recommended action for each group. |
+| 3.5 | Diagnosis in practice | How to apply the assessment. How to give a return. Common manager mistakes when classifying. |
+| 3.6 | Reassessment and evolution | When to reevaluate. How to measure progress. When changing someone group. |
 
 ---
 
-## TRILHA 4 — Gestao de Equipe Comercial (amber)
+## TRACK 4 — Commercial Team Management (amber)
 
-Trilha de gestao: coordenar perfis diferentes.
+Management track: coordinate different profiles.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 4.1 | O papel do gestor comercial | Nao e so cobrar meta. E diagnosticar, posicionar, treinar e combinar vendedor com cliente. |
-| 4.2 | Trilha para o vendedor talentoso | Refinar tecnica, dar autonomia, desafiar com metas maiores. O que o talentoso ainda precisa aprender. |
-| 4.3 | Trilha para o vendedor treinavel | Script, repeticao, acompanhamento. Como transformar disciplina em resultado. |
-| 4.4 | Trilha para o perfil resistente | Reposicionar: pre-venda, conteudo, relacionamento, social selling. Descobrir a causa da rejeicao. |
-| 4.5 | Quando redirecionar alguem | Sinais de que nao vai funcionar. Como comunicar. Para onde mover. |
-| 4.6 | A matriz vendedor x nivel de consciencia | Quem faz o que, para quem, com qual abordagem. Cruzamento pratico. |
-| 4.7 | Rotina de gestao comercial | Reunioes, acompanhamento, feedback, simulacao. Cadencia semanal. |
+| 4.1 | The role of the commercial manager | It's not just about setting a target. And diagnose, position, train and match seller with customer. |
+| 4.2 | Path to the Talented Salesperson | Refine technique, give autonomy, challenge with bigger goals. What the talented still need to learn. |
+| 4.3 | Trail for the trainable salesperson | Script, repetition, accompaniment. How to transform discipline into results. |
+| 4.4 | Track for the resistant profile | Reposition: pre-sales, content, relationships, social selling. Discover the cause of the rejection. |
+| 4.5 | When to redirect someone | Signs that it won't work. How to communicate. Where to move. |
+| 4.6 | The seller x level of awareness matrix | Who does what, for whom, with what approach. Practical crossover. |
+| 4.7 | Commercial management routine | Meetings, monitoring, feedback, simulation. Weekly cadence. |
 
 ---
 
-## TRILHA 5 — Estrategia por Nivel de Consciencia (rose)
+## TRACK 5 — Strategy by Level of Consciousness (rose)
 
-Trilha de gestao: plano de conteudo e abordagem para cada nivel do consumidor.
+Management track: content plan and approach for each level of consumer.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 5.1 | Estrategia para o publico inconsciente | Educacao, identificacao, conteudo que gera "eu nem sabia que isso era um problema". |
-| 5.2 | Estrategia para consciente do problema | Aprofundar a dor. Mostrar consequencia. Gerar urgencia interna. |
-| 5.3 | Estrategia para consciente da solucao | Mostrar caminhos e diferenciais. Posicionar sua abordagem como superior. |
-| 5.4 | Estrategia para consciente do produto | Prova social, autoridade, comparacao honesta. Reduzir risco percebido. |
-| 5.5 | Estrategia para muito consciente | Oferta, urgencia, condicao, chamada para acao. Fechar sem forcar. |
-| 5.6 | Plano de conteudo para todos os niveis | Como produzir conteudo simultaneo para topo, meio e fundo. Proporcao 60-80% educacao / 20-40% oferta. |
-| 5.7 | Integrando equipe e estrategia | Qual perfil de vendedor atende melhor cada nivel. Automacao vs humano. Quando escalar. |
+| 5.1 | Strategy for the unconscious public | Education, identification, content that generates "I didn't even know this was a problem". |
+| 5.2 | Strategy to become aware of the problem | Deepen the pain. Show consequence. Generate internal urgency. |
+| 5.3 | Strategy for solution awareness | Show paths and differences. Position your approach as superior. |
+| 5.4 | Strategy for product awareness | Social proof, authority, honest comparison. Reduce perceived risk. |
+| 5.5 | Strategy for very conscious | Offer, urgency, condition, call to action. Close without forcing. |
+| 5.6 | Content plan for all levels | How to produce simultaneous content for top, middle and bottom. Proportion 60-80% education / 20-40% supply. |
+| 5.7 | Integrating team and strategy | Which seller profile best suits each level. Automation vs human. When to climb. |
 
 ---
 
-## TRILHA 6 — Plano Estrategico de Treinamento (cyan)
+## TRACK 6 — Strategic Training Plan (cyan)
 
-Trilha de gestao: montar e executar o plano de capacitacao.
+Management track: assemble and execute the training plan.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 6.1 | Como montar um programa de treinamento | Diagnostico, trilha, execucao, medicao. Estrutura minima viavel. |
-| 6.2 | Treinamento por perfil | O que ensinar para cada grupo (A, B, C). Intensidade, formato, duracao. |
-| 6.3 | O metodo de 7 dias na pratica | Implementacao dia a dia. Materiais necessarios. Quem conduz. |
-| 6.4 | Simulacao e role play | Como montar cenarios reais. Como avaliar. Como dar feedback que muda comportamento. |
-| 6.5 | Metricas de evolucao | O que medir. Como saber se o treinamento esta funcionando. Indicadores simples. |
-| 6.6 | Treinamento continuo vs pontual | Por que treinar uma vez nao resolve. Cadencia ideal. Microtreinamentos. |
+| 6.1 | How to set up a training program | Diagnosis, trail, execution, measurement. Minimum viable structure. |
+| 6.2 | Profile training | What to teach for each group (A, B, C). Intensity, format, duration. |
+| 6.3 | The 7-day method in practice | Day to day implementation. Necessary materials. Who drives. |
+| 6.4 | Simulation and role play | How to create real scenarios. How to evaluate. How to give feedback that changes behavior. |
+| 6.5 | Evolution metrics | What to measure. How to know if the training is working. Simple indicators. |
+| 6.6 | Continuous vs punctual training | Why training once doesn't solve it. Ideal cadence. Microtrainings. |
 
 ---
 
-## TRILHA 7 — Avaliacao e Ferramentas (orange)
+## TRACK 7 — Assessment and Tools (orange)
 
-Ferramentas praticas, templates e checklists.
+Practical tools, templates and checklists.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 7.1 | Questionario de diagnostico comercial | Ferramenta completa com as 20 perguntas, score automatico e classificacao. |
-| 7.2 | Script pronto de vendas | Template editavel do roteiro de valor. Versoes por segmento. |
-| 7.3 | Mapa de objecoes e respostas | As 5 objecoes + respostas prontas + variacoes por contexto. |
-| 7.4 | Checklist do gestor comercial | Rotina semanal. O que observar. O que corrigir. |
-| 7.5 | Plano de conteudo por nivel de consciencia | Template com tipo de conteudo, canal, frequencia e exemplo para cada nivel. |
-| 7.6 | Avaliacao de desempenho comercial | Modelo de acompanhamento mensal com indicadores por perfil. |
+| 7.1 | Commercial diagnostic questionnaire | Complete tool with 20 questions, automatic scoring and classification. |
+| 7.2 | Ready sales script | Editable value script template. Versions by segment. |
+| 7.3 | Map of objections and responses | The 5 objections + ready-made answers + variations by context. |
+| 7.4 | Commercial manager checklist | Weekly routine. What to watch out for. What to fix. |
+| 7.5 | Content plan by level of awareness | Template with content type, channel, frequency and example for each level. |
+| 7.6 | Commercial performance assessment | Monthly monitoring model with indicators per profile. |
 
 ---
 
-## TRILHA 8 — Referencias e Pensamento Avancado (indigo)
+## TRACK 8 — References and Advanced Thinking (indigo)
 
-Para quem quer ir alem.
+For those who want to go further.
 
-| Modulo | Titulo | Topicos principais |
+| Module | Title | Main topics |
 |--------|--------|---------------------|
-| 8.1 | Os 10 livros essenciais | SPIN Selling, Challenger Sale, JOLT Effect, Gap Selling, etc. Resumo e ordem de leitura. |
-| 8.2 | Os 6 pensamentos mais avancados em vendas (2026) | Clareza > persuasao. Impacto economico. Confianca na decisao. Consenso interno. Preco premium. IA + humano. |
-| 8.3 | Vendas B2B vs B2C: o que muda | Onde os conceitos se aplicam igual e onde divergem. |
-| 8.4 | O futuro: IA, autoservico e o papel humano | O que a IA substitui. O que so humano resolve. Como se posicionar. |
+| 8.1 | The 10 essential books | SPIN Selling, Challenger Sale, JOLT Effect, Gap Selling, etc. Summary and reading order. |
+| 8.2 | The 6 most advanced sales thoughts (2026) | Clarity > persuasion. Economic impact. Confidence in the decision. Internal consensus. Premium price. AI + human. |
+| 8.3 | B2B vs B2C sales: what changes | Where concepts apply the same and where they diverge. |
+| 8.4 | The future: AI, self-service and the human role | What AI replaces. What only humans can solve. How to position yourself. |
 
 ---
 
-## Estrutura de Arquivos
-
-```
+## File Structure```
 8020/
 ├── index.html                    (Landing page principal)
 ├── PLANO.md                      (Este documento)
@@ -190,6 +188,4 @@ Para quem quer ir alem.
         ├── index.html
         ├── modulo-8-1.html
         ├── ... ate modulo-8-4.html
-```
-
-Total: 1 landing page + 8 index de trilha + 51 paginas de modulo = **60 arquivos HTML**
+```Total: 1 landing page + 8 trail index + 51 module pages = **60 HTML files**

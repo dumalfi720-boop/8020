@@ -1,3 +1,3 @@
-# 8020 — Vendas, Gestao e Estrategia Comercial
+# 8020 — Sales, Management and Commercial Strategy
 
-Curso completo no formato INEMA.CLUB.
+Complete course in duclub format.

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 4.5: Quando redirecionar alguem | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 4.5: When to redirect someone | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,362 +32,313 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Metodo</span></a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnostico</span></a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Gestao</span></a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrategia</span></a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Treinamento</span></a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Ferramentas</span></a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Avancado</span></a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2"><span id="theme-icon" class="text-lg">🌙</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 4</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-amber-400 font-medium">Modulo 4.5</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULO 4.5</span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🚪 Quando redirecionar alguem</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Uma das decisoes mais dificeis e mais importantes do gestor: reconhecer quando nao vai funcionar e agir com justica, clareza e respeito.
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Method</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Diagnosis</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-400" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Management</span></a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Strategy</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Training</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html"><span class="sm:hidden">T7</span><span class="hidden sm:inline">Tools</span></a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html"><span class="sm:hidden">T8</span><span class="hidden sm:inline">Advanced</span></a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()"><span class="text-lg" id="theme-icon">🌙</span></button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 4</a>
+<span class="text-neutral-600">/</span>
+<span class="text-amber-400 font-medium">Module 4.5</span>
+</div>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.5</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🚪 When to redirect someone</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">One of the manager's most difficult and most important decisions: recognizing when it won't work and acting with fairness, clarity and respect.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">4</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">~50</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Advance.</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-amber-400">Decision</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">⚠️ Signs that it won't work</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">They exist<strong class="text-amber-400">objective indicators</strong>that the investment is not generating a return. The manager needs to separate emotion from data and make decisions based on evidence, not hope.</p>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">The 7 warning signs</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">1</span>
+<span>Activity metrics falling consistently for 3+ weeks</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">2</span>
+<span>Repeated resistance to feedback — apply once, return to old pattern</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">3</span>
+<span>Lack of evolution after specific and documented interventions</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">4</span>
+<span>Negative impact on team morale — contagious demotivation</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">5</span>
+<span>Constant external justifications — “the market”, “the leads”, “the product”</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">6</span>
+<span>Does not attend training or participates without engagement</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-red-400 mt-1">7</span>
+<span>The person himself shows unhappiness or lack of interest in the role</span>
+</li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspective</h3>
+<p class="text-neutral-300">Don't confuse<strong class="text-blue-400">slow learning with impossibility</strong>. Some trainables take longer. The difference is in the direction: if there is progress (even slow), keep investing. If there is no direction for improvement, it is time to act.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">⏳ How much time to give</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The fair deadline depends on the context, but there are<strong class="text-amber-400">practical references</strong>that balance investment with results. The secret is the intermediate milestones — don't wait 90 days to evaluate for the first time.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Timeline with milestones</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">30</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">30 days: Attitude and activity</h4>
+<p class="text-sm text-neutral-400">Evaluate: are you doing the activities? Does it demonstrate a desire to learn? Apply feedback? If not, it would be a conversation.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">60</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">60 days: Measurable progress</h4>
+<p class="text-sm text-neutral-400">Evaluate: have metrics improved? Have skills evolved? If there is no measurable progress, formal action plan.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">90</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">90 days: Final decision</h4>
+<p class="text-sm text-neutral-400">Assess: Did you meet the plan milestones? If yes, continue. If not, redirect or disconnect clearly.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Rule of Thumb</h3>
+<p class="text-neutral-300">Document everything. Every feedback, every milestone, every result.<strong class="text-primary">Documentation protects you, the company and the person</strong>. When the decision comes, everyone knows it was fair because the process was transparent.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">💬 How to communicate without demotivating</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The redirection conversation is one of the most difficult in management. Done badly, it destroys a person's self-esteem and creates enemies.<strong class="text-amber-400">Done well, it opens doors and preserves dignity</strong>.
       </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">4</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">~50</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Avanc.</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-amber-400">Decisao</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">⚠️ Sinais de que nao vai funcionar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Existem <strong class="text-amber-400">indicadores objetivos</strong> de que o investimento nao esta gerando retorno. O gestor precisa separar emocao de dados e tomar decisoes baseadas em evidencias, nao em esperanca.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Os 7 sinais de alerta</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">1</span>
-            <span>Metricas de atividade em queda consistente por 3+ semanas</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">2</span>
-            <span>Resistencia repetida ao feedback — aplica uma vez, volta ao padrao antigo</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">3</span>
-            <span>Ausencia de evolucao apos intervencoes especificas e documentadas</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">4</span>
-            <span>Impacto negativo na moral da equipe — desmotivacao contagiosa</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">5</span>
-            <span>Justificativas externas constantes — "o mercado", "os leads", "o produto"</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">6</span>
-            <span>Nao comparece a treinamentos ou participa sem engajamento</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-red-400 mt-1">7</span>
-            <span>A propria pessoa demonstra infelicidade ou desinteresse pela funcao</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Perspectiva</h3>
-        <p class="text-neutral-300">
-          Nao confunda <strong class="text-blue-400">lentidao de aprendizado com impossibilidade</strong>. Alguns treinaveis demoram mais. A diferenca esta na direcao: se ha progresso (mesmo lento), continue investindo. Se nao ha direcao de melhora, e hora de agir.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">⏳ Quanto tempo dar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        O prazo justo depende do contexto, mas existem <strong class="text-amber-400">referencias praticas</strong> que equilibram investimento com resultados. O segredo sao os marcos intermediarios — nao espere 90 dias para avaliar pela primeira vez.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Timeline com marcos</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">30</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">30 dias: Atitude e atividade</h4>
-              <p class="text-sm text-neutral-400">Avaliar: esta fazendo as atividades? Demonstra vontade de aprender? Aplica feedback? Se nao, conversa seria.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">60</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">60 dias: Progresso mensuravel</h4>
-              <p class="text-sm text-neutral-400">Avaliar: metricas melhoraram? Habilidades evoluiram? Se nao ha progresso mensuravel, plano de acao formal.</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">90</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">90 dias: Decisao final</h4>
-              <p class="text-sm text-neutral-400">Avaliar: atingiu os marcos do plano? Se sim, continua. Se nao, redirecionamento ou desligamento com clareza.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Regra Pratica</h3>
-        <p class="text-neutral-300">
-          Documente tudo. Cada feedback, cada marco, cada resultado. <strong class="text-primary">Documentacao protege voce, a empresa e a pessoa</strong>. Quando a decisao chegar, todos sabem que foi justa porque o processo foi transparente.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">💬 Como comunicar sem desmotivar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A conversa de redirecionamento e uma das mais dificeis da gestao. Feita mal, destroi a autoestima da pessoa e cria inimigos. <strong class="text-amber-400">Feita bem, abre portas e preserva dignidade</strong>.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Framework da conversa dificil</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">1</span>
-            <span><strong class="text-amber-400">Reconhecer esforco:</strong> "Eu vejo que voce se dedicou e tentou. Isso importa."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">2</span>
-            <span><strong class="text-amber-400">Apresentar dados:</strong> "Os numeros mostram que esta funcao nao esta trazendo os resultados que precisamos."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">3</span>
-            <span><strong class="text-amber-400">Focar no futuro:</strong> "Acredito que suas habilidades se encaixam melhor em..."</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-amber-400 mt-1">4</span>
-            <span><strong class="text-amber-400">Oferecer caminho:</strong> "Essas sao as opcoes que temos. Qual faz mais sentido para voce?"</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
-          <h4 class="font-bold text-amber-400 mb-4">✓ Comunicacao eficaz</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>Foco em fatos, nao em julgamentos</li>
-            <li>Apresenta alternativas concretas</li>
-            <li>Escuta a perspectiva da pessoa</li>
-            <li>Preserva a dignidade em todos os cenarios</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Erros comuns</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Voce nao serve para vendas"</li>
-            <li>Comparar com outros vendedores</li>
-            <li>Fazer a conversa na frente de outros</li>
-            <li>Nao oferecer nenhuma alternativa</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">🗺️ Para onde mover</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Nem toda saida de vendas precisa ser uma saida da empresa. O gestor que <strong class="text-amber-400">mapeia destinos possiveis</strong> retém talentos, economiza custos de contratacao e preserva conhecimento institucional.
-      </p>
-
-      <div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-amber-400 mb-4">Mapa de destinos possiveis</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🎯</div>
-            <div class="font-semibold text-neutral-200 text-sm">Customer Success</div>
-            <div class="text-xs text-neutral-400">Para quem tem empatia e foco em relacionamento</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">⚙️</div>
-            <div class="font-semibold text-neutral-200 text-sm">Operacoes Comerciais</div>
-            <div class="text-xs text-neutral-400">Para quem e analitico e organizado</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📢</div>
-            <div class="font-semibold text-neutral-200 text-sm">Marketing</div>
-            <div class="text-xs text-neutral-400">Para quem comunica bem por escrito</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🛡️</div>
-            <div class="font-semibold text-neutral-200 text-sm">Suporte Tecnico</div>
-            <div class="text-xs text-neutral-400">Para quem tem paciencia e conhecimento de produto</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🤝</div>
-            <div class="font-semibold text-neutral-200 text-sm">Parcerias / Canais</div>
-            <div class="text-xs text-neutral-400">Para quem tem habilidade de relacionamento B2B</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Inteligencia Comercial</div>
-            <div class="text-xs text-neutral-400">Para quem e bom com dados e analises</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 A boa noticia</h3>
-        <p class="text-neutral-300">
-          O custo de realocar internamente e <strong class="text-primary">5 a 10x menor</strong> do que demitir e contratar. Alem disso, a pessoa ja conhece a cultura, o produto e os clientes. O gestor que redireciona bem vira referencia na empresa.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>7 sinais objetivos de que nao vai funcionar</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Timeline de 30-60-90 dias com marcos claros</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Framework para a conversa dificil</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-amber-400">✓</span>
-              <span>Mapa de destinos possiveis dentro da empresa</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-amber-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-amber-400 font-bold text-sm">4.6</span>
-            <h4 class="font-bold mt-1">📊 A matriz vendedor x nivel de consciencia</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              O cruzamento estrategico que define quem faz o que na sua equipe comercial.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-4-4.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 4.4
-        </a>
-        <a href="modulo-4-6.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors">
-          Proximo: Modulo 4.6 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 4.5: Quando redirecionar alguem</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Difficult conversation framework</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">1</span>
+<span><strong class="text-amber-400">Recognize effort:</strong>"I see you dedicated yourself and tried. That matters."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">2</span>
+<span><strong class="text-amber-400">Present data:</strong>"The numbers show that this function is not bringing the results we need."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">3</span>
+<span><strong class="text-amber-400">Focus on the future:</strong>"I believe your skills are best suited to..."</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-amber-400 mt-1">4</span>
+<span><strong class="text-amber-400">Offer way:</strong>"These are the options we have. Which one makes the most sense to you?"</span>
+</li>
+</ul>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-amber-900/20 rounded-xl p-6 border border-amber-500/30">
+<h4 class="font-bold text-amber-400 mb-4">✓ Effective communication</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>Focus on facts, not judgments</li>
+<li>Presents concrete alternatives</li>
+<li>Listen to the person's perspective</li>
+<li>Preserves dignity in all scenarios</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Common mistakes</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"You're not good for sales"</li>
+<li>Compare with other sellers</li>
+<li>Doing the talking in front of others</li>
+<li>Do not offer any alternative</li>
+</ul>
+</div>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">🗺️ Where to move</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Not every sales exit needs to be a company exit. The manager who<strong class="text-amber-400">maps possible destinations</strong>retains talent, saves hiring costs and preserves institutional knowledge.</p>
+<div class="bg-gradient-to-br from-amber-900/20 to-dark-800 rounded-xl p-6 border border-amber-500/20 mb-6">
+<h3 class="text-lg font-semibold text-amber-400 mb-4">Map of possible destinations</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🎯</div>
+<div class="font-semibold text-neutral-200 text-sm">Customer Success</div>
+<div class="text-xs text-neutral-400">For those who have empathy and focus on relationships</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">⚙️</div>
+<div class="font-semibold text-neutral-200 text-sm">Commercial Operations</div>
+<div class="text-xs text-neutral-400">For those who are analytical and organized</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📢</div>
+<div class="font-semibold text-neutral-200 text-sm">Marketing</div>
+<div class="text-xs text-neutral-400">For those who communicate well in writing</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🛡️</div>
+<div class="font-semibold text-neutral-200 text-sm">Technical Support</div>
+<div class="text-xs text-neutral-400">For those who have patience and product knowledge</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🤝</div>
+<div class="font-semibold text-neutral-200 text-sm">Partnerships / Channels</div>
+<div class="text-xs text-neutral-400">For those with B2B relationship skills</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Commercial Intelligence</div>
+<div class="text-xs text-neutral-400">For those who are good with data and analysis</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 The good news</h3>
+<p class="text-neutral-300">The cost of relocating internally and<strong class="text-primary">5 to 10x smaller</strong>than firing and hiring. Furthermore, the person already knows the culture, the product and the customers. The manager who redirects well becomes a reference in the company.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>7 objective signs that it won't work</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>30-60-90 day timeline with clear milestones</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Framework for the difficult conversation</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-amber-400">✓</span>
+<span>Map of possible destinations within the company</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-amber-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-amber-400 font-bold text-sm">4.6</span>
+<h4 class="font-bold mt-1">📊 The seller x awareness level matrix</h4>
+<p class="text-neutral-400 text-sm mt-2">The strategic crossover that defines who does what in your sales team.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-4-4.html">← Module 4.4</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-6.html">Next: Module 4.6 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 4.5: When to redirect someone</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -396,6 +347,5 @@
     }
     if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); document.getElementById('theme-icon').textContent = '☀️'; }
   </script>
-
 </body>
 </html>

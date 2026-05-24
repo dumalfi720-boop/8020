@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 3.5: Diagnostico na pratica | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 3.5: Diagnosis in practice | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,527 +32,458 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 3</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-purple-400 font-medium">Modulo 3.5</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 3.5
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔬 Diagnostico na pratica</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Guia pratico completo: como aplicar a avaliacao, dar devolutiva construtiva, evitar erros comuns e saber quando reavaliar. Inclui estudo de caso real.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">~65</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Gestao</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">📋 Como aplicar a avaliacao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A qualidade do diagnostico depende tanto da <strong class="text-purple-400">ferramenta quanto do contexto de aplicacao</strong>. Momento errado, ambiente errado ou formato errado distorcem os resultados e invalidam todo o processo.
-      </p>
-
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">O checklist da aplicacao</h3>
-        <div class="grid md:grid-cols-3 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📅</div>
-            <div class="font-semibold text-neutral-200 text-sm">Momento</div>
-            <ul class="text-xs text-neutral-400 mt-2 space-y-1">
-              <li>→ Apos 30-60 dias de trabalho</li>
-              <li>→ Nao em periodo de crise</li>
-              <li>→ Nao logo apos demissoes</li>
-              <li>→ Preferencialmente no inicio do trimestre</li>
-            </ul>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🏢</div>
-            <div class="font-semibold text-neutral-200 text-sm">Ambiente</div>
-            <ul class="text-xs text-neutral-400 mt-2 space-y-1">
-              <li>→ Sala reservada e privada</li>
-              <li>→ Sem interrupcoes</li>
-              <li>→ Ambiente calmo e tranquilo</li>
-              <li>→ Duracao prevista: 30-45 min</li>
-            </ul>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📝</div>
-            <div class="font-semibold text-neutral-200 text-sm">Formato</div>
-            <ul class="text-xs text-neutral-400 mt-2 space-y-1">
-              <li>→ Individual e confidencial</li>
-              <li>→ Gestor avalia + auto-avaliacao</li>
-              <li>→ Cruzar as duas visoes</li>
-              <li>→ Registrar tudo por escrito</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Dica essencial</h3>
-        <p class="text-neutral-300">
-          Faca a <strong class="text-primary">auto-avaliacao do vendedor ANTES</strong> da sua avaliacao como gestor. Compare os dois depois. As divergencias entre as visoes sao tao reveladoras quanto os scores em si.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">💬 Como dar devolutiva</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A devolutiva e o momento mais <strong class="text-purple-400">delicado e mais importante</strong> de todo o processo. Feita bem, transforma o diagnostico em motivacao e plano de acao. Feita mal, gera ressentimento e desconfianca.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">O framework da devolutiva</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">1</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Contexto e intencao (2 min)</h4>
-              <p class="text-sm text-neutral-400">"Fizemos uma avaliacao do perfil comercial de toda a equipe. O objetivo nao e julgar ninguem, e entender onde cada um esta para investir melhor no desenvolvimento."</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">2</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Pontos fortes primeiro (5 min)</h4>
-              <p class="text-sm text-neutral-400">Comece pelos fatores com score mais alto. Mostre com exemplos concretos. "Seu score de vontade e 22 - muito alto. Isso aparece na sua proatividade e na forma como voce lida com rejeicao."</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">3</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Areas de desenvolvimento (5 min)</h4>
-              <p class="text-sm text-neutral-400">Apresente os fatores com score mais baixo. Use linguagem de desenvolvimento, nao de critica. "Seu score de execucao tem espaco para crescer. Vamos trabalhar juntos nisso."</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">4</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Plano de acao conjunto (10 min)</h4>
-              <p class="text-sm text-neutral-400">Construa o plano de acao COM o vendedor, nao PARA o vendedor. Pergunte: "O que voce acha que podemos fazer para melhorar esse ponto?" Compromisso construido junto tem mais aderencia.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-purple-900/20 rounded-xl p-6 border border-purple-500/30">
-          <h4 class="font-bold text-purple-400 mb-4">✓ Frases que ajudam</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Seu ponto forte e..."</li>
-            <li>"Essa area tem espaco para crescer..."</li>
-            <li>"Vamos trabalhar juntos nisso..."</li>
-            <li>"O que voce acha que funciona?"</li>
-          </ul>
-        </div>
-        <div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
-          <h4 class="font-bold text-red-400 mb-4">✗ Frases que destroem</h4>
-          <ul class="space-y-3 text-neutral-300 text-sm">
-            <li>"Voce e fraco nisso..."</li>
-            <li>"Comparado ao fulano, voce..."</li>
-            <li>"Voce precisa melhorar ou..."</li>
-            <li>"Sempre foi assim mesmo..."</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">⚠️ Erros comuns do gestor ao classificar</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Todo ser humano tem <strong class="text-purple-400">vieses cognitivos</strong> que distorcem avaliacoes. Conhece-los e o primeiro passo para minimiza-los. Um diagnostico enviesado e pior que nenhum diagnostico.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Efeito Halo</h4>
-              <p class="text-sm text-neutral-400">Uma qualidade forte contamina a avaliacao inteira. "Ele e simpatico, entao deve ser bom em tudo." Avalie fator por fator, isoladamente.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Vies de Recencia</h4>
-              <p class="text-sm text-neutral-400">Lembra so do ultimo mes. Se o vendedor teve um mes ruim, avalia tudo como ruim - mesmo que os 5 meses anteriores tenham sido bons. Use dados de 90+ dias.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Favoritismo</h4>
-              <p class="text-sm text-neutral-400">Avaliar melhor quem voce gosta pessoalmente. Simpatia nao e aptidao. O vendedor que almoça com voce nao e necessariamente o melhor.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Vies de Similaridade</h4>
-              <p class="text-sm text-neutral-400">Avaliar melhor quem se parece com voce. Se voce era um vendedor extrovertido, pode subestimar vendedores introvertidos que performam de forma diferente.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Tendencia Central</h4>
-              <p class="text-sm text-neutral-400">Dar nota 3 para tudo para "nao errar". Isso torna o diagnostico inutil. Tome posicao: se e 2, coloque 2. Se e 5, coloque 5.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Antidoto</h3>
-        <p class="text-neutral-300">
-          Use <strong class="text-primary">exemplos comportamentais concretos</strong> para justificar cada nota. Em vez de "acho que ele e bom em comunicacao", pense "na reuniao de quinta, ele explicou o produto de forma clara e o cliente entendeu de primeira." Comportamento observavel reduz vieses.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">🔄 Quando a classificacao esta errada</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Nenhum diagnostico e perfeito. <strong class="text-purple-400">Sinais de que a classificacao precisa ser revista</strong> aparecem quando os resultados reais nao batem com o que o grupo previa. Esteja atento a essas discrepancias.
-      </p>
-
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Sinais de reavaliacao</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Grupo A que nao performa:</strong> Se esta classificado como talento natural mas nao entrega resultados por 2+ meses, algo esta errado na classificacao ou no contexto.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Grupo B que supera Grupo A:</strong> Se o "construivel" esta performando acima do "natural", a classificacao pode estar invertida.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Mudanca de comportamento abrupta:</strong> Vendedor que era proativo e para. Ou que era resistente e de repente engaja. Investigue a causa e reavalie.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-purple-400 mt-1">✓</span>
-            <span><strong>Evento pessoal significativo:</strong> Divorcio, doenca, nascimento de filho. Fatores externos podem alterar temporaria ou permanentemente o perfil.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Regra pratica</h3>
-        <p class="text-neutral-300">
-          Se a performance real esta <strong class="text-blue-400">consistentemente diferente</strong> (para mais ou para menos) do que o grupo previa por mais de 60 dias, e hora de reavaliar. Nao espere o trimestre - antecipe.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">📖 Estudo de caso: diagnosticando uma equipe real</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Vamos aplicar todo o processo em uma <strong class="text-purple-400">equipe ficticia de 6 vendedores</strong> de uma empresa de software B2B. Acompanhe a avaliacao completa, classificacao em grupos e planos de acao individuais.
-      </p>
-
-      <!-- Equipe -->
-      <div class="space-y-4 mb-6">
-        <div class="bg-green-900/20 rounded-xl p-5 border border-green-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-green-400">Marcos — Grupo A</h4>
-            <span class="text-xs text-green-400 bg-green-500/20 px-2 py-1 rounded">Score: 20.15</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-green-400 font-bold">A:23</span><br>Alta</div>
-            <div><span class="text-green-400 font-bold">V:22</span><br>Alta</div>
-            <div><span class="text-yellow-400 font-bold">L:18</span><br>Media</div>
-            <div><span class="text-yellow-400 font-bold">E:16</span><br>Media</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Dar contas maiores, preparar para coordenacao. Foco em melhorar execucao (pipeline e CRM).</p>
-        </div>
-
-        <div class="bg-blue-900/20 rounded-xl p-5 border border-blue-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-blue-400">Juliana — Grupo B</h4>
-            <span class="text-xs text-blue-400 bg-blue-500/20 px-2 py-1 rounded">Score: 17.90</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-red-400 font-bold">A:12</span><br>Baixa</div>
-            <div><span class="text-green-400 font-bold">V:24</span><br>Alta</div>
-            <div><span class="text-green-400 font-bold">L:23</span><br>Alta</div>
-            <div><span class="text-yellow-400 font-bold">E:19</span><br>Media</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Scripts detalhados, role play 2x/semana, shadow com Marcos. Meta progressiva.</p>
-        </div>
-
-        <div class="bg-blue-900/20 rounded-xl p-5 border border-blue-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-blue-400">Rafael — Grupo B</h4>
-            <span class="text-xs text-blue-400 bg-blue-500/20 px-2 py-1 rounded">Score: 16.55</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-yellow-400 font-bold">A:15</span><br>Media</div>
-            <div><span class="text-green-400 font-bold">V:21</span><br>Alta</div>
-            <div><span class="text-yellow-400 font-bold">L:17</span><br>Media</div>
-            <div><span class="text-yellow-400 font-bold">E:14</span><br>Media</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Treinamento de tecnicas de vendas, acompanhamento do pipeline, metas intermediarias.</p>
-        </div>
-
-        <div class="bg-green-900/20 rounded-xl p-5 border border-green-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-green-400">Camila — Grupo A</h4>
-            <span class="text-xs text-green-400 bg-green-500/20 px-2 py-1 rounded">Score: 19.25</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-green-400 font-bold">A:24</span><br>Alta</div>
-            <div><span class="text-yellow-400 font-bold">V:17</span><br>Media</div>
-            <div><span class="text-green-400 font-bold">L:21</span><br>Alta</div>
-            <div><span class="text-yellow-400 font-bold">E:14</span><br>Media</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Investigar vontade media (pode estar entediada). Dar projeto especial para engajar. Monitorar execucao.</p>
-        </div>
-
-        <div class="bg-yellow-900/20 rounded-xl p-5 border border-yellow-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-yellow-400">Lucas — Grupo C</h4>
-            <span class="text-xs text-yellow-400 bg-yellow-500/20 px-2 py-1 rounded">Score: 14.80</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-green-400 font-bold">A:21</span><br>Alta</div>
-            <div><span class="text-red-400 font-bold">V:10</span><br>Baixa</div>
-            <div><span class="text-yellow-400 font-bold">L:15</span><br>Media</div>
-            <div><span class="text-red-400 font-bold">E:11</span><br>Baixa</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Conversa exploratoria sobre o bloqueio. Prazo de 45 dias para decisao. Possivel realocacao para CS.</p>
-        </div>
-
-        <div class="bg-red-900/20 rounded-xl p-5 border border-red-500/30">
-          <div class="flex items-center justify-between mb-2">
-            <h4 class="font-bold text-red-400">Pedro — Grupo D</h4>
-            <span class="text-xs text-red-400 bg-red-500/20 px-2 py-1 rounded">Score: 10.70</span>
-          </div>
-          <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
-            <div><span class="text-red-400 font-bold">A:10</span><br>Baixa</div>
-            <div><span class="text-red-400 font-bold">V:9</span><br>Baixa</div>
-            <div><span class="text-red-400 font-bold">L:12</span><br>Baixa</div>
-            <div><span class="text-red-400 font-bold">E:13</span><br>Baixa</div>
-          </div>
-          <p class="text-sm text-neutral-400"><strong>Plano:</strong> Conversa honesta e respeitosa. Buscar opcoes internas (operacoes). Se nao houver, apoiar transicao.</p>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio</h3>
-        <p class="text-neutral-300">
-          Aplique este mesmo exercicio com <strong class="text-primary">sua equipe real</strong>. Avalie cada vendedor, classifique no grupo, defina o plano de acao. O primeiro diagnostico nunca e perfeito, mas o ato de fazer ja transforma sua gestao.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Como e quando aplicar a avaliacao</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Framework de devolutiva em 4 etapas</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>5 vieses cognitivos que distorcem avaliacoes</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Sinais de que a classificacao precisa de revisao</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Estudo de caso completo com 6 vendedores</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-purple-400 font-bold text-sm">3.6</span>
-            <h4 class="font-bold mt-1">🔄 Reavaliacao e evolucao</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Quando reavaliar, como medir progresso e quando mudar alguem de grupo.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-3-4.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 3.4
-        </a>
-        <a href="modulo-3-6.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors">
-          Proximo: Modulo 3.6 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 3.5: Diagnostico na pratica</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400" href="index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 3</a>
+<span class="text-neutral-600">/</span>
+<span class="text-purple-400 font-medium">Module 3.5</span>
+</div>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULE 3.5</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🔬 Diagnosis in practice</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Complete practical guide: how to apply the assessment, give constructive feedback, avoid common mistakes and know when to reassess. Includes real case study.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">~65</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Management</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Practical</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">📋 How to apply the assessment</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The quality of the diagnosis depends both on the<strong class="text-purple-400">tool and application context</strong>. Wrong timing, wrong environment or wrong format distort the results and invalidate the entire process.</p>
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">The application checklist</h3>
+<div class="grid md:grid-cols-3 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📅</div>
+<div class="font-semibold text-neutral-200 text-sm">Moment</div>
+<ul class="text-xs text-neutral-400 mt-2 space-y-1">
+<li>→ After 30-60 days of work</li>
+<li>→ Not in a period of crisis</li>
+<li>→ Not immediately after layoffs</li>
+<li>→ Preferably at the beginning of the quarter</li>
+</ul>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🏢</div>
+<div class="font-semibold text-neutral-200 text-sm">Environment</div>
+<ul class="text-xs text-neutral-400 mt-2 space-y-1">
+<li>→ Reserved and private room</li>
+<li>→ No interruptions</li>
+<li>→ Calm and peaceful environment</li>
+<li>→ Expected duration: 30-45 min</li>
+</ul>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📝</div>
+<div class="font-semibold text-neutral-200 text-sm">Format</div>
+<ul class="text-xs text-neutral-400 mt-2 space-y-1">
+<li>→ Individual and confidential</li>
+<li>→ Manager evaluates + self-evaluation</li>
+<li>→ Cross the two views</li>
+<li>→ Record everything in writing</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Essential tip</h3>
+<p class="text-neutral-300">Make the<strong class="text-primary">seller self-assessment BEFORE</strong>your assessment as a manager. Compare the two later. The divergences between the views are as revealing as the scores themselves.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">💬 How to give feedback</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The return and the most important moment<strong class="text-purple-400">delicate and most important</strong>of the entire process. Done well, it transforms the diagnosis into motivation and an action plan. Done poorly, it generates resentment and distrust.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">The feedback framework</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">1</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Context and intention (2 min)</h4>
+<p class="text-sm text-neutral-400">"We carried out an assessment of the commercial profile of the entire team. The objective is not to judge anyone, but to understand where each person is in order to better invest in development."</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">2</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Strengths first (5 min)</h4>
+<p class="text-sm text-neutral-400">Start with the factors with the highest score. Show with concrete examples. "Your willingness score is 22 - very high. This shows in your proactivity and the way you deal with rejection."</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">3</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Development areas (5 min)</h4>
+<p class="text-sm text-neutral-400">Present the factors with the lowest score. Use developmental language, not criticism. "Your execution score has room to grow. Let's work on this together."</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">4</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Joint action plan (10 min)</h4>
+<p class="text-sm text-neutral-400">Build the action plan WITH the seller, not FOR the seller. Ask: "What do you think we can do to improve this?" Commitment built together has more adherence.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div class="bg-purple-900/20 rounded-xl p-6 border border-purple-500/30">
+<h4 class="font-bold text-purple-400 mb-4">✓ Phrases that help</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"Your strong point and..."</li>
+<li>"This area has room to grow..."</li>
+<li>"Let's work together on this..."</li>
+<li>"What do you think works?"</li>
+</ul>
+</div>
+<div class="bg-red-900/20 rounded-xl p-6 border border-red-500/30">
+<h4 class="font-bold text-red-400 mb-4">✗ Phrases that destroy</h4>
+<ul class="space-y-3 text-neutral-300 text-sm">
+<li>"You're weak at this..."</li>
+<li>"Compared to so-and-so, you..."</li>
+<li>"You need to improve or..."</li>
+<li>"It's always been like that..."</li>
+</ul>
+</div>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">⚠️ Common manager mistakes when classifying</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Every human being has<strong class="text-purple-400">cognitive biases</strong>that distort assessments. Knowing them is the first step to minimizing them. A biased diagnosis is worse than no diagnosis.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Halo Effect</h4>
+<p class="text-sm text-neutral-400">A strong quality contaminates the entire evaluation. "He's nice, so he must be good at everything." Evaluate factor by factor, in isolation.</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Recency bias</h4>
+<p class="text-sm text-neutral-400">Just remember last month. If the seller had a bad month, he evaluates everything as bad - even if the previous 5 months were good. Use 90+ days of data.</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Favoritism</h4>
+<p class="text-sm text-neutral-400">Better evaluate who you like personally. Sympathy is not aptitude. The salesperson who has lunch with you is not necessarily the best.</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Similarity Bias</h4>
+<p class="text-sm text-neutral-400">Better evaluate who looks like you. If you were an extroverted salesperson, you may underestimate introverted salespeople who perform differently.</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-400 font-bold text-sm flex-shrink-0">!</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Central Tendency</h4>
+<p class="text-sm text-neutral-400">Give everything a 3 so as not to make mistakes. This makes the diagnosis useless. Take position: if it is 2, put 2. If it is 5, put 5.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Antidote</h3>
+<p class="text-neutral-300">Use<strong class="text-primary">concrete behavioral examples</strong>to justify each note. Instead of "I think he's good at communicating," think "In the meeting on Thursday, he explained the product clearly and the customer understood it right away." Observable behavior reduces bias.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">🔄 When the classification is wrong</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">No diagnosis is perfect.<strong class="text-purple-400">Signs that the classification needs to be revised</strong>appear when the actual results do not match what the group predicted. Be aware of these discrepancies.</p>
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Signs of reevaluation</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Group A that does not perform:</strong>If you are classified as natural talent but don't deliver results for 2+ months, something is wrong with the classification or context.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Group B that surpasses Group A:</strong>If the "constructible" is performing above the "natural", the classification may be inverted.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Abrupt behavior change:</strong>Salesperson who was proactive and stopped. Or that it was resistant and suddenly engages. Investigate the cause and reevaluate.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-purple-400 mt-1">✓</span>
+<span><strong>Significant personal event:</strong>Divorce, illness, birth of a child. External factors can temporarily or permanently change the profile.</span>
+</li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Practical rule</h3>
+<p class="text-neutral-300">If the actual performance is<strong class="text-blue-400">consistently different</strong>(more or less) than the group predicted for more than 60 days, and it's time to reevaluate. Don't wait for the quarter - anticipate it.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">📖 Case Study: Diagnosing a Real Team</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Let's apply the entire process in one<strong class="text-purple-400">fictional team of 6 salespeople</strong>of a B2B software company. Follow the complete assessment, classification into groups and individual action plans.</p>
+Team
+<div class="space-y-4 mb-6">
+<div class="bg-green-900/20 rounded-xl p-5 border border-green-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-green-400">Marcos — Group A</h4>
+<span class="text-xs text-green-400 bg-green-500/20 px-2 py-1 rounded">Score: 20.15</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-green-400 font-bold">A:23</span><br/>High</div>
+<div><span class="text-green-400 font-bold">V:22</span><br/>High</div>
+<div><span class="text-yellow-400 font-bold">L:18</span><br/>Average</div>
+<div><span class="text-yellow-400 font-bold">E:16</span><br/>Average</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Give bigger accounts, prepare for coordination. Focus on improving execution (pipeline and CRM).</p>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-5 border border-blue-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-blue-400">Juliana — Group B</h4>
+<span class="text-xs text-blue-400 bg-blue-500/20 px-2 py-1 rounded">Score: 17.90</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-red-400 font-bold">A:12</span><br/>Low</div>
+<div><span class="text-green-400 font-bold">V:24</span><br/>High</div>
+<div><span class="text-green-400 font-bold">L:23</span><br/>High</div>
+<div><span class="text-yellow-400 font-bold">E:19</span><br/>Average</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Detailed scripts, role play 2x/week, shadow with Marcos. Progressive goal.</p>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-5 border border-blue-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-blue-400">Rafael — Group B</h4>
+<span class="text-xs text-blue-400 bg-blue-500/20 px-2 py-1 rounded">Score: 16.55</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-yellow-400 font-bold">A:15</span><br/>Average</div>
+<div><span class="text-green-400 font-bold">V:21</span><br/>High</div>
+<div><span class="text-yellow-400 font-bold">L:17</span><br/>Average</div>
+<div><span class="text-yellow-400 font-bold">E:14</span><br/>Average</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Sales technique training, pipeline monitoring, intermediate goals.</p>
+</div>
+<div class="bg-green-900/20 rounded-xl p-5 border border-green-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-green-400">Camila — Group A</h4>
+<span class="text-xs text-green-400 bg-green-500/20 px-2 py-1 rounded">Score: 19.25</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-green-400 font-bold">A:24</span><br/>High</div>
+<div><span class="text-yellow-400 font-bold">V:17</span><br/>Average</div>
+<div><span class="text-green-400 font-bold">L:21</span><br/>High</div>
+<div><span class="text-yellow-400 font-bold">E:14</span><br/>Average</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Investigate average will (may be bored). Give special project to engage. Monitor execution.</p>
+</div>
+<div class="bg-yellow-900/20 rounded-xl p-5 border border-yellow-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-yellow-400">Lucas — Group C</h4>
+<span class="text-xs text-yellow-400 bg-yellow-500/20 px-2 py-1 rounded">Score: 14.80</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-green-400 font-bold">A:21</span><br/>High</div>
+<div><span class="text-red-400 font-bold">V:10</span><br/>Low</div>
+<div><span class="text-yellow-400 font-bold">L:15</span><br/>Average</div>
+<div><span class="text-red-400 font-bold">E:11</span><br/>Low</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Exploratory conversation about the blockade. Deadline of 45 days for decision. Possible relocation to CS.</p>
+</div>
+<div class="bg-red-900/20 rounded-xl p-5 border border-red-500/30">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-bold text-red-400">Pedro — Group D</h4>
+<span class="text-xs text-red-400 bg-red-500/20 px-2 py-1 rounded">Score: 10.70</span>
+</div>
+<div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs">
+<div><span class="text-red-400 font-bold">A:10</span><br/>Low</div>
+<div><span class="text-red-400 font-bold">V:9</span><br/>Low</div>
+<div><span class="text-red-400 font-bold">L:12</span><br/>Low</div>
+<div><span class="text-red-400 font-bold">E:13</span><br/>Low</div>
+</div>
+<p class="text-sm text-neutral-400"><strong>Flat:</strong>Honest and respectful conversation. Search for internal options (operations). If not, support transition.</p>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Exercise</h3>
+<p class="text-neutral-300">Apply this same exercise with<strong class="text-primary">your real team</strong>. Evaluate each seller, classify them in the group, define the action plan. The first diagnosis is never perfect, but the act of making it already transforms your management.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>How and when to apply the assessment</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>4-step feedback framework</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>5 cognitive biases that distort assessments</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Signs that the rating needs review</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Complete case study with 6 sellers</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-purple-400 font-bold text-sm">3.6</span>
+<h4 class="font-bold mt-1">🔄 Reevaluation and evolution</h4>
+<p class="text-neutral-400 text-sm mt-2">When to reassess, how to measure progress and when to change someone group.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-3-4.html">← Module 3.4</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-6.html">Next: Module 3.6 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 3.5: Diagnosis in practice</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -572,6 +503,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

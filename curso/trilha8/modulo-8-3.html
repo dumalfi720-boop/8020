@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 8.3: Vendas B2B vs B2C | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 8.3: B2B vs B2C Sales | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,437 +32,375 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-indigo-500/10 text-indigo-400">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-indigo-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 8</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-indigo-400 font-medium">Modulo 8.3</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 8.3
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔀 Vendas B2B vs B2C: o que muda</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        As diferencas estruturais entre vender para empresas e vender para consumidores — e os principios universais que se aplicam em ambos os mundos.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-indigo-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-indigo-400">~45</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-indigo-400">Avancado</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-indigo-400">Comparativo</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Topico 1 -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">⏱️ Ciclo de decisao</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        A diferenca mais visivel entre B2B e B2C esta no <strong class="text-indigo-400">tempo e na estrutura da decisao</strong>. Em B2C, uma pessoa decide em minutos. Em B2B, um comite decide em semanas ou meses. Isso muda TUDO na abordagem.
-      </p>
-
-      <div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Comparacao direta</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <h4 class="font-bold text-neutral-200 mb-3">🛒 B2C — Curto e individual</h4>
-            <ul class="space-y-2 text-sm text-neutral-400">
-              <li>→ Decisao em minutos a dias</li>
-              <li>→ 1 decisor (a propria pessoa)</li>
-              <li>→ Emocao como motor principal</li>
-              <li>→ Impulso e escassez funcionam</li>
-              <li>→ Ticket medio baixo-medio</li>
-              <li>→ Volume alto compensa margem</li>
-            </ul>
-          </div>
-          <div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
-            <h4 class="font-bold text-indigo-400 mb-3">🏢 B2B — Longo e coletivo</h4>
-            <ul class="space-y-2 text-sm text-neutral-300">
-              <li>→ Decisao em semanas a meses</li>
-              <li>→ 6-10 stakeholders envolvidos</li>
-              <li>→ Racionalidade + politica interna</li>
-              <li>→ Business case e ROI sao obrigatorios</li>
-              <li>→ Ticket medio alto-muito alto</li>
-              <li>→ Cada deal importa individualmente</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 O que isso muda na pratica</h3>
-        <p class="text-neutral-300">
-          Em B2C, voce otimiza o funil para <strong class="text-blue-400">conversao rapida</strong>. Em B2B, voce otimiza para <strong class="text-blue-400">relacionamento e progresso de deal</strong>. Tentar fechar um deal B2B com urgencia de B2C e a forma mais rapida de perder credibilidade. Tentar construir relacionamento longo em B2C e desperdicio de recursos.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 2 -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🧩 Niveis de consciencia em B2B</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Em B2C, voce lida com um nivel de consciencia por vez (o do comprador). Em B2B, <strong class="text-indigo-400">cada stakeholder pode estar em um nivel diferente</strong>. O usuario sofre com o problema diariamente. O CFO nem sabe que o problema existe. O CTO quer saber da tecnologia. Voce precisa falar todas as linguas.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Mapa de consciencia por stakeholder</h3>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center">
-              <span class="text-red-400 font-bold text-sm">😰</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Usuario final — Consciente do problema</h4>
-              <p class="text-sm text-neutral-400">Vive a dor diariamente. Quer solucao urgente. Fala linguagem de funcionalidade e usabilidade. "Eu preciso de algo que faca X mais rapido."</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-              <span class="text-amber-400 font-bold text-sm">🔧</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Gestor / CTO — Consciente da solucao</h4>
-              <p class="text-sm text-neutral-400">Sabe que existem opcoes. Avalia tecnicamente. Fala linguagem de integracao, seguranca, escalabilidade. "Como isso se conecta com nosso stack?"</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center">
-              <span class="text-indigo-400 font-bold text-sm">💼</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">CFO / CEO — Consciente (ou nao) do impacto</h4>
-              <p class="text-sm text-neutral-400">Pensa em numeros, risco e prioridade. Pode nem saber que o problema existe. Fala linguagem de ROI, payback e custo de oportunidade. "Quanto isso impacta no P&L?"</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <span class="text-purple-400 font-bold text-sm">⚖️</span>
-            </div>
-            <div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
-              <h4 class="font-semibold text-neutral-200 mb-1">Procurement / Juridico — Consciente do processo</h4>
-              <p class="text-sm text-neutral-400">Foca em compliance, contrato, SLA e risco. Pode desacelerar ou vetar por razoes processuais. "Qual e a clausula de saida?"</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Para seu proximo deal B2B, crie uma "matriz de mensagens": uma tabela com cada stakeholder, seu nivel de consciencia, sua preocupacao principal e a mensagem-chave que voce deve levar. Uma unica apresentacao para todos nao funciona.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 3 -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">📈 Construcao de valor em B2B</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Em B2C, valor e frequentemente <strong class="text-indigo-400">emocional e imediato</strong>: status, prazer, conveniencia. Em B2B, valor precisa ser <strong class="text-indigo-400">quantificado em impacto financeiro</strong>: ROI, reducao de risco, ganho de eficiencia. Sem business case, nao ha aprovacao de orcamento.
-      </p>
-
-      <div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Os 4 pilares de valor em B2B</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">💰</div>
-            <div class="font-semibold text-neutral-200 text-sm">ROI direto</div>
-            <div class="text-xs text-neutral-400">"Gera R$X de receita adicional" ou "Economiza R$Y por mes"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">⏱️</div>
-            <div class="font-semibold text-neutral-200 text-sm">Eficiencia operacional</div>
-            <div class="text-xs text-neutral-400">"Reduz tempo de processo de X horas para Y minutos"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">🛡️</div>
-            <div class="font-semibold text-neutral-200 text-sm">Reducao de risco</div>
-            <div class="text-xs text-neutral-400">"Elimina risco de compliance" ou "Reduz downtime em X%"</div>
-          </div>
-          <div class="bg-dark-800/50 rounded-lg p-4">
-            <div class="text-2xl mb-2">📊</div>
-            <div class="font-semibold text-neutral-200 text-sm">Vantagem competitiva</div>
-            <div class="text-xs text-neutral-400">"Coloca voce X meses a frente da concorrencia"</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 A regra do business case</h3>
-        <p class="text-neutral-300">
-          Em B2B, se voce nao pode preencher esta frase, nao esta pronto para vender: "Nossa solucao resolve [problema especifico] que custa [R$ quantificado] por [periodo], gerando [resultado mensuravel] em [prazo]. O investimento se paga em [X meses]." Pratique ate isso sair natural.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 4 -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">🎤 Script e objecoes em B2B</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Em B2C, objecoes sao tipicamente pessoais: "e caro", "nao preciso", "vou pensar". Em B2B, objecoes sao <strong class="text-indigo-400">organizacionais e sistemicas</strong>: envolvem orcamento, timing, processos internos e politica corporativa. O script precisa navegar camadas de complexidade.
-      </p>
-
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Objecoes B2B vs B2C</h3>
-        <div class="space-y-4">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-dark-800/50 rounded-lg p-4">
-              <h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "E caro"</h4>
-              <p class="text-neutral-400 text-xs">Resposta: ancoragem em beneficio emocional, parcelamento, escassez.</p>
-            </div>
-            <div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
-              <h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "Nao esta no orcamento"</h4>
-              <p class="text-neutral-300 text-xs">Resposta: "Qual e o custo de NAO resolver? Podemos estruturar para o proximo ciclo orcamentario? Existe budget de outro departamento que isso impacta?"</p>
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-dark-800/50 rounded-lg p-4">
-              <h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "Vou pensar"</h4>
-              <p class="text-neutral-400 text-xs">Resposta: criar urgencia, oferta limitada, follow-up rapido.</p>
-            </div>
-            <div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
-              <h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "Preciso aprovar internamente"</h4>
-              <p class="text-neutral-300 text-xs">Resposta: "Posso ajudar a preparar o material para a apresentacao interna? Quem mais precisa estar envolvido? Qual e o processo de aprovacao?"</p>
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div class="bg-dark-800/50 rounded-lg p-4">
-              <h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "Nao preciso"</h4>
-              <p class="text-neutral-400 text-xs">Resposta: revelar dor latente, mostrar consequencia de nao agir.</p>
-            </div>
-            <div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
-              <h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "Temos contrato com outro fornecedor"</h4>
-              <p class="text-neutral-300 text-xs">Resposta: "Quando vence o contrato? O que faria voce considerar alternativas? Posso mostrar um comparativo de valor?"</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Mapeie as 5 objecoes mais comuns que voce ouve. Para cada uma, identifique: (1) E objecao de valor, timing, processo ou politica? (2) Quem realmente esta por tras dessa objecao? (3) Qual e a resposta que RESOLVE, nao apenas rebate? O objetivo nao e ganhar a discussao — e remover o obstaculo.
-        </p>
-      </div>
-    </section>
-
-    <!-- Topico 5 -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🔗 O que se aplica igual</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Apesar de todas as diferencas, <strong class="text-indigo-400">os principios fundamentais sao os mesmos</strong>. Pessoas compram de quem confiam. Valor precede preco. Emocao influencia toda decisao — mesmo em B2B. Os fundamentos das Trilhas 1-7 do 8020 se aplicam em qualquer contexto.
-      </p>
-
-      <div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Principios universais de vendas</h3>
-        <ul class="space-y-3 text-neutral-300">
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Confianca como base</strong> — Ninguem compra de quem nao confia, seja um consumidor comprando um celular ou um CFO aprovando um projeto de R$1M.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Valor antes de preco</strong> — A ordem sempre importa: primeiro o cliente entende o que ganha, depois discute o que paga. Isso vale para um curso de R$97 ou um SaaS de R$500K/ano.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Escuta ativa</strong> — O melhor vendedor e o que mais ouve, nao o que mais fala. Em B2C ou B2B, a discovery e rei.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Diagnostico antes de prescricao</strong> — Nao apresente solucao antes de entender o problema. Isso vale para um medico, um vendedor B2C e um AE enterprise.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Follow-up disciplinado</strong> — A maioria das vendas acontece apos o 5o contato. Quem desiste no 2o perde dinheiro, em qualquer mercado.</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-indigo-400 mt-1">✓</span>
-            <span><strong class="text-indigo-400">Principio 80/20</strong> — 20% dos clientes geram 80% da receita. 20% das atividades geram 80% dos resultados. Isso e universal.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 A grande conclusao</h3>
-        <p class="text-neutral-300">
-          B2B e B2C sao <strong class="text-blue-400">contextos diferentes, nao planetas diferentes</strong>. Os principios sao os mesmos — a aplicacao muda. Um vendedor que domina os fundamentos pode transitar entre os dois mundos. O que muda e a complexidade da execucao, nao a essencia do trabalho.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-indigo-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-indigo-400">✓</span>
-              <span>Ciclo curto vs longo muda toda a abordagem</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-indigo-400">✓</span>
-              <span>Cada stakeholder tem nivel de consciencia diferente</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-indigo-400">✓</span>
-              <span>Valor em B2B precisa ser quantificado em ROI</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-indigo-400">✓</span>
-              <span>Objecoes B2B sao organizacionais, nao pessoais</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-indigo-400">✓</span>
-              <span>Os principios fundamentais sao universais</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-indigo-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-indigo-400 font-bold text-sm">8.4</span>
-            <h4 class="font-bold mt-1">🚀 O futuro: IA, autoservico e o papel humano</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Como se preparar para o futuro das vendas na era da inteligencia artificial. O que muda e o que permanece.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-8-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 8.2
-        </a>
-        <a href="modulo-8-4.html" class="flex-1 text-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-500 transition-colors">
-          Proximo: Modulo 8.4 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 8.3: Vendas B2B vs B2C</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-all" href="../trilha3/index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-indigo-500/10 text-indigo-400" href="index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-indigo-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 8</a>
+<span class="text-neutral-600">/</span>
+<span class="text-indigo-400 font-medium">Module 8.3</span>
+</div>
+<span class="inline-block px-3 py-1 bg-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full mb-4">MODULE 8.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🔀 B2B vs B2C sales: what changes</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The structural differences between selling to businesses and selling to consumers — and the universal principles that apply in both worlds.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-indigo-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-indigo-400">~45</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-indigo-400">Advanced</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-indigo-400">Comparative</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Topic 1
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">⏱️ Decision cycle</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">The most visible difference between B2B and B2C is in the<strong class="text-indigo-400">time and structure of the decision</strong>. In B2C, a person decides in minutes. In B2B, a committee decides in weeks or months. This changes EVERYTHING in the approach.</p>
+<div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
+<h3 class="text-lg font-semibold text-indigo-400 mb-4">Direct comparison</h3>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-bold text-neutral-200 mb-3">🛒 B2C — Short and individual</h4>
+<ul class="space-y-2 text-sm text-neutral-400">
+<li>→ Decision in minutes to days</li>
+<li>→ 1 decision maker (the person himself)</li>
+<li>→ Emotion as the main driver</li>
+<li>→ Momentum and scarcity work</li>
+<li>→ Medium low-medium ticket</li>
+<li>→ High volume compensates for margin</li>
+</ul>
+</div>
+<div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
+<h4 class="font-bold text-indigo-400 mb-3">🏢 B2B — Long and collective</h4>
+<ul class="space-y-2 text-sm text-neutral-300">
+<li>→ Decision in weeks to months</li>
+<li>→ 6-10 stakeholders involved</li>
+<li>→ Rationality + internal politics</li>
+<li>→ Business case and ROI are mandatory</li>
+<li>→ Medium high-very high ticket</li>
+<li>→ Each deal matters individually</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 What does this change in practice</h3>
+<p class="text-neutral-300">In B2C, you optimize the funnel to<strong class="text-blue-400">quick conversation</strong>. In B2B, you optimize for<strong class="text-blue-400">relationship and deal progress</strong>. Trying to close a B2B deal with B2C urgency is the quickest way to lose credibility. Trying to build long-term relationships in B2C is a waste of resources.</p>
+</div>
+</section>
+Topic 2
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🧩 Levels of awareness in B2B</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">In B2C, you deal with one level of awareness at a time (the buyer's). In B2B,<strong class="text-indigo-400">each stakeholder can be at a different level</strong>. The user suffers from the problem daily. The CFO doesn't even know the problem exists. The CTO wants to know about the technology. You need to speak all languages.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-indigo-400 mb-4">Awareness map by stakeholder</h3>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center">
+<span class="text-red-400 font-bold text-sm">😰</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">End user — Aware of the problem</h4>
+<p class="text-sm text-neutral-400">Live the pain daily. Want an urgent solution. Speaks the language of functionality and usability. "I need something that does X faster."</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="text-amber-400 font-bold text-sm">🔧</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Manager / CTO — Aware of the solution</h4>
+<p class="text-sm text-neutral-400">You know there are options. Assess technically. It speaks the language of integration, security, scalability. "How does this connect to our stack?"</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center">
+<span class="text-indigo-400 font-bold text-sm">💼</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">CFO / CEO — Aware (or not) of the impact</h4>
+<p class="text-sm text-neutral-400">Think about numbers, risk and priority. You may not even know the problem exists. Speaks the language of ROI, payback and opportunity cost. “How much does this impact the P&amp;L?”</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+<span class="text-purple-400 font-bold text-sm">⚖️</span>
+</div>
+<div class="flex-1 bg-dark-800/50 rounded-lg p-4 border border-dark-600">
+<h4 class="font-semibold text-neutral-200 mb-1">Procurement / Legal — Aware of the process</h4>
+<p class="text-sm text-neutral-400">Focuses on compliance, contract, SLA and risk. It may slow down or veto for procedural reasons. "What's the get-out clause?"</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">For your next B2B deal, create a "message matrix": a table with each stakeholder, their level of awareness, their main concern and the key message you should take. A single presentation for all does not work.</p>
+</div>
+</section>
+Topic 3
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">📈 Building value in B2B</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">In B2C, value and often<strong class="text-indigo-400">emotional and immediate</strong>: status, pleasure, convenience. In B2B, value needs to be<strong class="text-indigo-400">quantified in financial impact</strong>: ROI, risk reduction, efficiency gain. Without a business case, there is no budget approval.</p>
+<div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
+<h3 class="text-lg font-semibold text-indigo-400 mb-4">The 4 pillars of value in B2B</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">💰</div>
+<div class="font-semibold text-neutral-200 text-sm">Direct ROI</div>
+<div class="text-xs text-neutral-400">"Generates R$X in additional revenue" or "Saves R$Y per month"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">⏱️</div>
+<div class="font-semibold text-neutral-200 text-sm">Operational efficiency</div>
+<div class="text-xs text-neutral-400">"Reduces process time from X hours to Y minutes"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">🛡️</div>
+<div class="font-semibold text-neutral-200 text-sm">Risk reduction</div>
+<div class="text-xs text-neutral-400">"Eliminates compliance risk" or "Reduces downtime by X%"</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4">
+<div class="text-2xl mb-2">📊</div>
+<div class="font-semibold text-neutral-200 text-sm">Competitive advantage</div>
+<div class="text-xs text-neutral-400">"Puts you X months ahead of the competition"</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 The business case rule</h3>
+<p class="text-neutral-300">In B2B, if you can't fill out this sentence, you're not ready to sell: "Our solution solves [specific problem] that costs [quantified R$] per [period], generating [measurable result] in [deadline]. The investment pays for itself in [X months]." Practice until it feels natural.</p>
+</div>
+</section>
+Topic 4
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">🎤 Script and objections in B2B</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">In B2C, objections are typically personal: "it's expensive", "I don't need it", "I'll think about it". In B2B, objections are<strong class="text-indigo-400">organizational and systemic</strong>: involve budget, timing, internal processes and corporate policy. The script needs to navigate layers of complexity.</p>
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-indigo-400 mb-4">B2B vs B2C objections</h3>
+<div class="space-y-4">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "It's expensive"</h4>
+<p class="text-neutral-400 text-xs">Answer: anchoring in emotional benefit, installments, scarcity.</p>
+</div>
+<div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
+<h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "Not in the budget"</h4>
+<p class="text-neutral-300 text-xs">Answer: "What is the cost of NOT solving it? Can we structure it for the next budget cycle? Is there another department's budget that this impacts?"</p>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "I'll think about it"</h4>
+<p class="text-neutral-400 text-xs">Answer: create urgency, limited supply, quick follow-up.</p>
+</div>
+<div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
+<h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "I need to approve internally"</h4>
+<p class="text-neutral-300 text-xs">Answer: "Can I help prepare the material for the internal presentation? Who else needs to be involved? What is the approval process?"</p>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-dark-800/50 rounded-lg p-4">
+<h4 class="font-semibold text-neutral-200 mb-2 text-sm">B2C: "I don't need it"</h4>
+<p class="text-neutral-400 text-xs">Answer: reveal latent pain, show the consequences of not acting.</p>
+</div>
+<div class="bg-indigo-900/20 rounded-lg p-4 border border-indigo-500/30">
+<h4 class="font-semibold text-indigo-400 mb-2 text-sm">B2B: "We have a contract with another supplier"</h4>
+<p class="text-neutral-300 text-xs">Answer: "When does the contract expire? What would make you consider alternatives? Can I show you a comparison of value?"</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">Map out the 5 most common objections you hear. For each, identify: (1) Is it a value, timing, process or policy objection? (2) Who is really behind this objection? (3) What is the answer that RESOLVES, not just rebuts? The goal is not to win the argument — it is to remove the obstacle.</p>
+</div>
+</section>
+Topic 5
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🔗 What applies the same</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Despite all the differences,<strong class="text-indigo-400">The fundamental principles are the same</strong>. People buy from those they trust. Value precedes price. Emotion influences every decision — even in B2B. The fundamentals of 8020 Tracks 1-7 apply in any context.</p>
+<div class="bg-gradient-to-br from-indigo-900/20 to-dark-800 rounded-xl p-6 border border-indigo-500/20 mb-6">
+<h3 class="text-lg font-semibold text-indigo-400 mb-4">Universal sales principles</h3>
+<ul class="space-y-3 text-neutral-300">
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">Trust as a basis</strong>— No one buys from someone they don't trust, whether it's a consumer buying a cell phone or a CFO approving a R$1M project.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">Value before price</strong>— Order always matters: first the customer understands what they get, then they discuss what they pay. This goes for a course costing R$97 or a SaaS costing R$500K/year.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">Active listening</strong>— The best salesperson is the one who listens the most, not the one who talks the most. In B2C or B2B, discovery is king.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">Diagnosis before prescription</strong>— Don’t present a solution before understanding the problem. This goes for a doctor, a B2C salesperson and an AE enterprise.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">Disciplined follow-up</strong>— Most sales happen after the 5th contact. Whoever gives up on the 2nd loses money, in any market.</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="text-indigo-400 mt-1">✓</span>
+<span><strong class="text-indigo-400">80/20 principle</strong>— 20% of customers generate 80% of revenue. 20% of activities generate 80% of results. This is universal.</span>
+</li>
+</ul>
+</div>
+<div class="bg-blue-900/20 rounded-xl p-6 border border-blue-500/30">
+<h3 class="text-lg font-semibold text-blue-400 mb-3">📊 The big conclusion</h3>
+<p class="text-neutral-300">B2B and B2C are<strong class="text-blue-400">different contexts, not different planets</strong>. The principles are the same — the application changes. A salesperson who masters the fundamentals can move between both worlds. What changes is the complexity of execution, not the essence of the work.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-indigo-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-indigo-400">✓</span>
+<span>Short vs long cycle changes the whole approach</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-indigo-400">✓</span>
+<span>Each stakeholder has a different level of awareness</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-indigo-400">✓</span>
+<span>Value in B2B needs to be quantified in ROI</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-indigo-400">✓</span>
+<span>B2B objections are organizational, not personal</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-indigo-400">✓</span>
+<span>The fundamental principles are universal</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-indigo-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-indigo-400 font-bold text-sm">8.4</span>
+<h4 class="font-bold mt-1">🚀 The future: AI, self-service and the human role</h4>
+<p class="text-neutral-400 text-sm mt-2">How to prepare for the future of sales in the age of artificial intelligence. What changes and what remains.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-8-2.html">← Module 8.2</a>
+<a class="flex-1 text-center px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-500 transition-colors" href="modulo-8-4.html">Next: Module 8.4 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 8.3: B2B vs B2C Sales</div>
+</div>
+</div>
+</footer>
+Scripts
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -482,6 +420,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>

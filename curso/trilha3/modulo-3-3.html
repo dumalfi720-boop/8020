@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modulo 3.3: Matriz de avaliacao com score | 8020</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Module 3.3: Evaluation matrix with score | 8020</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
     tailwind.config = {
       darkMode: 'class',
       theme: {
@@ -18,8 +18,8 @@
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
     body { font-family: 'Inter', sans-serif; }
     html:not(.dark) body { background-color: #f8fafc; color: #1e293b; }
     html:not(.dark) .bg-dark-900 { background-color: #f8fafc; }
@@ -32,555 +32,487 @@
   </style>
 </head>
 <body class="bg-dark-900 text-neutral-100 min-h-screen">
-
-  <!-- Navigation Global -->
-  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-4">
-          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors">
-            <span class="text-3xl">💰</span>
-            <span class="font-bold text-xl hidden sm:inline">8020</span>
-          </a>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-        </div>
-        <div class="flex flex-col items-end space-y-1">
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all">
-              <span class="sm:hidden">T1</span>
-              <span class="hidden sm:inline">Fundamentos</span>
-            </a>
-            <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all">
-              <span class="sm:hidden">T2</span>
-              <span class="hidden sm:inline">Metodo</span>
-            </a>
-            <a href="index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400">
-              <span class="sm:hidden">T3</span>
-              <span class="hidden sm:inline">Diagnostico</span>
-            </a>
-            <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all">
-              <span class="sm:hidden">T4</span>
-              <span class="hidden sm:inline">Gestao</span>
-            </a>
-          </div>
-          <div class="flex items-center space-x-1 sm:space-x-2">
-            <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all">
-              <span class="sm:hidden">T5</span>
-              <span class="hidden sm:inline">Estrategia</span>
-            </a>
-            <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all">
-              <span class="sm:hidden">T6</span>
-              <span class="hidden sm:inline">Treinamento</span>
-            </a>
-            <a href="../trilha7/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all">
-              <span class="sm:hidden">T7</span>
-              <span class="hidden sm:inline">Ferramentas</span>
-            </a>
-            <a href="../trilha8/index.html" class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all">
-              <span class="sm:hidden">T8</span>
-              <span class="hidden sm:inline">Avancado</span>
-            </a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2">
-              <span id="theme-icon" class="text-lg">🌙</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="flex items-center space-x-2 mb-4 text-sm">
-        <a href="../../index.html" class="text-neutral-500 hover:text-neutral-300">Inicio</a>
-        <span class="text-neutral-600">/</span>
-        <a href="index.html" class="text-neutral-500 hover:text-neutral-300">Trilha 3</a>
-        <span class="text-neutral-600">/</span>
-        <span class="text-purple-400 font-medium">Modulo 3.3</span>
-      </div>
-
-      <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">
-        MODULO 3.3
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-bold mb-4">📝 Matriz de avaliacao com score</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">
-        Ferramenta pratica com 20 perguntas organizadas em 4 blocos para gerar um score objetivo de cada vendedor. Inclui as perguntas reais e o sistema de classificacao.
-      </p>
-
-      <div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">5</div>
-          <div class="text-xs text-neutral-400">Topicos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">~70</div>
-          <div class="text-xs text-neutral-400">Minutos</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Gestao</div>
-          <div class="text-xs text-neutral-400">Nivel</div>
-        </div>
-        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
-          <div class="text-xl font-bold text-purple-400">Pratico</div>
-          <div class="text-xs text-neutral-400">Tipo</div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Conteudo Principal -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-
-    <!-- Instrucoes -->
-    <section class="mb-12">
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Como usar esta matriz</h3>
-        <p class="text-neutral-300 mb-4">Cada pergunta recebe uma nota de <strong class="text-purple-400">1 a 5</strong>. Ao final de cada bloco, some as 5 notas para obter o score do fator (minimo 5, maximo 25). Use a escala abaixo:</p>
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30">
-            <div class="text-lg font-bold text-green-400">21-25</div>
-            <div class="text-xs text-neutral-400">ALTA</div>
-          </div>
-          <div class="bg-yellow-900/20 rounded-lg p-3 border border-yellow-500/30">
-            <div class="text-lg font-bold text-yellow-400">14-20</div>
-            <div class="text-xs text-neutral-400">MEDIA</div>
-          </div>
-          <div class="bg-red-900/20 rounded-lg p-3 border border-red-500/30">
-            <div class="text-lg font-bold text-red-400">5-13</div>
-            <div class="text-xs text-neutral-400">BAIXA</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 1: Bloco Aptidao -->
-    <section id="topico-1" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
-        <h2 class="text-2xl font-bold">🗣️ Bloco 1: Aptidao Natural (5 perguntas)</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Avalie a <strong class="text-purple-400">facilidade natural do vendedor para comunicacao, persuasao e leitura de pessoas</strong>. Observe comportamentos reais, nao o que ele diz sobre si mesmo. Cada pergunta recebe nota de 1 (muito baixo) a 5 (excelente).
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A1</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Comunicacao verbal</h4>
-              <p class="text-sm text-neutral-400">O vendedor se expressa com clareza e fluidez em conversas com clientes? Consegue explicar o produto/servico de forma simples e convincente?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Confuso e travado | 3=Razoavel | 5=Fluido e claro</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A2</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Capacidade de persuasao</h4>
-              <p class="text-sm text-neutral-400">Consegue conduzir o cliente na direcao do fechamento sem parecer forcado? Usa argumentos que conectam com as necessidades reais do cliente?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Nao convence | 3=Convence as vezes | 5=Persuade naturalmente</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A3</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Leitura de pessoas</h4>
-              <p class="text-sm text-neutral-400">Percebe sinais nao-verbais, mudancas de humor, objecoes nao ditas e nivel de interesse do cliente durante a conversa?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Nao percebe nada | 3=Percebe sinais obvios | 5=Le nas entrelinhas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A4</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Adaptacao de discurso</h4>
-              <p class="text-sm text-neutral-400">Ajusta tom, linguagem e abordagem conforme o perfil do cliente (tecnico, executivo, operacional)? Fala a "lingua" do interlocutor?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Mesmo discurso pra todos | 3=Ajusta parcialmente | 5=Camaleao natural</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A5</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Criacao de rapport</h4>
-              <p class="text-sm text-neutral-400">Gera conexao e confianca rapidamente? O cliente se sente confortavel e aberto na presenca desse vendedor?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Cliente fica desconfortavel | 3=Conexao neutra | 5=Cria confianca rapido</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 2: Bloco Vontade -->
-    <section id="topico-2" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
-        <h2 class="text-2xl font-bold">🔥 Bloco 2: Vontade de Vender (5 perguntas)</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Avalie o <strong class="text-purple-400">desejo genuino do vendedor de estar em vendas</strong>. Observe comportamentos espontaneos, nao respostas ensaiadas. A vontade se manifesta em atitudes, nao em palavras.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V1</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Prazer no jogo comercial</h4>
-              <p class="text-sm text-neutral-400">Demonstra gostar do processo de vendas? Fala sobre vendas com entusiasmo? Comemora fechamentos com energia genuina?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Parece sofrer vendendo | 3=Neutro | 5=Visivelmente apaixonado</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V2</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Tolerancia a rejeicao</h4>
-              <p class="text-sm text-neutral-400">Como reage a um "nao"? Recupera rapido e parte para o proximo? Ou fica paralisado, desmotivado ou reclamando?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Desmorona com rejeicao | 3=Incomoda mas segue | 5=Usa como combustivel</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V3</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Fome de meta</h4>
-              <p class="text-sm text-neutral-400">Olha para a meta como desafio empolgante ou como ameaca? Busca superar o target ou apenas "sobreviver" ao mes?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Ignora ou teme a meta | 3=Busca atingir | 5=Quer superar sempre</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V4</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Proatividade comercial</h4>
-              <p class="text-sm text-neutral-400">Busca leads e oportunidades por conta propria? Ou so trabalha o que a empresa entrega? Toma iniciativa sem ser mandado?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=So faz o que mandam | 3=Toma iniciativa as vezes | 5=Sempre buscando mais</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V5</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Auto-motivacao</h4>
-              <p class="text-sm text-neutral-400">Mantem a energia e o ritmo mesmo em semanas ruins? Precisa que o gestor fique "puxando" ou se mantem em movimento sozinho?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Precisa ser empurrado | 3=Se mantem com apoio | 5=Autogerador de energia</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 3: Bloco Aprendizagem -->
-    <section id="topico-3" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
-        <h2 class="text-2xl font-bold">📈 Bloco 3: Capacidade de Aprendizagem (5 perguntas)</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Avalie a <strong class="text-purple-400">coachability e velocidade de evolucao</strong> do vendedor. Este e o fator que mais prediz o desempenho futuro. Observe o que acontece APOS o feedback, nao durante.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L1</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Receptividade a feedback</h4>
-              <p class="text-sm text-neutral-400">Como reage quando recebe critica construtiva? Ouve com abertura ou se defende? Agradece o feedback ou fica ressentido?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Fica defensivo/ressentido | 3=Ouve mas nem sempre aplica | 5=Agradece e age</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L2</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Velocidade de ajuste</h4>
-              <p class="text-sm text-neutral-400">Apos receber um feedback especifico, em quanto tempo aplica a mudanca? Na proxima interacao? Na proxima semana? Nunca?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Nunca ajusta | 3=Ajusta em dias | 5=Ajusta na proxima interacao</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L3</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Busca ativa por conhecimento</h4>
-              <p class="text-sm text-neutral-400">Estuda por conta propria? Le sobre vendas, ouve podcasts, pede materiais? Ou so consome o que e obrigatorio?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Nenhum interesse extra | 3=Estuda quando indicado | 5=Autodidata voraz</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L4</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Aplicacao do aprendido</h4>
-              <p class="text-sm text-neutral-400">Transforma conhecimento em pratica? O que aprende no treinamento aparece nas ligacoes e reunioes reais?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Sabe mas nao faz | 3=Aplica parcialmente | 5=Implementa tudo que aprende</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L5</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Evolucao visivel</h4>
-              <p class="text-sm text-neutral-400">Comparando com 30-60 dias atras, ha evolucao perceptivel? O vendedor de hoje e melhor que o de ontem?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Estagnado | 3=Evolucao lenta | 5=Evolucao rapida e consistente</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 4: Bloco Execucao -->
-    <section id="topico-4" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
-        <h2 class="text-2xl font-bold">⚙️ Bloco 4: Execucao Consistente (5 perguntas)</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Avalie a <strong class="text-purple-400">disciplina e consistencia na rotina comercial</strong>. Este bloco mede o que o vendedor FAZ, nao o que ele SABE ou QUER. Use dados do CRM e observacao direta.
-      </p>
-
-      <div class="space-y-4 mb-6">
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E1</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Cumprimento da rotina diaria</h4>
-              <p class="text-sm text-neutral-400">Faz o numero minimo de atividades diarias (ligacoes, emails, reunioes)? Cumpre a rotina mesmo em dias dificeis?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Raramente cumpre | 3=Cumpre na maioria dos dias | 5=Cumpre todos os dias</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E2</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Gestao do pipeline</h4>
-              <p class="text-sm text-neutral-400">Mantem o CRM atualizado? Registra interacoes? Move deals entre etapas? Ou o pipeline dele e uma bagunca desatualizada?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Pipeline caos | 3=Atualiza com atraso | 5=Pipeline impecavel e em tempo real</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E3</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Follow-up sistematico</h4>
-              <p class="text-sm text-neutral-400">Faz follow-up de forma consistente e no timing certo? Ou deixa leads esfriarem por esquecimento ou procrastinacao?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Nao faz follow-up | 3=Faz quando lembra | 5=Sistema de follow-up impecavel</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E4</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Preparacao para reunioes</h4>
-              <p class="text-sm text-neutral-400">Pesquisa o cliente antes da reuniao? Prepara perguntas? Tem clareza do objetivo? Ou entra "no improviso"?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Zero preparacao | 3=Preparacao basica | 5=Pesquisa profunda e objetivo claro</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
-          <div class="flex items-start space-x-3">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E5</span>
-            <div>
-              <h4 class="font-semibold text-neutral-200 mb-1">Entrega de resultados</h4>
-              <p class="text-sm text-neutral-400">Os numeros refletem o esforço? Atinge a meta ou fica consistentemente abaixo? O resultado e previsivel ou volatil?</p>
-              <p class="text-xs text-neutral-500 mt-2">1=Muito abaixo da meta | 3=Proximo da meta | 5=Supera consistentemente</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Topico 5: Classificacao -->
-    <section id="topico-5" class="mb-16">
-      <div class="flex items-center space-x-3 mb-6">
-        <span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">5</span>
-        <h2 class="text-2xl font-bold">🏷️ Classificacao e interpretacao de scores</h2>
-      </div>
-
-      <p class="text-neutral-300 mb-6 leading-relaxed">
-        Com os 4 scores em maos, e hora de <strong class="text-purple-400">classificar e interpretar</strong>. A classificacao nao e um rotulo permanente - e um retrato do momento que orienta as acoes de desenvolvimento.
-      </p>
-
-      <!-- Tabela de Classificacao -->
-      <div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Faixas de classificacao por fator</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-dark-600">
-                <th class="text-left py-3 px-4 text-neutral-400">Score</th>
-                <th class="text-left py-3 px-4 text-neutral-400">Classificacao</th>
-                <th class="text-left py-3 px-4 text-neutral-400">Significado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-3 px-4 font-bold text-green-400">21-25</td>
-                <td class="py-3 px-4 text-green-400">Alta</td>
-                <td class="py-3 px-4 text-neutral-300">Destaque no fator. Ponto forte natural ou desenvolvido.</td>
-              </tr>
-              <tr class="border-b border-dark-600/50">
-                <td class="py-3 px-4 font-bold text-yellow-400">14-20</td>
-                <td class="py-3 px-4 text-yellow-400">Media</td>
-                <td class="py-3 px-4 text-neutral-300">Potencial com espaco para crescer. Nao impede mas nao se destaca.</td>
-              </tr>
-              <tr>
-                <td class="py-3 px-4 font-bold text-red-400">5-13</td>
-                <td class="py-3 px-4 text-red-400">Baixa</td>
-                <td class="py-3 px-4 text-neutral-300">Necessidade de desenvolvimento intenso ou redirecionamento.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Exemplo de Perfil -->
-      <div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Exemplo: Perfil completo de um vendedor</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-          <div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30 text-center">
-            <div class="text-lg font-bold text-green-400">22</div>
-            <div class="text-xs text-neutral-400">Aptidao (ALTA)</div>
-          </div>
-          <div class="bg-yellow-900/20 rounded-lg p-3 border border-yellow-500/30 text-center">
-            <div class="text-lg font-bold text-yellow-400">17</div>
-            <div class="text-xs text-neutral-400">Vontade (MEDIA)</div>
-          </div>
-          <div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30 text-center">
-            <div class="text-lg font-bold text-green-400">21</div>
-            <div class="text-xs text-neutral-400">Aprendizagem (ALTA)</div>
-          </div>
-          <div class="bg-red-900/20 rounded-lg p-3 border border-red-500/30 text-center">
-            <div class="text-lg font-bold text-red-400">11</div>
-            <div class="text-xs text-neutral-400">Execucao (BAIXA)</div>
-          </div>
-        </div>
-        <p class="text-neutral-300 text-sm"><strong class="text-purple-400">Interpretacao:</strong> Vendedor com alto potencial (aptidao + aprendizagem altas) mas que nao executa a rotina. O foco do desenvolvimento e claro: disciplina, processo e acompanhamento proximo da rotina. A vontade media indica que pode precisar de motivacao adicional.</p>
-        <p class="text-neutral-300 text-sm mt-2"><strong class="text-purple-400">Score ponderado:</strong> (22x0,35)+(17x0,25)+(21x0,20)+(11x0,20) = 7,70+4,25+4,20+2,20 = <strong>18,35</strong></p>
-      </div>
-
-      <!-- Dica -->
-      <div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
-        <h3 class="text-lg font-semibold text-primary mb-3">💡 Exercicio Pratico</h3>
-        <p class="text-neutral-300">
-          Escolha 3 vendedores da sua equipe agora e <strong class="text-primary">aplique as 20 perguntas</strong>. Nao busque precisao absoluta na primeira vez - busque um retrato honesto. A pratica vai refinar sua capacidade de avaliar com o tempo.
-        </p>
-      </div>
-    </section>
-
-    <!-- Resumo Final -->
-    <section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
-      <h2 class="text-2xl font-bold mb-6 flex items-center">
-        <span class="mr-3">📝</span> Resumo do Modulo
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">O que voce aprendeu:</h3>
-          <ul class="space-y-2 text-neutral-300">
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>20 perguntas para avaliar os 4 fatores</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Escala de 1 a 5 por pergunta</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Classificacao: 21-25 alta, 14-20 media, 5-13 baixa</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Score ponderado com a formula de potencial</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <span class="text-purple-400">✓</span>
-              <span>Interpretacao contextual dos resultados</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold text-purple-400 mb-4">Proximo modulo:</h3>
-          <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
-            <span class="text-purple-400 font-bold text-sm">3.4</span>
-            <h4 class="font-bold mt-1">🏷️ Grupos A, B, C e D</h4>
-            <p class="text-neutral-400 text-sm mt-2">
-              Classificar vendedores em 4 grupos com estrategias de desenvolvimento especificas para cada perfil.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="modulo-3-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">
-          ← Modulo 3.2
-        </a>
-        <a href="modulo-3-4.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors">
-          Proximo: Modulo 3.4 →
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-4">
-          <span class="text-2xl">💰</span>
-          <span class="font-bold text-neutral-200">8020</span>
-          <span class="text-neutral-600">|</span>
-          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm">INEMA.CLUB</a>
-        </div>
-        <div class="text-neutral-500 text-sm">Modulo 3.3: Matriz de avaliacao com score</div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+Global Navigation
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors" href="../../index.html">
+<span class="text-3xl">💰</span>
+<span class="font-bold text-xl hidden sm:inline">8020</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex flex-col items-end space-y-1">
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all" href="../trilha1/index.html">
+<span class="sm:hidden">T1</span>
+<span class="hidden sm:inline">Fundamentals</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all" href="../trilha2/index.html">
+<span class="sm:hidden">T2</span>
+<span class="hidden sm:inline">Method</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold bg-purple-500/10 text-purple-400" href="index.html">
+<span class="sm:hidden">T3</span>
+<span class="hidden sm:inline">Diagnosis</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" href="../trilha4/index.html">
+<span class="sm:hidden">T4</span>
+<span class="hidden sm:inline">Management</span>
+</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-all" href="../trilha5/index.html">
+<span class="sm:hidden">T5</span>
+<span class="hidden sm:inline">Strategy</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" href="../trilha6/index.html">
+<span class="sm:hidden">T6</span>
+<span class="hidden sm:inline">Training</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all" href="../trilha7/index.html">
+<span class="sm:hidden">T7</span>
+<span class="hidden sm:inline">Tools</span>
+</a>
+<a class="px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" href="../trilha8/index.html">
+<span class="sm:hidden">T8</span>
+<span class="hidden sm:inline">Advanced</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-dark-700 transition-colors ml-2" onclick="toggleTheme()">
+<span class="text-lg" id="theme-icon">🌙</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</nav>
+Header
+<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex items-center space-x-2 mb-4 text-sm">
+<a class="text-neutral-500 hover:text-neutral-300" href="../../index.html">Start</a>
+<span class="text-neutral-600">/</span>
+<a class="text-neutral-500 hover:text-neutral-300" href="index.html">Track 3</a>
+<span class="text-neutral-600">/</span>
+<span class="text-purple-400 font-medium">Module 3.3</span>
+</div>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULE 3.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">📝 Evaluation matrix with score</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Practical tool with 20 questions organized into 4 blocks to generate an objective score for each salesperson. Includes the actual questions and the grading system.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">5</div>
+<div class="text-xs text-neutral-400">Topics</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">~70</div>
+<div class="text-xs text-neutral-400">Minutes</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Management</div>
+<div class="text-xs text-neutral-400">Level</div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 text-center">
+<div class="text-xl font-bold text-purple-400">Practical</div>
+<div class="text-xs text-neutral-400">Type</div>
+</div>
+</div>
+</div>
+</header>
+Main Content
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+Instructions
+<section class="mb-12">
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">How to use this matrix</h3>
+<p class="text-neutral-300 mb-4">Each question receives a grade of<strong class="text-purple-400">1 to 5</strong>. At the end of each block, add up the 5 scores to obtain the factor score (minimum 5, maximum 25). Use the scale below:</p>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30">
+<div class="text-lg font-bold text-green-400">21-25</div>
+<div class="text-xs text-neutral-400">HIGH</div>
+</div>
+<div class="bg-yellow-900/20 rounded-lg p-3 border border-yellow-500/30">
+<div class="text-lg font-bold text-yellow-400">14-20</div>
+<div class="text-xs text-neutral-400">AVERAGE</div>
+</div>
+<div class="bg-red-900/20 rounded-lg p-3 border border-red-500/30">
+<div class="text-lg font-bold text-red-400">5-13</div>
+<div class="text-xs text-neutral-400">LOW</div>
+</div>
+</div>
+</div>
+</section>
+Topic 1: Aptitude Block
+<section class="mb-16" id="topico-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">1</span>
+<h2 class="text-2xl font-bold">🗣️ Block 1: Natural Aptitude (5 questions)</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Evaluate the<strong class="text-purple-400">The salesperson's natural ability to communicate, persuade and read people</strong>. Observe actual behaviors, not what he says about himself. Each question is graded from 1 (very low) to 5 (excellent).</p>
+<div class="space-y-4 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A1</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Verbal communication</h4>
+<p class="text-sm text-neutral-400">Does the salesperson express himself clearly and fluidly in conversations with customers? Can you explain the product/service in a simple and convincing way?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Confused and stuck | 3=Reasonable | 5=Fluid and clear</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A2</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Persuasive capacity</h4>
+<p class="text-sm text-neutral-400">Can you guide the client towards closing without seeming forced? Do you use arguments that connect with the customer’s real needs?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Not convincing | 3=Convinces sometimes | 5=Persuades naturally</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A3</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Reading people</h4>
+<p class="text-sm text-neutral-400">Do you notice non-verbal signals, changes in mood, unspoken objections and the customer's level of interest during the conversation?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Doesn't understand anything | 3=Notices obvious signs | 5=Read between the lines</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A4</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Speech adaptation</h4>
+<p class="text-sm text-neutral-400">Adjust tone, language and approach according to the client’s profile (technical, executive, operational)? Do you speak the interlocutor's "language"?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Same speech for everyone | 3=Partially adjusts | 5=Natural chameleon</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">A5</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Rapport creation</h4>
+<p class="text-sm text-neutral-400">Does it generate connection and trust quickly? Does the customer feel comfortable and open in the presence of this salesperson?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Client is uncomfortable | 3=Neutral connection | 5=Builds trust quickly</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 2: Block Will
+<section class="mb-16" id="topico-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">2</span>
+<h2 class="text-2xl font-bold">🔥 Block 2: Willingness to Sell (5 questions)</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Evaluate the<strong class="text-purple-400">seller's genuine desire to be in sales</strong>. Observe spontaneous behaviors, not rehearsed responses. The will manifests itself in attitudes, not in words.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V1</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Pleasure in the commercial game</h4>
+<p class="text-sm text-neutral-400">Do you demonstrate that you enjoy the sales process? Do you talk about sales enthusiastically? Do you celebrate closings with genuine energy?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Seems to suffer selling | 3=Neutral | 5=Visibly in love</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V2</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Rejection tolerance</h4>
+<p class="text-sm text-neutral-400">How do you react to a “no”? Recover quickly and move on to the next one? Or do you become paralyzed, unmotivated or complaining?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Collapses with rejection | 3=Uncomfortable but carry on | 5=Uses as fuel</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V3</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Goal hunger</h4>
+<p class="text-sm text-neutral-400">Do you see the goal as an exciting challenge or as a threat? Are you looking to surpass the target or just "survive" the month?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Ignores or fears the goal | 3=Seeks to achieve | 5=Always wants to overcome</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V4</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Commercial proactiveness</h4>
+<p class="text-sm text-neutral-400">Do you search for leads and opportunities on your own? Or do you just work with what the company delivers? Do you take initiative without being told to?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Just do what you're told | 3=Take initiative sometimes | 5=Always looking for more</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">V5</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Self-motivation</h4>
+<p class="text-sm text-neutral-400">Do you maintain energy and pace even in bad weeks? Do you need the manager to be "pulling" you or do you keep moving on your own?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Needs to be pushed | 3=Stay supported | 5=Self-generating energy</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 3: Learning Block
+<section class="mb-16" id="topico-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">3</span>
+<h2 class="text-2xl font-bold">📈 Block 3: Learning Capacity (5 questions)</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Evaluate the<strong class="text-purple-400">coachability and speed of evolution</strong>from the seller. This is the factor that most predicts future performance. Notice what happens AFTER the feedback, not during it.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L1</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Receptivity to feedback</h4>
+<p class="text-sm text-neutral-400">How do you react when you receive constructive criticism? Do you listen openly or defend yourself? Are you grateful for the feedback or resentful?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Becomes defensive/resentful | 3=Listen but does not always apply | 5=Give thanks and act</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L2</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Adjustment speed</h4>
+<p class="text-sm text-neutral-400">After receiving specific feedback, how long does it take to implement the change? In the next interaction? Next week? Never?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Never adjusts | 3=Adjusts in days | 5=Adjusts in the next iteration</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L3</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Active search for knowledge</h4>
+<p class="text-sm text-neutral-400">Do you study on your own? Read about sales, listen to podcasts, order materials? Or do you only consume what is mandatory?</p>
+<p class="text-xs text-neutral-500 mt-2">1=No extra interest | 3=Studies when indicated | 5=Voracious self-taught</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L4</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Application of what you learned</h4>
+<p class="text-sm text-neutral-400">Transform knowledge into practice? Does what you learn in training show up in real calls and meetings?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Knows but doesn't do | 3=Partially applies | 5=Implements everything you learn</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">L5</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Visible evolution</h4>
+<p class="text-sm text-neutral-400">Comparing with 30-60 days ago, is there noticeable evolution? Is today's salesperson better than yesterday's?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Stagnant | 3=Slow evolution | 5=Fast and consistent evolution</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 4: Execution Block
+<section class="mb-16" id="topico-4">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">4</span>
+<h2 class="text-2xl font-bold">⚙️ Block 4: Consistent Execution (5 questions)</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Evaluate the<strong class="text-purple-400">discipline and consistency in the commercial routine</strong>. This block measures what the salesperson DOES, not what he KNOWS or WANTS. Use CRM data and direct observation.</p>
+<div class="space-y-4 mb-6">
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E1</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Compliance with the daily routine</h4>
+<p class="text-sm text-neutral-400">Do the minimum number of daily activities (calls, emails, meetings)? Do you stick to your routine even on difficult days?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Rarely complies | 3=Complies most days | 5=Complies every day</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E2</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Pipeline management</h4>
+<p class="text-sm text-neutral-400">Do you keep your CRM updated? Register interactions? Move deals between stages? Or is his pipeline an outdated mess?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Pipeline chaos | 3=Updates with delay | 5=Impeccable and real-time pipeline</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E3</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Systematic follow-up</h4>
+<p class="text-sm text-neutral-400">Do you follow-up consistently and at the right time? Or do you let leads cool off due to forgetfulness or procrastination?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Does not follow-up | 3=Do it when you remember | 5=Impeccable follow-up system</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E4</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Preparation for meetings</h4>
+<p class="text-sm text-neutral-400">Research the client before the meeting? Prepare questions? Are you clear on your objective? Or do you enter "improvised"?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Zero preparation | 3=Basic preparation | 5=Deep research and clear objective</p>
+</div>
+</div>
+</div>
+<div class="bg-dark-700/50 rounded-xl p-5 border border-dark-600">
+<div class="flex items-start space-x-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold text-sm flex-shrink-0">E5</span>
+<div>
+<h4 class="font-semibold text-neutral-200 mb-1">Delivery of results</h4>
+<p class="text-sm text-neutral-400">Do the numbers reflect the effort? Does it meet the target or consistently fall short? Is the result predictable or volatile?</p>
+<p class="text-xs text-neutral-500 mt-2">1=Much below target | 3=Close to goal | 5=Consistently outperforms</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Topic 5: Classification
+<section class="mb-16" id="topico-5">
+<div class="flex items-center space-x-3 mb-6">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold">5</span>
+<h2 class="text-2xl font-bold">🏷️ Classification and interpretation of scores</h2>
+</div>
+<p class="text-neutral-300 mb-6 leading-relaxed">With the 4 scores in hand, it's time to<strong class="text-purple-400">classify and interpret</strong>. The classification is not a permanent label - it is a portrait of the moment that guides development actions.</p>
+Classification Table
+<div class="bg-gradient-to-br from-purple-900/20 to-dark-800 rounded-xl p-6 border border-purple-500/20 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Rating ranges by factor</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-dark-600">
+<th class="text-left py-3 px-4 text-neutral-400">Score</th>
+<th class="text-left py-3 px-4 text-neutral-400">Classification</th>
+<th class="text-left py-3 px-4 text-neutral-400">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-4 font-bold text-green-400">21-25</td>
+<td class="py-3 px-4 text-green-400">High</td>
+<td class="py-3 px-4 text-neutral-300">Featured in the factor. Natural or developed strong point.</td>
+</tr>
+<tr class="border-b border-dark-600/50">
+<td class="py-3 px-4 font-bold text-yellow-400">14-20</td>
+<td class="py-3 px-4 text-yellow-400">Average</td>
+<td class="py-3 px-4 text-neutral-300">Potential with room to grow. It doesn't impede it but it doesn't stand out.</td>
+</tr>
+<tr>
+<td class="py-3 px-4 font-bold text-red-400">5-13</td>
+<td class="py-3 px-4 text-red-400">Low</td>
+<td class="py-3 px-4 text-neutral-300">Need for intense development or redirection.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+Profile Example
+<div class="bg-dark-700/50 rounded-xl p-6 border border-dark-600 mb-6">
+<h3 class="text-lg font-semibold text-purple-400 mb-4">Example: Full profile of a seller</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+<div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30 text-center">
+<div class="text-lg font-bold text-green-400">22</div>
+<div class="text-xs text-neutral-400">Fitness (HIGH)</div>
+</div>
+<div class="bg-yellow-900/20 rounded-lg p-3 border border-yellow-500/30 text-center">
+<div class="text-lg font-bold text-yellow-400">17</div>
+<div class="text-xs text-neutral-400">Willingness (MEDIA)</div>
+</div>
+<div class="bg-green-900/20 rounded-lg p-3 border border-green-500/30 text-center">
+<div class="text-lg font-bold text-green-400">21</div>
+<div class="text-xs text-neutral-400">Learning (HIGH)</div>
+</div>
+<div class="bg-red-900/20 rounded-lg p-3 border border-red-500/30 text-center">
+<div class="text-lg font-bold text-red-400">11</div>
+<div class="text-xs text-neutral-400">Execution (LOW)</div>
+</div>
+</div>
+<p class="text-neutral-300 text-sm"><strong class="text-purple-400">Interpretation:</strong>Salesperson with high potential (high aptitude + learning) but who does not perform the routine. The focus of development is clear: discipline, process and close routine monitoring. Average desire indicates that you may need additional motivation.</p>
+<p class="text-neutral-300 text-sm mt-2"><strong class="text-purple-400">Weighted score:</strong>(22x0.35)+(17x0.25)+(21x0.20)+(11x0.20) = 7.70+4.25+4.20+2.20 =<strong>18.35</strong></p>
+</div>
+Tip
+<div class="bg-primary/10 rounded-xl p-6 border border-primary/30">
+<h3 class="text-lg font-semibold text-primary mb-3">💡 Practical Exercise</h3>
+<p class="text-neutral-300">Choose 3 salespeople from your team now and<strong class="text-primary">apply the 20 questions</strong>. Don't look for absolute accuracy the first time - look for an honest portrayal. Practice will refine your ability to evaluate over time.</p>
+</div>
+</section>
+Final Summary
+<section class="bg-dark-800 rounded-2xl p-8 border border-dark-600">
+<h2 class="text-2xl font-bold mb-6 flex items-center">
+<span class="mr-3">📝</span>Module Summary</h2>
+<div class="grid md:grid-cols-2 gap-8 mb-8">
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">What you learned:</h3>
+<ul class="space-y-2 text-neutral-300">
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>20 questions to assess the 4 factors</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Scale from 1 to 5 per question</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Rating: 21-25 high, 14-20 medium, 5-13 low</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Score weighted with the potential formula</span>
+</li>
+<li class="flex items-start space-x-2">
+<span class="text-purple-400">✓</span>
+<span>Contextual interpretation of results</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-purple-400 mb-4">Next module:</h3>
+<div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
+<span class="text-purple-400 font-bold text-sm">3.4</span>
+<h4 class="font-bold mt-1">🏷️ Groups A, B, C and D</h4>
+<p class="text-neutral-400 text-sm mt-2">Classify sellers into 4 groups with specific development strategies for each profile.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-3-2.html">← Module 3.2</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-4.html">Next: Module 3.4 →</a>
+</div>
+</section>
+</main>
+Footer
+<footer class="border-t border-dark-600 bg-dark-800/50 mt-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center space-x-4">
+<span class="text-2xl">💰</span>
+<span class="font-bold text-neutral-200">8020</span>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="text-neutral-500 text-sm">Module 3.3: Evaluation matrix with score</div>
+</div>
+</div>
+</footer>
+<script data-notranslate="True">
     function toggleTheme() {
       const html = document.documentElement;
       const icon = document.getElementById('theme-icon');
@@ -600,6 +532,5 @@
       document.getElementById('theme-icon').textContent = '☀️';
     }
   </script>
-
 </body>
 </html>
